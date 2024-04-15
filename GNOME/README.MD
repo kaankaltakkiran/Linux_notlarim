@@ -1,3 +1,4 @@
 ```
-sudo apt update $ sudo apt upgrade -y //sistemi güncelleme
+ # Depolarda yer alan paketlerin güncel listesini indir ve güncelle
+sudo apt update $ sudo apt upgrade -y
 ```
