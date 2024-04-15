@@ -6,3 +6,4 @@ sudo apt install gnome-shell-extensions gnome-shell-extension-manager -y
  # Gnome shell paketini kaldır
 $ sudo apt remove gnome-shell-extensions gnome-shell-extension-manager -y
 ```
+Kaynak:  [Gnome](https://www.linuxbuzz.com/install-gnome-extensions-ubuntu/)
