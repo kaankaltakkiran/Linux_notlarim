@@ -49,6 +49,11 @@
 **history** Bu komut, **geçmiş terminalde yazılan komutları** gösterir.
 ## **top**
 **top** Bu komut, **Linux sistemlerinde çalışan işlem ve sistem kaynaklarını izlemek** için kullanılan bir komuttur.
+## **du**
+**du** komutu (disk usage), Linux ve diğer Unix benzeri işletim sistemlerinde **disk kullanımını incelemek** için kullanılır.
+> **Note:**  **du -h** komutu **disk kullanımı gb cinsinden gösterir** kullanılır.
+## **df**
+**df** Bu komut, mevcut dosya sistemi üzerindeki **disk bölümlerinin ve ağ dosya sistemlerinin kullanılan ve boş disk alanlarını raporlar.**
 
 
 
