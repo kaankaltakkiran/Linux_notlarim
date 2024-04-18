@@ -28,12 +28,6 @@
 
 <kbd> Control</kbd> + <kbd>R</kbd>Bu komut , terminalde **arama yapmamıza olanak sağlar.**
 
-## Linuxte uygulama nasıl yüklenir?
-**Birinci yöntem:**: indirmiş olduğumuz **.deb** uzantılı dosyayı çalıştırıp kurabliliriz.
-
-**örnek kullanım:**  sudo dpkg -i filename
-
-**İkinci yöntem:**: İlgili uygulamanın gerekli kodlarla reposundaki listeyi çekip.
 ##### pwd
 **pwd** komutunu hangi **dizinde (klasörde) olduğunuzu bulmak** için kullanılır.
 
