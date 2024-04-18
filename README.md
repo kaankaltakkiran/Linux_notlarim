@@ -150,6 +150,56 @@ Aşağıdaki komut kaan.txt dosyasının içeriğini gösterir.
 ```BASH
 cat kaan.txt
 ```
+##### seq
+seq ile girilen sayı değeri kadar sayı  oluşturur.
+
+Örnek çıktı: 
+1
+2
+3
+4
+5
+```BASH
+seq 5
+```
+Aşağıdaki komut **1 ile 20 arasında** sayı üretir.
+```BASH
+seq 1 20
+```
+Aşağıdaki komut **1 ile başlayan 5 er artan 36 biten** sayıları üretir.
+Örnek çıktı: 
+1
+6
+11
+16
+21
+26
+31
+36
+```BASH
+seq 1 5 36
+```
+##### grep
+-r parametresi ile bulunduğunuz ya da belirttiğiniz bir dizinde bulunan tüm metin dosyalarında arama yapılır
+
+Aşağıdaki komut içinde **a geçen dosyalarda arama** yapar
+```BASH
+grep -r a
+```
+Aşağıdaki komut **kaan.txt dosyasında -i ile küçük/büyük harf duyarsız şekilde kaan kelimesini arar**
+```BASH
+grep -i kaan kaan.txt
+```
+
+Aşağıdaki komut içinde **a geçen dosyalarda satır numarası ile arama** yapar
+```BASH
+grep -n a
+```
+Aşağıdaki komutta **-v** ile  **a geçmeyen dosyalarda satır numarası ile arama** yapar
+```BASH
+grep -v a Ankara
+```
+
 ##### less
  Dosyanın içeriğinin görüntülenmesini sağlar. **Dosyanın içeriği, yukarı ve aşağı ok
 tuşları ile görüntülenebilir**.
