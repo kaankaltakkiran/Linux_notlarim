@@ -117,5 +117,14 @@
 ## **df**
 **df** Bu komut, mevcut dosya sistemi üzerindeki **disk bölümlerinin ve ağ dosya sistemlerinin kullanılan ve boş disk alanlarını raporlar.**
 
+## Genel Bİlgiler
+**date:** Saat ve tarihi gösterir. 
+**uptime:** sistemin açık kalma süresini gösterir
+ **w** : sistemler ilgili özet bilgiler verir.
+ **whoami:** giriş yapan kullanıcıyı gösterir. 
+ **uname**: sistem bilgilerini getirir. –a tüm bilgilerle birlikte gelir.
+**Free:** RAM durumunu görmek için kullanılabilir.
+
+
 
 
