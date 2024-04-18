@@ -15,12 +15,15 @@
 |`/usr`            | Paylaşılan dosyaların barındığı dizindir. Burada çalışabilen dosyalar bulunmakla beraber, doküman ve kullanıcı programlarına ait dosyalar da yer almaktadır.  |
 |`/mnt`            |  Sisteme dışarıdan bağlanacak olan donanım aygıtlarının, bağlantı noktalarını belirten dizindir.|
 |`/proc`            | Sistem hakkında gerekli bilgilerin bulunduğu sanal dizindir. Bilgisayar boot olduğunda Ram de oluşturulur. Sistemde çalışan geçici süreçler bu dizin altında çalışırlar.|
-
-  
-   
-    
-  **/proc**: Sistem hakkında gerekli bilgilerin bulunduğu sanal dizindir. Bilgisayar boot olduğunda Ram de oluşturulur. Sistemde çalışan geçici süreçler bu dizin altında çalışırlar.
-    
+## Genel Notlarım
+|Komut                        |Açıklama                      
+-------------------------------|-----------------------------|
+|`Apt`            |paket yönetim işlemleri için kullanılan komuttur.|
+|`sudo apt update`  |Bu komut, ubutntuda bulunan **tüm repoların listesini günceller.**|    
+|`sudo apt upgrade`| Bu komut, yüklü olan tüm paketleri **en son sürüme yükseltir**|    
+|`sudo su` | Bu komut ile **en yetkili kullanıcı** oluruz.|    
+|`sudo apt autoremove`|Bu komut, **diğer paketlerin kaldırılmasıyla birlikte sistemde kalmış olabilen ve artık kullanılmayan tüm paketleri kaldırır.**|    
+|`sudo apt update && sudo apt upgrade && sudo apt autoremove` |Bu komut **işlem başarılıysa güncelleme yapar ve gereksiz paketleri siler.**|    
 
 **Apt,** paket yönetim işlemleri için kullanılan komuttur.
 
