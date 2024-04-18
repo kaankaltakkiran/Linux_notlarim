@@ -7,7 +7,9 @@
  
   **/boot:** Linux Kernelini barındıran (vmlinuz), sistem haritalarını ve ikinci seviye boot yükleyicilerini barındıran dizindir.
   
-   **/root:** Bir sistemde en yetkili kullanıcı olan "root" kullanıcısına ait dizindir. **/dev**: Donanımlara erişebilmek için gerekli dosyaları barındırır. (/media) 
+   **/root:** Bir sistemde en yetkili kullanıcı olan "root" kullanıcısına ait dizindir. 
+   
+   **/dev**: Donanımlara erişebilmek için gerekli dosyaları barındırır. (/media) 
    
   **/sbin**: Sistem yöneticisine ait çalıştırılabilir dosyaları barındırır.
   
