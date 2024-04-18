@@ -56,31 +56,148 @@
 **örnek kullanım:**  sudo dpkg -i filename
 
 **İkinci yöntem:**: İlgili uygulamanın gerekli kodlarla reposundaki listeyi çekip.
-
-## **pwd**
+##### pwd
 **pwd** komutunu hangi **dizinde (klasörde) olduğunuzu bulmak** için kullanılır.
-## **cd**
-**cd** dosya sisteminde **gezinmek için.**
--   **cd ..** (iki noktayla) b**ir üst dizine gitmek** için.
--   **cd** direkt olarak **ana klasöre gitmek** için.
--   **cd-** (tireli) **bir önceki dizine gitmek** için.
 
-## **ls**
-**ls** komutu **bir dizinin içeriğini görmek için** kullanılır.
-> **Note:**  **ll** komutu **bir dizinin içeriğini görmek için** kullanılır.
+Örnek çıktı: /home/kaan
+```BASH
+pwd
+```
+##### cd
+**cd** dosya sisteminde **gezinmek için** kullanılır.
 
-## **mkdir**
+Aşağıdaki komut Downloads dizinine gider
+```BASH
+cd  Downloads
+```
+Aşağıdaki komut bir üst dizine gider.
+```BASH
+cd ..
+```
+##### ls
+Dizin altında yer alan dosyaları listeler.
+
+Örnek çıktı: Documents   kaan.txt 
+```BASH
+ls
+```
+##### mkdir
 **mkdir klasör_adı:** belirtilen isimde **klasör oluşturur.**
-## **touch**
+
+Örnek çıktı: resimlerim adında klasör oluşturur.
+```BASH
+mkdir resimlerim 
+```
+##### touch
 **touch dosya_adı:** belirtilen isimde **dosya oluşturur.**
-## **cp**
-**cp { -r dizin | dosya } hedefdizin** : dizin | dosya'yı hedefdizin'e kopyalar.
+
+Örnek çıktı: notlarım adında txt dosyası oluşturur.
+```BASH
+touch notlarım.txt 
+```
+##### cp
+Dosyaların kopyalanması için, cp (copy) komutu kullanılır.
 > **Note:**  Dizin kopyalamak için **-r** parametresi gereklidir.
 
-## **rm**
+Örnek Kullanım: kaan.txt dosyasını Downloads dizinine kopyalar
+```BASH
+cp kaan.txt /home/kaan/Downloads
+```
+
+Örnek Kullanım: Music dizinini Videos dizininin içine kopyalar
+```BASH
+cp -r /home/kaan/Music /home/kaan/Videos
+```
+##### rm
 **rm -f** **Dosyaları ve dizinleri kaldırmak** için kullanılır.
+
 > **Note:**  **rm -rf** komutu **bir dizinin içeriğini ve kendisini silmek** için kullanılır.
 
+Aşağıdaki komut kaan.txt dosyasını siler.
+```BASH
+rm -f kaan.txt
+```
+Aşağıdaki komut deneme dizini ve içeriğini siler.
+```BASH
+ rm -rf deneme
+```
+##### cat
+**cat dosya_adı**: **dosya içeriğini görüntülemek** için kullanılır.
+
+Aşağıdaki komut kaan.txt dosyasının içeriğini gösterir.
+```BASH
+cat kaan.txt
+```
+##### history
+**history** Bu komut, **geçmiş terminalde yazılan komutları** gösterir.
+
+```BASH
+history
+```
+##### top
+Bu komut, **Linux sistemlerinde çalışan işlem ve sistem kaynaklarını izlemek** için kullanılan bir komuttur.
+
+```BASH
+top
+```
+##### du
+**du** komutu (disk usage), Linux ve diğer Unix benzeri işletim sistemlerinde **disk kullanımını incelemek** için kullanılır.
+
+```BASH
+du
+```
+##### df
+**df** Bu komut, mevcut dosya sistemi üzerindeki **disk bölümlerinin ve ağ dosya sistemlerinin kullanılan ve boş disk alanlarını raporlar.**
+
+```BASH
+df
+```
+##### date
+Güncel Saat ve tarihi gösterir. 
+
+örnek çıktı: Prş 18 Nis 2024 17:04:11 +03
+
+```BASH
+date
+```
+##### uptime
+**uptime:** sistemin açık kalma süresini gösterir.
+
+ örnek çıktı:17:05:36 up  7:22,  3 users,  load average: 1,08, 0,70, 0,66
+
+```BASH
+uptime
+```
+##### w
+ **w** : sistemler ilgili özet bilgiler verir.
+```BASH
+w
+```
+##### whoami
+ **whoami:** giriş yapan kullanıcıyı gösterir. 
+ 
+ örnek çıktı: kaan
+```BASH
+whoami
+```
+##### uname
+ **uname**: sistem bilgilerini getirir. –a tüm bilgilerle birlikte gelir.
+  örnek çıktı: Linux
+```BASH
+uname
+```
+Aşşağıdaki komut daha ayrıntılı sistem bilgisi sunar.
+
+ÖRnek çıktı : Linux KaanPc 6.5.0-27-generic #28~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 15 10:51:06 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+```BASH
+ uname -a
+```
+##### free
+**free:** RAM durumunu görmek için kullanılabilir.
+```BASH
+free
+```
 ## **grep**
  Verilen **data içerisinden istenilen kriterlere ait kelimeleri aramak için** kullanılan komuttur.
 > **Note:**  **i** ile büyük küçük harfe bakmadan arama yapar.
@@ -88,8 +205,6 @@
 >   **-v** ile yazılan kriterle uyuşanlar dışındaki çıktıları ekrana getirir.
 ## **find**
 **find {dosya_yolu} –name ‘aranacak ifade’:** **Dosya ve dizinleri aramak için** kullanılır. Verilen dizin ve alt klasörlerinde arama yapar.
-## **cat**
-**cat dosya_adı**: **dosya içeriğini görüntülemek** için kullanılır.
 ## **head**
  varsayılan olarak **bir dosyanın ilk 10 satırını getirir.**
  > **Note:**  **-n** parametresi ile satır sayısı belirlenebilir.
@@ -106,23 +221,8 @@
   
   Tüm haklar verildiğinde sayısal değer 7ye eşit olur (4+2+1)
   
-## **history**
-**history** Bu komut, **geçmiş terminalde yazılan komutları** gösterir.
-## **top**
-**top** Bu komut, **Linux sistemlerinde çalışan işlem ve sistem kaynaklarını izlemek** için kullanılan bir komuttur.
-## **du**
-**du** komutu (disk usage), Linux ve diğer Unix benzeri işletim sistemlerinde **disk kullanımını incelemek** için kullanılır.
-> **Note:**  **du -h** komutu **disk kullanımı gb cinsinden gösterir** kullanılır.
-## **df**
-**df** Bu komut, mevcut dosya sistemi üzerindeki **disk bölümlerinin ve ağ dosya sistemlerinin kullanılan ve boş disk alanlarını raporlar.**
 
-## Genel Bİlgiler
-**date:** Saat ve tarihi gösterir. 
-**uptime:** sistemin açık kalma süresini gösterir
- **w** : sistemler ilgili özet bilgiler verir.
- **whoami:** giriş yapan kullanıcıyı gösterir. 
- **uname**: sistem bilgilerini getirir. –a tüm bilgilerle birlikte gelir.
-**Free:** RAM durumunu görmek için kullanılabilir.
+
 
 
 
