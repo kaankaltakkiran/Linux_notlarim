@@ -46,6 +46,7 @@ Aşağıdaki komut bir üst dizine gider.
 ```BASH
 cd ..
 ```
+
 ##### ls
 Dizin altında yer alan dosyaları listeler.
 
@@ -302,6 +303,13 @@ Aşağıdaki komut **-n parameretsi ile son 2 satırı** getir.
 ```BASH
 tail -n2 kaan.txt 
 
+```
+##### pipe
+ **|operatörü ise bir komutun çıktısını bir başka komuta girdi** olarak vermeye yarar.
+
+Aşağıdaki komut **kaan.txt doyasının içeriğini okur head ile ilk 2 satırdaki içeriği** getirir.
+```BASH
+ cat kaan.txt | head -n 2
 ```
 
 ##### date
