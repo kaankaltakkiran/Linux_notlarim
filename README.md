@@ -70,9 +70,43 @@
 **ls** komutu **bir dizinin içeriğini görmek için** kullanılır.
 > **Note:**  **ll** komutu **bir dizinin içeriğini görmek için** kullanılır.
 
+## **mkdir**
+**mkdir klasör_adı:** belirtilen isimde **klasör oluşturur.**
+## **touch**
+**touch dosya_adı:** belirtilen isimde **dosya oluşturur.**
+## **cp**
+**cp { -r dizin | dosya } hedefdizin** : dizin | dosya'yı hedefdizin'e kopyalar.
+> **Note:**  Dizin kopyalamak için **-r** parametresi gereklidir.
+
 ## **rm**
 **rm -f** **Dosyaları ve dizinleri kaldırmak** için kullanılır.
-> **Note:**  **rm -rf** komutu **bir dizinin içeriğini ve kendisini silmek** için kullanılır. 
+> **Note:**  **rm -rf** komutu **bir dizinin içeriğini ve kendisini silmek** için kullanılır.
+
+## **grep**
+ Verilen **data içerisinden istenilen kriterlere ait kelimeleri aramak için** kullanılan komuttur.
+> **Note:**  **i** ile büyük küçük harfe bakmadan arama yapar.
+>  **-r** ile alt dizinlerde recursive olarak arama yapar.
+>   **-v** ile yazılan kriterle uyuşanlar dışındaki çıktıları ekrana getirir.
+## **find**
+**find {dosya_yolu} –name ‘aranacak ifade’:** **Dosya ve dizinleri aramak için** kullanılır. Verilen dizin ve alt klasörlerinde arama yapar.
+## **cat**
+**cat dosya_adı**: **dosya içeriğini görüntülemek** için kullanılır.
+## **head**
+ varsayılan olarak **bir dosyanın ilk 10 satırını getirir.**
+ > **Note:**  **-n** parametresi ile satır sayısı belirlenebilir.
+## **tail**
+ varsayılan olarak **bir dosyanın son 10 satırını getirir.**
+  > **Note:**  **-n** parametresi ile satır sayısı belirlenebilir.
+  Dosya izinleri
+  ## **  Dosya izinleri**
+**x (çalıştırma)** = 1
+
+  **w (yazma)** = 2
+  
+  **r (okuma)** = 4 
+  
+  Tüm haklar verildiğinde sayısal değer 7ye eşit olur (4+2+1)
+  
 ## **history**
 **history** Bu komut, **geçmiş terminalde yazılan komutları** gösterir.
 ## **top**
