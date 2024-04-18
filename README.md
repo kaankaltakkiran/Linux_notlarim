@@ -15,28 +15,6 @@
 |`/usr`            | Paylaşılan dosyaların barındığı dizindir. Burada çalışabilen dosyalar bulunmakla beraber, doküman ve kullanıcı programlarına ait dosyalar da yer almaktadır.  |
 |`/mnt`            |  Sisteme dışarıdan bağlanacak olan donanım aygıtlarının, bağlantı noktalarını belirten dizindir.|
 |`/proc`            | Sistem hakkında gerekli bilgilerin bulunduğu sanal dizindir. Bilgisayar boot olduğunda Ram de oluşturulur. Sistemde çalışan geçici süreçler bu dizin altında çalışırlar.|
-## Genel Notlarım
-|Komut                        |Açıklama                      
--------------------------------|-----------------------------|
-|`Apt`            |paket yönetim işlemleri için kullanılan komuttur.|
-|`sudo apt update`  |Bu komut, ubutntuda bulunan **tüm repoların listesini günceller.**|    
-|`sudo apt upgrade`| Bu komut, yüklü olan tüm paketleri **en son sürüme yükseltir**|    
-|`sudo su` | Bu komut ile **en yetkili kullanıcı** oluruz.|    
-|`sudo apt autoremove`|Bu komut, **diğer paketlerin kaldırılmasıyla birlikte sistemde kalmış olabilen ve artık kullanılmayan tüm paketleri kaldırır.**|    
-|`sudo apt update && sudo apt upgrade && sudo apt autoremove` |Bu komut **işlem başarılıysa güncelleme yapar ve gereksiz paketleri siler.**|    
-
-**Apt,** paket yönetim işlemleri için kullanılan komuttur.
-
-**sudo apt update**: Bu komut, ubutntuda bulunan **tüm repoların listesini günceller.**
-
-**sudo apt upgrade**: Bu komut, yüklü olan tüm paketleri **en son sürüme yükseltir**.
-
-**sudo su**: Bu komut ile **en yetkili kullanıcı** oluruz.
-
-**sudo apt autoremove**:Bu komut, **diğer paketlerin kaldırılmasıyla birlikte sistemde kalmış olabilen ve artık kullanılmayan tüm paketleri kaldırır.**
-
-**sudo apt update && sudo apt upgrade && sudo apt autoremove** :Bu komut **işlem başarılıysa güncelleme yapar ve gereksiz paketleri siler.**
-
 
 <kbd>Alt</kbd> + <kbd> Control</kbd>+ <kbd>T</kbd>:Bu komut ile terminal **ekranı açılır.**
 
@@ -93,9 +71,19 @@ Aşağıdaki komut   **Ters sıralama yapar **.
 ```BASH
 ls -r
 ```
+Aşağıdaki komut **Dizin altındaki dosyaların kapasitesini, oluşturulma
+tarihini ve özelliğini** gösterir.
+
+```BASH
+ls -l
+```
 Aşağıdaki komut **Dosya boyutuna göre** sıralar.
 ```BASH
 ls -S
+```
+Aşağıdaki komut **/var klasörü altındaki dosyaları** listeler.
+```BASH
+ls /var
 ```
 ##### mkdir
 **mkdir klasör_adı:** belirtilen isimde **klasör oluşturur.**
@@ -103,6 +91,13 @@ ls -S
 Örnek çıktı: resimlerim adında klasör oluşturur.
 ```BASH
 mkdir resimlerim 
+```
+
+Aşağıdaki komut  Bir dizini silmek için **rmdir** (remove directory) komutu kullanılır.
+
+Örnek çıktı: reisimlerim adlı dizin silinir.
+```BASH
+rmdir resimlerim 
 ```
 ##### touch
 **touch dosya_adı:** belirtilen isimde **dosya oluşturur.**
@@ -124,6 +119,7 @@ cp kaan.txt /home/kaan/Downloads
 ```BASH
 cp -r /home/kaan/Music /home/kaan/Videos
 ```
+
 ##### rm
 **rm -f** **Dosyaları ve dizinleri kaldırmak** için kullanılır.
 
@@ -137,12 +133,36 @@ Aşağıdaki komut deneme dizini ve içeriğini siler.
 ```BASH
  rm -rf deneme
 ```
+Aşağıdaki komut **-i işlemi onaylamanızı ister**, hata olasılığını azaltmak için kullanılır.
+
+Örnek çıktı: deneme.txt onay sorarak silmemezi sağlar.
+```BASH
+ rm -rm deneme.txt
+```
+Aşağıdaki komut Bulunduğunuz **dizin altında bulunan tüm dosyaları silmek için ise ‘*’ karakteri** kullanılır.
+
+Örnek çıktı: **a harfi ile başlayan** tüm dosyaları siler.
+```BASH
+rm -i a*
+```
+Örnek çıktı: **içinde at geçen** tüm dosyaları siler.
+```BASH
+ rm -i *at*
+```
 ##### cat
 **cat dosya_adı**: **dosya içeriğini görüntülemek** için kullanılır.
 
 Aşağıdaki komut kaan.txt dosyasının içeriğini gösterir.
 ```BASH
 cat kaan.txt
+```
+##### less
+ Dosyanın içeriğinin görüntülenmesini sağlar. **Dosyanın içeriği, yukarı ve aşağı ok
+tuşları ile görüntülenebilir**.
+
+Aşağıdaki komut kaan.txt dosyasının içeriğini gösterir.
+```BASH
+less kaan.txt
 ```
 ##### history
 **history** Bu komut, **geçmiş terminalde yazılan komutları** gösterir.
@@ -162,12 +182,84 @@ top
 ```BASH
 du
 ```
+Aşağıdaki komut Disk kullanımını insan tarafından **okunabilir bir formatta (KB, MB, GB gibi)** gösterir.
+```BASH
+du -h
+```
+ Toplam kullanılan **disk alanını yalnızca bir satırda gösterir**, alt dizinlerin detaylarını göstermez.
+ örnek çıktı: 3823084
+```BASH
+du -s
+```
+ **Boyutları megabayt cinsinden** gösterir.
+ örnek çıktı: 3738
+```BASH
+du -m
+
+```
 ##### df
 **df** Bu komut, mevcut dosya sistemi üzerindeki **disk bölümlerinin ve ağ dosya sistemlerinin kullanılan ve boş disk alanlarını raporlar.**
 
 ```BASH
 df
 ```
+##### find
+find komutu ile **dosya ve dizin aramaları yapılabilir**.
+
+Aşağıdaki komut Desktop dizinindeki tüm dosya ve dizinleri getirir.
+
+```BASH
+find Desktop
+
+```
+Aşağıdaki komut **-name parametresi ile arananılan dosyayı** bulur.
+
+Örnek çıktı: ./Downloads/kaan.txt
+```BASH
+find -name  kaan.txt
+
+```
+Aşağıdaki komut -name parametresi **ile k harfi ile biten** dosyaları bulur
+
+Örnek çıktı: ./Downloads/denek.txt
+```BASH
+find Desktop -name *k
+
+```
+Aşağıdaki komut -type parametresi **ile dosya türüne göre göre** dosyaları bulur
+
+-type d : dizin sonuçlarını gösterir.
+
+Örnek çıktı: ./Downloads/kaan.jpg
+```BASH
+find Images -type d -name *png
+
+```
+##### head
+ varsayılan olarak **bir dosyanın ilk 10 satırını getirir.**
+ 
+```BASH
+head kaan.txt
+```
+Aşağıdaki komut **-n parameretsi ile ilk 2 satırı** getir.
+
+```BASH
+head -n2 kaan.txt 
+
+```
+##### tail
+ varsayılan olarak **bir dosyanın son 10 satırını getirir.**
+ 
+```BASH
+tail
+```
+Aşağıdaki komut **-n parameretsi ile son 2 satırı** getir.
+
+```BASH
+tail -n2 kaan.txt 
+
+```
+
 ##### date
 Güncel Saat ve tarihi gösterir. 
 
@@ -214,30 +306,6 @@ Aşşağıdaki komut daha ayrıntılı sistem bilgisi sunar.
 ```BASH
 free
 ```
-## **grep**
- Verilen **data içerisinden istenilen kriterlere ait kelimeleri aramak için** kullanılan komuttur.
-> **Note:**  **i** ile büyük küçük harfe bakmadan arama yapar.
->  **-r** ile alt dizinlerde recursive olarak arama yapar.
->   **-v** ile yazılan kriterle uyuşanlar dışındaki çıktıları ekrana getirir.
-## **find**
-**find {dosya_yolu} –name ‘aranacak ifade’:** **Dosya ve dizinleri aramak için** kullanılır. Verilen dizin ve alt klasörlerinde arama yapar.
-## **head**
- varsayılan olarak **bir dosyanın ilk 10 satırını getirir.**
- > **Note:**  **-n** parametresi ile satır sayısı belirlenebilir.
-## **tail**
- varsayılan olarak **bir dosyanın son 10 satırını getirir.**
-  > **Note:**  **-n** parametresi ile satır sayısı belirlenebilir.
-  Dosya izinleri
-  ## **  Dosya izinleri**
-**x (çalıştırma)** = 1
-
-  **w (yazma)** = 2
-  
-  **r (okuma)** = 4 
-  
-  Tüm haklar verildiğinde sayısal değer 7ye eşit olur (4+2+1)
-  
-
 
 
 
