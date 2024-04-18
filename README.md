@@ -79,7 +79,23 @@ Dizin altında yer alan dosyaları listeler.
 
 Örnek çıktı: Documents   kaan.txt 
 ```BASH
-ls
+ ls
+```
+Aşağıdaki komut **gizli dosyları** da gösterir.
+```BASH
+ls -a
+```
+Aşağıdaki komut  **Değiştirilme tarihine** göre sıralar.
+```BASH
+ls -t
+```
+Aşağıdaki komut   **Ters sıralama yapar **.
+```BASH
+ls -r
+```
+Aşağıdaki komut **Dosya boyutuna göre** sıralar.
+```BASH
+ls -S
 ```
 ##### mkdir
 **mkdir klasör_adı:** belirtilen isimde **klasör oluşturur.**
