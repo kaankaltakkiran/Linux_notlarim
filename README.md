@@ -35,6 +35,12 @@
 ```BASH
 pwd
 ```
+##### man
+Bu komutu **başka bir komutun ne işe yaradığını öğrenmek** için kullanılır. “man” komutu “manual”(kitapçık) kelimesinden gelir.
+Aşağıdaki komut ls komutu ve aldığı parametreler hakkında bilgi verir.
+```BASH
+man ls
+```
 ##### cd
 **cd** dosya sisteminde **gezinmek için** kullanılır.
 
