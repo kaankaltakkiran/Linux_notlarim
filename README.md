@@ -81,7 +81,7 @@ Aşağıdaki komut  **Değiştirilme tarihine** göre sıralar.
 ```BASH
 ls -t
 ```
-Aşağıdaki komut   **Ters sıralama yapar **.
+Aşağıdaki komut   **Ters sıralama yapar**.
 ```BASH
 ls -r
 ```
@@ -324,7 +324,7 @@ tail -n2 kaan.txt
 
 ```
 ##### pipe
- **|operatörü ise bir komutun çıktısını bir başka komuta girdi** olarak vermeye yarar.
+ **| operatörü ise bir komutun çıktısını bir başka komuta girdi** olarak vermeye yarar.
 
 Aşağıdaki komut **kaan.txt doyasının içeriğini okur head ile ilk 2 satırdaki içeriği** getirir.
 ```BASH
