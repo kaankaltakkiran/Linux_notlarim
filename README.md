@@ -46,6 +46,25 @@ Aşağıdaki komut bir üst dizine gider.
 ```BASH
 cd ..
 ```
+##### wc
+Linux’ta **wc (word count) komutu dosyada bulunan satır sayısını, kelime sayısını ve karakter sayısını** çıktı olarak verir.
+
+Örnek çıktı:  5  5 40 kaan.txt
+```BASH
+wc kaan.txt
+```
+Aşağıdaki komut **-c ile sadece karakter sayısını** gösterir.
+```BASH
+wc -c kaan.txt 
+```
+Aşağıdaki komut **-l ile sadece satır sayısını** gösterir.
+```BASH
+wc -l kaan.txt 
+```
+Aşağıdaki komut **-c ile sadece kelime sayısını** gösterir.
+```BASH
+wc -w kaan.txt 
+```
 
 ##### ls
 Dizin altında yer alan dosyaları listeler.
