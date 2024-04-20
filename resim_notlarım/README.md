@@ -1,4 +1,4 @@
-# Linux Çalışmalarım
+# Linux resim işlemleri notlarım
 Linux komut satırında birden fazla **görüntü dosyası üzerinde işlem yapmak** için en uygun paketlerden birisi **imagemagick** paketidir. 
 ## imagemagick paketi nasıl yüklenir ?
 ```BASH
