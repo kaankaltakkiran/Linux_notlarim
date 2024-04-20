@@ -105,6 +105,27 @@ Aşağıdaki komut **/var klasörü altındaki dosyaları** listeler.
 ```BASH
 ls /var
 ```
+##### wget
+**internetten dosya çekmeye yarayan**, Web GET sözcüklerinin kısaltması olan bir program.
+
+Örnek çıktı: adresi intall.sh dosyasına kaydeder.
+```BASH
+wget http://www.plugged.in/downloads/plugged.sh -O install.sh
+```
+Aşağıdaki komut dosya yarım kalmışsa, **kaldığı yerden devam ettirmek için -c parametresini** vermemiz yeterlidir.
+
+```BASH
+wget -c http://www.plugged.in/downloads/plugged.sh
+```
+Aşağıdaki komut **İndirme hızını limitlemek için limit-rate parametresi** kullanılır.
+
+```BASH
+wget --limit-rate=400k http://mirror.rackdc.com/CentOS/7/isos/x86_64/CentOS-7-x86_64-Minimal-1503-01.iso
+```
+Aşağıdaki komut Bazı durumlarda indirme işlemini kaç kez deneyeceğinizi belirtmek isteyebilirsiniz.
+```BASH
+wget --tries=10 http://plugged.in/downloads/plugged.sh
+```
 ##### mkdir
 **mkdir klasör_adı:** belirtilen isimde **klasör oluşturur.**
 
