@@ -147,6 +147,42 @@ rmdir resimlerim
 ```BASH
 touch notlarım.txt 
 ```
+##### sed
+
+Linux **sed komutu string bazlı dosyalarımızda bul ve değiştir işlemi** yapmamızı sağlar.
+
+Örnek çıktı: kaan.txt yer alan ilk metnini son metni ile değiştirir.
+```BASH
+sed 's/ilk/son/g' kaan.txt
+```
+##### cut
+Bir **dosya içerisindeki satırların içerdiği alanları keserek belirli bir yere kopyalamak için** kullanılır.
+Seçenekler
+-b : Karakter konumlarını belirler.Byte tipinde işlem yaparak karakterleri byte birimiyle algılar.
+
+-c : Karakter konumlarını belirler.Byte tipinde işlem yaparak karakterleri karakter olarak algılar.
+
+-f : Özel bir ayıraçla ayrılan alanları tanımlamak amacıyla kullanılır.
+
+-d : Ayıraçları tanımlamak için kullanılır.
+
+-s : -f seçeneği kullanıldığı durumlarda, ayıraca sahip olmayan satırların atlanmasını sağlar.
+
+-n : Tek byte’tan fazla olan karakterleri tamamiyle alır.
+
+Örnek çıktı:
+Ali 90
+Ayşe 85
+Mehmet 75
+dosyasından şuı çıktıyı verir:
+Ali
+Ayşe
+Mehmet
+
+
+```BASH
+cut -d ' ' -f 1 students.txt
+```
 ##### cp
 Dosyaların kopyalanması için, cp (copy) komutu kullanılır.
 > **Note:**  Dizin kopyalamak için **-r** parametresi gereklidir.
