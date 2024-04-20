@@ -45,3 +45,23 @@ Aşağıdaki komut **image-3.jpg  dosyasını %50 ölçücde küçük resim şek
 ```BASH
 convert image-3.jpg -resize 50% küçük.jpg
 ```
+## Resim döndürme nasıl yapılır ?
+Aşağıdaki komut **image-3.jpg resmini 90 derece döndürür ve  rotate90image.jpg dosyasına** dönüştürür.
+```BASH
+convert image-3.jpg -rotate 90 rotate90image.jpg
+```
+## Resim aynalama nasıl yapılır ?
+Aynalama işlemleri için **flip ve flop seçenekleri kullanılır. flip görüntüyü başaşağı çevirir (x-ekseninde aynalama), flop ise soldan sağa doğru (y-ekseninde)** çevirir.
+
+Aşağıdaki komut **image-3.jpg resmine flip işlemini yapar  flipped.jpg dosyasına** dönüştürür.
+```BASH
+convert image-3.jpg -flip flipped.jpg
+```
+Aşağıdaki komut **image-3.jpg resmine flop işlemini flopped.png dosyasına** dönüştürür.
+```BASH
+convert image-3.jpg -flop flopped.png
+```
+Aşağıdaki komut **image-3.jpg resmini hem flip hem de flop işlemi uygular flipflop.png dosyasına** dönüştürür.
+```BASH
+convert image-3.jpg -flip -flop flipflop.png
+```
