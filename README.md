@@ -179,9 +179,30 @@ Ali
 Ayşe
 Mehmet
 
-
 ```BASH
 cut -d ' ' -f 1 students.txt
+```
+##### crontab
+ Crontab bir komutu, **scripti ya da uygulamayı belirlediğiniz zaman veya belirli zaman aralıklarıyla çalışmasını** sağlamaktadır. 
+
+Aşağıdaki komut **crontab komutunu düzenlemeye** yarar.
+```BASH
+crontab -e
+```
+Aşağıdaki komut **Crontab dosyasını listelemek ve içindeki işlerin listesini görmek** için  kullanıyoruz. 
+```BASH
+crontab -l
+```
+Aşağıdaki komut **Crontab dosyasını silmek** için 
+```BASH
+crontab -r
+```
+##### xargs
+bir komuttan gelen **standart çıktıyı başka bir komuta argüman** olarak yönlendirebilirsiniz.
+
+Aşağıdaki komut **önce mevcut dizindeki .txt dosyalarını listeleyecek (ls *.txt), sonra bu dosyaları "rm" komutuna argüman olarak geçirecek** ve böylece hepsini silecektir.
+```BASH
+ls *.txt | xargs rm
 ```
 ##### cp
 Dosyaların kopyalanması için, cp (copy) komutu kullanılır.
