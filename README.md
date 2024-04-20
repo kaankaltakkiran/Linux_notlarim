@@ -200,7 +200,7 @@ crontab -r
 ##### xargs
 bir komuttan gelen **standart çıktıyı başka bir komuta argüman** olarak yönlendirebilirsiniz.
 
-Aşağıdaki komut **önce mevcut dizindeki .txt dosyalarını listeleyecek (ls *.txt), sonra bu dosyaları "rm" komutuna argüman olarak geçirecek** ve böylece hepsini silecektir.
+Aşağıdaki komut önce mevcut dizindeki .txt dosyalarını listeleyecek (ls *.txt), sonra bu dosyaları "rm" komutuna argüman olarak geçirecek ve böylece hepsini silecektir.
 ```BASH
 ls *.txt | xargs rm
 ```
@@ -235,7 +235,7 @@ Aşağıdaki komut **-i işlemi onaylamanızı ister**, hata olasılığını az
 
 Örnek çıktı: deneme.txt onay sorarak silmemezi sağlar.
 ```BASH
- rm -rm deneme.txt
+ rm -i deneme.txt
 ```
 Aşağıdaki komut Bulunduğunuz **dizin altında bulunan tüm dosyaları silmek için ise ‘*’ karakteri** kullanılır.
 
