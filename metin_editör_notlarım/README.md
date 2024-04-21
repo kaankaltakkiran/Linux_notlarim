@@ -1,0 +1,1 @@
+# Linux metin editör notlarım
