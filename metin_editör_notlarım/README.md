@@ -75,4 +75,5 @@ Aşağıdaki komut **Metin dosyasında kelime değiştirme işlemi yapılabilir.
 :s/eski/yeni/g
 ```
 > **Note:** **s: Bu, "substitute" (değiştir) komutunu temsil eder**. Bu komut, belirli bir metin örneğini başka bir metinle değiştirmek için kullanılır.
+
 > **g: Bu, "global" anlamına gelir ve komutun bir satırda birden fazla eşleşme bulunursa hepsini değiştirmesini** sağlar. Ancak, g kullanılmazsa, yalnızca bir satırda ilk eşleşme değiştirilir.
