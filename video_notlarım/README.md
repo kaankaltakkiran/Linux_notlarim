@@ -12,7 +12,7 @@ ffmpeg -i exampleVideo.mp4 transformVideo.mp3
 > **Note:**  **-i, ffmpeg'in giriş dosyasını** belirtmek için kullanılan bir seçenektir. Yani, ffmpeg'e hangi dosyanın giriş olarak kullanılacağını söyler. Örneğin, **-i exampleVideo.mp4 komutu, ffmpeg'e exampleVideo.mp4 dosyasının giriş olarak kullanılması** gerektiğini belirtir.
 
 ## Komut satırından video nasıl oynatılır?
-Aşağıdaki komut **ffplay komut ile ismini yazdığınız videoyu** oynayır.
+Aşağıdaki komut **ffplay komut ile ismini yazdığınız videoyu** oynatır.
 ```BASH
 ffplay  exampleVideo.mp4
 ```
