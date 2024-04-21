@@ -31,7 +31,7 @@
 **GNOME Sushi, Ubuntu'da kullanılabilen bir dosya önizleme aracıdır**. Bu araç, **dosyalara hızlıca göz atmanızı sağlar, böylece dosya içeriğini gerçekten açmadan önce içeriği** görebilirsiniz. 
 ### gnome-sushi paketi nasıl yüklenir ?
 ```BASH
-sudo apt install imagemagick
+sudo apt install gnome-sushi
 ```
 > **Note:** GNOME Sushi'yi kullanmak oldukça basittir. **Dosya Gezgini'ni açın ve önizlemesini görmek istediğiniz dosyayı seçin. Dosyayı seçtikten sonra, üzerine gelin ve Space tuşuna basın**. GNOME Sushi, seçili dosyanın hızlı bir önizlemesini gösterecektir.
 
