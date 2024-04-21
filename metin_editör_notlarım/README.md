@@ -48,11 +48,31 @@ Aşağıdaki komut **Kesilmiş veya kopyalanan metni yapıştırmak için kullan
 p
 ```
 ## İleri ve Geri Alma işlemi nasıl yapılır ?
-Aşağıdaki komut **Son yapılan işlemi geri almak için kullanılır.**
+Aşağıdaki komut **Son yapılan işlemi <kbd>U</kbd> ile geri almak için kullanılır.**
 ```BASH
 u
 ```
-Aşağıdaki komut **Geri alınan bir işlemi ileri almak için kullanılır.**
+Aşağıdaki komut **Geri alınan bir işlemi <kbd>Control</kbd> + <kbd>R</kbd> ile ileri almak için kullanılır.**
 ```BASH
 ctrl+r
 ```
+## Satır başına ve satır sonuna nasıl gelinir ?
+Aşağıdaki komut **<kbd>0</kbd> ile satırın başına gitmek için kullanılır.**
+```BASH
+0
+```
+Aşağıdaki komut **<kbd>$</kbd> ile geri alınan bir işlemi ileri almak için kullanılır.**
+```BASH
+$
+```
+## Arama ve değiştirme işlemi nasıl yapılır ?
+Aşağıdaki komut **/arama_kelimesi yazılarak arama işlemi yapılır**
+```BASH
+/arama_kelimesi
+```
+Aşağıdaki komut **Metin dosyasında kelime değiştirme işlemi yapılabilir.**
+```BASH
+:s/eski/yeni/g
+```
+> **Note:** **s: Bu, "substitute" (değiştir) komutunu temsil eder**. Bu komut, belirli bir metin örneğini başka bir metinle değiştirmek için kullanılır.
+> **g: Bu, "global" anlamına gelir ve komutun bir satırda birden fazla eşleşme bulunursa hepsini değiştirmesini** sağlar. Ancak, g kullanılmazsa, yalnızca bir satırda ilk eşleşme değiştirilir.
