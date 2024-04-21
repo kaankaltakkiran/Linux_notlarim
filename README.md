@@ -27,6 +27,13 @@
 <kbd> Control</kbd> + <kbd>⇧ Shift</kbd> + <kbd>V</kbd>Bu komut , **kopyaladığımız içeriği terminale yapıştırır.**
 
 <kbd> Control</kbd> + <kbd>R</kbd>Bu komut , terminalde **arama yapmamıza olanak sağlar.**
+## gnome-sushi
+**GNOME Sushi, Ubuntu'da kullanılabilen bir dosya önizleme aracıdır**. Bu araç, **dosyalara hızlıca göz atmanızı sağlar, böylece dosya içeriğini gerçekten açmadan önce içeriği** görebilirsiniz. 
+### gnome-sushi paketi nasıl yüklenir ?
+```BASH
+sudo apt install imagemagick
+```
+> **Note:** GNOME Sushi'yi kullanmak oldukça basittir. **Dosya Gezgini'ni açın ve önizlemesini görmek istediğiniz dosyayı seçin. Dosyayı seçtikten sonra, üzerine gelin ve Space tuşuna basın**. GNOME Sushi, seçili dosyanın hızlı bir önizlemesini gösterecektir.
 
 ##### pwd
 **pwd** komutunu hangi **dizinde (klasörde) olduğunuzu bulmak** için kullanılır.
