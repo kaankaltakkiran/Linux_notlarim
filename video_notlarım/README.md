@@ -1,0 +1,1 @@
+# Video işlemleri için notlarım
