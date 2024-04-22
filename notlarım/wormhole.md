@@ -1,4 +1,6 @@
 # Wormhole Notlarım
+**2014 yılında**  yayınlandı.
+
 **Wormhole genellikle komut satırı aracılığıyla kullanılan bir dosya paylaşımı aracıdır ve dosyaları iki bilgisayar arasında hızlı ve güvenli** bir şekilde aktarmanıza olanak tanır.
 ## Wormhole nasıl yüklenir ?
 ```BASH
