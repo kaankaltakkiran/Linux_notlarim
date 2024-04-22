@@ -52,20 +52,20 @@ sudo apt install gnome-sushi
 ```
 > **Note:** GNOME Sushi'yi kullanmak oldukça basittir. **Dosya Gezgini'ni açın ve önizlemesini görmek istediğiniz dosyayı seçin. Dosyayı seçtikten sonra, üzerine gelin ve Space tuşuna basın**. GNOME Sushi, seçili dosyanın hızlı bir önizlemesini gösterecektir.
 
-##### pwd
+## pwd
 **pwd** komutunu hangi **dizinde (klasörde) olduğunuzu bulmak** için kullanılır.
 
 Örnek çıktı: /home/kaan
 ```BASH
 pwd
 ```
-##### man
+## man
 Bu komutu **başka bir komutun ne işe yaradığını öğrenmek** için kullanılır. “man” komutu “manual”(kitapçık) kelimesinden gelir.
 Aşağıdaki komut ls komutu ve aldığı parametreler hakkında bilgi verir.
 ```BASH
 man ls
 ```
-##### cd
+## cd
 **cd** dosya sisteminde **gezinmek için** kullanılır.
 
 Aşağıdaki komut Downloads dizinine gider
@@ -76,7 +76,7 @@ Aşağıdaki komut bir üst dizine gider.
 ```BASH
 cd ..
 ```
-##### wc
+## wc
 Linux’ta **wc (word count) komutu dosyada bulunan satır sayısını, kelime sayısını ve karakter sayısını** çıktı olarak verir.
 
 Örnek çıktı:  5  5 40 kaan.txt
@@ -96,7 +96,7 @@ Aşağıdaki komut **-c ile sadece kelime sayısını** gösterir.
 wc -w kaan.txt 
 ```
 
-##### ls
+## ls
 Dizin altında yer alan dosyaları listeler.
 
 Örnek çıktı: Documents   kaan.txt 
@@ -129,7 +129,7 @@ Aşağıdaki komut **/var klasörü altındaki dosyaları** listeler.
 ```BASH
 ls /var
 ```
-##### wget
+## wget
 **internetten dosya çekmeye yarayan**, Web GET sözcüklerinin kısaltması olan bir program.
 
 Örnek çıktı: adresi intall.sh dosyasına kaydeder.
@@ -150,7 +150,7 @@ Aşağıdaki komut Bazı durumlarda indirme işlemini kaç kez deneyeceğinizi b
 ```BASH
 wget --tries=10 http://plugged.in/downloads/plugged.sh
 ```
-##### mkdir
+## mkdir
 **mkdir klasör_adı:** belirtilen isimde **klasör oluşturur.**
 
 Örnek çıktı: resimlerim adında klasör oluşturur.
@@ -164,14 +164,14 @@ Aşağıdaki komut  Bir dizini silmek için **rmdir** (remove directory) komutu 
 ```BASH
 rmdir resimlerim 
 ```
-##### touch
+## touch
 **touch dosya_adı:** belirtilen isimde **dosya oluşturur.**
 
 Örnek çıktı: notlarım adında txt dosyası oluşturur.
 ```BASH
 touch notlarım.txt 
 ```
-##### sed
+## sed
 
 Linux **sed komutu string bazlı dosyalarımızda bul ve değiştir işlemi** yapmamızı sağlar.
 
@@ -179,7 +179,7 @@ Linux **sed komutu string bazlı dosyalarımızda bul ve değiştir işlemi** ya
 ```BASH
 sed 's/ilk/son/g' kaan.txt
 ```
-##### cut
+## cut
 Bir **dosya içerisindeki satırların içerdiği alanları keserek belirli bir yere kopyalamak için** kullanılır.
 Seçenekler
 -b : Karakter konumlarını belirler.Byte tipinde işlem yaparak karakterleri byte birimiyle algılar.
@@ -206,7 +206,7 @@ Mehmet
 ```BASH
 cut -d ' ' -f 1 students.txt
 ```
-##### crontab
+## crontab
  Crontab bir komutu, **scripti ya da uygulamayı belirlediğiniz zaman veya belirli zaman aralıklarıyla çalışmasını** sağlamaktadır. 
 
 Aşağıdaki komut **crontab komutunu düzenlemeye** yarar.
@@ -221,14 +221,14 @@ Aşağıdaki komut **Crontab dosyasını silmek** için
 ```BASH
 crontab -r
 ```
-##### xargs
+## xargs
 bir komuttan gelen **standart çıktıyı başka bir komuta argüman** olarak yönlendirebilirsiniz.
 
 Aşağıdaki komut önce mevcut dizindeki .txt dosyalarını listeleyecek (ls *.txt), sonra bu dosyaları "rm" komutuna argüman olarak geçirecek ve böylece hepsini silecektir.
 ```BASH
 ls *.txt | xargs rm
 ```
-##### cp
+## cp
 Dosyaların kopyalanması için, cp (copy) komutu kullanılır.
 > **Note:**  Dizin kopyalamak için **-r** parametresi gereklidir.
 
@@ -242,7 +242,7 @@ cp kaan.txt /home/kaan/Downloads
 cp -r /home/kaan/Music /home/kaan/Videos
 ```
 
-##### rm
+## rm
 **rm -f** **Dosyaları ve dizinleri kaldırmak** için kullanılır.
 
 > **Note:**  **rm -rf** komutu **bir dizinin içeriğini ve kendisini silmek** için kullanılır.
@@ -271,14 +271,14 @@ rm -i a*
 ```BASH
  rm -i *at*
 ```
-##### cat
+## cat
 **cat dosya_adı**: **dosya içeriğini görüntülemek** için kullanılır.
 
 Aşağıdaki komut kaan.txt dosyasının içeriğini gösterir.
 ```BASH
 cat kaan.txt
 ```
-##### seq
+## seq
 seq ile girilen sayı değeri kadar sayı  oluşturur.
 
 Örnek çıktı: 
@@ -307,7 +307,7 @@ Aşağıdaki komut **1 ile başlayan 5 er artan 36 biten** sayıları üretir.
 ```BASH
 seq 1 5 36
 ```
-##### grep
+## grep
 -r parametresi ile bulunduğunuz ya da belirttiğiniz bir dizinde bulunan tüm metin dosyalarında arama yapılır
 
 Aşağıdaki komut içinde **a geçen dosyalarda arama** yapar
@@ -328,7 +328,7 @@ Aşağıdaki komutta **-v** ile  **a geçmeyen dosyalarda satır numarası ile a
 grep -v a Ankara
 ```
 
-##### less
+## less
  Dosyanın içeriğinin görüntülenmesini sağlar. **Dosyanın içeriği, yukarı ve aşağı ok
 tuşları ile görüntülenebilir**.
 
@@ -336,19 +336,19 @@ Aşağıdaki komut kaan.txt dosyasının içeriğini gösterir.
 ```BASH
 less kaan.txt
 ```
-##### history
+## history
 **history** Bu komut, **geçmiş terminalde yazılan komutları** gösterir.
 
 ```BASH
 history
 ```
-##### top
+## top
 Bu komut, **Linux sistemlerinde çalışan işlem ve sistem kaynaklarını izlemek** için kullanılan bir komuttur.
 
 ```BASH
 top
 ```
-##### du
+## du
 **du** komutu (disk usage), Linux ve diğer Unix benzeri işletim sistemlerinde **disk kullanımını incelemek** için kullanılır.
 
 ```BASH
@@ -369,13 +369,13 @@ du -s
 du -m
 
 ```
-##### df
+## df
 **df** Bu komut, mevcut dosya sistemi üzerindeki **disk bölümlerinin ve ağ dosya sistemlerinin kullanılan ve boş disk alanlarını raporlar.**
 
 ```BASH
 df
 ```
-##### find
+## find
 find komutu ile **dosya ve dizin aramaları yapılabilir**.
 
 Aşağıdaki komut Desktop dizinindeki tüm dosya ve dizinleri getirir.
@@ -407,7 +407,7 @@ Aşağıdaki komut -type parametresi **ile dosya türüne göre göre** dosyalar
 find Images -type d -name *png
 
 ```
-##### head
+## head
  varsayılan olarak **bir dosyanın ilk 10 satırını getirir.**
  
 ```BASH
@@ -419,7 +419,7 @@ Aşağıdaki komut **-n parameretsi ile ilk 2 satırı** getir.
 head -n2 kaan.txt 
 
 ```
-##### tail
+## tail
  varsayılan olarak **bir dosyanın son 10 satırını getirir.**
  
 ```BASH
@@ -431,7 +431,7 @@ Aşağıdaki komut **-n parameretsi ile son 2 satırı** getir.
 tail -n2 kaan.txt 
 
 ```
-##### pipe
+## pipe
  **| operatörü ise bir komutun çıktısını bir başka komuta girdi** olarak vermeye yarar.
 
 Aşağıdaki komut **kaan.txt doyasının içeriğini okur head ile ilk 2 satırdaki içeriği** getirir.
@@ -439,7 +439,7 @@ Aşağıdaki komut **kaan.txt doyasının içeriğini okur head ile ilk 2 satır
  cat kaan.txt | head -n 2
 ```
 
-##### date
+## date
 Güncel Saat ve tarihi gösterir. 
 
 örnek çıktı: Prş 18 Nis 2024 17:04:11 +03
@@ -447,7 +447,7 @@ Güncel Saat ve tarihi gösterir.
 ```BASH
 date
 ```
-##### uptime
+## uptime
 **uptime:** sistemin açık kalma süresini gösterir.
 
  örnek çıktı:17:05:36 up  7:22,  3 users,  load average: 1,08, 0,70, 0,66
@@ -455,19 +455,19 @@ date
 ```BASH
 uptime
 ```
-##### w
+## w
  **w** : sistemler ilgili özet bilgiler verir.
 ```BASH
 w
 ```
-##### whoami
+## whoami
  **whoami:** giriş yapan kullanıcıyı gösterir. 
  
  örnek çıktı: kaan
 ```BASH
 whoami
 ```
-##### uname
+## uname
  **uname**: sistem bilgilerini getirir. –a tüm bilgilerle birlikte gelir.
   örnek çıktı: Linux
 ```BASH
@@ -480,7 +480,7 @@ Aşşağıdaki komut daha ayrıntılı sistem bilgisi sunar.
 ```BASH
  uname -a
 ```
-##### free
+## free
 **free:** RAM durumunu görmek için kullanılabilir.
 ```BASH
 free
