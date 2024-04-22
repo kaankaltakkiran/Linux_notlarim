@@ -33,13 +33,13 @@ Shell OperatörLeri Detaylı Bilgi: [Shell OperatörLeri](https://github.com/kaa
 
 **Tldr (Too Long; Didn't Read), özellikle karmaşık veya uzun Linux komutlarını kısa ve öz** bir şekilde açıklamak için kullanılan bir kaynaktır.
  
-Tldr Pages Detaylı Bilgi: [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/edit/main/notlar%C4%B1m/tldr.md)
+Tldr Pages Detaylı Bilgi: [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/tldr.md)
 ## Wine
  **1993 Yılında** yayınlanmıştır.
  
 **Wine, Windows uygulamalarını Linux ve diğer Unix benzeri işletim sistemlerinde çalıştırmak için bir uyumluluk katmanıdır**.
  
-Wine Detaylı Bilgi: [Wine](https://github.com/kaankaltakkiran/Linux_notlarim/edit/main/notlar%C4%B1m/wine.md)
+Wine Detaylı Bilgi: [Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/wine.md)
 
 ## Linux Dosya Hiyerarşisi
 |Komut                        |Açıklama                      
