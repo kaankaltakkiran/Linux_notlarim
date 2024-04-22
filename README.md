@@ -1,10 +1,10 @@
 # Linux Notlarım
-## Vim Editör
- **1991 Yılında** yayınlanmıştır.
+## Vi Editör
+ **1976 Yılında** yayınlanmıştır.
  
  **Vim (Vi IMproved), metin düzenleme ve programlama** için kullanılan güçlü bir metin editörüdür.
  
-Vim Editör Detaylı Bilgi: [Vim](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/vim_edit%C3%B6r.md)
+Vi Editör Detaylı Bilgi: [Vi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/vim_edit%C3%B6r.md)
 ## Wormhole
 **2014 yılında**  yayınlandı.
 
