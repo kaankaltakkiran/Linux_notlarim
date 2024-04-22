@@ -1,5 +1,5 @@
-# Vim Editör Notlarım
- 1991 Yılında yayınlanmıştır.
+# Vi Editör Notlarım
+ 1976 Yılında yayınlanmıştır.
  
 Linux'ta Vim (Vi IMproved), metin düzenleme ve programlama için kullanılan güçlü bir metin editörüdür. Vim, komut satırı tabanlı bir editördür ve genellikle programcılar, sistem yöneticileri ve yazılım geliştiricileri tarafından tercih edilir. 
 
