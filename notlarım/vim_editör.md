@@ -1,5 +1,7 @@
-# Linux metin editör notlarım
+# Vim Editör Notlarım
 Linux'ta Vim (Vi IMproved), metin düzenleme ve programlama için kullanılan güçlü bir metin editörüdür. Vim, komut satırı tabanlı bir editördür ve genellikle programcılar, sistem yöneticileri ve yazılım geliştiricileri tarafından tercih edilir. 
+
+Vim editörden çıkmak için ```:q! ``` komutu kullanılır.
 ## Genel özet tablosu
 |Komut                       |Açıklama                         |
 |-------------------------------|-----------------------------|
