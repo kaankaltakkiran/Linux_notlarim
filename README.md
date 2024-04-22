@@ -1,17 +1,26 @@
 # Linux Notlarım
 ## Vim Editör
+ **1991 Yılında** yayınlanmıştır.
+ 
  **Vim (Vi IMproved), metin düzenleme ve programlama** için kullanılan güçlü bir metin editörüdür.
  
 Vim Editör Detaylı Bilgi: [Vim](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/vim_edit%C3%B6r.md)
 ## Wormhole
+**2014 yılında**  yayınlandı.
+
 **Wormhole genellikle komut satırı aracılığıyla kullanılan bir dosya paylaşımı aracıdır** ve dosyaları iki bilgisayar arasında hızlı ve güvenli bir şekilde aktarmanıza olanak tanır.
  
 Wormhole Detaylı Bilgi: [wormhole](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/wormhole.md)
 ## İmagemagick
+ **1990 Yılında** yayınlanmıştır.
+ 
 Linux **komut satırında birden fazla görüntü dosyası üzerinde işlem yapmak** için en uygun paketlerden birisi imagemagick paketidir.
  
 İmagemagick Detaylı Bilgi: [İmagemagick](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/imagemagick.md)
 ## Ffmpeg
+
+ **2000 Yılında** yayınlanmıştır.
+
 **FFmpeg, açık kaynaklı bir çoklu ortam çerçevesidir. Video ve ses dosyalarını işlemek, dönüştürmek, kodlamak ve çözmek** için kullanılır.
  
 Ffmpeg Detaylı Bilgi: [ffmpeg](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/ffmpeg.md)
