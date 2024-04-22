@@ -71,6 +71,17 @@ Aşağıdaki komut **firefox yolunu** gösterir.
 ```BASH
  which firefox
 ```
+## alias
+**alias komutu, kısayollar oluşturmanızı sağlar. Bu kısayollar, sık kullandığınız uzun komutları daha kısa bir adla** çağırmanıza izin verir.
+
+Genel kullanımı aşağıdaki gibidir:
+```BASH
+alias kısayol="bu kısa yolun tetikleyeceği komut"
+```
+Aşağıdaki komut **disk boyutunu daha anlamlı gösteren du-h komutunu disk adında tanımlanır**. Daha sonra **komut satırına disk yazarak** komut çalıştırılır.
+```BASH
+alias disk='du -h'
+```
 
 ## pwd
 **pwd** komutunu hangi **dizinde (klasörde) olduğunuzu bulmak** için kullanılır.
