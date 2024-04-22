@@ -4,7 +4,7 @@
  
  **Vim (Vi IMproved), metin düzenleme ve programlama** için kullanılan güçlü bir metin editörüdür.
  
-Vi Editör Detaylı Bilgi: [Vi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/vim_edit%C3%B6r.md)
+Vi Editör Detaylı Bilgi: [Vi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/vi_edit%C3%B6r.md)
 ## Wormhole
 **2014 yılında**  yayınlandı.
 
