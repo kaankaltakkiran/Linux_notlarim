@@ -1,5 +1,22 @@
 # Linux metin editör notlarım
 Linux'ta Vim (Vi IMproved), metin düzenleme ve programlama için kullanılan güçlü bir metin editörüdür. Vim, komut satırı tabanlı bir editördür ve genellikle programcılar, sistem yöneticileri ve yazılım geliştiricileri tarafından tercih edilir. 
+## Genel özet tablosu
+|Komut                       |Açıklama                         |
+|-------------------------------|-----------------------------|
+|```:w ```|kaydet ama kapatma|
+|```:wq ``` |kaydet ve kapat|
+|```:q! ``` |*kapat (quit) kaydedilmeyen değişiklik var ise hata verir|
+|```d ``` |Seçili metni kesmek için kullanılır|
+|```dd ``` |tüm satırı seçerek  kesme işlemi yapılır|
+|```y``` |Seçili metni kopyalamak için kullanılır|
+|```yy``` |tüm satırı seçerek  kopyalama işlemi yapılır|
+|```p``` |Kesilmiş veya kopyalanan metni yapıştırmak için kullanılır|
+|<kbd>u</kbd>|Son yapılan işlemi geri almak için kullanılır|
+|<kbd>Control</kbd> + <kbd>R</kbd> |Geri alınan bir işlemi  ileri almak için kullanılır|
+|<kbd>0</kbd> |satırın başına gitmek için kullanılır|
+|<kbd>$</kbd> |satırın sonuna gitmek için kullanılır|
+|```/arama_kelimesi``` |aranacak kelime yazılarak arama yapılır|
+|```:s/eski/yeni/g``` |Metin dosyasında kelime değiştirme işlemi yapılabilir|
 
 ## Vim editör paketi nasıl yüklenir ?
 ```BASH
@@ -61,7 +78,7 @@ Aşağıdaki komut **<kbd>0</kbd> ile satırın başına gitmek için kullanıl�
 ```BASH
 0
 ```
-Aşağıdaki komut **<kbd>$</kbd> ile geri alınan bir işlemi ileri almak için kullanılır.**
+Aşağıdaki komut **<kbd>$</kbd> ile satırın sonuna gitmek için kullanılır**
 ```BASH
 $
 ```
