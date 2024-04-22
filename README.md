@@ -56,6 +56,22 @@ sudo apt install gnome-sushi
 ```
 > **Note:** GNOME Sushi'yi kullanmak oldukça basittir. **Dosya Gezgini'ni açın ve önizlemesini görmek istediğiniz dosyayı seçin. Dosyayı seçtikten sonra, üzerine gelin ve Space tuşuna basın**. GNOME Sushi, seçili dosyanın hızlı bir önizlemesini gösterecektir.
 
+## which
+**which komutu, bir programın tam yolunu (yani, çalıştırılabilir dosyanın dizin yolunu) bulmak** için kullanılır. Özellikle, bir komutun **hangi dizinde olduğunu belirlemek** için sıkça kullanılır.
+
+Aşağıdaki komut **spotifyın yolunu** gösterir.
+
+Örnek çıktı: /snap/bin/spotify
+```BASH
+which spotify
+```
+Aşağıdaki komut **firefox yolunu** gösterir.
+
+Örnek çıktı: /usr/bin/firefox
+```BASH
+ which firefox
+```
+
 ## pwd
 **pwd** komutunu hangi **dizinde (klasörde) olduğunuzu bulmak** için kullanılır.
 
