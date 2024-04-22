@@ -1,4 +1,6 @@
 # FFmpeg Notlarım
+ **2000 Yılında** yayınlanmıştır.
+ 
 **FFmpeg, açık kaynaklı bir çoklu ortam çerçevesidir. Video ve ses dosyalarını işlemek, dönüştürmek, kodlamak ve çözmek** için kullanılır. 
 ## FFmpeg nasıl yüklenir ?
 ```BASH
