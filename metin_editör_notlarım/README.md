@@ -5,7 +5,7 @@ Linux'ta Vim (Vi IMproved), metin düzenleme ve programlama için kullanılan g�
 |-------------------------------|-----------------------------|
 |```:w ```|kaydet ama kapatma|
 |```:wq ``` |kaydet ve kapat|
-|```:q! ``` |*kapat (quit) kaydedilmeyen değişiklik var ise hata verir|
+|```:q! ``` |kapat (quit) kaydedilmeyen değişiklik var ise hata verir|
 |```d ``` |Seçili metni kesmek için kullanılır|
 |```dd ``` |tüm satırı seçerek  kesme işlemi yapılır|
 |```y``` |Seçili metni kopyalamak için kullanılır|
