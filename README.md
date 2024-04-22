@@ -28,6 +28,12 @@ Ffmpeg Detaylı Bilgi: [ffmpeg](https://github.com/kaankaltakkiran/Linux_notlari
 **Linux komutlarının zincirlenmesi, birkaç komutun birleştirilmesi ve aralarında kullanılan operatörün davranışına göre yürütülmesi** anlamına gelir.
  
 Shell OperatörLeri Detaylı Bilgi: [Shell OperatörLeri](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/shell_operat%C3%B6rleri.md)
+## Tldr Pages
+**2013 yılında** yayınlanmıştır.
+
+**Tldr (Too Long; Didn't Read), özellikle karmaşık veya uzun Linux komutlarını kısa ve öz** bir şekilde açıklamak için kullanılan bir kaynaktır.
+ 
+Tldr Pages Detaylı Bilgi: [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/edit/main/notlar%C4%B1m/tldr.md)
 
 ## Linux Dosya Hiyerarşisi
 |Komut                        |Açıklama                      
