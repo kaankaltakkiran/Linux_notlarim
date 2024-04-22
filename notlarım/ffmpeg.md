@@ -1,4 +1,4 @@
-# Video işlemleri için notlarım
+# FFmpeg Notlarım
 **FFmpeg, açık kaynaklı bir çoklu ortam çerçevesidir. Video ve ses dosyalarını işlemek, dönüştürmek, kodlamak ve çözmek** için kullanılır. 
 ## FFmpeg nasıl yüklenir ?
 ```BASH
