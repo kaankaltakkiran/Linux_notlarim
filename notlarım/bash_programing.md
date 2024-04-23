@@ -117,11 +117,6 @@ Daha sonra aşağıdaki komut ile **bash dosyamızı çalıştırıyoruz**.
  ```BASH
 bash firstFolder.sh 
 ```
-Şu şekilde çıktı almalıyız: 
-Sayac: 1
-Sayac: 2
-Sayac: 3
-Sayac: 4
-Sayac: 5
-Döngü bitti.
+Örneğin 0 sayısını girdik. Şu şekilde çıktı almalıyız:
+Girilen sayı sıfırdır.
 
