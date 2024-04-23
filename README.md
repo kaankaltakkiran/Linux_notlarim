@@ -99,9 +99,28 @@ Genel kullanımı aşağıdaki gibidir:
 ```BASH
 alias kısayol="bu kısa yolun tetikleyeceği komut"
 ```
-Aşağıdaki komut **disk boyutunu daha anlamlı gösteren du-h komutunu disk adında tanımlanır**. Daha sonra **komut satırına disk yazarak** komut çalıştırılır.
+Aşağıdaki komut **disk boyutunu daha anlamlı gösteren du-h komutunu disk adında tanımlanır**.
 ```BASH
 alias disk='du -h'
+```
+ Daha sonra **komut satırına disk yazarak** komut çalıştırılır. Şuan sadece **bu oturumdayken disk komutunu kullanabiliriz**. **Her zaman geçerli olması için .bashrc dosyasın**a kaydetmelisiniz.
+ ```BASH
+disk
+```
+### bashrc nedir ? nasıl kullanılır ?
+
+**.bashrc dosyası, Bash kabuğu tarafından başlatılan her bir oturumda otomatik olarak yüklenen** bir dosyadır. Bu dosya, **kullanıcı özelleştirmeleri ve ayarları içerir. Özellikle, alias'lar** gibi özel komutlar veya çevre değişkenleri burada tanımlanabilir.
+
+Aşağıdaki komut **vi metin editörü ile bashrc** dosyasını açar.
+```BASH
+vi ~/.bashrc
+```
+### bashrc dosyasına alias nasıl eklenir ?
+vi editör ile bashrc dosyasını açıktıntan sonra `i` (insert) tuşu ile düzenleme modunu aktifleştiriyoruz. Daha sonra eklemek istediğimiz aliasımızı bashrc dosyasına yapıştırıyoruz. <kbd>Escape</kbd> tuşu ile insert modundan çıkıyoruz. Son olarak ```:wq ``` ile dosyayı kaydedip çıkıyoruz.
+
+Son olarak değiliklerin aktif olması bashrc dosyasını aşağıdaki komut ile yeniden yüklüyoruz.  Bu şekilde artık kalıcı olarak aliasa sahip oluruz.
+```BASH
+source ~/.bashrc
 ```
 
 ## pwd
@@ -113,7 +132,7 @@ pwd
 ```
 ## man
 Bu komutu **başka bir komutun ne işe yaradığını öğrenmek** için kullanılır. “man” komutu “manual”(kitapçık) kelimesinden gelir.
-Aşağıdaki komut ls komutu ve aldığı parametreler hakkında bilgi verir.
+Aşağıdaki komut **ls komutu ve aldığı parametreler** hakkında bilgi verir.
 ```BASH
 man ls
 ```
