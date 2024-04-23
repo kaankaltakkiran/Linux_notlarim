@@ -7,6 +7,8 @@ Vim editörden çıkmak için ```:q! ``` komutu kullanılır.
 ## Genel özet tablosu
 |Komut                       |Açıklama                         |
 |-------------------------------|-----------------------------|
+|<kbd>i</kbd>|insert moduna geçilir|
+|<kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>| insert modundan çıkılır|
 |```:w ```|kaydet ama kapatma|
 |```:wq ``` |kaydet ve kapat|
 |```:q! ``` |kapat (quit) kaydedilmeyen değişiklik var ise hata verir|
