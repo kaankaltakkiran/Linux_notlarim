@@ -21,7 +21,7 @@ Aşağıdaki komut bash script’inin konumunu görüntüleyecektir.
 which bash
 ```
 ## Örnek Basit Fonksiyon Uygulaması
-Aşağıdaki komut ile **vi editör** ile oluşturduğunuz **.sh dosyasına** bu komutunu yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu**yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
+Aşağıdaki komut ile **vi editör** ile oluşturduğunuz **.sh dosyasına** bu komutunu yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
  ```BASH
 #!/bin/bash
 testfunction(){
@@ -35,7 +35,7 @@ Daha sonra aşağıdaki komut ile **bash dosyamızı çalıştırıyoruz**.
 bash firstFolder.sh 
 ```
 ## Örnek Parametreli Fonksiyon Uygulaması
-Aşağıdaki komut ile **vi editör** ile oluşturduğunuz **.sh dosyasına** bu komutunu yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu**yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
+Aşağıdaki komut  **vi editör** ile oluşturduğunuz **.sh dosyasına** bu komutunu yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd> insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
  ```BASH
 #!/bin/bash
 testfunction(){
@@ -50,25 +50,27 @@ bash firstFolder.sh
 ```
 ## While Komutu İle Örnek
 Aşağıdaki komut ile **vi editör** ile oluşturduğunuz **.sh dosyasına** bu komutunu yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
+
 Aşağıdaki komut  `sayac` adında bir değişkeni başlatır ve ardından while döngüsü içinde `sayac` **değeri 5** olana kadar işlem yapar.
- Her döngüde, döngü değişkeninin değerini ekrana yazdırır ve döngü değişkenini bir artırır. 
+
+ Her döngüde, **döngü değişkeninin değerini ekrana yazdırır ve döngü değişkenini bir artırır**. 
+ 
  Son olarak, döngü tamamlandığında **"Döngü bitti."** mesajını yazdırır.
+ 
  ```BASH
 #!/bin/bash
-
 # Başlangıç değeri
 sayac=1
-
 # While döngüsü
 while [ $sayac -le 5 ]; do
     echo "Sayac: $sayac"
     sayac=$((sayac + 1)) # Sayacı bir artır
 done
-
 echo "Döngü bitti."
-
 ```
-> **Note:** **: **`-le`, bir sayının başka bir sayıdan "küçük veya eşit" olduğunu kontrol etmek için** kullanılan bir koşul ifadesidir
+> **Note:** **: **`-le`, bir sayının başka bir sayıdan "küçük veya eşit" olduğunu kontrol etmek için** kullanılan bir koşul ifadesidir.
+> 
+Daha sonra aşağıdaki komut ile **bash dosyamızı çalıştırıyoruz**.
  ```BASH
 bash firstFolder.sh 
 ```
