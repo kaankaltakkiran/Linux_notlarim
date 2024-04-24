@@ -40,6 +40,11 @@ Tldr Pages Detaylı Bilgi: [Tldr](https://github.com/kaankaltakkiran/Linux_notla
 **Wine, Windows uygulamalarını Linux ve diğer Unix benzeri işletim sistemlerinde çalıştırmak için bir uyumluluk katmanıdır**.
  
 Wine Detaylı Bilgi: [Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/wine.md)
+## Bash Programlama
+Bash programalama ile basit örnekler.
+ 
+Bash Programlama Detaylı Bilgi: [Bash Programlama](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/bash_programing.md)
+
 
 ## Linux Dosya Hiyerarşisi
 |Komut                        |Açıklama                      
