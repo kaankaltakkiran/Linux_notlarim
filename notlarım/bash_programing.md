@@ -164,3 +164,48 @@ bash case.sh
 Örneğin muz yazdık. Şu şekilde çıktı almalıyız:
 Muz seçildi.
 
+## For Döngüsü İle Resimler Klasöründeki .jpg Resimlerini .png formatına Çevirme Örneği
+Aşağıdaki komutu **vi editör** ile oluşturduğunuz **.sh dosyasına** yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
+
+Bu betik dosyası, **Klasördeki tüm .jpg uzantılı resimleri .png uzantılı resimlere çevirir.** gerçekleştirir.
+
+> **Note:** **: Bu convert işleminde imagemagick paketi kullanılıyor. Nasıl yüklendiğini ve kullanıldığını öğrenmek için aşağıdaki bağlantıya tıklayabilirsiniz:
+
+> İmagemagick Detaylı Bilgi: [İmagemagick](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/imagemagick.md)
+ 
+ ```BASH
+#!/bin/bash
+
+# Dönüştürme yapılacak klasör
+klasor="resimler"
+
+# Klasördeki JPG dosyalarını bul ve dönüştür
+for dosya in $klasor/*.jpg; do
+    # Dosya adını al
+    dosya_adi=$(basename "$dosya")
+    # Yeni dosya adını oluştur
+    yeni_dosya="$klasor/$(echo $dosya_adi | sed 's/\.jpg$/.png/')"
+    # Dönüşümü gerçekleştir
+    convert "$dosya" "$yeni_dosya"
+    echo "$dosya_adi dönüştürüldü."
+done
+
+echo "Tüm dosyalar dönüştürüldü."
+
+```
+
+Daha sonra aşağıdaki komut ile **bash dosyamızı çalıştırıyoruz**.
+ ```BASH
+bash convertİmage.sh 
+```
+Şu şekilde çıktı almalıyız:
+
+image-1.jpg dönüştürüldü.
+
+image-2.jpg dönüştürüldü.
+
+image-3.jpg dönüştürüldü.
+
+Tüm dosyalar dönüştürüldü.
+
+
