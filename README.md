@@ -45,6 +45,12 @@ Bash programalama ile basit örnekler.
  
 Bash Programlama Detaylı Bilgi: [Bash Programlama](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/bash_programing.md)
 
+## Node Version Manager (NVM)
+
+**Node Version Manager (NVM), Node.js'in farklı sürümlerini yönetmek için kullanılan bir araçtır. Node.js, JavaScript tabanlı uygulamaları çalıştırmak için kullanılan** bir çalışma zamanı ortamıdır ve sürekli olarak geliştirilmektedir. Her Node.js sürümü, yeni özellikler, performans iyileştirmeleri ve hata düzeltmeleri içerebilir.
+ 
+Node Version Manager (NVM) Detaylı Bilgi: [NVM](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/NVM.md)
+
 
 ## Linux Dosya Hiyerarşisi
 |Komut                        |Açıklama                      
