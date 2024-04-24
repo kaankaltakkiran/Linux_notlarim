@@ -9,6 +9,7 @@
 vim firstFolder.sh
 ```
 Daha sonra **<kbd>i</kbd> ile (insert) moduna** giriyoruz.
+
  Bütün bash scriptleri aşağıdaki satırla başlamalıdır:
  ```BASH
 #!/bin/bash
@@ -46,9 +47,9 @@ testfunction "Selam"
 Daha sonra aşağıdaki komut ile **bash dosyamızı çalıştırıyoruz**. Örnek olarak **Selam parametresini** yazıyoruz.
 Şu şekilde çıktı almalıyız: **Selam**
  ```BASH
-bash firstFolder.sh 
+bash parametreliFunc.sh
 ```
-## While İle Örnek
+## While Döngüsü Örneği
 Aşağıdaki komutu **vi editör** ile oluşturduğunuz **.sh dosyasına** yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
 
 Aşağıdaki komut  `sayac` adında bir değişkeni başlatır ve ardından while döngüsü içinde `sayac` **değeri 5** olana kadar işlem yapar.
@@ -72,7 +73,7 @@ echo "Döngü bitti."
 
 Daha sonra aşağıdaki komut ile **bash dosyamızı çalıştırıyoruz**.
  ```BASH
-bash firstFolder.sh 
+bash örnekWhile.sh 
 ```
 Şu şekilde çıktı almalıyız: 
 Sayac: 1
@@ -82,7 +83,7 @@ Sayac: 4
 Sayac: 5
 Döngü bitti.
 
-## İf Else İle Örnek
+## İf-else Döngüsü Örneği:
 Aşağıdaki komutu **vi editör** ile oluşturduğunuz **.sh dosyasına** yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
 
 Bu betik dosyası, **kullanıcıdan bir sayı girmesini ister. Ardından, girilen sayıyı kontrol eder ve ekrana bu sayının pozitif, negatif veya sıfır** olduğunu yazdırır.
@@ -115,8 +116,51 @@ fi
 
 Daha sonra aşağıdaki komut ile **bash dosyamızı çalıştırıyoruz**.
  ```BASH
-bash firstFolder.sh 
+bash ifElse.sh 
 ```
 Örneğin 0 sayısını girdik. Şu şekilde çıktı almalıyız:
 Girilen sayı sıfırdır.
+
+## Case Örneği
+Aşağıdaki komutu **vi editör** ile oluşturduğunuz **.sh dosyasına** yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
+
+Bu betik dosyası, **kullanıcıdan bir meyve ismi girmesini ister ve ardından girilen meyveyi kontrol eder. Girilen meyve ismine göre farklı işlemler** gerçekleştirir.
+ 
+ ```BASH
+#!/bin/bash
+
+# Kullanıcıdan bir meyve ismi girmesini isteyelim
+echo "Hangi meyveyi seçtiniz? (elma, armut, muz, çilek)"
+read meyve
+
+# Girilen meyveyi kontrol edelim
+case $meyve in
+    "elma")
+        echo "Elma seçildi." ;;
+    "armut")
+        echo "Armut seçildi." ;;
+    "muz")
+        echo "Muz seçildi." ;;
+    "çilek")
+        echo "Çilek seçildi." ;;
+    *) # Varsayılan durum
+        echo "Geçersiz meyve." ;;
+esac
+
+```
+**case ifadesi, belirli bir değeri kontrol etmek için** kullanılır.
+
+**in ifadesi, kontrol edilecek değerleri** belirtir.
+
+**;; ifadesi, bir durumun sonunu** belirtir.
+
+> **Note:** **: **esac, case ifadesinin tersidir ve "end case" anlamına gelir. Bash'te, bir case bloğunun sonunu belirtmek** için kullanılır. 
+
+
+Daha sonra aşağıdaki komut ile **bash dosyamızı çalıştırıyoruz**.
+ ```BASH
+bash case.sh 
+```
+Örneğin muz yazdık. Şu şekilde çıktı almalıyız:
+Muz seçildi.
 
