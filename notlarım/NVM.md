@@ -9,7 +9,7 @@ Kaynak: [NVM](https://github.com/nvm-sh/nvm)
 **NVM ayrıca birden çok projenin aynı makinede farklı Node.js sürümlerini kullanmasına izin vererek geliştirme sürecini daha esnek hale getirir.** Bu, **uygulamaları geliştirirken veya test ederken farklı sürümleri denemek** için çok faydalı olabilir.. 
 
 ## NVM nasıl yüklenir ?
-Aşığıdaki komutlarından herhangi biriyle yükleyebilirsiniz.
+Aşığıdaki **komutlarından herhangi biriyle** yükleyebilirsiniz.
 ```BASH
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
@@ -17,3 +17,44 @@ yada:
 ```BASH
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
+Kurduktan sonra **aşşığıdaki komut ile kontrol** edebilirsiniz.
+
+Örnek çıktı: 0.39.7
+```BASH
+nvm -v
+```
+## NVM ile node.js nasıl kurulur ?
+Aşığıdaki komut ile **node.js verison 20.12.2** kurabilirsiniz.
+```BASH
+# download and install Node.js 
+nvm install 20
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v20.12.2`
+
+# verifies the right NPM version is in the environment
+npm -v # should print `10.5.0`
+```
+## Node.js ve npm versiyonunu nasıl öğrebilirim ?
+
+Aşığıdaki komut ile **node.js verisiyonunu** görebilirsiniz.
+
+Örnek çıktı: v20.12.2
+```BASH
+node -v
+```
+Aşığıdaki komut ile **npm verisiyonunu** görebilirsiniz.
+
+Örnek çıktı: 10.5.0
+```BASH
+npm -v
+```
+## NVM ile istediğiniz node.js versiyonunu nasıl kurabilirsiniz ?
+
+Örneğin aşığıdaki komut ile **node.js 16. versiyonunu** kullanabilirsiniz.
+
+```BASH
+nvm use 16
+Now using node v16.9.1 (npm v7.21.1)
+```
+
