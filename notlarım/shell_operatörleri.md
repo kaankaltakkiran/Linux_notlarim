@@ -5,10 +5,6 @@
 ## Ampersand Operatör (&)
 **‘&’ işlevi, komutun arka planda çalışmasını** sağlamaktır.
 
-Aşağıdaki komut **arka planda update ve upgrade komutunu çalıştırır.**
-```BASH
-sudo apt update -y & sudo apt upgrade -y 
-```
 ## Noktalı Virgül Operatör (;)
 Noktalı virgül operatörü, **tek seferde birkaç komutu çalıştırmayı ve komutların sırayla yürütülmesini** sağlar.
 
