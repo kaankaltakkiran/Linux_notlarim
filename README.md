@@ -112,6 +112,23 @@ alias disk='du -h'
  ```BASH
 disk
 ```
+Bu komut, **güncelleme işleminden sonra tüm paketleri kaldırırken eksik dosyaları otomatik olarak düzeltmeye** çalışır.
+```BASH
+alias gunaydin='sudo apt update --fix-missing -y && sudo apt upgrade -y && sudo apt autoremove -y'
+```
+**sudo apt update --fix-missing -y: Bu komut, paket veritabanını güncellerken eksik veya bozuk paket listelerini düzeltir (--fix-missing). -y seçeneği tüm güncelleme işlemlerini otomatik** olarak onaylar.
+
+**sudo apt upgrade -y: Bu komut, sistemdeki tüm paketleri en son sürümlerine günceller. -y seçeneği yine tüm güncelleme işlemlerini otomatik** olarak onaylar.
+
+**sudo apt autoremove -y: Bu komut, sistemde artık kullanılmayan paketleri (örneğin, bağımlılıkları çözülmüş olan paketler) kaldırır. -y seçeneği tüm kaldırma işlemlerini otomatik olarak onaylar. Bu şekilde, gereksiz dosyaları temizler ve disk alanı** açar.
+
+> **Note:** **sudo apt purge bir paketi sistemden kaldırırken, sudo apt autoremove ise artık kullanılmayan paketleri** temizler.
+
+Daha sonra **komut satırına gunaydin yazarak** komut çalıştırılır. Şuan sadece **bu oturumdayken gunaydin komutunu kullanabiliriz**. **Her zaman geçerli olması için .bashrc dosyasına** kaydetmelisiniz.
+ ```BASH
+gunaydin
+```
+
 ### bashrc nedir ? nasıl kullanılır ?
 
 **.bashrc dosyası, Bash kabuğu tarafından başlatılan her bir oturumda otomatik olarak yüklenen** bir dosyadır. Bu dosya, **kullanıcı özelleştirmeleri ve ayarları içerir. Özellikle, alias'lar** gibi özel komutlar veya çevre değişkenleri burada tanımlanabilir.
