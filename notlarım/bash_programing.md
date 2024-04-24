@@ -22,7 +22,11 @@ Aşağıdaki komut bash script’inin konumunu görüntüleyecektir.
 which bash
 ```
 ## Örnek Basit Fonksiyon Uygulaması
-Aşağıdaki komut ile **vi editör** ile oluşturduğunuz **.sh dosyasına** bu komutunu yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
+**Vi editör**  ile bash programlama yapacağımız **.sh uzantılı** dosyamızı oluşturuyoruz.
+```BASH
+vim firstFolder.sh
+```
+ Daha sonra **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Aşığıdaki Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
  ```BASH
 #!/bin/bash
 testfunction(){
@@ -36,7 +40,11 @@ Daha sonra aşağıdaki komut ile **bash dosyamızı çalıştırıyoruz**.
 bash firstFolder.sh 
 ```
 ## Örnek Parametreli Fonksiyon Uygulaması
-Aşağıdaki komutu  **vi editör** ile oluşturduğunuz **.sh dosyasına** yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd> insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
+**Vi editör**  ile bash programlama yapacağımız **.sh uzantılı** dosyamızı oluşturuyoruz.
+```BASH
+vim parametreliFunc.sh
+```
+ Daha sonra **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Aşığıdaki Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
  ```BASH
 #!/bin/bash
 testfunction(){
@@ -50,7 +58,11 @@ Daha sonra aşağıdaki komut ile **bash dosyamızı çalıştırıyoruz**. Örn
 bash parametreliFunc.sh
 ```
 ## While Döngüsü Örneği
-Aşağıdaki komutu **vi editör** ile oluşturduğunuz **.sh dosyasına** yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
+**Vi editör**  ile bash programlama yapacağımız **.sh uzantılı** dosyamızı oluşturuyoruz.
+```BASH
+vim örnekWhile.sh 
+```
+ Daha sonra **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Aşığıdaki Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
 
 Aşağıdaki komut  `sayac` adında bir değişkeni başlatır ve ardından while döngüsü içinde `sayac` **değeri 5** olana kadar işlem yapar.
 
@@ -84,8 +96,12 @@ Sayac: 5
 Döngü bitti.
 
 ## İf-else Döngüsü Örneği:
-Aşağıdaki komutu **vi editör** ile oluşturduğunuz **.sh dosyasına** yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
-
+**Vi editör**  ile bash programlama yapacağımız **.sh uzantılı** dosyamızı oluşturuyoruz.
+```BASH
+vim ifElse.sh
+```
+ Daha sonra **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Aşığıdaki Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.*
+ 
 Bu betik dosyası, **kullanıcıdan bir sayı girmesini ister. Ardından, girilen sayıyı kontrol eder ve ekrana bu sayının pozitif, negatif veya sıfır** olduğunu yazdırır.
  
  ```BASH
@@ -122,7 +138,11 @@ bash ifElse.sh
 Girilen sayı sıfırdır.
 
 ## Case Örneği
-Aşağıdaki komutu **vi editör** ile oluşturduğunuz **.sh dosyasına** yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
+**Vi editör**  ile bash programlama yapacağımız **.sh uzantılı** dosyamızı oluşturuyoruz.
+```BASH
+vim case.sh 
+```
+ Daha sonra **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Aşığıdaki Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.*
 
 Bu betik dosyası, **kullanıcıdan bir meyve ismi girmesini ister ve ardından girilen meyveyi kontrol eder. Girilen meyve ismine göre farklı işlemler** gerçekleştirir.
  
@@ -165,7 +185,11 @@ bash case.sh
 Muz seçildi.
 
 ## For Döngüsü İle Resimler Klasöründeki .jpg Resimlerini .png formatına Çevirme Örneği
-Aşağıdaki komutu **vi editör** ile oluşturduğunuz **.sh dosyasına** yapıştırmalıyız.   **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.**
+**Vi editör**  ile bash programlama yapacağımız **.sh uzantılı** dosyamızı oluşturuyoruz.
+```BASH
+vim convertİmage.sh 
+```
+ Daha sonra **<kbd>i</kbd> ile (insert) moduna** giriyoruz. Aşığıdaki Komutu **yapıştırıyoruz ve <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd>insert modundan çıkıyoruz**. Son olarak **dosyayı ```:wq ``` ile kaydedip kapatıyoruz.*
 
 Bu betik dosyası, **Klasördeki tüm .jpg uzantılı resimleri .png uzantılı resimlere çevirir.** gerçekleştirir.
 
