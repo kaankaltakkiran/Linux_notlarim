@@ -484,13 +484,33 @@ less kaan.txt
 history
 ```
 > **Note:** **Bir boşluk bırakıp komut yazarsanız bu yazdığınız komut history de** gözükmez.
-> 
+
 ## top
 Bu komut, **Linux sistemlerinde çalışan işlem ve sistem kaynaklarını izlemek** için kullanılan bir komuttur.
 
 ```BASH
 top
 ```
+## kill
+**Linux'ta kill komutu, çalışan bir işlemi sonlandırmak** veya sinyal göndermek için kullanılır. 
+```BASH
+kill PID_değeri
+```
+> **Note:** **Bu PID_değerini top komutuyla hangi uygulamayı kapatmak istiyorsak** onun değerini bulabiliriz.
+
+Aşığıdaki **komut ile örneğin vlc ile çalışan tüm pencereleri** kapatır.
+```BASH
+killall vlc
+```
+## tilde" (~)
+**Linux'ta "tilde" (~), genellikle bir kullanıcının ev dizinini temsil etmek** için kullanılır. Ev dizini, bir kullanıcının oturum açtığında varsayılan olarak bulunduğu dizindir.
+
+> **Note:** **klavyede <kbd>Alt Gr</kbd> + <kbd>ü</kbd> kombinasyonu** ile yapılır.
+
+```BASH
+cd ~/belgeler
+```
+
 ## du
 **du** komutu (disk usage), Linux ve diğer Unix benzeri işletim sistemlerinde **disk kullanımını incelemek** için kullanılır.
 
