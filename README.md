@@ -92,6 +92,27 @@ sudo apt install gnome-sushi
 ```
 > **Note:** GNOME Sushi'yi kullanmak oldukça basittir. **Dosya Gezgini'ni açın ve önizlemesini görmek istediğiniz dosyayı seçin. Dosyayı seçtikten sonra, üzerine gelin ve Space tuşuna basın**. GNOME Sushi, seçili dosyanın hızlı bir önizlemesini gösterecektir.
 
+## Gromit-MPX
+**Gromit-MPX size ekranın üzerine açıklama notları çizmenizi veya eklemenizi** sağlayan ücretsiz ve açık kaynaklı araçtır.
+### gnome-sushi paketi nasıl yüklenir ?
+```BASH
+sudo apt install gromit-mpx 
+```
+Aşığıdaki komut ile **gromit-mpx** çalışır.
+```BASH
+ gromit-mpx 
+```
+Aşığıdaki komut ile **gromit-mpx'in ayarlarına gidersiniz vi editör ile** çalışır.
+```BASH
+sudo vi /etc/gromit-mpx/gromit-mpx.cfg 
+```
+## Pip(python)
+**pip, Python programlama dilinde paket yönetimi için kullanılan** bir araçtır. 
+### Pip nasıl yüklenir ?
+```BASH
+sudo apt install python3-pip
+```
+Pyhton paketlerinin olduğu web sitesi Detaylı Bilgi: [Pypi](https://pypi.org/)
 ## which
 **which komutu, bir programın tam yolunu (yani, çalıştırılabilir dosyanın dizin yolunu) bulmak** için kullanılır. Özellikle, bir komutun **hangi dizinde olduğunu belirlemek** için sıkça kullanılır.
 
