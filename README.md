@@ -502,7 +502,7 @@ Aşığıdaki **komut ile örneğin vlc ile çalışan tüm pencereleri** kapat�
 ```BASH
 killall vlc
 ```
-## tilde" (~)
+## tilde (~)
 **Linux'ta "tilde" (~), genellikle bir kullanıcının ev dizinini temsil etmek** için kullanılır. Ev dizini, bir kullanıcının oturum açtığında varsayılan olarak bulunduğu dizindir.
 
 > **Note:** **klavyede <kbd>Alt Gr</kbd> + <kbd>ü</kbd> kombinasyonu** ile yapılır.
