@@ -35,3 +35,5 @@
 | whoami  | Giriş yapan kullanıcıyı gösterir. | 1971 (UNIX V1) |
 | uname   | Sistem bilgilerini getirir. | 1971 (UNIX V1) |
 | free    | RAM durumunu görmek için kullanılır. | 1971 (UNIX V1) |
+| kill    | Bir işlemi sonlandırmak için kullanılır. | 1971 (UNIX V1) |
+| tilde   | Kullanıcıların ana dizinine (home directory) erişmek için kullanılır. | - |
