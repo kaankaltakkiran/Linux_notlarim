@@ -483,6 +483,8 @@ less kaan.txt
 ```BASH
 history
 ```
+> **Note:** **Bir boşluk bırakıp komut yazarsanız bu yazdığınız komut history de** gözükmez.
+> 
 ## top
 Bu komut, **Linux sistemlerinde çalışan işlem ve sistem kaynaklarını izlemek** için kullanılan bir komuttur.
 
