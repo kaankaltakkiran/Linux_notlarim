@@ -193,11 +193,34 @@ Son olarak değiliklerin aktif olması bashrc dosyasını aşağıdaki komut ile
 ```BASH
 source ~/.bashrc
 ```
+## shutdown
+**Shutdown  komutu, sistemi güvenli** bir şekilde kapatır.
+
+Aşağıdaki komut **bilgisayarı hemen kapatır**.
+```BASH
+ shutdown -h now
+```
+Aşağıdaki komut **bilgisayarı yeniden başlatır**.
+```BASH
+  shutdown -r now
+```
+Aşağıdaki komut **bilgisayarı 5 dakika sonra yeniden başlatır**.
+```BASH
+   shutdown -r +{{5}} &
+```
+Aşağıdaki komut **saat 13.00 da bilgisayarı kapatır**.
+```BASH
+  shutdown -h 13:00
+```
+Aşağıdaki komut **yazdığınız kapatma komutunu iptal eder**.
+```BASH
+ shutdown -c
+```
 
 ## pwd
 **pwd** komutunu hangi **dizinde (klasörde) olduğunuzu bulmak** için kullanılır.
 
-Örnek çıktı: /home/kaan
+**Örnek çıktı: /home/kaan**
 ```BASH
 pwd
 ```
