@@ -5,7 +5,7 @@ Temel linux komutları **ilk yayınlanma tarihleriyle birlikte özet tablo** ola
 Linux Komutları Özet Tablo Detaylı Bilgi: [Linux Komutları Özet Tablo](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/komut_notlar%C4%B1m/%C3%B6zet_komutlar.md)
 
 ## Linux Komut Notlarım
-Linuxta **kullanılan komutların özet tablosu, bash programlama ve shell operatörleri** hakkında bilgiler içermektedir.
+Linuxta **kullanılan komutların özet tablosu,komut satırı kısayolları, bash programlama ve shell operatörleri** hakkında bilgiler içermektedir.
  
 Linux Komut Notlarım Detaylı Bilgi: [Linux Komut Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/notlar%C4%B1m/komut_notlar%C4%B1m)
 
@@ -31,26 +31,6 @@ Faydalı Paketler Detaylı Bilgi: [Faydalı Paketler](https://github.com/kaankal
 |`/mnt`            |  Sisteme dışarıdan bağlanacak olan donanım aygıtlarının, bağlantı noktalarını belirten dizindir.|
 |`/proc`            | Sistem hakkında gerekli bilgilerin bulunduğu sanal dizindir. Bilgisayar boot olduğunda Ram de oluşturulur. Sistemde çalışan geçici süreçler bu dizin altında çalışırlar.|
 
-## Komut Satırı Kısayolları
-<kbd>Alt</kbd> + <kbd> Control</kbd>+ <kbd>T</kbd>:Bu komut ile terminal **ekranı açılır.**
-
-<kbd> Control</kbd> + <kbd>U</kbd>:Bu komut, terminalda ki **en soldaki yazıyı siler.**
-
-<kbd> Control</kbd> + <kbd>K</kbd>:Bu komut, terminalda ki **en sağdaki yazıyı siler.**
-
-<kbd> Home</kbd> Bu tuş ile, **terminalde imleç en sola** gelir.
-
-<kbd> End</kbd> Bu tuş ile, **terminalde imleç en sola** gelir.
-
-<kbd> Control</kbd> + <kbd>D</kbd>: Bu komut , **terminali kaydedip kapatır.**
-
-<kbd> Control</kbd> + <kbd>L</kbd>: Bu komut , **terminali temizler.**
-
-<kbd> Control</kbd> + <kbd>⇧ Shift</kbd> + <kbd>c</kbd>Bu komut , **seçili komutu kopyalar.**
-
-<kbd> Control</kbd> + <kbd>⇧ Shift</kbd> + <kbd>V</kbd>Bu komut , **kopyaladığımız içeriği terminale yapıştırır.**
-
-<kbd> Control</kbd> + <kbd>R</kbd>Bu komut , terminalde **arama yapmamıza olanak sağlar.**
 
 ## which
 **which komutu, bir programın tam yolunu (yani, çalıştırılabilir dosyanın dizin yolunu) bulmak** için kullanılır. Özellikle, bir komutun **hangi dizinde olduğunu belirlemek** için sıkça kullanılır.
