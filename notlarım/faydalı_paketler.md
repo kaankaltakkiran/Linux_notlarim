@@ -1,5 +1,55 @@
 # Faydalı Paketler
 
+## Vi Editör
+ **1976 Yılında** yayınlanmıştır.
+ 
+ **Vim (Vi IMproved), metin düzenleme ve programlama** için kullanılan güçlü bir metin editörüdür.
+ 
+Vi Editör Detaylı Bilgi: [Vi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/vi_edit%C3%B6r.md)
+## Wormhole
+**2014 yılında**  yayınlandı.
+
+**Wormhole genellikle komut satırı aracılığıyla kullanılan bir dosya paylaşımı aracıdır** ve dosyaları iki bilgisayar arasında hızlı ve güvenli bir şekilde aktarmanıza olanak tanır.
+ 
+Wormhole Detaylı Bilgi: [wormhole](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/wormhole.md)
+## İmagemagick
+ **1990 Yılında** yayınlanmıştır.
+ 
+Linux **komut satırında birden fazla görüntü dosyası üzerinde işlem yapmak** için en uygun paketlerden birisi imagemagick paketidir.
+ 
+İmagemagick Detaylı Bilgi: [İmagemagick](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/imagemagick.md)
+## Ffmpeg
+
+ **2000 Yılında** yayınlanmıştır.
+
+**FFmpeg, açık kaynaklı bir çoklu ortam çerçevesidir. Video ve ses dosyalarını işlemek, dönüştürmek, kodlamak ve çözmek** için kullanılır.
+ 
+Ffmpeg Detaylı Bilgi: [ffmpeg](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/ffmpeg.md)
+## Linux Shell OperatörLeri
+**Linux komutlarının zincirlenmesi, birkaç komutun birleştirilmesi ve aralarında kullanılan operatörün davranışına göre yürütülmesi** anlamına gelir.
+ 
+Shell OperatörLeri Detaylı Bilgi: [Shell OperatörLeri](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/shell_operat%C3%B6rleri.md)
+## Tldr Pages
+**2013 yılında** yayınlanmıştır.
+
+**Tldr (Too Long; Didn't Read), özellikle karmaşık veya uzun Linux komutlarını kısa ve öz** bir şekilde açıklamak için kullanılan bir kaynaktır.
+ 
+Tldr Pages Detaylı Bilgi: [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/tldr.md)
+## Wine
+ **1993 Yılında** yayınlanmıştır.
+ 
+**Wine, Windows uygulamalarını Linux ve diğer Unix benzeri işletim sistemlerinde çalıştırmak için bir uyumluluk katmanıdır**.
+ 
+Wine Detaylı Bilgi: [Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/wine.md)
+
+
+## Node Version Manager (NVM)
+
+**Node Version Manager (NVM), Node.js'in farklı sürümlerini yönetmek için kullanılan bir araçtır. Node.js, JavaScript tabanlı uygulamaları çalıştırmak için kullanılan** bir çalışma zamanı ortamıdır ve sürekli olarak geliştirilmektedir. Her Node.js sürümü, yeni özellikler, performans iyileştirmeleri ve hata düzeltmeleri içerebilir.
+ 
+Node Version Manager (NVM) Detaylı Bilgi: [NVM](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/NVM.md)
+
+
 ## gnome-sushi
 **GNOME Sushi, Ubuntu'da kullanılabilen bir dosya önizleme aracıdır**. Bu araç, **dosyalara hızlıca göz atmanızı sağlar, böylece dosya içeriğini gerçekten açmadan önce içeriği** görebilirsiniz. 
 ### gnome-sushi paketi nasıl yüklenir ?
