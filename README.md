@@ -5,7 +5,7 @@ Temel linux komutları **ilk yayınlanma tarihleriyle birlikte özet tablo** ola
 Linux Komutları Özet Tablo Detaylı Bilgi: [Linux Komutları Özet Tablo](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/komut_notlar%C4%B1m/%C3%B6zet_komutlar.md)
 
 ## Linux Komut Notlarım
-Linuxta **kullanılan komutların özet tablosu,komut satırı kısayolları, bash programlama ve shell operatörleri** hakkında bilgiler içermektedir.
+Linuxta **kullanılan komutların özet tablosu,linux dosya hiyerarşisi,komut satırı kısayolları, bash programlama ve shell operatörleri** hakkında bilgiler içermektedir.
  
 Linux Komut Notlarım Detaylı Bilgi: [Linux Komut Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/notlar%C4%B1m/komut_notlar%C4%B1m)
 
@@ -14,23 +14,7 @@ Linuxta **kullandığım paketlerin nasıl yüklendiği ve nasıl kullanıldığ
  
 Faydalı Paketler Detaylı Bilgi: [Faydalı Paketler](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/notlar%C4%B1m/faydal%C4%B1_paketler)
 
-## Linux Dosya Hiyerarşisi
-|Komut                        |Açıklama                      
--------------------------------|-----------------------------|
-|`/bin`|Kullanıcı ve sistem yöneticisine ait çalıştırılabilir dosyaları barındırır.|
-|`/opt`            | Add-on yazılımların bulunduğu alandır. |
-|`/boot`|Linux Kernelini barındıran (vmlinuz), sistem haritalarını ve ikinci seviye boot yükleyicilerini barındıran dizindir.|
-|`/root`|  Bir sistemde en yetkili kullanıcı olan "root" kullanıcısına ait dizindir. |
-|`/dev`|  Donanımlara erişebilmek için gerekli dosyaları barındırır. (/media)  |
-|`/sbin`|  Sistem yöneticisine ait çalıştırılabilir dosyaları barındırır. |
-|`/etc`| Sistemde çalışan servislerin konfigürasyonları için gerekli dosyaları barındırır. (Telnet, ssh, samba, apache, dhcp vb.) Servisleri başlatma betikleri de burada bulunu |
-|`/home`|  Kullanıcılara ait dizindir.  |
-|`/tmp`|  Geçici dosyaların yer aldığı dizindir.  |
-|`/lib`| Sistem kütüphanelerini barındırır.  |
-|`/usr`| Paylaşılan dosyaların barındığı dizindir. Burada çalışabilen dosyalar bulunmakla beraber, doküman ve kullanıcı programlarına ait dosyalar da yer almaktadır.  |
-|`/mnt`|  Sisteme dışarıdan bağlanacak olan donanım aygıtlarının, bağlantı noktalarını belirten dizindir.|
-|`/proc`| Sistem hakkında gerekli bilgilerin bulunduğu sanal dizindir. Bilgisayar boot olduğunda Ram de oluşturulur. Sistemde çalışan geçici süreçler bu dizin altında çalışırlar.|
-
+## Linux Komutları
 
 ## which
 **which komutu, bir programın tam yolunu (yani, çalıştırılabilir dosyanın dizin yolunu) bulmak** için kullanılır. Özellikle, bir komutun **hangi dizinde olduğunu belirlemek** için sıkça kullanılır.
