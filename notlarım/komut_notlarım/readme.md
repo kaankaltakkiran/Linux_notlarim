@@ -8,7 +8,7 @@ Linux Komutları Özet Tablo Detaylı Bilgi: [Linux Komutları Özet Tablo](http
 ## Linux Dosya Hiyerarşisi Tablosu
 Temel **linux dosya hiyerarşisi hakkında tablo** olarak hazırlanmıştır.
  
-Linux Dosya Hiyerarşisi Detaylı Bilgi: [Linux Dosya Hiyerarşisi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/komut_notlar%C4%B1m/%C3%B6zet_komutlar.md)
+Linux Dosya Hiyerarşisi Detaylı Bilgi: [Linux Dosya Hiyerarşisi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/komut_notlar%C4%B1m/linux_dosya_hiyerar%C5%9Fisi.md)
 
 
 ## Bash Programlama
