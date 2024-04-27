@@ -18,4 +18,4 @@ Shell Operatörleri Detaylı Bilgi: [Shell Operatörleri](https://github.com/kaa
 ##  Komut Satırı Kısayolları
 Linuxta **komut yazarken sıkça kullanılan kısayollar**.
 
-Komut Satırı Kısayolları Detaylı Bilgi: [Komut Satırı Kısayolları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/komut_notlar%C4%B1m/shell_operat%C3%B6rleri.md)
+Komut Satırı Kısayolları Detaylı Bilgi: [Komut Satırı Kısayolları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/komut_notlar%C4%B1m/k%C4%B1sayollar.md)
