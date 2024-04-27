@@ -25,10 +25,7 @@ Linux **komut satırında birden fazla görüntü dosyası üzerinde işlem yapm
 **FFmpeg, açık kaynaklı bir çoklu ortam çerçevesidir. Video ve ses dosyalarını işlemek, dönüştürmek, kodlamak ve çözmek** için kullanılır.
  
 Ffmpeg Detaylı Bilgi: [ffmpeg](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/ffmpeg.md)
-## Linux Shell OperatörLeri
-**Linux komutlarının zincirlenmesi, birkaç komutun birleştirilmesi ve aralarında kullanılan operatörün davranışına göre yürütülmesi** anlamına gelir.
- 
-Shell OperatörLeri Detaylı Bilgi: [Shell OperatörLeri](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/notlar%C4%B1m/shell_operat%C3%B6rleri.md)
+
 ## Tldr Pages
 **2013 yılında** yayınlanmıştır.
 
