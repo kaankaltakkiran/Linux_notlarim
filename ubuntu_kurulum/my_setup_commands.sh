@@ -1,10 +1,10 @@
 # Depolarda yer alan paketlerin güncel listesini indir
-sudo apt update -y
+sudo apt update
 # Mevcut paketlerin yenisi varsa yükle
-sudo apt upgrade -y
+sudo apt upgrade
 
 # Sürücülerin (driver) güncel dosyalarını yükle
-sudo ubuntu-drivers autoinstall -y
+sudo ubuntu-drivers autoinstall
 
 # gnome-sushi, ffmpeg, imagemagick, magic-wormhole, vim paketleri yüklenir
 sudo apt install gnome-sushi ffmpeg imagemagick magic-wormhole vim -y
@@ -14,11 +14,12 @@ sudo apt install gnome-sushi ffmpeg imagemagick magic-wormhole vim -y
 wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
 ## Depolarda yer alan paketlerin güncel listesini indir
-sudo apt update -y
+sudo apt update
 ## vscode paketini kur
-sudo apt install code 
+sudo apt install code -y
+
 ## Vscode Extension Kurulumu
-```BASH
+
 # Auto Close Tag eklentisi
 code --install-extension formulahendry.auto-close-tag
 # Auto Rename Tag eklentisi
@@ -92,39 +93,42 @@ code --install-extension tomoki1207.pdf
 # WakaTime eklentisi
 code --install-extension WakaTime.vscode-wakatime
 # indent-rainbow eklentisi
-code --install-extension oderwat.indent-rainbow
-```
+code --install-extension oderwat.indent-rainbow 
 
-# Fare için ayarlar
-## Dock ünitesinde program simgesine tıklayınca küçült/büyült
+#### Fare için ayarlar
+##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
+##### Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
+#### Anydesk kurulumu
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+sudo apt update
+sudo apt install anydesk
 
-#Guake terminal kurulumu
-sudo apt install guake  -y
+#### Guake terminal kurulumu
+sudo apt install guake
 
-# Gnome Extansion Manger Kurulumu
-sudo apt install gnome-shell-extension-manager 
+#### Gnome Extansion Manger Kurulumu
+sudo apt install gnome-shell-extension-manager
 
-# Snap Store kurulumu
-sudo apt update -y
-sudo apt install snapd 
+#### Snap Store kurulumu
+sudo apt update
+sudo apt install snapd
 
-# Snap Store vlc, potify, discord, prospect-mail yükleme
+#### Snap Store vlc, potify, discord, prospect-mail yükleme
 sudo snap install vlc spotify discord prospect-mail -y
 
-# Ulauncher kurulumu
+#### ulauncher kurulumu
 sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
 
-# GIT ayarları
+#### Kurulum sonrasında varsa gereksiz paketleri temizle
+sudo apt autoremove -y
+
+#### GIT ayarları
 sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
-
-## Kurulum sonrasında varsa gereksiz paketleri temizle
-sudo apt autoremove -y
-sudo apt update -y
 
 echo "\n\n\n=== KURULUM TAMAMLANDI ===\n\n\n"
