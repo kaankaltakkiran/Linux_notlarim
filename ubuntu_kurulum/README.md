@@ -3,7 +3,7 @@
 ## Hızlı Kurulum
 
 ```bash
-wget https://raw.githubusercontent.com/kaankaltakkiran/linux_setup/main/my_setup_commands.sh -O - | sh
+wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/main/ubuntu_kurulum/my_setup_commands.sh -O - | sh
 ```
 
 ### Detaylı Kurulum
