@@ -30,7 +30,7 @@ sudo apt update
 sudo apt install code -y
 
 ## Vscode Extension Kurulumu
-```BASH
+
 # Auto Close Tag eklentisi
 code --install-extension formulahendry.auto-close-tag
 # Auto Rename Tag eklentisi
@@ -104,8 +104,7 @@ code --install-extension tomoki1207.pdf
 # WakaTime eklentisi
 code --install-extension WakaTime.vscode-wakatime
 # indent-rainbow eklentisi
-code --install-extension oderwat.indent-rainbow
-```
+code --install-extension oderwat.indent-rainbow 
 
 #### Fare için ayarlar
 ##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
@@ -115,11 +114,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windo
 
 #### Anydesk kurulumu
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-
 echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
-
 sudo apt update
-
 sudo apt install anydesk
 
 #### Guake terminal kurulumu
@@ -147,5 +143,4 @@ git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
 
 echo "\n\n\n=== KURULUM TAMAMLANDI ===\n\n\n"
-
 ```
