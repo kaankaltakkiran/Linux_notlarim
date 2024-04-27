@@ -110,7 +110,7 @@ code --install-extension oderwat.indent-rainbow
 #### Fare için ayarlar
 ##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
+##### Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
 #### Anydesk kurulumu
