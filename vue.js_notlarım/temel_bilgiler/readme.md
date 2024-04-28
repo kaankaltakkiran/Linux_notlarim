@@ -37,5 +37,10 @@ Conditional Rendering Detaylı Bilgi: [Conditional Rendering ](https://github.co
 
 Lifecycle Hooks Detaylı Bilgi: [Lifecycle Hooks ](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/temel_bilgiler/Lifecycle%20_Hooks.md)
 
+  ## Watchers
+
+Watchers Detaylı Bilgi: [Watchers ](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/temel_bilgiler/Lifecycle%20_Hooks.md)
+
+
 
 
