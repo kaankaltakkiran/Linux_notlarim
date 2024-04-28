@@ -43,7 +43,7 @@ Watchers Detaylı Bilgi: [Watchers ](https://github.com/kaankaltakkiran/Linux_no
 
   ## Template Refs
 
-Template Refs Detaylı Bilgi: [Template Refs](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/temel_bilgiler/Lifecycle%20_Hooks.md)
+Template Refs Detaylı Bilgi: [Template Refs](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/temel_bilgiler/Template_Refs.md)
 
 
 
