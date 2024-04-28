@@ -31,5 +31,5 @@ Conditional Rendering Detaylı Bilgi: [Conditional Rendering ](https://github.co
 
    ## Form Input Bindings 
 
- Form Input Bindings   Detaylı Bilgi: [Form Input Bindings](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/temel_bilgiler/Event%20_Handling.md)
+ Form Input Bindings   Detaylı Bilgi: [Form Input Bindings](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/temel_bilgiler/Form%20_Input%20Bindings.md)
 
