@@ -24,3 +24,7 @@ Conditional Rendering Detaylı Bilgi: [Conditional Rendering ](https://github.co
  ## List Rendering 
 
  List Rendering  Detaylı Bilgi: [ List Rendering  ](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/temel_bilgiler/List_Rendering.md)
+
+  ## Event Handling
+
+ Event Handling  Detaylı Bilgi: [ Event Handling](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/temel_bilgiler/List_Rendering.md)
