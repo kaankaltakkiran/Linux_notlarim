@@ -39,7 +39,7 @@ Lifecycle Hooks Detaylı Bilgi: [Lifecycle Hooks ](https://github.com/kaankaltak
 
   ## Watchers
 
-Watchers Detaylı Bilgi: [Watchers ](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/temel_bilgiler/Lifecycle%20_Hooks.md)
+Watchers Detaylı Bilgi: [Watchers ](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/temel_bilgiler/Watchers.md)
 
 
 
