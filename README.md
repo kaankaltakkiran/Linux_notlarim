@@ -17,5 +17,5 @@ Vue.js Detaylı Bilgi: [Vue.js](https://github.com/kaankaltakkiran/Linux_notlari
 ## TypeScript  Notlarım
 **TypeScript** hakkında bilgiler içermektedir.
  
-TypeScript  Detaylı Bilgi: [TypeScript]()
+TypeScript  Detaylı Bilgi: [TypeScript](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/TypeScript_notlar%C4%B1m)
 
