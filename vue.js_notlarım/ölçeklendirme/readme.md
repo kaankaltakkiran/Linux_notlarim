@@ -2,5 +2,5 @@
 
 ## Routing
 
-Routing Detaylı Bilgi: [Routing](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/ayr%C4%B1nt%C4%B1l%C4%B1_components/Props.md)
+Routing Detaylı Bilgi: [Routing](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/%C3%B6l%C3%A7eklendirme/Routing.md)
 
