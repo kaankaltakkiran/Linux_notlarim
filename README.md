@@ -14,3 +14,8 @@ Ubuntu Kurulum Detaylı Bilgi: [Ubuntu Kurulum](https://github.com/kaankaltakkir
  
 Vue.js Detaylı Bilgi: [Vue.js](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlar%C4%B1m)
 
+## TypeScript  Notlarım
+**TypeScript** hakkında bilgiler içermektedir.
+ 
+TypeScript  Detaylı Bilgi: [TypeScript]()
+

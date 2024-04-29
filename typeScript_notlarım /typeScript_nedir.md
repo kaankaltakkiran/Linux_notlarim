@@ -1,0 +1,3 @@
+# TypeScript Notlarım
+
+## TypeScript Nedir?
