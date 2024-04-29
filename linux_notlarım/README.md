@@ -1,9 +1,9 @@
 # Linux Notlarım
 
-## Temel Linux Komutları Ayrıntılı Notlar
-Temel linux komutları **ayrıntılı ve örnekli** olarak hazırlanmıştır.
+## Temel Linux Komut Notlarım
+Temel Linux Komut **ayrıntılı ve örnekli** olarak hazırlanmıştır.
  
-Linux Komutları Ayrıntılı Notlar Detaylı Bilgi: [Linux Komutları Ayrıntılı Notlar](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlar%C4%B1m/komut_notlar%C4%B1m)
+Linux Komutları Ayrıntılı Notlar Detaylı Bilgi: [Linux Komut Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlar%C4%B1m/komut_notlar%C4%B1m)
 
 ## Linuxta Kullandığım Faydalı Paketler
 Linuxta **kullandığım paketlerin nasıl yüklendiği ve nasıl kullanıldığı**  hakkında bilgiler içermektedir.
