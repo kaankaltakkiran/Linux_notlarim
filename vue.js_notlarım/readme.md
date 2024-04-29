@@ -13,3 +13,14 @@ Bu konular şunlardır: Binding,Computed,İf,For,List,Reactivity,Syntax,Applicat
 Bu konular şunlardır: Props,Slots,
 
  Vue.js Ayrıntınlı Component Detaylı Bilgi: [ Vue.js Ayrıntınlı Component](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlar%C4%B1m/ayr%C4%B1nt%C4%B1l%C4%B1_components)
+
+  ## Vue.js Ölçeklendirme 
+ vue.js Ölçeklendirmeye hakkında bilgilier verilmiştir.
+
+Bu konular şunlardır: Routing
+
+ Vue.js Ölçeklendirme  Detaylı Bilgi: [ Vue.js Ölçeklendirme ](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlar%C4%B1m/ayr%C4%B1nt%C4%B1l%C4%B1_components)
+
+
+ 
+
