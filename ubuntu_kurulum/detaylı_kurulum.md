@@ -14,6 +14,12 @@ alias gunaydin='sudo apt update --fix-missing -y && sudo apt upgrade -y && sudo 
 # Komut satırında gün,tarih,saat,isim gibi bilgileri gösterme
 PS1="\n\[\e[35m\]\D{%Y-%m-%d}, \t\[\e[m\] \[\e[31m\]\u\[\e[m\]@\[\e[36m\]KaanPc\[\e[m\]:\[\e[32m\]\w\[\e[m\]\n\$ "
 ```
+## Faydalı Paketler
+```BASH
+# Sık kullanılan faydalı paketleri kur
+sudo apt install git npm guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine vlc chromium-browser magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl -y
+```
+
 
 ## GIT Kurulumu
 
