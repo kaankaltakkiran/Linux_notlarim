@@ -25,7 +25,7 @@ sudo apt install gnome-sushi ffmpeg imagemagick magic-wormhole vim -y
 wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
 
-# AnyDesk krulumu
+# AnyDesk kurulumu
 sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
 sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
@@ -42,14 +42,11 @@ sudo apt update -y
 ## Anydesk,SublimeMerge, Vscode yükle
 sudo apt install anydesk sublime-merge code -y
 
-
 #### Fare için ayarlar
 ##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ##### Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
-
-
 
 #### Guake terminal kurulumu
 sudo apt install guake
@@ -63,9 +60,6 @@ sudo apt install snapd
 
 #### Snap Store vlc, potify, discord, prospect-mail yükleme
 sudo snap install vlc spotify discord prospect-mail -y
-
-
-
 
 #### GIT ayarları
 sudo apt install git -y
