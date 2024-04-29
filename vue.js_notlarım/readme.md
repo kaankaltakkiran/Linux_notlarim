@@ -19,7 +19,7 @@ Bu konular şunlardır: Props,Slots,
 
 Bu konular şunlardır: Routing
 
- Vue.js Ölçeklendirme  Detaylı Bilgi: [ Vue.js Ölçeklendirme ](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlar%C4%B1m/ayr%C4%B1nt%C4%B1l%C4%B1_components)
+ Vue.js Ölçeklendirme  Detaylı Bilgi: [ Vue.js Ölçeklendirme ](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlar%C4%B1m/%C3%B6l%C3%A7eklendirme)
 
 
  
