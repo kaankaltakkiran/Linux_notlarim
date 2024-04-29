@@ -1,6 +1,6 @@
 # TypeScript Notlarım
 
-## TypeScript İle Javascript Arasında Ne Fark Vardır?
+## JavaScript İle TypeScript Arasında Ne Fark Vardır?
 
 | Özellikler                   | JavaScript                                                                                  | TypeScript                                                                                           |
 |------------------------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
