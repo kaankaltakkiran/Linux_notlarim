@@ -7,7 +7,7 @@ sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 
 sudo apt upgrade -y
 
-sudo apt install sublime-merge code anydesk -y
+sudo apt install  anydesk -y
 
 ## Hızlı Kurulum
 
