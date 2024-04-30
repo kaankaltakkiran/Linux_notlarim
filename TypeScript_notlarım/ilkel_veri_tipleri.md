@@ -41,18 +41,7 @@ let isOpen: boolean = false;
 let emptyValue: null = null;
 let notDefined: undefined = undefined;
  ```
-  ## any
-**Bu veri tipi, belirli bir tipe sahip olmadığı zaman veya türü dinamik olarak** belirlenmesi gerektiğinde kullanılır. 
-
-Ancak, mümkünse, bu türden kaçınılması önerilir, **çünkü belirli bir tür güvencesi sağlamaz**. 
-
-Örneğin:
-  ```js
-let dynamicValue: any = 10;
-dynamicValue = "Hello";
- ```
-
-   ## any
+   ## void
 **Fonksiyonların bir değer döndürmediği durumları** ifade eder.
 
 **Yani, bir fonksiyonun geri dönüş değeri yoksa, bu tip kullanılır**. 
