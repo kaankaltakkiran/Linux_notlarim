@@ -1,4 +1,7 @@
 # Ubuntu 22.04 Kurulum
+![Ekran Görüntüsü - 2024-05-01 00-56-23](https://github.com/kaankaltakkiran/Linux_notlarim/assets/98158194/103d6168-a590-42fc-987a-a267edd97802)
+
+![Ekran Görüntüsü - 2024-05-01 00-56-57](https://github.com/kaankaltakkiran/Linux_notlarim/assets/98158194/02255cc6-e208-4f7c-9eac-10598ab200d0)
 
 ## Hızlı Kurulum
 
