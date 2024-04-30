@@ -1,20 +1,20 @@
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update
 # Mevcut paketlerin yenisi varsa yükle
-sudo apt upgrade -y
+sudo apt upgrade
 
 # Sürücülerin (driver) güncel dosyalarını yükle
 sudo ubuntu-drivers autoinstall
 
-# gnome-sushi, ffmpeg, imagemagick, magic-wormhole, vim paketleri yüklenir
-sudo apt install gnome-sushi ffmpeg imagemagick magic-wormhole vim -y
+# Sık kullanılan faydalı paketleri kur
+sudo apt install ffmpeg  imagemagic guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine vlc chromium-browser magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl -y
 
 # vscode kurulumu
 ## vscode için güvenilir depolara vscode'un kendi deposunu ve imzasını ekle
 wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
 
-# AnyDesk krulumu
+# AnyDesk kurulumu
 sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
 sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
@@ -24,12 +24,11 @@ sudo apt-get install apt-transport-https
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
-
 ## Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
 ## Anydesk,SublimeMerge, Vscode yükle
-sudo apt install anydesk sublime-merge code -y
+sudo apt install sublime-merge code anydesk -y
 
 #### Fare için ayarlar
 ##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
@@ -37,24 +36,18 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ##### Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
-#### Anydesk kurulumu
-wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
-sudo apt update
-sudo apt install anydesk
-
 #### Guake terminal kurulumu
-sudo apt install guake
+sudo apt install guake -y
 
 #### Gnome Extansion Manger Kurulumu
-sudo apt install gnome-shell-extension-manager
+sudo apt install gnome-shell-extension-manager -y
 
 #### Snap Store kurulumu
-sudo apt update
+
 sudo apt install snapd
 
 #### Snap Store vlc, potify, discord, prospect-mail yükleme
-sudo snap install vlc spotify discord prospect-mail -y
+sudo snap install vlc spotify discord prospect-mail 
 
 #### GIT ayarları
 sudo apt install git -y
