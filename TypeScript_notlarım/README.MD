@@ -40,3 +40,10 @@ TypeScript Tip Doğrulama Detaylı Bilgi:[TypeScript Tip Doğrulama ](https://gi
  
 TypeScript Tip Koruma  Detaylı Bilgi:[TypeScript Tip Koruma ](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/TypeScript_notlar%C4%B1m/tip_koruma.md)
 
+Yaralandığım Kaynaklar:
+
+TypeScript Medium Yazısı:[TypeScript Medium Yazısı ](https://medium.com/@ozgancan9/typescript-nedir-f34372e12056)
+
+TypeScript Hakkında Detaylı Bilgi :[TypeScript Hakkında ](https://typescript-notlari.vercel.app/docs/intro)
+
+
