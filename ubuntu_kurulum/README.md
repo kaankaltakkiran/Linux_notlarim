@@ -1,7 +1,10 @@
 # Ubuntu 22.04 Kurulum
 sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+
 sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+
 sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
+
 sudo apt upgrade -y
 
 sudo apt install sublime-merge code anydesk -y
