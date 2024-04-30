@@ -8,11 +8,31 @@
 **Microsoft tarafından geliştirilen ve desteklenen, ücretsiz ve open source bir proje olan TypeScript bünyesinde barındırdığı derleyici sayesinde, yazılan kodu JavaScriptkoduna çevirir.** TypeScript gerek client (istemci) taraflı, gerekse server (sunucu) taraflı yazılım geliştirmede kullanılabilmektedir.
 
 ## Neden TypeScript ?
+ **TypeScript in temel amacı static type checking yaparak geliştirme aşamasında tip kontrolünü**sağlamaktır.
 
-**Örneğin JavaScript ile string ve number gibi primitive değerleri kullanırız** ancak bunları **tutarlı şekilde atadığınızın takibini yapamayız. TypeScript ile bunu yaparız.**
+ **Static Type sistemler, programlarımızı çalıştırdığımızda değerlerimizin ne olacağını ve davranışlarını** tanımlar. TypeScript bu **bilgiyi kullanır ve bize ne zaman hata alacağımızı** söyler.
 
-**Bu açıdan bakıldığında JavaScript kodlarınız zaten hali hazırda TypeScript kodudur.** 
+ ```js
+const message = "hello!";
 
-**TypeScript sadece olası hatalardan sizi korumak için fayda sağlamakla** görevlidir.
- 
-**Projelerinizde çok büyük değişiklikler yapmadan kodlarınızı TypeScript'e geçirebilir ve bir yandan öğrenme sürecinize devam** edebilirsiniz.
+message();
+
+/* This expression is not callable.
+Type 'String' has no call signatures. */
+```
+**Yukarıda ki kod bloğunu çalıştırdığımızda hata mesajı karşımıza** çıkacaktır. TypeScript ise kodu çalıştırmadan önce bize bir **hata mesajı** verecektir.
+
+**TypeScript aynı zamanda çalışma öncesi hataları yakalamamızı** da sağlar. 
+
+Örneğin aşağıdaki **kod bloğunu çalıştırdığımızda console a undefined** değerini yazar.
+ ```js
+ const user = {
+  name: "Daniel",
+  age: 26,
+};
+
+console.log(user.location);
+```
+**TypeScript kullandığımız takdirde kullandığımız editörümüz de karşımıza aşağıdaki hata mesajı** çıkacaktır.
+
+> **Note**: **Property 'location' does not exist on type '{ name: string; age: number; }**'.
