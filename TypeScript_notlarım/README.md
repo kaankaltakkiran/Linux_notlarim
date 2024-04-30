@@ -40,6 +40,12 @@ TypeScript Tip Doğrulama Detaylı Bilgi:[TypeScript Tip Doğrulama ](https://gi
  
 TypeScript Tip Koruma  Detaylı Bilgi:[TypeScript Tip Koruma ](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/TypeScript_notlar%C4%B1m/tip_koruma.md)
 
+## Sınıflar
+
+**TypeScript sınıflar hakkında bilgilere** değinilmiştir.
+ 
+Sınıflar Detaylı Bilgi:[Sınıflar](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/TypeScript_notlar%C4%B1m/sınıflar.md)
+
 ## Yaralandığım Kaynaklar:
 
 TypeScript Medium Yazısı:[TypeScript Medium Yazısı ](https://medium.com/@ozgancan9/typescript-nedir-f34372e12056)
