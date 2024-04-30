@@ -112,7 +112,7 @@ sudo apt install axel
 ```
 Aşığıdaki komut **ile 10 parçadan daha hızlı** indirir.
 ```BASH
-axel n-10  http://example.com/bigfile.zip
+ axel -n 10  https://releases.ubuntu.com/24.04/ubuntu-24.04-desktop-amd64.iso
 ```
 ## ncdu
 **ncdu (Ncurses Disk Usage), terminal tabanlı bir disk kullanımı analiz** aracıdır.
