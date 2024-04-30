@@ -52,6 +52,47 @@ function logMessage(): void {
     console.log("This is a log message");
 }
  ```
+ **Geriye Değer Döndürebilen** Fonksiyonlar:
+   ```js
+   let logDetails = (user: { name: string; age: number }): string => {
+   return `Isminiz: ${user. name} ve Ya1n1Z: ${user.age}`;
+};
+  ```
+   **Parametresi Zorunlu (Required) Olmayan** Fonksiyonlar:
+   ```js
+ let logDetails = (user: { name: string; age: number }, action?): string => {
+if(action === "add"){
+return "Kullanıcı Eklendi."
+}
+   return `Isminiz: ${user. name} ve Ya1n1Z: ${user.age}`;
+};
+  ```
+ ## Never
+ **Bir şeyin asla olmayacağından emin olduğunuzda kullanılır.** 
+
+ **Örneğin, bitiş noktasına geri dönmeyen veya her zaman bir istisna atan bir işlev yazarsınızJavaScript’e empty** olarak adalandırılır. 
+
+Örneğin:
+  ```js
+function throwError(errorMsg: string): never { 
+            throw new Error(errorMsg); 
+} 
+
+function keepProcessing(): never { 
+            while (true) { 
+         console.log('I always does something and never ends.')
+     }
+}
+ ```
+  **Yukarıdaki örnekte, throwError()işlev bir hata atar ve keepProcessing()işlev her zaman yürütülür ve while döngüsü hiçbir zaman sona ermediğinden hiçbir zaman bir bitiş noktasına ulaşmaz.**
+  
+   **Bu nedenle, asla gerçekleşmeyecek veya bir işlevden geri dönmeyecek değeri belirtmek için asla türü** kullanılır.
+
+  > **Note**: **Void türü, as’ın hiçbir değere sahip olamayacağı bir değer olarak undefined veya null değerine** sahip olabilir.
+  ```js
+let something: void = null;
+let nothing: never = null; // Error: Type 'null' is not assignable to type 'never'
+ ```
 
  ## symbol
 **Symbol, JavaScript dilinde benzersiz değerler** oluşturmak için kullanılır ve genellikle nesnelerin özel özelliklerini tanımlamak için kullanılır.
