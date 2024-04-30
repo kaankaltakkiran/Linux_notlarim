@@ -12,8 +12,6 @@
 > **Statik tipte yazılan diller derleme zamanında(compile-time)** tür denetimi gerçekleştirir.
 
 
-
-
 ## Neden TypeScript ?
  **TypeScript in temel amacı static type checking yaparak geliştirme aşamasında tip kontrolünü**sağlamaktır.
 
@@ -43,3 +41,35 @@ console.log(user.location);
 **TypeScript kullandığımız takdirde kullandığımız editörümüz de karşımıza aşağıdaki hata mesajı** çıkacaktır.
 
 > **Note**: **Property 'location' does not exist on type '{ name: string; age: number; }**'.
+
+## Bilinemesi Gerekenler
+
+### JavaScript (JS)
+
+**JavaScript, web tarayıcılarında ve çoğu modern web tarayıcısı tarafından desteklenen bir programlama dilidir.**
+
+**İlk olarak Netscape Communications Corporation tarafından** geliştirilmiştir. 
+
+**JavaScript, web sayfalarını etkileşimli hale getirmek, kullanıcıyla etkileşim sağlamak, web uygulamalarını geliştirmek ve dinamik içerik oluşturmak için kullanılır.**
+
+**JavaScript, ECMAScript standartlarına uygun olarak geliştirilir ve sürekli** olarak güncellenir.
+
+### ECMAScript (ES)
+
+**ECMAScript, JavaScript dilinin standartlarının belirlendiği bir spesifikasyon** serisidir. 
+
+**JavaScript'in resmi olarak bir dil olarak tanımlanması ve geliştirilmesi bu standartlar üzerine dayanır.**
+
+ Yani, JavaScript aslında **ECMAScript'in bir uygulamasıdır**. 
+ 
+ **ECMAScript, dilin yapısını, özelliklerini ve davranışlarını** tanımlayan bir dizi standart belirler. Örneğin, ES5, ES6 (ya da ECMAScript 2015), ES7 gibi sürümler bu standartlar arasında yer alır.
+
+ ### TypeScript (TS)
+ 
+ **TypeScript, JavaScript'in genişletilmiş bir versiyonudur.**
+ 
+ **Microsoft tarafından geliştirilmiştir. TypeScript, JavaScript kodunu daha güvenli, okunabilir ve bakımı kolay hale getirmek için tasarlanmıştır.** 
+ 
+ Bununla birlikte, **TypeScript, JavaScript koduna tip belirtme, statik tip denetimi ve diğer gelişmiş özellikler ekleyerek kodun daha sağlam** hale gelmesini sağlar. 
+ 
+ **TypeScript, JavaScript'e transpile edilebilir, yani TypeScript kodu, tarayıcılar veya Node.js gibi JavaScript çalışma zamanlarında çalışabilen JavaScript** koduna dönüştürülebilir.
