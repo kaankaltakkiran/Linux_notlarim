@@ -1,5 +1,10 @@
 ## Genel Güncelleme İşlemleri
+sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY |sudo apt-key add -
+sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 
+sudo apt update
+sudo apt install anydesk
 ```BASH
 sudo apt update -y
 sudo apt upgrade -y
