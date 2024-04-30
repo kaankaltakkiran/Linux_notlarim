@@ -19,7 +19,17 @@ PS1="\n\[\e[35m\]\D{%Y-%m-%d}, \t\[\e[m\] \[\e[31m\]\u\[\e[m\]@\[\e[36m\]KaanPc\
 # Sık kullanılan faydalı paketleri kur
 sudo apt install git npm guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine vlc chromium-browser magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl -y
 ```
+## Oracle VirtualBox Kurulumu
 
+```BASH
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+sudo apt update
+sudo apt install virtualbox-7.0
+```
+  > **Note**: Kurulumda **kernel hatası alarsanız bu linkteki** çözümü uygulayın.
+
+> [Kernel Hata Çözümü](https://superuser.com/questions/1285964/how-to-fix-and-prevent-virtualbox-kernel-driver-not-installed)
 
 ## GIT Kurulumu
 
