@@ -17,8 +17,8 @@ sudo apt upgrade
 # Sürücülerin (driver) güncel dosyalarını yükle
 sudo ubuntu-drivers autoinstall
 
-# gnome-sushi, ffmpeg, imagemagick, magic-wormhole, vim paketleri yüklenir
-sudo apt install gnome-sushi ffmpeg imagemagick magic-wormhole vim -y
+# Sık kullanılan faydalı paketleri kur
+sudo apt install ffmpeg  imagemagic guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine vlc chromium-browser magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl -y
 
 # vscode kurulumu
 ## vscode için güvenilir depolara vscode'un kendi deposunu ve imzasını ekle
@@ -39,7 +39,7 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update -y
 
 ## Anydesk,SublimeMerge, Vscode yükle
-sudo apt install anydesk sublime-merge code -y
+sudo apt install sublime-merge code anydesk -y
 
 #### Fare için ayarlar
 ##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
@@ -48,17 +48,17 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
 #### Guake terminal kurulumu
-sudo apt install guake
+sudo apt install guake -y
 
 #### Gnome Extansion Manger Kurulumu
-sudo apt install gnome-shell-extension-manager
+sudo apt install gnome-shell-extension-manager -y
 
 #### Snap Store kurulumu
-sudo apt update
+
 sudo apt install snapd
 
 #### Snap Store vlc, potify, discord, prospect-mail yükleme
-sudo snap install vlc spotify discord prospect-mail -y
+sudo snap install vlc spotify discord prospect-mail 
 
 #### GIT ayarları
 sudo apt install git -y
