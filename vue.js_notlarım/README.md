@@ -21,6 +21,10 @@ Bu konular şunlardır: Routing
 
  Vue.js Ölçeklendirme  Detaylı Bilgi: [ Vue.js Ölçeklendirme ](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlar%C4%B1m/%C3%B6l%C3%A7eklendirme)
 
-
  
+## Yaralandığım Kaynaklar:
+
+ Vue.js  Medium Yazısı:[Vue.js Medium Yazısı ](https://medium.com/kocsistem/vue-js-t%C3%BCrk%C3%A7e-kaynak-cbb1d0d73490)
+
+ Vue.js Hakkında Detaylı Bilgi :[Vue.js  Hakkında ](https://vuejs.org/)
 
