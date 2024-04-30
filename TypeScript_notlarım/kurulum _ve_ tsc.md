@@ -21,3 +21,9 @@ tsc main.ts
 >tsc main.ts
 > ```
  > şeklinde **TypeScript dosyamızı eklediğimiz takdirde hata** alırız.
+
+TypeScript **dosyamızda her değişiklik yaptığımızda tsc main.ts** yazmak yerine,
+  ```bash
+tsc main.ts --w
+ ```
+  yazdığımızda **TypeScript dosyamızda her değişik yaptığımızda otomatik olarak compile** edilecektir.
