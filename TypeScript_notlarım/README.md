@@ -46,6 +46,13 @@ TypeScript Tip Koruma  Detaylı Bilgi:[TypeScript Tip Koruma ](https://github.co
  
 Sınıflar Detaylı Bilgi:[Sınıflar](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/TypeScript_notlar%C4%B1m/sınıflar.md)
 
+## Modules,Namespaces,Generics
+
+**TypeScript Modules,Namespaces,Generics hakkında bilgilere** değinilmiştir.
+ 
+Modules,Namespaces,Generics Detaylı Bilgi:[Modules,Namespaces,Generics](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/TypeScript_notlar%C4%B1m/modules.md)
+
+
 ## Yaralandığım Kaynaklar:
 
 TypeScript Medium Yazısı:[TypeScript Medium Yazısı ](https://medium.com/@ozgancan9/typescript-nedir-f34372e12056)
