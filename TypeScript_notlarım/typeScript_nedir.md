@@ -7,6 +7,13 @@
 
 **Microsoft tarafından geliştirilen ve desteklenen, ücretsiz ve open source bir proje olan TypeScript bünyesinde barındırdığı derleyici sayesinde, yazılan kodu JavaScriptkoduna çevirir.** TypeScript gerek client (istemci) taraflı, gerekse server (sunucu) taraflı yazılım geliştirmede kullanılabilmektedir.
 
+> **Note**: **Dinamik tipte yazılan diller çalışma zamanında(run-time)** tür denetimi gerçekleştirir.
+
+> **Statik tipte yazılan diller derleme zamanında(compile-time)** tür denetimi gerçekleştirir.
+
+
+
+
 ## Neden TypeScript ?
  **TypeScript in temel amacı static type checking yaparak geliştirme aşamasında tip kontrolünü**sağlamaktır.
 
