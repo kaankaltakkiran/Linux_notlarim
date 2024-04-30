@@ -1,10 +1,10 @@
 # Depolarda yer alan paketlerin güncel listesini indir
-sudo apt update 
+sudo apt update -y
 # Mevcut paketlerin yenisi varsa yükle
 sudo apt upgrade -y
 
 # Sürücülerin (driver) güncel dosyalarını yükle
-sudo ubuntu-drivers autoinstall -y
+sudo ubuntu-drivers autoinstall 
 
 # Sık kullanılan faydalı paketleri kur
 sudo apt install ffmpeg  imagemagic guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine vlc chromium-browser magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl -y
