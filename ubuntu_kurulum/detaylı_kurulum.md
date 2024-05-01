@@ -38,6 +38,11 @@ sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
 ```
+## Node.js ve Npm kurulumu
+
+```BASH
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
 
 ## AnyDesk Kurulumu
 
