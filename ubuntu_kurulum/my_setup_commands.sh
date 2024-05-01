@@ -7,7 +7,8 @@ sudo apt upgrade -y
 sudo ubuntu-drivers autoinstall 
 
 # Sık kullanılan faydalı paketleri kur
-sudo apt install ffmpeg imagemagick guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl -y
+sudo apt install ffmpeg wine  imagemagick guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl -y
+
 
 # vscode kurulumu
 ## vscode için güvenilir depolara vscode'un kendi deposunu ve imzasını ekle
@@ -15,8 +16,9 @@ wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor 
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
 
 # AnyDesk kurulumu
-sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
-sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+echo "deb http://deb.anydesk.com/ all main" | sudo tee
+/etc/apt/sources.list.d/anydesk-stable.list
 sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 
 # SublimeMerge kurulumu
@@ -27,7 +29,7 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 ## Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-## Anydesk,SublimeMerge, Vscode yükle
+## SublimeMerge,Vscode, Anydesk yükle
 sudo apt install sublime-merge code anydesk -y
 
 #### Fare için ayarlar
