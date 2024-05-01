@@ -15,22 +15,22 @@ sudo apt install ffmpeg wine  imagemagick guake guake-indicator pv meld vim axel
 wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
 
+# SublimeMerge kurulumu
+sudo apt-get install apt-transport-https
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+
 # AnyDesk kurulumu
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 echo "deb http://deb.anydesk.com/ all main" | sudo tee
 /etc/apt/sources.list.d/anydesk-stable.list
 sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 
-# SublimeMerge kurulumu
-sudo apt-get install apt-transport-https
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-
 ## Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
 ## SublimeMerge,Vscode, Anydesk yükle
-sudo apt install sublime-merge code anydesk -y
+sudo ap tanydesk install sublime-merge code  -y
 
 #### Fare için ayarlar
 ##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
@@ -50,6 +50,10 @@ sudo apt install snapd
 
 #### Snap Store vlc, potify, discord, prospect-mail yükleme
 sudo snap install vlc spotify discord prospect-mail 
+
+#### Node.js ve Npm Kurulumu
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install 20
 
 #### GIT ayarları
 sudo apt install git -y
