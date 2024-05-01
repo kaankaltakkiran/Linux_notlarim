@@ -59,7 +59,10 @@ sudo apt install gnome-shell-extension-manager -y
 sudo apt install snapd
 
 #### Snap Store vlc, potify, discord, prospect-mail yükleme
-sudo snap install vlc spotify discord prospect-mail 
+sudo snap install vlc spotify discord prospect-mail
+
+#### Node.js ve Npm Kurulumu
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 #### GIT ayarları
 sudo apt install git -y
