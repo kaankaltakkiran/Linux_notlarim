@@ -62,8 +62,10 @@ sudo apt install snapd
 sudo snap install vlc spotify discord prospect-mail
 
 #### Node.js ve Npm Kurulumu
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install 20
+node -v
+npm -v 
 
 #### GIT ayarları
 sudo apt install git -y
