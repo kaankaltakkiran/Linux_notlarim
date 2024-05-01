@@ -42,6 +42,7 @@ git config --global user.name 'Kaan Kaltakkıran'
 
 ```BASH
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install 20
 ```
 
 ## AnyDesk Kurulumu
