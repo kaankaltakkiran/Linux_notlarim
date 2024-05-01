@@ -41,8 +41,10 @@ git config --global user.name 'Kaan Kaltakkıran'
 ## Node.js ve Npm kurulumu
 
 ```BASH
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install 20
+node -v
+npm -v 
 ```
 
 ## AnyDesk Kurulumu
