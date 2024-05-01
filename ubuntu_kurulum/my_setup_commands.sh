@@ -30,7 +30,7 @@ sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 sudo apt update -y
 
 ## SublimeMerge,Vscode, Anydesk yükle
-sudo apt anydesk install sublime-merge code  -y
+sudo apt install anydesk sublime-merge code  -y
 
 #### Fare için ayarlar
 ##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
@@ -52,6 +52,7 @@ sudo apt install snapd
 sudo snap install vlc spotify discord prospect-mail 
 
 #### Node.js ve Npm Kurulumu
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install 20
 node -v
