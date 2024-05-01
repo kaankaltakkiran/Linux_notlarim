@@ -42,8 +42,10 @@ git config --global user.name 'Kaan Kaltakkıran'
 ## AnyDesk Kurulumu
 
 ```BASH
-wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+echo "deb http://deb.anydesk.com/ all main" | sudo tee
+/etc/apt/sources.list.d/anydesk-stable.list
+sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 sudo apt update
 sudo apt install anydesk
 ```
