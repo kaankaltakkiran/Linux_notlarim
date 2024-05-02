@@ -43,3 +43,8 @@ Son olarak **dev sunucusunu başlatmak için Quasar CLI** komutunu çalıştır�
 ```bash
  quasar dev
 ```
+## Yaralandığım Kaynaklar:
+
+Quasar Framework Medium Yazısı:[Quasar Framework Medium Yazısı](https://yagmurmutluer.medium.com/quasar-nedir-quasar-framework-ve-vue-js-4f89b1503fde)
+
+ Quasar Framework Dokümantasyon :[Quasar Framework Dokümantasyon](https://quasar.dev/docs)
