@@ -43,6 +43,14 @@ Daha sonra aşığıdaki **komut ile npm ile quasar cli** oluşturmaya başlayı
 ```bash
 npm init quasar
 ```
+Gerekli yüklemeler tamamlantıktan sonra **cd komutu ile proje dizinine** gidin.
+```bash
+cd <folder_name>
+```
+Son olarak **aşığıdaki komut ile projenizi** çalıştırın
+```bash
+  quasar dev
+```
 ## Yaralandığım Kaynaklar:
 
 Quasar Framework Medium Yazısı:[Quasar Framework Medium Yazısı](https://yagmurmutluer.medium.com/quasar-nedir-quasar-framework-ve-vue-js-4f89b1503fde)
