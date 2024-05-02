@@ -33,6 +33,8 @@ Ayrıca Quasar, **Her detayı barındıran oldukça açıklayıcı bir dokümant
 ## Quasar Nasıl Kullanılır ?
 Quasarı **ClI** ile kullanmak mümkün.
 
+ > **Note**: **Quasarı kullanmak için nodejs 14.verisondan yukarısı ve npm 6.14 ten yukarı bir versiyon** kurulu olması gereklidir.
+
 Aşığıdaki komut, **quasar cli global olarak npm ile** yükler.
 ```bash
 npm i -g @quasar/cli
