@@ -6,6 +6,7 @@
  **Yazdığımız tek kodu tüm platformlara dağıtarak kullanabiliriz. Websitesi, Masaüstü uygulaması ve Mobil uygulamalar quasar ile kolaylıkla** geliştirilebilir.
 
  > **Note**: **write code once and simultaneously deploy.**
+
  Yukardaki yazı bize Quasarın en güçlü özelliğinden bahsetmektedir: **kodu bir kez yazın ve aynı anda dağıtın.**
  Bu demek oluyor ki **örneğin bir web sitesi olarak projenizi** geliştiriyorsunuz. **Diyelim ki mobil uygulama** olarak da yayınlamak istediniz projenizi. 
  
