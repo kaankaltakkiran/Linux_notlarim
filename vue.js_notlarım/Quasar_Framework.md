@@ -39,13 +39,9 @@ Aşığıdaki komut, **quasar cli global olarak npm ile** yükler.
 ```bash
 npm i -g @quasar/cli
 ```
-Daha sonra aşığıdaki komut ile **proje klasörüne gidin**, **proje klasörüne gidin ve dev sunucusunu başlatmak için Quasar CLI** komutunu çalıştırın.
+Daha sonra aşığıdaki **komut ile npm ile quasar cli** oluşturmaya başlayın.
 ```bash
-cd <project_folder_name>
-```
-Son olarak **dev sunucusunu başlatmak için Quasar CLI** komutunu çalıştırın.
-```bash
- quasar dev
+npm init quasar
 ```
 ## Yaralandığım Kaynaklar:
 
