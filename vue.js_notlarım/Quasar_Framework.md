@@ -8,6 +8,7 @@
  > **Note**: **write code once and simultaneously deploy.**
 
  Yukardaki yazı bize Quasarın en güçlü özelliğinden bahsetmektedir: **kodu bir kez yazın ve aynı anda dağıtın.**
+ 
  Bu demek oluyor ki **örneğin bir web sitesi olarak projenizi** geliştiriyorsunuz. **Diyelim ki mobil uygulama** olarak da yayınlamak istediniz projenizi. 
  
  **Quasar ile başka bir kod yazmadan bir kaç ayarlama ile projeniz hem web sitesi olarak hem de mobil uygulama olarak yayınlama imkani** elde edebiliyoruz. Bu durum çok kullanışlı ve harika bir özellik.
