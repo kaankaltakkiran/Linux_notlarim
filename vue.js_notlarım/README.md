@@ -26,6 +26,11 @@ Bu konular şunlardır: Routing
 
 Quasar Framework  Detaylı Bilgi: [Quasar Framework](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/Quasar_Framework.md)
 
+  ## Sass ve SCSS
+**Sass ve SCSS** hakkında bilgiler verilmiştir.
+
+ Sass ve SCSS Detaylı Bilgi: [Sass ve SCSS](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/Sass_ve_%20Scss_nedir.md)
+
  
 ## Yaralandığım Kaynaklar:
 
@@ -36,4 +41,6 @@ Quasar Framework  Detaylı Bilgi: [Quasar Framework](https://github.com/kaankalt
  Quasar Framework Medium Yazısı:[Quasar Framework Medium Yazısı](https://yagmurmutluer.medium.com/quasar-nedir-quasar-framework-ve-vue-js-4f89b1503fde)
 
  Quasar Framework Dokümantasyon :[Quasar Framework Dokümantasyon](https://quasar.dev/docs)
+
+  Sass ve SCSS Medium Yazısı :[Medium Yazısı](https://medium.com/@koseoglumelikenur/sass-ve-scss-nedi%CC%87r-5a14618bbd97)
 
