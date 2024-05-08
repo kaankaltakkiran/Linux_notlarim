@@ -72,3 +72,6 @@ div {
  }   
 }
  ```
+Daha fazla örnek kod için:
+
+Sass ve SCSS örnek kodlar  :[Sass ve SCSS örnek kod](  https://devhints.io/sass)
