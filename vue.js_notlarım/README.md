@@ -43,4 +43,6 @@ Quasar Framework  Detaylı Bilgi: [Quasar Framework](https://github.com/kaankalt
  Quasar Framework Dokümantasyon :[Quasar Framework Dokümantasyon](https://quasar.dev/docs)
 
   Sass ve SCSS Medium Yazısı :[Medium Yazısı](https://medium.com/@koseoglumelikenur/sass-ve-scss-nedi%CC%87r-5a14618bbd97)
+  
+  Sass ve SCSS örnek kodlar  :[Sass ve SCSS örnek kod](  https://devhints.io/sass)
 
