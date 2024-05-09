@@ -22,8 +22,7 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 
 # AnyDesk kurulumu
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
-echo "deb http://deb.anydesk.com/ all main" | sudo tee
-/etc/apt/sources.list.d/anydesk-stable.list
+echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
 sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 
 # Spotify kurulumu
@@ -34,7 +33,7 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt update -y
 
 ## Spotify,Anydesk,SublimeMerge,Vscode yükle
-sudo apt install || true  spotify-client anydesk sublime-merge code  -y
+sudo apt install spotify-client anydesk sublime-merge code -y
 
 #### Fare için ayarlar
 ##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
