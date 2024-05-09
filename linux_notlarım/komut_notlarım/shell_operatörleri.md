@@ -20,7 +20,7 @@ Aşağıdaki komut **ilk önce apt’yi günceller işlem başarılıysa apt pak
 sudo apt update  && sudo apt upgrade -y
 ```
 ## OR (VEYA) Operatörü (||)
-OR (VEYA) Operatörü (||), programlamadaki ‘else’ ifadesine çok benzer. **Bu operatör, yalnızca ilk komutun yürütülmesi başarısız olduğunda ikinci komutu yürütmenize**izin verir.
+OR (VEYA) Operatörü (||), programlamadaki ‘else’ ifadesine çok benzer. **Bu operatör, yalnızca ilk komutun yürütülmesi başarısız olduğunda ikinci komutu yürütmenize** izin verir.
 
 Aşağıdaki komut **snap klasörünü rm ile silmek istiyor ama -r parametresi kullanmadan klasör silinemeyeceği için başarısız olup echo ile ekrana mesajımızı yazdırır.**
 ```BASH
