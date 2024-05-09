@@ -26,11 +26,15 @@ echo "deb http://deb.anydesk.com/ all main" | sudo tee
 /etc/apt/sources.list.d/anydesk-stable.list
 sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 
+# Spotify kurulumu
+curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+
 ## Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-## SublimeMerge,Vscode, Anydesk yükle
-sudo apt install anydesk sublime-merge code  -y
+## Spotify,Anydesk,SublimeMerge,Vscode yükle
+sudo apt install spotify-client anydesk sublime-merge code  -y
 
 #### Fare için ayarlar
 ##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
@@ -48,8 +52,8 @@ sudo apt install gnome-shell-extension-manager -y
 
 sudo apt install snapd
 
-#### Snap Store vlc, potify, discord, prospect-mail yükleme
-sudo snap install vlc spotify discord prospect-mail 
+#### Snap Store vlc,discord, prospect-mail yükleme
+sudo snap install vlc discord prospect-mail 
 
 #### Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
