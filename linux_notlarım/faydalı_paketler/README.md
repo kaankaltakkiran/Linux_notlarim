@@ -230,6 +230,23 @@ sudo apt install curl
 curl http://releases.ubuntu.com/20.04/ubuntu-20.04.3-desktop-amd64.iso
 ```
 
+## GnuPG
+**GnuPG, dosya ve veri şifreleme için güçlü bir araçtır ve Ubuntu üzerinde kolayca** kullanılabilir.
+### GnuPG nasıl yüklenir ?
+```BASH
+sudo apt-get install gnupg
+```
+### Dosya veya klasör nasıl şifrelenir ?
+Aşığıdaki **komut ile dosya veya klasör** şifreleyebilirsiniz.
+```BASH
+gpg -c dosya_adı
+```
+**Bu komut, dosyayı simetrik şifreleme ile şifreler ve sizden bir şifre girmeniz** ister.
 
-
+**Şifre girdiğinizde, dosya_adı.gpg adında şifrelenmiş** bir dosya oluşturulur.
+### Şifreli Dosya veya klasör nasıl çözülür?
+Aşığıdaki **komut ile dosya veya klasör** şifresini çözebilirsiniz.
+```BASH
+gpg dosya_adı.gpg
+```
 
