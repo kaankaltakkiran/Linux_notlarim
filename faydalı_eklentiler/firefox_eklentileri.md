@@ -5,6 +5,18 @@ Bu eklenti ile ,**bir metni herhangi bir class özelliğiyle veya etiketiyle kop
 
 Detaylı incelemek için ve yüklemek isterseniz bağlantıya tıklayabilirsiniz:[Copy PlainText](https://addons.mozilla.org/tr/firefox/addon/copy-plaintext/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=featured)
 
+## Buster: Captcha Solver for Humans eklentisi
+Bu eklenti, **Captcha gibi doğrulamaları çözmeye gerek kalmadan otamatik doğrulamaya** yarar.
+
+Detaylı incelemek için ve yüklemek isterseniz bağlantıya tıklayabilirsiniz:[Buster: Captcha Solver for Humans](https://addons.mozilla.org/tr/firefox/addon/buster-captcha-solver/)
+
+## Unhook: Remove YouTube Recommended Videos Comments eklentisi
+Bu eklenti, **yotube sayfasını istediğiniz gibi düzenlemeye** yarıyor.
+
+Örneğin **önerilerin videoları görmek istemiyorsanız** bunu kapatabilirsiniz.
+
+Detaylı incelemek için ve yüklemek isterseniz bağlantıya tıklayabilirsiniz:[Unhook: Remove YouTube Recommended Videos Comments](https://addons.mozilla.org/tr/firefox/addon/youtube-recommended-videos/)
+
 ## Adblock Plus eklentisi
 Bu eklenti, **yotube,facebook gibi diğer web sayfalarında çıkan reklamları** engelliyor. 
 
