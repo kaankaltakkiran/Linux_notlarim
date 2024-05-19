@@ -30,3 +30,7 @@ Shell Operatörleri Detaylı Bilgi: [Shell Operatörleri](https://github.com/kaa
 Linuxta **komut yazarken sıkça kullanılan kısayollar**.
 
 Komut Satırı Kısayolları Detaylı Bilgi: [Komut Satırı Kısayolları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlar%C4%B1m/komut_notlar%C4%B1m/k%C4%B1sayollar.md)
+
+## Yaralandığım Kaynaklar:
+
+ Temel Linux Komutları Detaylı Bilgi: [Temel Linux Komutları](https://yakupseker.medium.com/her-linux-kullan%C4%B1c%C4%B1s%C4%B1n%C4%B1n-bilmesi-gereken-temel-komutlar-ve-tu%C5%9F-k%C4%B1sayollar%C4%B1-125-komut-1552423cf7db)
