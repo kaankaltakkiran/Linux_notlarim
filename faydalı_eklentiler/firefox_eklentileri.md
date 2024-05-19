@@ -17,6 +17,12 @@ Bu eklenti, **yotube sayfasını istediğiniz gibi düzenlemeye** yarıyor.
 
 Detaylı incelemek için ve yüklemek isterseniz bağlantıya tıklayabilirsiniz:[Unhook: Remove YouTube Recommended Videos Comments](https://addons.mozilla.org/tr/firefox/addon/youtube-recommended-videos/)
 
+## TWP - Translate Web Pages eklentisi
+Bu eklenti, **web sitesini istediğiniz dile** çeviriyor.
+
+Detaylı incelemek için ve yüklemek isterseniz bağlantıya tıklayabilirsiniz:[TWP - Translate Web Pagess](https://addons.mozilla.org/tr/firefox/addon/traduzir-paginas-web/)
+
+
 ## Adblock Plus eklentisi
 Bu eklenti, **yotube,facebook gibi diğer web sayfalarında çıkan reklamları** engelliyor. 
 
