@@ -2,6 +2,7 @@
 
 ## Eklentiler nasıl yüklenir ?
 Aşığıdaki **bağlantıya tıklayarak çok kolay bir şekilde Gnome masaüstü ortamına** eklenti kurabilirsiniz.
+
 Eklenti Yükleme Sayfası: [Gnome Extansion](https://extensions.gnome.org/)
 
 Başka bir seçenek ise aşığıdaki **komut ile extansion managerı** yükleyip kurabilirsiniz.
