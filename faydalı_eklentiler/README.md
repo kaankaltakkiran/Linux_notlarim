@@ -2,6 +2,11 @@
 **Günlük kullanımda ve yazılım geliştirme aşamasında** kullandığım faydalı eklentilerin notları bulunmaktadır.
 
 ## Gnome Masaüstü Ortamında Kullandığım Eklentiler
-**Gnome masaüstü ortamında** kullandığım eklentiler hakkında detaylı bilgiler içermektedir.
+**Gnome masaüstü ortamında kullandığım eklentiler** hakkında detaylı bilgiler içermektedir.
  
 Detaylı Bilgi: [Gnome Masaüstü Ortamında Kullandığım Eklentiler](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/faydal%C4%B1_eklentiler/gnome_eklentileri.md)
+
+## Visual Studio Code'da Kullandığım Eklentiler
+**Visual studio code'da kullandığım eklentiler** hakkında detaylı bilgiler içermektedir.
+ 
+Detaylı Bilgi: [Visual Studio Code'da Kullandığım Eklentiler](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/faydal%C4%B1_eklentiler/vscode_eklentileri.md)
