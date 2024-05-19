@@ -4,4 +4,4 @@
 ## Gnome Masaüstü Ortamında Kullandığım Eklentiler
 **Gnome masaüstü ortamında** kullandığım eklentiler hakkında detaylı bilgiler içermektedir.
  
-Detaylı Bilgi: [Gnome Masaüstü Ortamında Kullandığım Eklentiler](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/faydal%C4%B1_eklentiler/gnome_shell_extensions.md)
+Detaylı Bilgi: [Gnome Masaüstü Ortamında Kullandığım Eklentiler](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/faydal%C4%B1_eklentiler/gnome_eklentileri.md)
