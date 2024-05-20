@@ -250,3 +250,12 @@ Aşığıdaki **komut ile dosya veya klasör** şifresini çözebilirsiniz.
 gpg dosya_adı.gpg
 ```
 
+## Zip dosyası nasıl şifrelenir ?
+Aşığıdaki komut ile bir dosya veya klasörü şifreleyebilirsiniz.
+```BASH
+zip -er deneme_zip_dosyası.zip deneme.txt
+```
+> **Note:** -e parametresi parametresi şifrelemeyi etkinleştirir.
+
+> -r parametresi klasörün içindeki tüm dosya ve alt klasörleri ZIP dosyasına ekler.
+
