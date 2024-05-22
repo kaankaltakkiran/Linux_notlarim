@@ -20,6 +20,19 @@ sudo ubuntu-drivers autoinstall
 # Sık kullanılan faydalı paketleri kur
 sudo apt install ffmpeg wine  imagemagick guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl -y
 
+# Apache kurulumu
+sudo apt install apache2 apache2-utils -y
+# Apache varsayılan dosyasını sil
+sudo rm -f /var/www/html/index.html
+# Sistem açıldığında apache servisini otomatik başlat
+sudo systemctl enable apache2
+# Apache servisini yeniden başlat
+sudo service apache2 restart
+# Aktif kullanıcıyı Apache'nin varsayılan grubuna ekle (www-data)
+sudo adduser $USER www-data
+# Apache'nin varsayılan dizinine aktif kullanıcıyı yetkilendir
+sudo chown -R $USER:www-data /var/www/html/
+
 # vscode kurulumu
 ## vscode için güvenilir depolara vscode'un kendi deposunu ve imzasını ekle
 wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
