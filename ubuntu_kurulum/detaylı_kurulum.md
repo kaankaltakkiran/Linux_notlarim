@@ -50,6 +50,13 @@ sudo service apache2 restart
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
 ```
+## Php 7.4 Kurulumu
+```BASH
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt update
+sudo apt install composer -y
+sudo service apache2 restart
+```
 
 ## Node.js ve Npm kurulumu
 
