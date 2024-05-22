@@ -38,6 +38,19 @@ sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
 ```
+## Apache Kurulumu
+```BASH
+sudo apt install apache2 apache2-utils -y
+sudo rm -f /var/www/html/index.html
+sudo systemctl enable apache2
+sudo service apache2 restart
+```
+## Apache Dizin Ayarları
+```BASH
+sudo adduser $USER www-data
+sudo chown -R $USER:www-data /var/www/html/
+```
+
 ## Node.js ve Npm kurulumu
 
 ```BASH
