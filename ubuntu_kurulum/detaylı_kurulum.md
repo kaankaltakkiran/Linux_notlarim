@@ -79,6 +79,12 @@ sudo update-alternatives --config php
 sudo update-alternatives --set php /usr/bin/php7.4
 
 ```
+## Adminer Kurulumu
+```BASH
+mkdir /var/www/html/adminer
+wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
+```
+  > **Note**: Adminer programını kullanmak için [adrese](http://127.0.0.1/adminer)  tıklayın.
 
 ## Node.js ve Npm kurulumu
 
