@@ -35,6 +35,32 @@ sudo apt update -y
 ## Spotify,Anydesk,SublimeMerge,Vscode yükle
 sudo apt install spotify-client anydesk sublime-merge code -y
 
+# Apache kurulumu
+sudo apt install apache2 apache2-utils -y
+sudo rm -f /var/www/html/index.html
+sudo systemctl enable apache2
+sudo service apache2 restart
+sudo adduser $USER www-data
+sudo chown -R $USER:www-data /var/www/html/
+
+# Php 7.4 kurulumu
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt update
+sudo apt install php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-pgsql php7.4-xml php7.4-redis libapache2-mod-php7.4 -y
+sudo apt install composer -y
+sudo service apache2 restart
+# Adminer kurulumu
+mkdir /var/www/html/adminer
+wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
+
+# MySQL / MariaDB kurulumu
+sudo apt install mariadb-server mariadb-client -y
+sudo systemctl enable mariadb
+sudo service mariadb restart
+# MySQL Root kullanıcısı için şifreyi değiştir
+sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
+
+
 #### Fare için ayarlar
 ##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
@@ -63,5 +89,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
+
+# Kurulum test
+php -v
+apache2 -v
+mysql --version
 
 echo "\n\n\n=== KURULUM TAMAMLANDI ===\n\n\n"
