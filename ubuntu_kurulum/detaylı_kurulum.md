@@ -86,6 +86,20 @@ wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
 ```
   > **Note**: Adminer programını kullanmak için [adrese](http://127.0.0.1/adminer)  tıklayın.
 
+## MySQL / MariaDB Kurulumu
+```BASH
+# MySQL / MariaDB kurulumu
+sudo apt install mariadb-server mariadb-client -y
+# Sistem açıldığında MySQL servisini otomatik başlat
+sudo systemctl enable mariadb
+# MySQL servisini yeniden başlat
+sudo service mariadb restart
+
+# MySQL Root kullanıcısı için şifreyi değiştir
+# sudo mysql_secure_installation
+sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
+```
+
 ## Node.js ve Npm kurulumu
 
 ```BASH
