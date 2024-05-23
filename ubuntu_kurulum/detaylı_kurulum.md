@@ -50,6 +50,12 @@ sudo service apache2 restart
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
 ```
+## Masaüzerine HTML klasörü kısayolunun açılması
+```BASH
+ cd ~/Desktop
+ln -s /var/www/html/
+sudo rm -f /var/www/html/index.html
+```
 ## Php 7.4 Kurulumu
 ```BASH
 sudo add-apt-repository -y ppa:ondrej/php
