@@ -60,7 +60,12 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt update -y
 
 # Spotify,Anydesk,SublimeMerge,Vscode yükle
-sudo apt install composer php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-pgsql php7.4-xml php7.4-redis libapache2-mod-php7.4 spotify-client anydesk sublime-merge code -y
+sudo apt install spotify-client anydesk sublime-merge code  -y
+## PHP 7.4 yükle
+sudo apt install php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-pgsql php7.4-xml php7.4-redis libapache2-mod-php7.4 -y
+## PHP composer paketini kur
+sudo apt install composer -y
+## PHP'nin çalışmaya başlaması için Apache'yi yeniden başlat
 sudo service apache2 restart
 
 # MySQL / MariaDB kurulumu
