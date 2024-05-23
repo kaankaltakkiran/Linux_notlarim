@@ -22,16 +22,19 @@ sudo apt install ffmpeg wine  imagemagick guake guake-indicator pv meld vim axel
 
 # Apache kurulumu
 sudo apt install apache2 apache2-utils -y
-# Apache varsayılan dosyasını sil
+## Apache varsayılan dosyasını sil
 sudo rm -f /var/www/html/index.html
-# Sistem açıldığında apache servisini otomatik başlat
+## Sistem açıldığında apache servisini otomatik başlat
 sudo systemctl enable apache2
-# Apache servisini yeniden başlat
+## Apache servisini yeniden başlat
 sudo service apache2 restart
-# Aktif kullanıcıyı Apache'nin varsayılan grubuna ekle (www-data)
+## Aktif kullanıcıyı Apache'nin varsayılan grubuna ekle (www-data)
 sudo adduser $USER www-data
-# Apache'nin varsayılan dizinine aktif kullanıcıyı yetkilendir
+## Apache'nin varsayılan dizinine aktif kullanıcıyı yetkilendir
 sudo chown -R $USER:www-data /var/www/html/
+
+# Php 7.4 Kurulumu
+sudo add-apt-repository -y ppa:ondrej/php
 
 # vscode kurulumu
 ## vscode için güvenilir depolara vscode'un kendi deposunu ve imzasını ekle
@@ -53,39 +56,62 @@ sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
-## Depolarda yer alan paketlerin güncel listesini indir
+# Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-## Spotify,Anydesk,SublimeMerge,Vscode yükle
-sudo apt install spotify-client anydesk sublime-merge code  -y
+# Spotify,Anydesk,SublimeMerge,Vscode yükle
+sudo apt install composer php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-pgsql php7.4-xml php7.4-redis libapache2-mod-php7.4 spotify-client anydesk sublime-merge code -y
+sudo service apache2 restart
 
-#### Fare için ayarlar
-##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
+# MySQL / MariaDB kurulumu
+sudo apt install mariadb-server mariadb-client -y
+## Sistem açıldığında MySQL servisini otomatik başlat
+sudo systemctl enable mariadb
+## MySQL servisini yeniden başlat
+sudo service mariadb restart
+
+# MySQL Root kullanıcısı için şifreyi değiştir
+## mysql parola belirleme
+sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
+
+# Adminer Kurulumu
+mkdir /var/www/html/adminer
+wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
+
+# Fare için ayarlar
+## Dock ünitesinde program simgesine tıklayınca küçült/büyült
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-##### Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
+## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
-#### Guake terminal kurulumu
+# Guake terminal kurulumu
 sudo apt install guake -y
 
-#### Gnome Extansion Manger Kurulumu
+# Gnome Extansion Manger Kurulumu
 sudo apt install gnome-shell-extension-manager -y
 
-#### Snap Store kurulumu
+# Snap Store kurulumu
 
 sudo apt install snapd
 
-#### Snap Store vlc,discord, prospect-mail yükleme
+# Snap Store vlc,discord, prospect-mail yükleme
 sudo snap install vlc discord prospect-mail
 
-#### Node.js ve Npm İçin Nvm Kurulumu
+# Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 
-#### GIT ayarları
+# GIT ayarları
 sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
+
+# Doğru kurulum yapıldığının test edilmesi
+npm -v
+node -v
+php -v
+apache2 -v
+mysql --version
 
 echo "\n\n\n=== KURULUM TAMAMLANDI ===\n\n\n"
 ```
