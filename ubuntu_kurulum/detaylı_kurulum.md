@@ -114,6 +114,15 @@ nvm install 20
 node -v
 npm -v 
 ```
+## Doğru kurulum yapıldığının test edilmesi
+
+```BASH
+npm -v
+node -v
+php -v
+apache2 -v
+mysql --version
+```
 
 ## AnyDesk Kurulumu
 
