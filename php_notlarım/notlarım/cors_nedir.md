@@ -31,6 +31,7 @@ Bu başlık, hangi domainlerin bu kaynağa erişim yapabileceğini belirler. `*`
 Belirli bir domain izin vermek isterseniz, `*` yerine domain adını kullanabilirsiniz (örneğin, http://example.com).
 
 2. `header('Access-Control-Allow-Methods: GET, POST, OPTIONS')`:
+
 Bu başlık, hangi HTTP yöntemlerinin (GET, POST, OPTIONS gibi) izinli olduğunu belirler.
 
  Bu örnekte GET, POST ve OPTIONS yöntemlerine izin verilmiştir.
