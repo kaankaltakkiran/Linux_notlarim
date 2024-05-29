@@ -32,9 +32,9 @@ Belirli bir domain izin vermek isterseniz, `*` yerine domain adını kullanabili
 
 2. `header('Access-Control-Allow-Methods: GET, POST, OPTIONS')`:
 
-Bu başlık, hangi HTTP yöntemlerinin (GET, POST, OPTIONS gibi) izinli olduğunu belirler.
+- Bu başlık, hangi HTTP yöntemlerinin (GET, POST, OPTIONS gibi) izinli olduğunu belirler.
 
- Bu örnekte GET, POST ve OPTIONS yöntemlerine izin verilmiştir.
+ - Bu örnekte GET, POST ve OPTIONS yöntemlerine izin verilmiştir.
 
 3. `header('Access-Control-Allow-Headers: Content-Type, Authorization')`:
 Bu başlık, hangi özel başlıkların izinli olduğunu belirler. 
