@@ -81,7 +81,7 @@ if (isset($data->name) && isset($data->age)) {
  ```
  1. `json_decode()`:
 -  Json formatındaki verileri php formatına çevirir.
- 1. `file_get_contents("php://input")`:
+ 2. `file_get_contents("php://input")`:
 -  Bu, gönderilen POST isteğinin gövdesini alır, yani '{"name":"John Doe","age":30}' metnini.
 
 - `php://input`, PHP'de HTTP isteğinin gövdesine doğrudan erişmek için kullanılan özel bir veri akış kaynağıdır. Belirli durumlarda, özellikle ham POST ve PUT istekleri için kullanışlıdır.
