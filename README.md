@@ -18,3 +18,6 @@
 
  [TypeScript Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/TypeScript_notlar%C4%B1m)
 
+ ## Php Notlarım
+ [Php Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/php_notlar%C4%B1m)
+
