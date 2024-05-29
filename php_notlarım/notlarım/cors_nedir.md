@@ -25,7 +25,7 @@ if ($method === 'OPTIONS') {
  ```
 ### CORS Başlıklarının Anlamı Nedir?
 
-1. `header('Access-Control-Allow-Origin: *')`:
+#### `header('Access-Control-Allow-Origin: *')`:
 Bu başlık, hangi domainlerin bu kaynağa erişim yapabileceğini belirler. `*` kullanmak, tüm domainlere izin verir. 
 
 Belirli bir domain izin vermek isterseniz, `*` yerine domain adını kullanabilirsiniz (örneğin, http://example.com).
@@ -39,12 +39,15 @@ Bu başlık, hangi HTTP yöntemlerinin (GET, POST, OPTIONS gibi) izinli olduğun
 Bu başlık, hangi özel başlıkların izinli olduğunu belirler. 
 
 Bu örnekte Content-Type ve Authorization başlıklarına izin verilmiştir.
+
 4. `header('Content-Type: application/json')`:
 Bu başlık, sunucunun döndüreceği içeriğin türünü belirtir.
 
  Bu örnekte **JSON** olarak belirtilmiştir.
+
  5. `$method = $_SERVER['REQUEST_METHOD']`:
 Bu satır, gelen HTTP isteğinin yöntemini alır (GET, POST, OPTIONS gibi).
+
 > "OPTIONS" isteği, tarayıcı tarafından sunucuya gönderilen bir preflight (ön kontrol) isteğidir. Bu istek, belirli **bir HTTP isteğinin (genellikle GET, POST, PUT, DELETE vb.) güvenli olup olmadığını kontrol eder**.
 
   6. `if ($method === 'OPTIONS') { http_response_code(200); exit; }`:
