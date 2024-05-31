@@ -70,3 +70,114 @@ obj[symbol2] = 'value2';
 console.log(obj[symbol1]); // "value1"
 console.log(obj[symbol2]); // "value2"
  ```
+ # İlkel Olamyan Veri Tipleri
+   ## Nesneler (Objects):
+  ```js
+// Bir öğrenci nesnesi örneği
+let student = {
+    name: "John",
+    age: 25,
+    grade: "A"
+};
+ ```
+  ## Diziler (Arrays)
+  ```js
+// Bir dizi örneği
+let numbers: number[] = [1, 2, 3, 4, 5];
+ ```
+   ## Tuple
+  ```js
+  //Tuple belirli bir sayıda elementin ve her bir elementin farklı tiplere sahip olabileceği arraydir.
+let myTuple: [string, number] = ['hello', 123];
+ ```
+## Enum
+  ```js
+  //birden fazla metin, sayı veri tipini tek bir koleksiyon içinde tutar
+enum PrintMedia {
+  Newspaper = 1,
+  Newsletter,
+  Magazine,
+  Book
+}
+ ```
+ ## Union
+Örneğin:
+  ```js
+  //Union tipi bir değişkenin belirtilen herhangi bir tipte
+function printId(id: number | string) {
+  console.log("Your ID is: " + id);
+}
+// OK ✅
+printId(101);
+// OK ✅
+printId("202");
+ ```
+ ## Fonksiyonlar (Functions)
+  ```js
+// Bir fonksiyon örneği
+function greet(name: string): void {
+    console.log("Hello, " + name + "!");
+}
+
+greet("John"); // Çıktı: Hello, John!
+ ```
+
+ ## Any
+  ```js
+  //belirli bir tipe sahip olmadığı zaman veya türü dinamik olarak belirlenmesinde kullanılır
+let dynamicValue: any = 10;
+dynamicValue = "Hello";
+ ```
+   ## Type
+  ```js
+  //bir tür tanımlamak için kullanılır
+type Point = {
+    x: number;
+    y: number;
+};
+
+ ```
+   ## Interface
+  ```js
+  //bir tür ve onun ilişkilendirilmiş özelliklerini tanımlamak için kullanılır
+interface Point {
+    x: number;
+    y: number;
+}
+// veya
+interface User {
+    id: number;
+    username: string;
+    email: string;
+}
+ ```
+ > **Note**: **Type isimlendirmesi ve Interface birbirlerine oldukça benzerler**. Çoğu durumda birini diğeri yerinde kullanabilirsiniz, Interface'in sunduğu tüm özellikler type için de geçerlidir.
+
+ > **Aralarındaki en büyük fark type'ın yeni propertyler için yeniden açılamayacağı** ancak **interface'in her zaman genişletilebilir** olmasıdır.
+
+  Örneğin, **var olan Interface'e yeni alanlar** ekleyebiliyoruz:
+  ```js
+  //type'ı oluşturulduktan sonra değiştirelebilir
+interface Window {
+  title: string
+}
+
+interface Window {
+  ts: TypeScriptAPI
+}
+
+const src = 'const a = "Hello World"';
+window.ts.transpileModule(src, {});
+ ```
+  ```js
+  //type'ı oluşturulduktan sonra değiştiremiyoruz
+type Window = {
+  title: string
+}
+
+type Window = {
+  ts: TypeScriptAPI
+}
+
+ // Error: Duplicate identifier 'Window'. 🚨
+ ```
