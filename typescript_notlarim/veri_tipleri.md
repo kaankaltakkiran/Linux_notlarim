@@ -176,3 +176,23 @@ type Window = {
 
  // Error: Duplicate identifier 'Window'. 🚨
  ```
+ # Literal types(Sabit Türler)
+## Literal types
+ ```js
+let x: "hello" = "hello";
+
+✅ // OK
+x = "hello";
+
+x = "howdy";
+🚨 Type '"howdy"' is not assignable to type '"hello"'.
+ ```
+  ```js
+let direction: 'up' | 'down' | 'left' | 'right'; // direction değişkeni sadece 'up', 'down', 'left' veya 'right' değerlerinden birine sahip olabilir.
+direction = 'up'; // geçerli
+direction = 'diagonal'; // hata: 'diagonal' değeri izin verilen değerler arasında değil
+
+let statusCode: 200 | 404 | 500; // statusCode değişkeni sadece 200, 404 veya 500 değerlerinden birine sahip olabilir.
+statusCode = 200; // geçerli
+statusCode = 400; // hata: 400 değeri izin verilen değerler arasında değil
+ ```
