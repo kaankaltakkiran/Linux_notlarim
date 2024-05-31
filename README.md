@@ -4,10 +4,6 @@
 
 - [Linux Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlar%C4%B1m)
 
-- [Linux Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlar%C4%B1m)
-- [Linux Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlar%C4%B1m)
-- [Linux Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlar%C4%B1m)
-- [Linux Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlar%C4%B1m)
 ### [Ubuntu Kurulum Notları](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum)
 
 ### [Ubuntu'da,Firefox'ta ve VSCode'da Kullandığım Eklentiler](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/faydal%C4%B1_eklentiler)
