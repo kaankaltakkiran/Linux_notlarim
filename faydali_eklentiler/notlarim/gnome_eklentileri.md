@@ -1,107 +1,68 @@
 # Ubuntu Gnome Masaüstü Ortamında Kullanıdğım Eklentiler
 
-## Eklentiler nasıl yüklenir ?
-Aşığıdaki **bağlantıya tıklayarak çok kolay bir şekilde Gnome masaüstü ortamına** eklenti kurabilirsiniz.
+## [Gnome Eklentiler Nasıl Yüklenir ](https://extensions.gnome.org/)
 
-Eklenti Yükleme Sayfası: [Gnome Extansion](https://extensions.gnome.org/)
-
-Başka bir seçenek ise aşığıdaki **komut ile extansion managerı** yükleyip kurabilirsiniz.
+komut ile extansion managerı yükleyip kurabilirsiniz.
 ```bash
 sudo apt install gnome-shell-extension-manager
 ```
-## Apps Menu eklentisi
-Bilgisayarınızda yüklü olan **uygulamaları çok güzel bir şekilde kategorize** ederek listeliyor.
+## [Apps Menu](https://extensions.gnome.org/extension/6/applications-menu/)
+Uygulamaları çok güzel bir şekilde kategorize ederek listeliyor.
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Apps Menu](https://extensions.gnome.org/extension/6/applications-menu/)
+## [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
+Kolay bir şekilde bluetooth bağlantısı yapmamıza olanak sağlıyor.
 
-## Bluetooth Quick Connect eklentisi
-Bu eklenti **kolay bir şekilde bluetooth bağlantısı** yapmamıza olanak sağlıyor.
+## [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
+GNOME masaüstü ortamındaki çeşitli bölgelere (üst panel, gösterge tablosu, genel bakış vb.) bulanıklaştırma efekti ekler.
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
+## [Burn My Windows](https://extensions.gnome.org/extension/4679/burn-my-windows/)
+Pencereyi kapattığınızda görsel bir efekt sunuyor.
 
-## Blur my Shell  eklentisi
-Bu eklenti, **GNOME masaüstü ortamındaki çeşitli bölgelere (üst panel, gösterge tablosu, genel bakış vb.) bulanıklaştırma** efekti ekler.
+## [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
+Bilgisayarınızın uykuya geçmesini önler.
 
- Bu **görsel iyileştirme, masaüstü ortamına daha estetik ve modern** bir görünüm kazandırır. 
+## [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
+En son kopyaladığınız yazıları liste halinde gösteriyor.
 
-## Burn My Windows eklentisi
-Bu eklenti, bir **pencereyi kapattığınızda görsel bir efekt** sunuyor.
+## [Clipboard Indicator](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
+Pencereyi süreklediğinizde görsel efekt sunuyor.
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Burn My Windows](https://extensions.gnome.org/extension/4679/burn-my-windows/)
+## [Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
+Pencereyi açtığınızda veya büyültüğünüzde görsel efekt sunuyor.
 
-## Caffeine eklentisi
-Bu eklenti, **bilgisayarınızın uykuya geçmesini** önler.
+## [Coverflow Alt-Tab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/)
+`alt-tab` yaptığınızda görsel bir efekt sunuyor.
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
+## [Disconnect Wifi](https://extensions.gnome.org/extension/904/disconnect-wifi/)
+Kolay bir şekilde bağlı wifi bağlantısını kesebiliyorsunuz.
 
-## Clipboard Indicator eklentisi
-Bu eklenti, **en son kopyaladığınız yazıları liste halinde** gösteriyor.
+## [ Refresh Wifi Connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
+Kolayca wifi bağlantısı yapabiliyorsunuz.
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
+## [Extension List](https://extensions.gnome.org/extension/3088/extension-list/)
+Yüklü eklentileri listeleyebilir ve active veye inactive yapabilirsiniz.
 
-## Compiz alike magic lamp effect eklentisi
-Bu eklenti, **pencereyi süreklediğinizde görsel efekt** sunuyor.
+## [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
+Üst barda yer alan kısayolları görünümlerini, boşluklarını ayarlayabilirsiniz.
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Clipboard Indicator](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
+## [Media Controls](https://extensions.gnome.org/extension/4470/media-controls/)
+Örneğin müzik dinlerken kolayca durdurup veya geçebilme imkani sağlar.
 
-## Compiz windows effect eklentisi
-Bu eklenti, **pencereyi açtığınızda veya büyültüğünüzde görsel efekt** sunuyor.
+## [OpenWeather ](https://extensions.gnome.org/extension/750/openweather/)
+Yaşadığınız bölgedeki güncel hava durumu bilgisini gösterir.
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Compiz windows effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
+## [Places Status Indicator ](https://extensions.gnome.org/extension/8/places-status-indicator/)
+Bilgisayarınzdaki indirilenler,resimler,belgeler gibi klasörleri listeler.
 
-## Coverflow Alt-Tab  eklentisi
-Bu eklenti, **alt-tab yaptığınızda görsel bir efekt** sunuyor.
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Coverflow Alt-Tab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/)
+## [Removable Drive Menu ](https://extensions.gnome.org/extension/7/removable-drive-menu/)
+Örneğin bilgisayara taktığımız flash belleği kolayca çıkartma imkanı sunuyor.
 
-## Disconnect Wifi  eklentisi
-Bu eklenti, **kolay bir şekilde bağlı wifi bağlantısını** kesebiliyorsunuz.
+## [Sound Input & Output Device Chooser ](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
+Kolay bir şekilde ses cihazı ayarlma imkanı sunuyor.
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[ Disconnect Wifi](https://extensions.gnome.org/extension/904/disconnect-wifi/)
+## [Vitals ](https://extensions.gnome.org/extension/1460/vitals/)
 
-## Refresh Wifi Connections eklentisi
-Bu eklenti, **kolayca wifi bağlantısı** yapabiliyorsunuz.
+Anlık olarak işlemci çalışma seviyesi, indirme hızı gibi detaylı bilgiler sunuyor.
 
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[ Refresh Wifi Connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
-
-## Extension List eklentisi
-Bu eklenti, **yüklü eklentileri listeleyebilir ve active veye inactive** yapabilirsiniz.
-
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Extension List](https://extensions.gnome.org/extension/3088/extension-list/)
-
-## Just Perfection eklentisi
-Bu eklenti, **üst barda yer alan kısayolları görünümlerini, boşluklarını** ayarlayabilirsiniz.
-
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
-
-## Media Controls eklentisi
-Bu eklenti, **örneğin müzik dinlerken kolayca durdurup veya geçebilme** imkani sağlar.
-
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Media Controls](https://extensions.gnome.org/extension/4470/media-controls/)
-
-## OpenWeather eklentisi
-Bu eklenti, **yaşadığınız bölgedeki güncel hava durumu bilgisini** gösterir.
-
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[OpenWeather ](https://extensions.gnome.org/extension/750/openweather/)
-
-## Places Status Indicator eklentisi
-Bu eklenti, **bilgisayarınzdaki indirilenler,resimler,belgeler gibi klasörleri** listeler.
-
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Places Status Indicator ](https://extensions.gnome.org/extension/8/places-status-indicator/)
-
-## Removable Drive Menu  eklentisi
-Bu eklenti, **örneğin bilgisayara taktığımız flash belleği kolayca çıkartma** imkanı sunuyor.
-
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Removable Drive Menu ](https://extensions.gnome.org/extension/7/removable-drive-menu/)
-
-## Sound Input & Output Device Chooser  eklentisi
-Bu eklenti, **kolay bir şekilde ses cihazı ayarlma imkanı** sunuyor.
-
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Sound Input & Output Device Chooser ](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
-
-## Vitals eklentisi
-Bu eklenti, **anlık olarak işlemci çalışma seviyesi, indirme hızı gibi detaylı bilgiler** sunuyor.
-
-Detaylı incelemek için bağlantıya tıklayabilirsiniz:[Vitals ](https://extensions.gnome.org/extension/1460/vitals/)
