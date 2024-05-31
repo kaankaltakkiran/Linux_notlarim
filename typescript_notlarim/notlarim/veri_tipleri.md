@@ -1,7 +1,5 @@
 # İlkel Veri Tipleri
-TypeScript'te kullanılan ilkel veri tipleri, programlamada temel veri depolama ve işlemleri yapmak için kullanılan basit veri türleridir.
 
-İlkel veri tipleri şunlardır:
 ## Number
   ```js
 let age: number = 25;
