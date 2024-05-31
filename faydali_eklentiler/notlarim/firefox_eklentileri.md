@@ -1,10 +1,12 @@
 # Firefox'da Kullandığım Eklentiler
 
-## Copy PlainText eklentisi
-[Copy PlainText sade bir şekilde metini kopyalar](https://addons.mozilla.org/tr/firefox/addon/copy-plaintext/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=featured)
+## [PlainText](https://addons.mozilla.org/tr/firefox/addon/copy-plaintext/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=featured)
 
-## Buster: Captcha Solver for Humans eklentisi
-Bu eklenti, **Captcha gibi doğrulamaları çözmeye gerek kalmadan otamatik doğrulamaya** yarar.
+Copy PlainText sade bir şekilde metini kopyalar
+## Copy PlainText eklentisi
+[Copy PlainText sade bir şekilde metini kopyalar]()
+
+## [Buster, Captcha gibi doğrulamalarıçözer ](https://addons.mozilla.org/tr/firefox/addon/buster-captcha-solver/)
 
 - [Buster, Captcha gibi doğrulamalarıçözer ](https://addons.mozilla.org/tr/firefox/addon/buster-captcha-solver/)
 
