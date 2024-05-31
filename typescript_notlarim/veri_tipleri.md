@@ -2,27 +2,27 @@
 TypeScript'te kullanılan ilkel veri tipleri, programlamada temel veri depolama ve işlemleri yapmak için kullanılan basit veri türleridir.
 
 İlkel veri tipleri şunlardır:
-## number
+## Number
   ```js
 let age: number = 25;
 let pi: number = 3.14;
  ```
- ## string
+ ## String
   ```js
 let name: string = "John"; //çift tırnak
 let message: string = 'Hello, world!'; //tek tırnak
  ```
-  ## boolean
+  ## Boolean
   ```js
 let isLogged: boolean = true;
 let isOpen: boolean = false;
  ```
- ## null ve undefined
+ ## Null Ve Undefined
   ```js
 let emptyValue: null = null; // bilinçli olarak hiçbir değere sahip değildir
 let notDefined: undefined = undefined; //değişken henüz  tanımlanmamıştır
  ```
-  ## void
+  ## Void
 
   ```js
 function logMessage(): void { //değer döndürmez
@@ -151,11 +151,6 @@ interface User {
     email: string;
 }
  ```
- > **Note**: **Type isimlendirmesi ve Interface birbirlerine oldukça benzerler**. Çoğu durumda birini diğeri yerinde kullanabilirsiniz, Interface'in sunduğu tüm özellikler type için de geçerlidir.
-
- > **Aralarındaki en büyük fark type'ın yeni propertyler için yeniden açılamayacağı** ancak **interface'in her zaman genişletilebilir** olmasıdır.
-
-  Örneğin, **var olan Interface'e yeni alanlar** ekleyebiliyoruz:
   ```js
   //type'ı oluşturulduktan sonra değiştirelebilir
 interface Window {
