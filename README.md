@@ -8,7 +8,7 @@
 
 - [Vue.js Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlar%C4%B1m)
 
-- [Typescript Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/TypeScript_notlar%C4%B1m)
+- [Typescript Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/typescript_notlarim)
 
 - [Php Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/php_notlar%C4%B1m)
 
