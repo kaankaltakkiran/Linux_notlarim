@@ -8,7 +8,7 @@ Sass ve SCSS, CSS kodunu daha düzenli ve okunaklı hale getirmek, tekrarlayan k
 
 ## Sass ve scss avantajları :
 
-_Daha İyi Sözdizimi:_ Sass ve SCSS, daha iyi bir sözdizim sunar. Normal CSS ile karşılaştırıldığında, daha az sembol kullanımı ve daha okunaklı bir yapıya sahiptir. Bu, kodun anlaşılmasını kolaylaştırır ve hata yapma olasılığını azaltır.
+**_Daha İyi Sözdizimi:_** Sass ve SCSS, daha iyi bir sözdizim sunar. Normal CSS ile karşılaştırıldığında, daha az sembol kullanımı ve daha okunaklı bir yapıya sahiptir. Bu, kodun anlaşılmasını kolaylaştırır ve hata yapma olasılığını azaltır.
 
 _Değişkenler:_ Sass ve SCSS, değişken kullanımına olanak tanır. Değişkenler, renkler, yazı tipleri ve diğer stil özelliklerini tek bir yerden yönetmenizi sağlar. Bu, tasarımın tutarlılığını sağlamak ve değişiklikleri daha hızlı yapmak için önemlidir.
 
