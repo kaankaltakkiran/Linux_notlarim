@@ -1,6 +1,6 @@
 # Php Notlarım
 
-- [Ayrıntılı Php Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/php_notlarim/notlarim/ayrintili_php_notlarim)
+- [Ayrıntılı Php Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/php_notlarim/notlarim)
 
 - [Örnek Php Kodlarım](https://github.com/kaankaltakkiran/php_ornekleri)
 
