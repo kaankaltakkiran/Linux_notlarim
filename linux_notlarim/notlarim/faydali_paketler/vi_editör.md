@@ -29,74 +29,74 @@ Vim editörden çıkmak için ```:q! ``` komutu kullanılır.
 sudo apt install vim 
 ```
 ## Vim editör ile dosya nasıl açılır ?
-Aşağıdaki komut **kaan.txt doyasını vim editör** ile açar.
+Aşağıdaki komut kaan.txt doyasını vim editör ile açar.
 ```BASH
 vim kaan.txt
 ```
 ## Vim editör nasıl kullanılır ?
-Vim Editör **tamamen klavye ile** yönetilmektedir. Bu sebeple öncelikle **<kbd>i</kbd> tuşuna basıp ekle (insert) moduna** geçiyoruz. **Sol aşşağı kısımda INSERT** yazdığını göreceksiniz.
+Vim Editör tamamen klavye ile yönetilmektedir. Bu sebeple öncelikle <kbd>i</kbd> tuşuna basıp ekle (insert) moduna geçiyoruz. Sol aşşağı kısımda INSERT yazdığını göreceksiniz.
 Daha sonra metin düzenleme işleminiz bittikten sonra <kbd>Escape</kbd> veya <kbd>Control</kbd> + <kbd>C</kbd> insert modundan çıkılır.
 ## Vim editörden nasıl çıkılır ?
-Aşağıdaki komut **kaydet ama kapatma (write)** işlemini yapar.
+Aşağıdaki komut kaydet ama kapatma (write) işlemini yapar.
 ```BASH
 :w 
 ```
-Aşağıdaki komut **kaydet ve kapat (write quit)** işlemini yapar.
+Aşağıdaki komut kaydet ve kapat (write quit) işlemini yapar.
 ```BASH
 :wq
 ```
-Aşağıdaki komut **kapat (quit) kaydedilmeyen değişiklik var ise hata verir** işlemini yapar.
+Aşağıdaki komut kapat (quit) kaydedilmeyen değişiklik var ise hata verir işlemini yapar.
 ```BASH
 :q!
 ```
 ## Metin kesme, kopyalama, yapıştırma işlemi nasıl yapılır ?
-Aşağıdaki komut **Seçili metni kesmek için kullanılır.**
+Aşağıdaki komut Seçili metni kesmek için kullanılır.
 ```BASH
 d 
 ```
-> **Note:** Aşağıdaki komut **tüm satırı seçerek  kesme işlemi yapılır.**
+> Note: Aşağıdaki komut tüm satırı seçerek  kesme işlemi yapılır.
 ```BASH
 dd
 ```
-Aşağıdaki komut **Seçili metni kopyalamak için kullanılır**.
+Aşağıdaki komut Seçili metni kopyalamak için kullanılır.
 ```BASH
 y
 ```
-> **Note:** Aşağıdaki komut **tüm satırı seçerek  kopyalama işlemi yapılır**.
+> Note: Aşağıdaki komut tüm satırı seçerek  kopyalama işlemi yapılır.
 ```BASH
 yy
 ```
-Aşağıdaki komut **Kesilmiş veya kopyalanan metni yapıştırmak için kullanılır.**
+Aşağıdaki komut Kesilmiş veya kopyalanan metni yapıştırmak için kullanılır.
 ```BASH
 p
 ```
 ## İleri ve Geri Alma işlemi nasıl yapılır ?
-Aşağıdaki komut **Son yapılan işlemi <kbd>U</kbd> ile geri almak için kullanılır.**
+Aşağıdaki komut Son yapılan işlemi <kbd>U</kbd> ile geri almak için kullanılır.
 ```BASH
 u
 ```
-Aşağıdaki komut **Geri alınan bir işlemi <kbd>Control</kbd> + <kbd>R</kbd> ile ileri almak için kullanılır.**
+Aşağıdaki komut Geri alınan bir işlemi <kbd>Control</kbd> + <kbd>R</kbd> ile ileri almak için kullanılır.
 ```BASH
 ctrl+r
 ```
 ## Satır başına ve satır sonuna nasıl gelinir ?
-Aşağıdaki komut **<kbd>0</kbd> ile satırın başına gitmek için kullanılır.**
+Aşağıdaki komut <kbd>0</kbd> ile satırın başına gitmek için kullanılır.
 ```BASH
 0
 ```
-Aşağıdaki komut **<kbd>$</kbd> ile satırın sonuna gitmek için kullanılır**
+Aşağıdaki komut <kbd>$</kbd> ile satırın sonuna gitmek için kullanılır
 ```BASH
 $
 ```
 ## Arama ve değiştirme işlemi nasıl yapılır ?
-Aşağıdaki komut **/arama_kelimesi yazılarak arama işlemi yapılır**
+Aşağıdaki komut /arama_kelimesi yazılarak arama işlemi yapılır
 ```BASH
 /arama_kelimesi
 ```
-Aşağıdaki komut **Metin dosyasında kelime değiştirme işlemi yapılabilir.**
+Aşağıdaki komut Metin dosyasında kelime değiştirme işlemi yapılabilir.
 ```BASH
 :s/eski/yeni/g
 ```
-> **Note:** **s: Bu, "substitute" (değiştir) komutunu temsil eder**. Bu komut, belirli bir metin örneğini başka bir metinle değiştirmek için kullanılır.
+> Note: s: Bu, "substitute" (değiştir) komutunu temsil eder. Bu komut, belirli bir metin örneğini başka bir metinle değiştirmek için kullanılır.
 
-> **g: Bu, "global" anlamına gelir ve komutun bir satırda birden fazla eşleşme bulunursa hepsini değiştirmesini** sağlar. Ancak, g kullanılmazsa, yalnızca bir satırda ilk eşleşme değiştirilir.
+> g: Bu, "global" anlamına gelir ve komutun bir satırda birden fazla eşleşme bulunursa hepsini değiştirmesini sağlar. Ancak, g kullanılmazsa, yalnızca bir satırda ilk eşleşme değiştirilir.
