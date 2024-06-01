@@ -1,6 +1,6 @@
 # Linux, Ubuntu, Vue.Js, Typescript Ve Php Notlarım
 
-- [Linux Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlar%C4%B1m)
+- [Linux Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlarim)
 
 - [Ubuntu Kurulum Notları](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum)
 
