@@ -25,7 +25,7 @@
 
 - [Template Refs](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/template_refs.md)
 
-- [Template Refs](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/template_refs.md)
+- [Ceating a Vue Application](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/template_refs.md)
 
 - [Watchers](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/watchers.md)
 
