@@ -1,9 +1,11 @@
-# Vue.js Notlarım
+# Vue.js, Quasar Framework, Scss Notlarım
 
-## Vue.js Temel Bİlgiler
-Vue.jste bilmemiz gereken bilgilere yer verilmiştir.
+ - [Vue.js Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim)
 
-Bu konular şunlardır: Binding,Computed,İf,For,List,Reactivity,Syntax,Application,Event Handling,Form Input Bindings,Lifecycle Hooks,Watchers,Template Refs ve Components Basics.    
+  - [ Quasar Framework Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/quasar_framework.md)
+
+   - [Scss Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim)
+   
 
  Vue.js Temel Bİlgiler Detaylı Bilgi: [Vue.js Temel Bİlgiler](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlar%C4%B1m/temel_bilgiler)
 
