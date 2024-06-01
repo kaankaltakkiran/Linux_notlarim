@@ -6,7 +6,7 @@
 
 - [Ubuntu'da,Firefox'ta ve VSCode'da Kullandığım Eklentiler](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/faydali_eklentiler)
 
-- [Vue.js Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlar%C4%B1m)
+- [Vue.js Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlarim)
 
 - [Typescript Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/typescript_notlarim)
 

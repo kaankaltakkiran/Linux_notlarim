@@ -1,4 +1,4 @@
-# Vue.js, Quasar Framework, Scss Notlarım
+# Vue.js, Quasar Framework Ve Scss Notlarım
 
  - [Vue.js Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim)
 
