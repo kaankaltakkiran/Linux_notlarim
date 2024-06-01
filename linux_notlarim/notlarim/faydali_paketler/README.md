@@ -11,7 +11,7 @@
 
 - [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/tldr.md)
 
--[Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/wine.md)
+- [Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/wine.md)
 
 
 - [NVM](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/nvm.md)
