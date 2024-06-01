@@ -18,13 +18,13 @@
 - [Genel Php Notlarım](https://github.com/kaankaltakkiran/ornekler) kurulum
 - [Örnek Php Projelerim](https://github.com/kaankaltakkiran/php-proje-resimleri) Php ile geliştirdiğim örnek web siteleri.
 ## Javascript
-- [Javascript Notlarım](https://github.com/kaankaltakkiran/example_js) Temel düzey de javascript nedir? yazım şekli , veri tipleri ve basit örnek uygulamalar.
+- [Javascript Notlarım](https://github.com/kaankaltakkiran/basit_javascript_ornekleri) Temel düzey de javascript nedir? yazım şekli , veri tipleri ve basit örnek uygulamalar.
 ## Vue.js
 - [Vue Eğitim Video](https://www.youtube.com/watch?v=C8jSrj9NmtA&list=PLxyK_IDMxgCUGrfAiM1y3vM01vB-9tQO3) Vue.js eğitim serisi ile vue tanıdım
 
 - [Vue Eğitim Notlarım](https://github.com/kaankaltakkiran/vue_ornekler) Eğitim de öğrendim konular hakkında kodlar
 
-- [Vue.js NOtlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlar%C4%B1m) Vue.js detaylı notlarım.
+- [Vue.js Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim) Vue.js detaylı notlarım.
 
 ## Quasar Framework
-- [Quasar Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlar%C4%B1m/Quasar_Framework.md) Quasar hakkında notlarım
+- [Quasar Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/quasar_framework.md) Quasar hakkında notlarım

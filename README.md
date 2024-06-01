@@ -10,6 +10,6 @@
 
 - [Typescript Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/typescript_notlarim)
 
-- [Php Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/php_notlar%C4%B1m)
+- [Php Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/php_notlarim)
 
 - [Web Programlama Yol Haritam](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/yol_haritam.md)
