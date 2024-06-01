@@ -8,4 +8,9 @@
 
 - [Conditional Rendering](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/conditional_rendering.md)
 
-- [Event Handling](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/conditional_rendering.md)
+- [Event Handling](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/event_handling.md)
+
+- [Form Input Bindings](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/event_handling.md)
+
+
+- [Lifecycle Hooks](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/event_handling.md)
