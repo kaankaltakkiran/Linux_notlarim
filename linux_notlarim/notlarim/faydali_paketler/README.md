@@ -1,20 +1,20 @@
 # Faydalı Paketler
 
-## [Vi Editör Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/vi_editor.md)
+- [Vi Editör Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/vi_editor.md)
 
-## [wormhole](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/wormhole.md)
+- [wormhole](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/wormhole.md)
 
-## [İmagemagick](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/imagemagick.md)
+- [İmagemagick](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/imagemagick.md)
 
-## [ffmpeg](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/ffmpeg.md)
-
-
-## [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/tldr.md)
-
-## [Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/wine.md)
+- [ffmpeg](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/ffmpeg.md)
 
 
-## [NVM](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/nvm.md)
+- [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/tldr.md)
+
+-[Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/wine.md)
+
+
+- [NVM](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/nvm.md)
 
 
 ## gnome-sushi
