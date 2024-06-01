@@ -1,16 +1,16 @@
 # Vue Router 
 
-**Detaylı Kaynak:** [Vue Router ](https://v3.router.vuejs.org/guide/)
+[Vue Router Detaylı Kaynak ](https://v3.router.vuejs.org/guide/)
 
 ## Vue 3 Yönlendirme (Routing) Nedir?
 
-Vue.js’in yönlendirme özelliği, **web uygulamasının farklı sayfalarına geçiş yapmayı sağlar.** Yani kullanıcının URL’sindeki path’i değiştirerek farklı sayfalara geçiş yapabilirsiniz. **Örneğin, kullanıcının “/home” yolundan “/about” yoluna geçiş yapmasını sağlayabilirsiniz.**
+Vue.js’in yönlendirme özelliği, web uygulamasının farklı sayfalarına geçiş yapmayı sağlar. Yani kullanıcının URL’sindeki path’i değiştirerek farklı sayfalara geçiş yapabilirsiniz. Örneğin, kullanıcının “/home” yolundan “/about” yoluna geçiş yapmasını sağlayabilirsiniz.
 
 ## Vue Router nasıl çalışır ?
 
-Vue 3 yönlendirme özelliği, “vue-router” adlı bir kütüphane kullanılarak sağlanır. Bu kütüphane, Vue.js uygulamasında kullanılacak olan bileşenlerin hangi URL’lerle eşleşeceğini tanımlar. **Bu eşleşmeleri oluşturmak için, vue-router’ın “routes” özelliğini kullanabilirsiniz.**
+Vue 3 yönlendirme özelliği, “vue-router” adlı bir kütüphane kullanılarak sağlanır. Bu kütüphane, Vue.js uygulamasında kullanılacak olan bileşenlerin hangi URL’lerle eşleşeceğini tanımlar. Bu eşleşmeleri oluşturmak için, vue-router’ın “routes” özelliğini kullanabilirsiniz.
 
-**Vue 3 yönlendirme özelliği, ayrıca bir URL’deki parametreleri yakalamak ve bir bileşen içinde kullanmak için dinamik URL’ler** de kullanabilirsiniz. Bu, bir URL’deki değeri okuyup, bileşenlerin bu değeri kullanarak farklı sonuçlar üretmesine olanak tanır.
+Vue 3 yönlendirme özelliği, ayrıca bir URL’deki parametreleri yakalamak ve bir bileşen içinde kullanmak için dinamik URL’ler de kullanabilirsiniz. Bu, bir URL’deki değeri okuyup, bileşenlerin bu değeri kullanarak farklı sonuçlar üretmesine olanak tanır.
 
 ## Kurulum
 
@@ -62,7 +62,7 @@ app.use(router) //tüm uygulamada router kullanmak için
 
 app.mount('#app')
 ```
-> **Note**: **main.js te dosyasına oluşturduğumuz routes dosyasını import ediyoruz ve tüm uygulumada kullanabilirliğini** sağlıyoruz.
+> Note: main.js te dosyasına oluşturduğumuz routes dosyasını import ediyoruz ve tüm uygulumada kullanabilirliğini sağlıyoruz.
 app.vue dosyası:
 ```js
 <template>
@@ -71,9 +71,9 @@ app.vue dosyası:
 
 </template>
 ```
-> **Note**: **router-view router içindeki componentleri** gösterir.
+> Note: router-view router içindeki componentleri gösterir.
 Örnek yönledirme:
 ```js
 <router-link to="/users">List Users</router-link>
 ```
-> **Note**: **rotuer-link ile hangi sayfaya gidileciğini** belirtiyoruz. **to ile hangi path ile o sayfaya erişilebilceğini** ayarlıyoruz.
+> Note: rotuer-link ile hangi sayfaya gidileciğini belirtiyoruz. to ile hangi path ile o sayfaya erişilebilceğini ayarlıyoruz.

@@ -1,13 +1,13 @@
 # Conditional Rendering(Koşullu Render) 
 
 ## v-if
-**v-if ile tanımlanan koşulun değeri true** ise  element görünür olur.
+v-if ile tanımlanan koşulun değeri true ise  element görünür olur.
 
-Aşığıdaki örnekte **awesome değeri ture ise ekranda Vue is awesome!**yazar.
+Aşığıdaki örnekte awesome değeri ture ise ekranda Vue is awesome!yazar.
 ```js
 <h1 v-if="awesome">Vue is awesome!</h1>
 ```
-Aşığıdaki örnekte **v-else awesome değeri false ise ekranda Oh no 😢**yazar.
+Aşığıdaki örnekte v-else awesome değeri false ise ekranda Oh no 😢yazar.
 ```js
 <button @click="awesome = !awesome">Toggle</button>
 
@@ -38,10 +38,10 @@ Aşığıdaki örnekteki gibi if-else bloğunu templatlerde de kullanabiliriz:
 </template>
 ```
 ## v-show
-**v-showile tanımlanan koşulun değeri true** ise  element görünür olur.
+v-showile tanımlanan koşulun değeri true ise  element görünür olur.
 
-Aşığıdaki örnekte **awesome değeri ture ise ekranda Vue is awesome!**yazar.
+Aşığıdaki örnekte awesome değeri ture ise ekranda Vue is awesome!yazar.
 ```js
 <h1 v-show="ok">Hello!</h1>
 ```
-> **Note**: **v-if ile v-show farkı şudur: v-if değeri false ise dom da bu element yer almaz ama v-show değeri false ise bu element domda gizli bir şekilde** bulunur.
+> Note: v-if ile v-show farkı şudur: v-if değeri false ise dom da bu element yer almaz ama v-show değeri false ise bu element domda gizli bir şekilde bulunur.

@@ -1,11 +1,11 @@
 # Class and Style Bindings
 
 ## Binding HTML Classes (Html Class Veri Bağlama)
-**Html elementlerin class özelliğine binding işlemi** aşığıdaki gibi yapılır.
+Html elementlerin class özelliğine binding işlemi aşığıdaki gibi yapılır.
 
-Burada **isActive değeri true olarak atanmış hasError değeri false** olarak atanmışdır.
+Burada isActive değeri true olarak atanmış hasError değeri false olarak atanmışdır.
 
-**isActive değeri true olduğu olduğu sadace o özelliği** alacaktır.
+isActive değeri true olduğu olduğu sadace o özelliği alacaktır.
 ```js
 const isActive = ref(true)
 const hasError = ref(false)

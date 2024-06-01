@@ -1,10 +1,9 @@
 # Slots 
+Bileşenler arasında içerik geçişi sağlamak için kullanılır. Propsta olduğu gibi ana componentten alt componente veri aktarılır.
 
-**bileşenler arasında içerik geçişi sağlamak** için kullanılır. **Propsta olduğu gibi ana componentten alt componente veri** aktarılır.
+Böylece bir bileşen içinde tanımlanan içerik, bu bileşeni kullanan yerde belirli bir yerde gösterilebilir. Slotlar, özellikle genişletilebilir veya yeniden kullanılabilir bileşenler oluştururken çok güçlübir araçtır.
 
-**Böylece bir bileşen içinde tanımlanan içerik, bu bileşeni kullanan yerde belirli bir yerde gösterilebilir.** Slotlar, özellikle **genişletilebilir veya yeniden kullanılabilir bileşenler oluştururken çok güçlü**bir araçtır.
-
-Aşığıdaki **component ana** componenttir.
+Aşığıdaki component ana componenttir.
 ```js
 <BaseLayout>
   <template v-slot:header>
@@ -12,7 +11,7 @@ Aşığıdaki **component ana** componenttir.
   </template>
 </BaseLayout>
 ```
-Aşığıdaki **component alt** componenttir.
+Aşığıdaki component alt componenttir.
 ```js
 <BaseLayout>
   <template #header>
@@ -30,7 +29,7 @@ Aşığıdaki **component alt** componenttir.
 </BaseLayout>
 ```
 ## Conditional Slots(Şartlı Slot) 
-**v-if ile slotlarla şart** yapabilirsiniz.
+v-if ile slotlarla şart yapabilirsiniz.
 ```js
 <template>
   <div class="card">
@@ -49,7 +48,7 @@ Aşığıdaki **component alt** componenttir.
 </template>
 ```
 ## Dynamic Slot Names(Dinamik Slot)
-**v-bin(:) ile dinamik slot** oluşturalabilir.
+v-bin(:) ile dinamik slot oluşturalabilir.
 ```js
 <base-layout>
   <template v-slot:[dynamicSlotName]>
@@ -63,7 +62,7 @@ Aşığıdaki **component alt** componenttir.
 </base-layout>
 ```
 ## Scoped Slots(Slot Kapsamı)
-**Propstaki gibi birden fazla slotu aynı anda** alabiliriz. 
+Propstaki gibi birden fazla slotu aynı anda alabiliriz. 
 
 Slot tanımlama:
 ```js
@@ -80,9 +79,9 @@ Slot kullanma
 ```
 ## Fancy List Example 
 
-**uzak verileri yükleme mantığını, bir listeyi görüntülemek için verileri kullanmayı ve hatta sayfalama veya sonsuz kaydırma gibi gelişmiş özellikleri kapsülleyebilir.**
+uzak verileri yükleme mantığını, bir listeyi görüntülemek için verileri kullanmayı ve hatta sayfalama veya sonsuz kaydırma gibi gelişmiş özellikleri kapsülleyebilir.
 
-  **Bununla birlikte, her bir öğenin nasıl görüneceği konusunda esnek olmasını ve her bir öğenin stilini onu tüketen ana bileşene bırakmasını** istiyoruz.
+  Bununla birlikte, her bir öğenin nasıl görüneceği konusunda esnek olmasını ve her bir öğenin stilini onu tüketen ana bileşene bırakmasını istiyoruz.
   
   Örnek kullanım:
 ```js

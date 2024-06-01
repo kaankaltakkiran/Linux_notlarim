@@ -1,8 +1,9 @@
 # Computed Properties(Hesaplan Özellikler) 
-## Computed
-**computed özelliği, bir veya daha fazla bağımlılığı olan bir hesaplama fonksiyonunu içerir**. 
 
-**Bir bağımlılık değiştiğinde, computed özelliğinin içindeki hesaplama fonksiyonu otomatik olarak yeniden çalışır ve sonuç güncellenir**.
+## Computed
+computed özelliği, bir veya daha fazla bağımlılığı olan bir hesaplama fonksiyonunu içerir. 
+
+Bir bağımlılık değiştiğinde, computed özelliğinin içindeki hesaplama fonksiyonu otomatik olarak yeniden çalışır ve sonuç güncellenir.
 
 Aşığıdaki örnekte computed fnksiyonu, hesaplanmış bir değer oluşturur. publishedBooksMessage adında bir hesaplanmış değer oluşturulmuştur. 
 
@@ -32,6 +33,6 @@ const publishedBooksMessage = computed(() => {
 </template>
 ```
 ## Computed ile Metot Arasındaki Fark Nedir?
-**Computed özellikleri, bir değeri hesaplamak ve bağımlılıklarının değiştiğinde otomatik olarak güncellemek için kullanılırken**,
+Computed özellikleri, bir değeri hesaplamak ve bağımlılıklarının değiştiğinde otomatik olarak güncellemek için kullanılırken,
 
-**metotlar genellikle olay tetiklendiğinde bir işlem gerçekleştirmek veya belirli bir davranışı kontrol etmek için** kullanılır.
+metotlar genellikle olay tetiklendiğinde bir işlem gerçekleştirmek veya belirli bir davranışı kontrol etmek için kullanılır.

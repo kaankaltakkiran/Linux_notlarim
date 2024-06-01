@@ -1,11 +1,11 @@
 # Components Basics
 
 ## Components
-​**Vue.js'te bileşenler (components), kullanıcı arayüzünü modüler parçalara ayırmak için kullanılan yapısal** bir özelliktir. 
+​Vue.js'te bileşenler (components), kullanıcı arayüzünü modüler parçalara ayırmak için kullanılan yapısal bir özelliktir. 
 
-**Vue.js uygulamalarında bileşenler, kendi içerikleri, davranışları ve stil özellikleriyle birlikte yeniden kullanılabilir ve bağımsızdır**.
+Vue.js uygulamalarında bileşenler, kendi içerikleri, davranışları ve stil özellikleriyle birlikte yeniden kullanılabilir ve bağımsızdır.
 
-**Bu, kodun daha organize edilmesini ve bakımını kolaylaştırır ve karmaşık arayüzleri daha yönetilebilir**hale getirir.
+Bu, kodun daha organize edilmesini ve bakımını kolaylaştırır ve karmaşık arayüzleri daha yönetilebilirhale getirir.
 
 Örneğin ButtonCounter adında şu kodu içeren componentimiz olsun:
 ```js
@@ -30,7 +30,7 @@ import ButtonCounter from './ButtonCounter.vue'
   <ButtonCounter />
 </template>
 ```
-> **Note**: **Aşığıdaki örnek gibi oluşturduğumuz compenenti birden fazla kez** kullanabiliriz.
+> Note: Aşığıdaki örnek gibi oluşturduğumuz compenenti birden fazla kez kullanabiliriz.
 ```js
 <h1>Here are many child components!</h1>
 <ButtonCounter />
@@ -38,7 +38,7 @@ import ButtonCounter from './ButtonCounter.vue'
 <ButtonCounter />
 ```
 ## Passing Props 
-**Vue.js'te bir bileşenden başka bir bileşene veri aktarmanın** bir yoludur. Bu, **ebeveyn bileşenin çocuk bileşene veri göndermesini sağlar ve bu veri çocuk bileşen içinde kullanılabilir**.
+Vue.js'te bir bileşenden başka bir bileşene veri aktarmanın bir yoludur. Bu, ebeveyn bileşenin çocuk bileşene veri göndermesini sağlar ve bu veri çocuk bileşen içinde kullanılabilir.
 
 örneğin BlogPost.vue adında bir component oluşturduk
 ```js

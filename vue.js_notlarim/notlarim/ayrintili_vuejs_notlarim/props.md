@@ -1,7 +1,7 @@
 # Props
-**bir bileşenin dış dünyadan veri almasına olanak tanır**. Bu, genellikle **üst düzey bileşenin içinde tanımlandığı ve alt bileşenlere aktarıldığı** bir mekanizmadır.
+Bir bileşenin dış dünyadan veri almasına olanak tanır. Bu, genellikle üst düzey bileşenin içinde tanımlandığı ve alt bileşenlere aktarıldığı bir mekanizmadır.
 
-**Props, veri akışını tek yönlü hale** getirir. Yani, **bir üst düzey bileşen tarafından bir alt bileşene iletilen veri, alt bileşen tarafından doğrudan değiştirilemez**. 
+Props, veri akışını tek yönlü hale getirir. Yani, bir üst düzey bileşen tarafından bir alt bileşene iletilen veri, alt bileşen tarafından doğrudan değiştirilemez. 
 
 Bunun yerine, alt bileşen, props olarak aldığı veriyi kullanabilir ve görüntüleyebilir, ancak doğrudan değiştiremez.
 
@@ -29,9 +29,9 @@ Props tanımlarken kebab-case tanımlayabilirsiniz:
 <MyComponent greeting-message="hello" />
 ```
 ## Static vs. Dynamic Props 
-**v-bind ile dinamik props** tanımlayabiliriz.
+v-bind ile dinamik props tanımlayabiliriz.
 
-Aşşağıdaki örnek **number tipi** için
+Aşşağıdaki örnek number tipi için
 ```js
 <!-- Even though `42` is static, we need v-bind to tell Vue that -->
 <!-- this is a JavaScript expression rather than a string.       -->
@@ -40,7 +40,7 @@ Aşşağıdaki örnek **number tipi** için
 <!-- Dynamically assign to the value of a variable. -->
 <BlogPost :likes="post.likes" />
 ```
-Aşşağıdaki örnek **Boolean tipi** için
+Aşşağıdaki örnek Boolean tipi için
 ```js
 <!-- Including the prop with no value will imply `true`. -->
 <BlogPost is-published />
@@ -52,7 +52,7 @@ Aşşağıdaki örnek **Boolean tipi** için
 <!-- Dynamically assign to the value of a variable. -->
 <BlogPost :is-published="post.isPublished" />
 ```
-Aşşağıdaki örnek **Array tipi** için
+Aşşağıdaki örnek Array tipi için
 ```js
 <!-- Even though the array is static, we need v-bind to tell Vue that -->
 <!-- this is a JavaScript expression rather than a string.            -->
@@ -61,7 +61,7 @@ Aşşağıdaki örnek **Array tipi** için
 <!-- Dynamically assign to the value of a variable. -->
 <BlogPost :comment-ids="post.commentIds" />
 ```
-Aşşağıdaki örnek **Object tipi** için
+Aşşağıdaki örnek Object tipi için
 ```js
 <!-- Even though the object is static, we need v-bind to tell Vue that -->
 <!-- this is a JavaScript expression rather than a string.             -->
@@ -76,7 +76,7 @@ Aşşağıdaki örnek **Object tipi** için
 <BlogPost :author="post.author" />
 ```
 ## Binding Multiple Properties Using an Object (Çoklu Props Objesi)
-**Çoklu props mümkün**
+Çoklu props mümkün
 ```js
 const post = {
   id: 1,
@@ -86,10 +86,10 @@ const post = {
 <BlogPost :id="post.id" :title="post.title" />
 ```
 
-> **Note**: Propslar **sadece readonlydir. Yani sadece değerini okunur değiştirilemez**.
+> Note: Propslar sadece readonlydir. Yani sadece değerini okunur değiştirilemez.
 
 ## Prop Validation (Prop Doğrulama)
-**`defineProps()` ile props** tanımlanabilir.
+`defineProps()` ile props tanımlanabilir.
 Aşığıdaki örnek props doğrulama ile ilgilidir.
 ```js
 defineProps({
@@ -142,13 +142,13 @@ defineProps({
   }
 })
 ```
-> **Note**: **required: true belirtilmediği sürece tüm proplar varsayılan olarak isteğe** bağlıdır.
+> Note: required: true belirtilmediği sürece tüm proplar varsayılan olarak isteğe bağlıdır.
 
->  **Boolean dışında isteğe bağlı olmayan bir prop tanımsız** değere sahip olacaktır.
+>  Boolean dışında isteğe bağlı olmayan bir prop tanımsız değere sahip olacaktır.
 ## Boolean Casting 
 Boolean için özel durum vardır.
 
-> **Note**: Boolean **casting kuralı yalnızca Boolean String'den önce göründüğünde** uygulanır:
+> Note: Boolean casting kuralı yalnızca Boolean String'den önce göründüğünde uygulanır:
 ```js
 // disabled will be casted to true
 defineProps({

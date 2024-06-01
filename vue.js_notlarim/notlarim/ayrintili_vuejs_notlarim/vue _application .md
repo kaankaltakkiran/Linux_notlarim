@@ -1,5 +1,5 @@
 ## Creating a Vue Application(Uygulama Oluşturma) 
-Vue.jste **createApp ile uygulama** oluşturulur.
+Vue.jste createApp ile uygulama oluşturulur.
 
 Örnek:
 ```js
@@ -11,8 +11,8 @@ const app = createApp(App)
 ```
 
 ## Mounting the App(Uygulama Kullanabilirlik)
-Uygulama oluşturma **mount evrsinde gerçkeleşir.**
-mount: **vue bileşeninin oluşturulduğu, Vue özelliklerinin etkinleştirildiği ve Vue bileşeninin kullanılabilir hale geldiği** noktadır.
+Uygulama oluşturma mount evrsinde gerçkeleşir.
+mount: vue bileşeninin oluşturulduğu, Vue özelliklerinin etkinleştirildiği ve Vue bileşeninin kullanılabilir hale geldiği noktadır.
 ```html
 <div id="app"></div>
 ```
@@ -21,7 +21,7 @@ app.mount('#app')
 ```
 
 ## App Configurations (Uygualama Yapılandırma )
-`.config`,**tüm alt bileşenlerden gelen hataları yakalayan uygulama düzeyinde bir hata işleyicisi** tanımlar.
+`.config`,tüm alt bileşenlerden gelen hataları yakalayan uygulama düzeyinde bir hata işleyicisi tanımlar.
 
 Örnek kullanım:
 ```js
@@ -44,4 +44,4 @@ const app2 = createApp({
 })
 app2.mount('#container-2')
 ```
-> **Note**: büyük bir sayfanın yalnızca belirli bölümlerini kontrol etmek için Vue'ya ihtiyacınız varsa, tüm sayfaya tek bir Vue uygulama örneği yüklemekten kaçının. Bunun yerine, birden fazla küçük uygulama örneği oluşturun. 
+> Note: büyük bir sayfanın yalnızca belirli bölümlerini kontrol etmek için Vue'ya ihtiyacınız varsa, tüm sayfaya tek bir Vue uygulama örneği yüklemekten kaçının. Bunun yerine, birden fazla küçük uygulama örneği oluşturun. 

@@ -1,9 +1,9 @@
 # List Rendering (Liste Render) 
 
 ## v-for
-**v-for ile for döngüsü** oluşturulur. **Örneğin bir dizideki elemanları tek tek listelemek** için kullanılır.
+v-for ile for döngüsü oluşturulur. Örneğin bir dizideki elemanları tek tek listelemek için kullanılır.
 
-Aşığıdaki örnekte **items dizisindeki elemanları listeler**yazar.
+Aşığıdaki örnekte items dizisindeki elemanları listeleryazar.
 ```js
 const parentMessage = ref('Parent')
 const items = ref([{ message: 'Foo' }, { message: 'Bar' }])
@@ -19,12 +19,12 @@ Parent - 1 - Bar
 
 ## v-for Range
 
-Aşığıdaki örnekte **belirlediğimiz sayı kadar listeleme**yapar.
+Aşığıdaki örnekte belirlediğimiz sayı kadar listelemeyapar.
 ```js
 <span v-for="n in 10">{{ n }}</span>
 ```
 ## v-for Template
-Aşığıdaki örnekte **Template listeleme işlemi**yapar.
+Aşığıdaki örnekte Template listeleme işlemiyapar.
 ```js
 <ul>
   <template v-for="item in items">
@@ -34,9 +34,9 @@ Aşığıdaki örnekte **Template listeleme işlemi**yapar.
 </ul>
 ```
 ## v-for key
-**v-for ile bir liste oluştururken key özelliği, Vue'ye her bir liste öğesinin benzersiz bir kimliğe sahip olduğunu belirtir**.
+v-for ile bir liste oluştururken key özelliği, Vue'ye her bir liste öğesinin benzersiz bir kimliğe sahip olduğunu belirtir.
 
- Bu, Vue'nun **listeyi daha etkili bir şekilde yönetmesine ve performansını artırmasına** yardımcı olur.
+ Bu, Vue'nun listeyi daha etkili bir şekilde yönetmesine ve performansını artırmasına yardımcı olur.
  Örnek kullanım:
 ```js
 <ul>
@@ -45,7 +45,7 @@ Aşığıdaki örnekte **Template listeleme işlemi**yapar.
 
 ```
 ## v-for with a Component 
-**v-for component ile kullanımı**.
+v-for component ile kullanımı.
  Örnek kullanım:
 ```js
 <MyComponent
@@ -56,7 +56,7 @@ Aşığıdaki örnekte **Template listeleme işlemi**yapar.
 />
 ```
 ## Array Change Detection 
-**v-for ile genelde dizi şeklindeki elemanları listelemek için kullanıldığında aşığıdaki javasciprt dizi metotları** sıkça kullanılır.
+v-for ile genelde dizi şeklindeki elemanları listelemek için kullanıldığında aşığıdaki javasciprt dizi metotları sıkça kullanılır.
 - `push()`
 - `pop()`
 - `shift()`
@@ -73,7 +73,7 @@ const evenNumbers = computed(() => {
   return numbers.value.filter((n) => n % 2 === 0)
 })
 ```
-> **Note**: **Eğer bu metotları kullanacaksanız aşşığıdaki gibi kullanılmalı. Çünkü bu işlemlerle siz verinizi manipüle etmiş olursuz. Aşığıdaki gibi kullanım dizinin bir kopyasını** alarak işlem yapar
+> Note: Eğer bu metotları kullanacaksanız aşşığıdaki gibi kullanılmalı. Çünkü bu işlemlerle siz verinizi manipüle etmiş olursuz. Aşığıdaki gibi kullanım dizinin bir kopyasını alarak işlem yapar
 
 ```js
 - return numbers.reverse()

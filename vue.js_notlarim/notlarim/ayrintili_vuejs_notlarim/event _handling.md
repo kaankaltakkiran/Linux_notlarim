@@ -1,14 +1,14 @@
 # Event Handling (OLay İşleme)
 
 ## Inline Handlers (Satır İşleme)
-Aşığıdaki örnek **ile click eventi** gerçekleştirilmektedir.
+Aşığıdaki örnek ile click eventi gerçekleştirilmektedir.
 ```js
 const count = ref(0)
 <button @click="count++">Add 1</button>
 <p>Count is: {{ count }}</p>
 ```
 ## Method Handlers (Methot ile işleme)
-Aşığıdaki **örnek ile, event.target aracılığıyla olayı gönderen öğeye** erişebiliyoruz.
+Aşığıdaki örnek ile, event.target aracılığıyla olayı gönderen öğeye erişebiliyoruz.
 ```js
 const name = ref('Vue.js')
 
@@ -31,7 +31,7 @@ function say(message) {
 <button @click="say('bye')">Say bye</button>
 ```
 ## Event Modifiers (Olay Değiştiricileri)
-**Bir çok olay methotları** bulunmaktadır. Aşığıda örnek verilmiştir:
+Bir çok olay methotları bulunmaktadır. Aşığıda örnek verilmiştir:
 
 - `.stop`
 - `.prevent`
@@ -40,16 +40,16 @@ function say(message) {
 - `.once`
 - `.passive`
 
-`.stop`: **Bu modifier, olayın etkileşim alanı dışına çıkmasını önler**. Örneğin, bir butona tıkladığınızda butonun dışında bir elemente tıklamaya çalışırsanız, bu modifier kullanılarak bu tıklamanın butona etki etmesi engellenebilir.
+`.stop`: Bu modifier, olayın etkileşim alanı dışına çıkmasını önler. Örneğin, bir butona tıkladığınızda butonun dışında bir elemente tıklamaya çalışırsanız, bu modifier kullanılarak bu tıklamanın butona etki etmesi engellenebilir.
 
-`.prevent`: **Bu modifier, tarayıcının varsayılan olay davranışını engeller**. Örneğin, **bir form gönderme işleminden önce sayfanın yenilenmesini** önlemek için kullanılabilir.
+`.prevent`: Bu modifier, tarayıcının varsayılan olay davranışını engeller. Örneğin, bir form gönderme işleminden önce sayfanın yenilenmesini önlemek için kullanılabilir.
 
-`.self`: Bu modifier, **olayın tetiklendiği öğenin kendisi olduğunda** işlem yapar. Örneğin, bir **liste öğesine tıkladığınızda, tıklama olayının yalnızca liste öğesinin kendisi üzerinde gerçekleşmesini sağlar, içindeki alt öğelerde gerçekleşmez**.
+`.self`: Bu modifier, olayın tetiklendiği öğenin kendisi olduğunda işlem yapar. Örneğin, bir liste öğesine tıkladığınızda, tıklama olayının yalnızca liste öğesinin kendisi üzerinde gerçekleşmesini sağlar, içindeki alt öğelerde gerçekleşmez.
 
- `.capture`: Bu modifier, **olayı yakalama evresinde** dinler. Normalde, olay ana öğeden alt öğelere doğru yayılır, ancak bu modifier kullanılarak **olayın alt öğelerden ana öğeye doğru yayılması** sağlanır.
-`.once`: Bu modifier, **olay dinleyicisinin sadece bir kez tetiklenmesini sağlar**. İlk tetiklemeden sonra dinleyici otomatik olarak kaldırılır.
+ `.capture`: Bu modifier, olayı yakalama evresinde dinler. Normalde, olay ana öğeden alt öğelere doğru yayılır, ancak bu modifier kullanılarak olayın alt öğelerden ana öğeye doğru yayılması sağlanır.
+`.once`: Bu modifier, olay dinleyicisinin sadece bir kez tetiklenmesini sağlar. İlk tetiklemeden sonra dinleyici otomatik olarak kaldırılır.
 
-`.passive`: Bu modifier, **olay dinleyicisinin preventDefault() çağrısını önler. Bu özellik, kaydırma olaylarında kullanılabilir ve performansı** artırabilir.
+`.passive`: Bu modifier, olay dinleyicisinin preventDefault() çağrısını önler. Bu özellik, kaydırma olaylarında kullanılabilir ve performansı artırabilir.
 ```js
 <!-- the click event's propagation will be stopped -->
 <a @click.stop="doThis"></a>
@@ -81,7 +81,7 @@ function say(message) {
 <div @scroll.passive="onScroll">...</div>
 ```
 ## Key Modifiers (Klavye Değiştirecileri)
-**Bir çok kalvye  olay methotları** bulunmaktadır. Aşığıda örnekler klavye tuşları verilmiştir:
+Bir çok kalvye  olay methotları bulunmaktadır. Aşığıda örnekler klavye tuşları verilmiştir:
 
 - `.enter`
 - `.tab`
@@ -94,30 +94,30 @@ function say(message) {
 - `.right`
 
 
-**Fare veya klavye olay dinleyicilerini yalnızca ilgili değiştirici tuşa basıldığında tetiklemek için aşağıdaki değiştiricileri** kullanabilirsiniz:
+Fare veya klavye olay dinleyicilerini yalnızca ilgili değiştirici tuşa basıldığında tetiklemek için aşağıdaki değiştiricileri kullanabilirsiniz:
 
 - `.ctrl`
 - `.alt`
 - `.shift`
 - `.meta`
 
-> **Note**:  **`.meta` dediğimiz windows** tuşu.
+> Note:  `.meta` dediğimiz windows tuşu.
 
-Aşığıdaki kod **klavyeden enter tuşuna** basınca tetiklenir.
+Aşığıdaki kod klavyeden enter tuşuna basınca tetiklenir.
 ```js
 <!-- only call `submit` when the `key` is `Enter` -->
 <input @keyup.enter="submit" />
 ```
 
-Aşığıdaki kod **klavyeden page down tuşuna** basınca tetiklenir.
+Aşığıdaki kod klavyeden page down tuşuna basınca tetiklenir.
 ```js
 <!-- only call `submit` when the `key` is `Enter` -->
 <input @keyup.enter="submit" />
 ```
 ## `.exact` Modifier {Exact Değiştiricisi}
-**exact: Bu modifier, sadece belirtilen tuşun basıldığında olayın tetiklenmesini sağlar.**
+exact: Bu modifier, sadece belirtilen tuşun basıldığında olayın tetiklenmesini sağlar.
 
-**Başka bir deyişle, bu modifier olmadan, Ctrl tuşu basılı olduğunda ve ek bir tuşa basıldığında olay da tetiklenebilir. Ancak exact modifier kullanıldığında, sadece belirtilen tuşun basıldığı durumda** olay tetiklenir.
+Başka bir deyişle, bu modifier olmadan, Ctrl tuşu basılı olduğunda ve ek bir tuşa basıldığında olay da tetiklenebilir. Ancak exact modifier kullanıldığında, sadece belirtilen tuşun basıldığı durumda olay tetiklenir.
 Örnek Kullanım:
 ```js
 <!-- this will fire even if Alt or Shift is also pressed -->

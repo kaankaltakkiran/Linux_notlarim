@@ -1,27 +1,27 @@
 # Template Syntax(Yazım Şekli) 
-**Vue, işlenen DOM'u temel bileşen örneğinin verilerine bildirimsel olarak bağlamanıza olanak tanıyan HTML tabanlı** bir şablon sözdizimi kullanır. Tüm Vue şablonları, teknik özelliklerle uyumlu tarayıcılar ve HTML ayrıştırıcıları tarafından ayrıştırılabilen sözdizimsel olarak geçerli HTML'dir.
+Vue, işlenen DOM'u temel bileşen örneğinin verilerine bildirimsel olarak bağlamanıza olanak tanıyan HTML tabanlı bir şablon sözdizimi kullanır. Tüm Vue şablonları, teknik özelliklerle uyumlu tarayıcılar ve HTML ayrıştırıcıları tarafından ayrıştırılabilen sözdizimsel olarak geçerli HTML'dir.
 
 
-**Vue, şablonları yüksek düzeyde optimize edilmiş JavaScript** koduna derler. Reaktivite sistemi ile birlikte Vue, uygulama durumu değiştiğinde yeniden işlenecek minimum sayıda bileşeni akıllı bir şekilde belirleyebilir ve minimum miktarda DOM manipülasyonu uygulayabilir.
+Vue, şablonları yüksek düzeyde optimize edilmiş JavaScript koduna derler. Reaktivite sistemi ile birlikte Vue, uygulama durumu değiştiğinde yeniden işlenecek minimum sayıda bileşeni akıllı bir şekilde belirleyebilir ve minimum miktarda DOM manipülasyonu uygulayabilir.
 
 ## Text Interpolation(Metin Yazımı)
-Aşşağıda **verilen örnekteki msg değeri değeri değiştiğinde** güncellenecektir.
+Aşşağıda verilen örnekteki msg değeri değeri değiştiğinde güncellenecektir.
 ```js
 <span>Message: {{ msg }}</span>
 ```
 ## Raw Html(v-html İle Html Çıktısı Alma)
-Aşşağıda verilen örnekte **v-html Directiviyle span etkinetine html öğe** ekrana yazdırılır
+Aşşağıda verilen örnekte v-html Directiviyle span etkinetine html öğe ekrana yazdırılır
 ```js
 <p>Using text interpolation: {{ rawHtml }}</p>
 <p>Using v-html directive: <span v-html="rawHtml"></span></p>
 ```
 
 ## Attribute Bindings (V-bind İle Nitelik Bağlama)
-Aşşağıda verilen örnekte **v-bind ile div elementinin id özelliğine değer bağlıyoruz**.
+Aşşağıda verilen örnekte v-bind ile div elementinin id özelliğine değer bağlıyoruz.
 ```js
 <div v-bind:id="dynamicId"></div>
 ```
-> **Note**: **Aşığıdaki örnekteki gibi kısa yazım şekli** de mevcuttur. Her iki yazım şeklide geçerlidir.
+> Note: Aşığıdaki örnekteki gibi kısa yazım şekli de mevcuttur. Her iki yazım şeklide geçerlidir.
  ```js
 <div :id="dynamicId"></div>
 ```
@@ -44,7 +44,7 @@ Javascript ile data binding örneği:
 <div :id="`list-${id}`"></div>
 ```
 ## Directives(Bağlamlar)
-Aşşağıda verilen örnekte **v-if ile eğer seen değeri true ise p elementi gözükecektir.**.
+Aşşağıda verilen örnekte v-if ile eğer seen değeri true ise p elementi gözükecektir..
 ```js
 <p v-if="seen">Now you see me</p>
 ```
@@ -55,7 +55,7 @@ v-bind örnek:
 <!-- shorthand -->
 <a :href="url"> ... </a>
 ```
-Aşşağıda verilen örnekte **v-on ile event bağlama işlemi yapılır.** Örneğin butona tıklama özelliği verilir. 2 farklı yazım şekli vardır.
+Aşşağıda verilen örnekte v-on ile event bağlama işlemi yapılır. Örneğin butona tıklama özelliği verilir. 2 farklı yazım şekli vardır.
 ```js
 <a v-on:click="doSomething"> ... </a>
 
@@ -71,7 +71,7 @@ Genel Kullanım şekli aşığıdaki gibidir. Event olarak örneğin focus,click
 ```
 ## Modifiers(Düzenleyiciler) 
 
-**Düzenleyiciler, bir yönergenin özel bir şekilde bağlanması gerektiğini belirtir**.
+Düzenleyiciler, bir yönergenin özel bir şekilde bağlanması gerektiğini belirtir.
 
 Örneğin, @submit.prevent v-on yönergesine tetiklenen olayda event.preventDefault() işlevini çağırmasını söyler:
 ```js

@@ -1,13 +1,13 @@
 # Template Refs (Referanslar)
-**DOM öğelerine doğrudan erişmemiz gereken durumlar** olabilir. Bunu başarmak için **özel ref niteliğini** kullanabiliriz.
+DOM öğelerine doğrudan erişmemiz gereken durumlar olabilir. Bunu başarmak için özel ref niteliğini kullanabiliriz.
 
 örnek kullanım
 ```js
 <input ref="input">
 ```
-Aşığıdaki örnekte **Ref'e yalnızca bileşen monte edildikten sonra erişebileceğinizi** unutmayın. 
+Aşığıdaki örnekte Ref'e yalnızca bileşen monte edildikten sonra erişebileceğinizi unutmayın. 
 
-Bir şablon ifadesindeki girdiye erişmeye çalışırsanız, **ilk render işleminde null olacaktır**. 
+Bir şablon ifadesindeki girdiye erişmeye çalışırsanız, ilk render işleminde null olacaktır. 
 
 Bunun nedeni, öğenin ilk render sonrasına kadar var olmamasıdır!
 ```js 
@@ -60,14 +60,14 @@ onMounted(() => console.log(itemRefs.value))
 </template>
 ```
 ## Function Refs 
-**Fonksiyon olarak referans** atayabiliriz.
+Fonksiyon olarak referans atayabiliriz.
 örnek kullanım:
 ```js 
 <input :ref="(el) => { /* assign el to a property or ref */ }">
 ```
 
 ## Ref on Component
-**Componentler olarak referans** kullanabiliriz.
+Componentler olarak referans kullanabiliriz.
 örnek kullanım:
 ```js 
 <script setup>
