@@ -1,46 +1,20 @@
 # Faydalı Paketler
 
-## [Vi Editör Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/vi_edit%C3%B6r.md)
+## [Vi Editör Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/vi_editor.md)
 
-## Wormhole
-2014 yılında  yayınlandı.
+## [wormhole](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/wormhole.md)
 
-Wormhole genellikle komut satırı aracılığıyla kullanılan bir dosya paylaşımı aracıdır ve dosyaları iki bilgisayar arasında hızlı ve güvenli bir şekilde aktarmanıza olanak tanır.
- 
-Wormhole Detaylı Bilgi: [wormhole](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlar%C4%B1m/faydal%C4%B1_paketler/wormhole.md)
-## İmagemagick
- 1990 Yılında yayınlanmıştır.
- 
-Linux komut satırında birden fazla görüntü dosyası üzerinde işlem yapmak için en uygun paketlerden birisi imagemagick paketidir.
- 
-İmagemagick Detaylı Bilgi: [İmagemagick](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlar%C4%B1m/faydal%C4%B1_paketler/imagemagick.md)
-## Ffmpeg
+## [İmagemagick](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/imagemagick.md)
 
- 2000 Yılında yayınlanmıştır.
-
-FFmpeg, açık kaynaklı bir çoklu ortam çerçevesidir. Video ve ses dosyalarını işlemek, dönüştürmek, kodlamak ve çözmek için kullanılır.
- 
-Ffmpeg Detaylı Bilgi: [ffmpeg](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlar%C4%B1m/faydal%C4%B1_paketler/ffmpeg.md)
-
-## Tldr Pages
-2013 yılında yayınlanmıştır.
-
-Tldr (Too Long; Didn't Read), özellikle karmaşık veya uzun Linux komutlarını kısa ve öz bir şekilde açıklamak için kullanılan bir kaynaktır.
- 
-Tldr Pages Detaylı Bilgi: [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlar%C4%B1m/faydal%C4%B1_paketler/tldr.md)
-## Wine
- 1993 Yılında yayınlanmıştır.
- 
-Wine, Windows uygulamalarını Linux ve diğer Unix benzeri işletim sistemlerinde çalıştırmak için bir uyumluluk katmanıdır.
- 
-Wine Detaylı Bilgi: [Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlar%C4%B1m/faydal%C4%B1_paketler/wine.md)
+## [ffmpeg](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/ffmpeg.md)
 
 
-## Node Version Manager (NVM)
+## [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/tldr.md)
 
-Node Version Manager (NVM), Node.js'in farklı sürümlerini yönetmek için kullanılan bir araçtır. Node.js, JavaScript tabanlı uygulamaları çalıştırmak için kullanılan bir çalışma zamanı ortamıdır ve sürekli olarak geliştirilmektedir. Her Node.js sürümü, yeni özellikler, performans iyileştirmeleri ve hata düzeltmeleri içerebilir.
- 
-Node Version Manager (NVM) Detaylı Bilgi: [NVM](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlar%C4%B1m/faydal%C4%B1_paketler/NVM.md)
+## [Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/wine.md)
+
+
+## [NVM](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/nvm.md)
 
 
 ## gnome-sushi
