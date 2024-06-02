@@ -60,3 +60,7 @@ Web sitelerindeki merak ettiğiniz css kodunu güzel ve ayrıntılı bir şekild
 
 ## [Aardvark Duex](https://addons.mozilla.org/en-US/firefox/addon/aardvark-duex/)
 Fare ile web sitesindeki bir div elemtinin üstüne gelince örneğin class etiketinin içeriğini gösteriyor.
+
+## [Medium parser](https://addons.mozilla.org/tr/firefox/addon/medium-parser/)
+Tüm medium bloglarını okuma imkanı sunuyor
+
