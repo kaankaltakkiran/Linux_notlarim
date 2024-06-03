@@ -64,6 +64,8 @@ sudo apt install php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl ph
 sudo apt install composer -y
 sudo service apache2 restart
 ```
+  > **Note**: php7.4-imagick hatasını kontrol et
+
 ## 2 farklı PHP sürümü kurma ve bunları kullanma
 
 ```bash
