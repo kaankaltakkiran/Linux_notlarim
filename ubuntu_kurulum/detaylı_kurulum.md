@@ -13,6 +13,11 @@ alias disk='du -h'
 alias gunaydin='sudo apt update --fix-missing -y && sudo apt upgrade -y && sudo apt autoremove -y'
 # Komut satırında gün,tarih,saat,isim gibi bilgileri gösterme
 PS1="\n\[\e[35m\]\D{%Y-%m-%d}, \t\[\e[m\] \[\e[31m\]\u\[\e[m\]@\[\e[36m\]KaanPc\[\e[m\]:\[\e[32m\]\w\[\e[m\]\n\$ "
+# Sanal makine başlatma
+alias startserver='VBoxManage startvm "UbuntuServer" --type headless'
+# Sanal makine durdurma
+alias stopserver='VBoxManage controlvm "UbuntuServer" acpipowerbutton'
+
 ```
 ## Faydalı Paketler
 ```BASH
