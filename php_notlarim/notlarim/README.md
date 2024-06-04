@@ -4,4 +4,6 @@
 
 - [Http Durum Kodları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/http_durum_kodlari.md)
 
+- [json Ve Fonksiyonları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/json_ve_fonksiyonlari.md)
+
 

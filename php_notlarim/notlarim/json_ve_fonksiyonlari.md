@@ -5,7 +5,7 @@
 
 Dizi, nesne, sayı, metin ve bool gibi temel veri türlerini temsil etmek için insan dostu bir metin tabanlı sözdizimi kullanır.
 
-örnek json yapısı:
+Örnek json yapısı:
 ```json
 {
   "ad": "Can",
@@ -16,9 +16,9 @@ Dizi, nesne, sayı, metin ve bool gibi temel veri türlerini temsil etmek için 
 }
 ```
 ## json_encode() Fonksiyonu Nedir Ve Nasıl Kullanılır? 
-`json_encode()`` fonksiyonu, PHP'de bulunan ve PHP değişkenlerini, dizilerini ve nesnelerini JavaScript Object Notation (JSON) formatına dönüştürmek için kullanılan bir fonksiyondur.
+`json_encode()` fonksiyonu, PHP'de bulunan ve PHP değişkenlerini, dizilerini ve nesnelerini JavaScript Object Notation (JSON) formatına dönüştürmek için kullanılan bir fonksiyondur.
 
-örnek kullanım:
+Örnek kullanım:
 ```php
 $veri = array(
   "ad" => "Can",
@@ -28,10 +28,10 @@ $veri = array(
 $jsonDizisi = json_encode($veri);
 echo $jsonDizisi; // Çıktı: {"ad":"Can","soyad":"Yılmaz","sehir":"İstanbul"}
 ```
-## JSON_UNESCAPED_UNICODE Nedir vVe Nasıl Kullanılır? 
+## JSON_UNESCAPED_UNICODE Nedir Ve Nasıl Kullanılır? 
 Bu buyruk, JSON kodlarken Unicode karakterlerinin kaçmadan gönderilmesini sağlar. 
 
-örnek kullanım:
+Örnek kullanım:
 ```php
 $data = array("ad" => "Ömer", "soyad" => "Şahin", "meslek" => "Yazılım Mühendisi");
 
@@ -45,12 +45,12 @@ Bu buyruk, JSON kodunu daha okunabilir hale getirir. Girinti ve satır sonları 
 
  Bu, özellikle karmaşık JSON nesnelerini analiz etmeyi kolaylaştırır.
 
-örnek kullanım:
+Örnek kullanım:
 ```php
 $data = array("ad" => "Ömer", "soyad" => "Şahin", "meslek" => "Yazılım Mühendisi");
 echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 ```
-yukardaki kodun çıktısı:
+Yukarıdaki kodun çıktısı:
 ```json
 {
     "ad": "Ömer",
