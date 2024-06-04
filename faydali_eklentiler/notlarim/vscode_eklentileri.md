@@ -12,3 +12,6 @@ Img etiketinde eklemek istedğiniz resmi doğru bir şekilde ekledikten sonra ed
 ## [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
 API testi ve HTTP istekleri gönderme işlemlerini basit ve kullanıcı dostu bir arayüzle sağlar. 
 
+## [Postman](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode)
+API geliştirme ve testlerini kolayca yapma imkanı sunar.
+
