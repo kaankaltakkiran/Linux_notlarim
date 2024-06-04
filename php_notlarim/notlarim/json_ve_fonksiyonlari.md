@@ -58,3 +58,23 @@ Yukarıdaki kodun çıktısı:
     "meslek": "Yazılım Mühendisi"
 }
 ```
+## json_decode() Fonksiyonu Nedir Ve Nasıl Kullanılır? 
+`json_decode()`, Gelen HTTP isteğinin gövdesindeki JSON verisini PHP dizisine dönüştürür.
+
+Örnek kullanım:
+```php
+$jsonString = '{"ad": "Can", "soyad": "Yılmaz", "yas": 30}';
+
+$data = json_decode($jsonString);
+
+echo $data->ad; // Çıktı: Can
+echo $data->soyad; // Çıktı: Yılmaz
+echo $data->yas; // Çıktı: 30
+```
+## file_get_contents("php://input") Yapısı Ne İşe Yarar ? 
+`file_get_contents("php://input"):` Bu kısım, HTTP isteğinin gövdesindeki ham verileri okur.
+
+ `php://input`` bir pseudo-protokol olup, sunucuda gelen HTTP isteğinin gövdesine erişim sağlar.
+
+`json_decode():` Okunan ham veriler, json_decode fonksiyonuna argüman olarak gönderilir. Bu fonksiyon, JSON formatındaki veriyi PHP dizisine dönüştürür.
+
