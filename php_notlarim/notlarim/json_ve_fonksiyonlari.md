@@ -76,5 +76,4 @@ echo $data->yas; // Çıktı: 30
 
  `php://input`` bir pseudo-protokol olup, sunucuda gelen HTTP isteğinin gövdesine erişim sağlar.
 
-`json_decode():` Okunan ham veriler, json_decode fonksiyonuna argüman olarak gönderilir. Bu fonksiyon, JSON formatındaki veriyi PHP dizisine dönüştürür.
 
