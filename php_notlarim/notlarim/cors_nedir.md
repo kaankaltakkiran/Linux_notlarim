@@ -59,3 +59,8 @@ if ($method === 'OPTIONS') {
 - Bu kontrol, gelen isteğin OPTIONS yöntemi olup olmadığını kontrol eder.
 
  - Eğer OPTIONS isteği ise, sunucu 200 HTTP durumu kodu ile yanıt verir ve işlemi sonlandırır (exit;).
+
+  ## Proxy ?
+`Proxy,` bir ağ üzerinden diğer bir ağa erişim sağlamak için kullanılan bir araçtır. Örneğin, bir bilgisayarın internete erişimini kontrol etmek veya gizlemek için kullanılabilir.
+
+ Bir proxy sunucusu, kullanıcının isteklerini alır, hedef sunucuya iletilir ve yanıtı kullanıcıya ileterek aradaki iletişimi sağlar. Bu, kullanıcının gerçek IP adresini gizlemesine ve farklı coğrafi konumlardan erişim sağlamasına olanak tanır.
