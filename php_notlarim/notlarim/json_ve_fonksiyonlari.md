@@ -74,6 +74,6 @@ echo $data->yas; // Çıktı: 30
 ## file_get_contents("php://input") Yapısı Ne İşe Yarar ? 
 `file_get_contents("php://input"):` Bu kısım, HTTP isteğinin gövdesindeki ham verileri okur.
 
- `php://input`` bir pseudo-protokol olup, sunucuda gelen HTTP isteğinin gövdesine erişim sağlar.
+ `php://input` bir pseudo-protokol olup, sunucuda gelen HTTP isteğinin gövdesine erişim sağlar.
 
 
