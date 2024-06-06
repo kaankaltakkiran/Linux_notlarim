@@ -6,7 +6,7 @@
 
 Aşağıdaki komut klasor1 adını klasor2 olarak değiştirir.
 
-```
+```bash
 git mv klasor1 klasor2
 ```
 
