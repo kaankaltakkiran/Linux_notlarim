@@ -28,4 +28,4 @@
 
 - [Watchers](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/watchers.md)
 
-- [Vue.js Kaynaklarim]()
+- [Vue.js Kaynaklarim](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/vue.js_kaynaklarim.md)
