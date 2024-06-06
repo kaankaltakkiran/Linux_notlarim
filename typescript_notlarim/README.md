@@ -14,4 +14,4 @@
 
 - [TypeScript Tip Koruma](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/typescript_notlarim/notlarim/tip_koruma.md)
 
-- [TypeScript Yararlandığım Kaynaklar](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/typescript_notlarim/notlarim/tip_koruma.md)
+- [TypeScript Yararlandığım Kaynaklar](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/typescript_notlarim/notlarim/typescript_kaynaklarim.md)
