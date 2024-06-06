@@ -12,7 +12,6 @@
 
 - [Form Input Bindings](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/form_input_bindings.md)
 
-
 - [Lifecycle Hooks](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/lifecycle_hooks.md)
 
 - [List Rendering](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/list_rendering.md)
@@ -29,5 +28,4 @@
 
 - [Watchers](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_vuejs_notlarim/watchers.md)
 
-
-
+- [Vue.js Kaynaklarim]()
