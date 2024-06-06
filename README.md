@@ -12,4 +12,6 @@
 
 - [Php Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/php_notlarim)
 
+- [Git Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/git_notlarim)
+
 - [Web Programlama Yol Haritam](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/yol_haritam.md)
