@@ -34,6 +34,26 @@ $jsonDizisi = json_encode($veri);
 echo $jsonDizisi; // Çıktı: {"ad":"Can","soyad":"Yılmaz","sehir":"İstanbul"}
 ```
 
+## JSON_UNESCAPED_SLASHES Nedir Ve Nasıl Kullanılır?
+
+json_encode fonksiyonu ile JSON formatına dönüştürülen bir dizideki ters eğik çizgileri (\) kaçırmadan yazdırmayı sağlayan bir sabittir.
+
+Örnek kullanım:
+
+```php
+$veri = array(
+  "dosya_yolu" => "/home/kullanici/dosyalarim"
+);
+
+$json1 = json_encode($veri);
+
+$json2 = json_encode($veri, JSON_UNESCAPED_SLASHES);
+
+echo $json1; //çıktı: {"dosya_yolu":"\/home\/kullanici\/dosyalarim"}
+
+echo $json2; //çıktı: {"dosya_yolu":"/home/kullanici/dosyalarim"}
+```
+
 ## JSON_UNESCAPED_UNICODE Nedir Ve Nasıl Kullanılır?
 
 Bu buyruk, JSON kodlarken Unicode karakterlerinin kaçmadan gönderilmesini sağlar.
