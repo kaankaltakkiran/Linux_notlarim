@@ -12,7 +12,7 @@ sudo apt install gnome-shell-extension-manager
 
 Uygulamaları çok güzel bir şekilde kategorize ederek listeliyor.
 
-## [GSConnect](https://extensions.gnome.org/extension/6/applications-menu/)
+## [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
 
 KDE Connecti kullanabilmemizi sağlar.
 
