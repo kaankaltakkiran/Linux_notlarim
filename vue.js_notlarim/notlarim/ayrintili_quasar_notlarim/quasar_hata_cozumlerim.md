@@ -27,8 +27,7 @@ if ($method === 'OPTIONS') {
 `quasar.config.js` dosyasında default olarak hash olarak tanımlı gelen `vueRouterMode` değerini hash yerine history yazarak değiştirilir.
 
 ```js
-      vueRouterMode: 'history', // available values: 'hash', 'history'
-
+ vueRouterMode: 'history', // available values: 'hash', 'history'
 ```
 
 ## Türkçe Krakter Sorunu Nasıl Çözülür ?
@@ -38,18 +37,6 @@ if ($method === 'OPTIONS') {
 ```js
  'roboto-font-latin-ext', // optional, you are not bound to it
 ```
-
-plugins: [
-'Notify',
-'Dialog',
-'AppFullscreen',
-'Cookies',
-'Loading',
-'LocalStorage',
-'SessionStorage',
-'Meta',
-'BottomSheet',
-],
 
 ## Notify, Dialog, Loading Gibi Quasar Compentleri Çalışmıyorsa
 
