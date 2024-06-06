@@ -12,4 +12,4 @@
 
 - [Linux Shell Operatörleri Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/komut_notlarim/shell_operatorleri.md)
 
-- [Linux Komut Kaynaklarim](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/komut_notlarim/shell_operatorleri.md)
+- [Linux Komut Kaynaklarim](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/komut_notlarim/linux_komut_kaynaklarim.md)
