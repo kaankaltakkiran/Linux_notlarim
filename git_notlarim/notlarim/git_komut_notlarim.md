@@ -17,3 +17,17 @@ git mv klasor1 klasor2
 ```bash
  git clone git@github.com:kaankaltakkiran/Contact-php.git
 ```
+
+## Git Hard Reset Nedir ve Nasıl Kullanılır?
+
+`Git hard reset`, Git deposundaki değişiklikleri geri almak için kullanılan bir komuttur.
+
+Bu komut, belirli bir commit'e kadar tüm değişiklikleri geri alarak deponuzu o commit'teki duruma geri döndürür.
+
+Aşağıdaki komut mevcut dalınızdaki en son commit'e geri döner
+
+```bash
+git reset --hard HEAD
+```
+
+> **Note**: `git hard reset` komutu, geri alınan değişiklikleri kalıcı olarak siler. Bu nedenle, bu komutu kullanmadan önce yaptığınız tüm değişikliklerin bir yedeğini aldığınızdan emin olun.
