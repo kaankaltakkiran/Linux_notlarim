@@ -28,8 +28,5 @@ Değişken tamsayıysa, o değeri; değilse, değişkenin tamsayıya dönüştü
 ```php
 $x = "12.34";
 $y = 5.67;
-
-echo intval($x) . " " . intval($y);
-
-// çıktı: 5 12.5
+echo intval($x) . " " . intval($y); // çıktı: 5 12.5
 ```
