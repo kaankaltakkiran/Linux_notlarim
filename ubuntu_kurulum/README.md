@@ -99,8 +99,8 @@ sudo apt install gnome-shell-extension-manager -y
 
 sudo apt install snapd
 
-# Snap Store vlc,discord, prospect-mail yükleme
-sudo snap install vlc discord prospect-mail
+# Snap Store vlc,discord, prospect-mail, postman yükleme
+sudo snap install vlc discord prospect-mail postman
 
 # Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash

@@ -4,6 +4,7 @@
 sudo apt update -y
 sudo apt upgrade -y
 ```
+
 ## .Bashrc komutlarım
 
 ```BASH
@@ -19,11 +20,14 @@ alias startserver='VBoxManage startvm "UbuntuServer" --type headless'
 alias stopserver='VBoxManage controlvm "UbuntuServer" acpipowerbutton'
 
 ```
+
 ## Faydalı Paketler
+
 ```BASH
 # Sık kullanılan faydalı paketleri kur
 sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl -y
 ```
+
 ## Oracle VirtualBox Kurulumu
 
 ```BASH
@@ -32,7 +36,8 @@ echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian $(lsb_r
 sudo apt update
 sudo apt install virtualbox-7.0
 ```
-  > **Note**: Kurulumda **kernel hatası alarsanız bu linkteki** çözümü uygulayın.
+
+> **Note**: Kurulumda **kernel hatası alarsanız bu linkteki** çözümü uygulayın.
 
 > [Kernel Hata Çözümü](https://superuser.com/questions/1285964/how-to-fix-and-prevent-virtualbox-kernel-driver-not-installed)
 
@@ -43,25 +48,33 @@ sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
 ```
+
 ## Apache Kurulumu
+
 ```BASH
 sudo apt install apache2 apache2-utils -y
 sudo rm -f /var/www/html/index.html
 sudo systemctl enable apache2
 sudo service apache2 restart
 ```
+
 ## Apache Dizin Ayarları
+
 ```BASH
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
 ```
+
 ## Masaüzerine HTML klasörü kısayolunun açılması
+
 ```BASH
  cd ~/Desktop
 ln -s /var/www/html/
 sudo rm -f /var/www/html/index.html
 ```
+
 ## Php 7.4 Kurulumu
+
 ```BASH
 sudo add-apt-repository -y ppa:ondrej/php
 sudo apt update
@@ -69,7 +82,8 @@ sudo apt install php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl ph
 sudo apt install composer -y
 sudo service apache2 restart
 ```
-  > **Note**: php7.4-imagick hatasını kontrol et
+
+> **Note**: php7.4-imagick hatasını kontrol et
 
 ## 2 farklı PHP sürümü kurma ve bunları kullanma
 
@@ -92,14 +106,18 @@ sudo update-alternatives --config php
 sudo update-alternatives --set php /usr/bin/php7.4
 
 ```
+
 ## Adminer Kurulumu
+
 ```BASH
 mkdir /var/www/html/adminer
 wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
 ```
-  > **Note**: Adminer programını kullanmak için [adrese](http://127.0.0.1/adminer)  tıklayın.
+
+> **Note**: Adminer programını kullanmak için [adrese](http://127.0.0.1/adminer) tıklayın.
 
 ## MySQL / MariaDB Kurulumu
+
 ```BASH
 # MySQL / MariaDB kurulumu
 sudo apt install mariadb-server mariadb-client -y
@@ -119,8 +137,9 @@ sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'local
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install 20
 node -v
-npm -v 
+npm -v
 ```
+
 ## Doğru kurulum yapıldığının test edilmesi
 
 ```BASH
@@ -143,24 +162,39 @@ sudo apt install anydesk
 ```
 
 ## Gnome-sushi Paketi Kurulumu
+
 ```BASH
-sudo apt install gnome-sushi 
+sudo apt install gnome-sushi
 ```
+
 ## Ffmpeg Paketi Kurulumu
+
 ```BASH
-sudo apt install  ffmpeg 
+sudo apt install  ffmpeg
 ```
+
 ## Imagemagick Paketi Kurulumu
+
 ```BASH
-sudo apt install imagemagick 
+sudo apt install imagemagick
 ```
+
 ## Magic-wormhole Paketi Kurulumu
+
 ```BASH
-sudo apt install magic-wormhole 
+sudo apt install magic-wormhole
 ```
-## Metin editör  Paketi Kurulumu
+
+## Metin editör Paketi Kurulumu
+
 ```BASH
 sudo apt install vim
+```
+
+## Postman Kurulum
+
+```BASH
+sudo snap install postman
 ```
 
 ## Vscode Kurulumu
@@ -171,6 +205,7 @@ echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.
 sudo apt update
 sudo apt install code -y
 ```
+
 ## Vscode Extension Kurulumu
 
 ```BASH
@@ -206,7 +241,7 @@ code --install-extension eamodio.gitlens
 code --install-extension vincaslt.highlight-matching-tag
 # HTML CSS Support eklentisi
 code --install-extension ecmel.vscode-html-css
-# Image preview  eklentisi 
+# Image preview  eklentisi
 code --install-extension kisstkondoros.vscode-gutter-preview
 # JavaScript (ES6) code snippets eklentisi
 code --install-extension xabikos.JavaScriptSnippets
@@ -283,11 +318,12 @@ sudo snap install discord
 ```BASH
 sudo snap install prospect-mail
 ```
+
 ## ulauncher kurulumu
+
 ```BASH
 sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
 ```
-
 
 ## Guake Terminal Kurulumu
 
