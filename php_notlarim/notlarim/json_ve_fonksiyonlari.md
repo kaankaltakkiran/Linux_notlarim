@@ -112,3 +112,45 @@ echo $data->yas; // Çıktı: 30
 `file_get_contents("php://input"):` Bu kısım, HTTP isteğinin gövdesindeki ham verileri okur.
 
 `php://input` bir pseudo-protokol olup, sunucuda gelen HTTP isteğinin gövdesine erişim sağlar.
+
+## JSON.parse() Fonksiyonu Nedir Ve Nasıl Kullanılır?
+
+`JSON.parse()`, Bir JSON string'ini JavaScript nesnesine dönüştürmek için kullanılır.
+
+Yani, metin formatındaki JSON verisini, JavaScript'in anlayabileceği bir veri yapısına çevirir.
+
+Bu fonksiyon, sunucudan gelen JSON yanıtlarını işlemek veya yerel depolamada saklanan JSON verilerini okumak gibi durumlarda kullanılır.
+
+Örnek kullanım:
+
+```Js
+const jsonString = '{"ad":"Ahmet","soyad":"Yılmaz","yas":30}';
+const kullanici = JSON.parse(jsonString);
+
+console.log(kullanici.ad); // Ahmet
+console.log(kullanici.soyad); // Yılmaz
+console.log(kullanici.yas); // 30
+```
+
+## JSON.stringify() Fonksiyonu Nedir Ve Nasıl Kullanılır?
+
+`JSON.parse()`, Bir JavaScript nesnesini JSON string'e dönüştürmek için kullanılır.
+
+Yani, JavaScript'teki veri yapısını, metin formatında bir JSON string'e çevirir.
+
+Bu fonksiyon, JSON verilerini sunucuya göndermek veya yerel depolamada saklamak gibi durumlarda kullanılır.
+
+Örnek kullanım:
+
+```Js
+const kullanici = {
+  ad: "Ayşe",
+  soyad: "Öztürk",
+  yas: 25
+};
+
+const jsonString = JSON.stringify(kullanici);
+
+console.log(jsonString); // {"ad":"Ayşe","soyad":"Öztürk","yas":25}
+
+```
