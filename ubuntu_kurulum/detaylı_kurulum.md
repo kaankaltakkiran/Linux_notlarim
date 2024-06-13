@@ -39,7 +39,7 @@ sudo apt install gnome-screenshot xclip -y
 
 Bilgisayarı dilini **Türkçe** kullanıyorsanız aşşığıdaki ayarlar yapılır:
 
-Ayarlar | Klavye | Klavye Kısayolları | Kısayolları Gör ve Özelleştir | Özel Kısayollar | menüsünden yeni `+`tuşuna basarak kısayol tanımlanır. Resimler dizinine bu ekran görüntülerini kaydetmek için KOMUT kısmına aşağıdaki kod girilir:
+Ayarlar | Klavye | Klavye Kısayolları | Kısayolları Gör ve Özelleştir | Özel Kısayollar | menüsünden yeni `+`tuşuna basarak kısayol tanımlanır. Resimler dizinine bu ekran görüntülerini kaydetmek için KOMUT kısmına aşağıdaki komut girilir:
 
 ```BASH
 sh -c 'gnome-screenshot -af /home/$USER/Resimler/$(date "+%Y.%m.%d-%H.%M.%S").png'
@@ -47,9 +47,7 @@ sh -c 'gnome-screenshot -af /home/$USER/Resimler/$(date "+%Y.%m.%d-%H.%M.%S").pn
 
 Son olarak `Kısayol Ayarla` diyerek istediğiniz kombinasyonu ayarlayabilirsiniz:
 
-```BASH
-<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>
-```
+örnek: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>
 
 ![Türkçe Ayar](2023.02.08-00.08.24.png)
 
@@ -67,7 +65,7 @@ sudo chmod ugo-rwx /home/$USER/Resimler/*
 
 Bilgisayarı dilini **İngilizce** kullanıyorsanız aşağıdaki ayarlar yapılır:
 
-Settings | Keyboard | Keyboard Shortcuts | View and Customize Shortcuts | Custom Shortcuts | menüsünden `+` tuşuna basarak yeni kısayol tanımlanır. Name alanına istediğiniz ismi verebilirsiniz. `Pictures` dizinine bu ekran görüntülerini kaydetmek için COMMAND kısmına aşağıdaki kod girilir:
+Settings | Keyboard | Keyboard Shortcuts | View and Customize Shortcuts | Custom Shortcuts | menüsünden `+` tuşuna basarak yeni kısayol tanımlanır. Name alanına istediğiniz ismi verebilirsiniz. `Pictures` dizinine bu ekran görüntülerini kaydetmek için COMMAND kısmına aşağıdaki komut girilir:
 
 ```BASH
 sh -c 'gnome-screenshot -af /home/$USER/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png'
@@ -75,9 +73,7 @@ sh -c 'gnome-screenshot -af /home/$USER/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").pn
 
 Son olarak `Set` Shortcut diyerek istediğiniz kombinasyonu ayarlayabilirsiniz:
 
-```BASH
-<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>
-```
+örnek: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>
 
 ![İngilizce Ayar](2024.06.13-20.23.48.png)
 
