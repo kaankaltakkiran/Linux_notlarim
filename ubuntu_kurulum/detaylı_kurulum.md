@@ -71,7 +71,7 @@ Settings | Keyboard | Keyboard Shortcuts | View and Customize Shortcuts | Custom
 sh -c 'gnome-screenshot -af /home/$USER/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png'
 ```
 
-Son olarak `Set` Shortcut diyerek istediğiniz kombinasyonu ayarlayabilirsiniz:
+Son olarak `Set Shortcut` diyerek istediğiniz kombinasyonu ayarlayabilirsiniz:
 
 örnek: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>
 
