@@ -14,6 +14,6 @@
 
 - [Git Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/git_notlarim)
 
-- [Genel Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/genel_notlarim.md)
+- [Karalama Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/karalamalarim)
 
 - [Web Programlama Yol Haritam](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/yol_haritam.md)
