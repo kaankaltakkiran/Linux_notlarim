@@ -37,9 +37,13 @@ Aşağıdaki komut ile `gnome-screenshot` ve `xclip` kurulur.
 sudo apt install gnome-screenshot xclip -y
 ```
 
-Bilgisayarı dilini **Türkçe** kullanıyorsanız aşşığıdaki ayarlar yapılır:
+Daha sonra aşşığıdaki ayarlar yapılır:
 
 Ayarlar | Klavye | Klavye Kısayolları | Kısayolları Gör ve Özelleştir | Özel Kısayollar | menüsünden yeni `+`tuşuna basarak kısayol tanımlanır. Resimler dizinine bu ekran görüntülerini kaydetmek için KOMUT kısmına aşağıdaki komut girilir:
+
+> **Note**:Bilgisayar dili ingilizce olanlar için:
+
+> Settings | Keyboard | Keyboard Shortcuts | View and Customize Shortcuts | Custom Shortcuts | menüsünden `+` tuşuna basarak yeni kısayol tanımlanır. Name alanına istediğiniz ismi verebilirsiniz. `Pictures` dizinine bu ekran görüntülerini kaydetmek için COMMAND kısmına aşağıdaki komut girilir:
 
 ```BASH
 sh -c 'gnome-screenshot -af /home/$USER/Resimler/$(date "+%Y.%m.%d-%H.%M.%S").png'
@@ -48,8 +52,6 @@ sh -c 'gnome-screenshot -af /home/$USER/Resimler/$(date "+%Y.%m.%d-%H.%M.%S").pn
 Son olarak `Kısayol Ayarla` diyerek istediğiniz kombinasyonu ayarlayabilirsiniz:
 
 örnek: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>
-
-![Türkçe Ayar](2023.02.08-00.08.24.png)
 
 > **Note**: Eğer ekran görüntüsü aldığınız halde ekran görüntüsü kaydedilmemişse aşşığıdaki komutu girerek resim klasörüne izin verin.
 
@@ -63,31 +65,9 @@ sudo chmod ugo+rwx /home/$USER/Resimler/*
 sudo chmod ugo-rwx /home/$USER/Resimler/*
 ```
 
-Bilgisayarı dilini **İngilizce** kullanıyorsanız aşağıdaki ayarlar yapılır:
-
-Settings | Keyboard | Keyboard Shortcuts | View and Customize Shortcuts | Custom Shortcuts | menüsünden `+` tuşuna basarak yeni kısayol tanımlanır. Name alanına istediğiniz ismi verebilirsiniz. `Pictures` dizinine bu ekran görüntülerini kaydetmek için COMMAND kısmına aşağıdaki komut girilir:
-
-```BASH
-sh -c 'gnome-screenshot -af /home/$USER/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png'
-```
-
-Son olarak `Set Shortcut` diyerek istediğiniz kombinasyonu ayarlayabilirsiniz:
-
-örnek: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>
+> **Note**:Bilgisayar dili ingilizce olanlar için: Resimler yerine Pictures yazmalısınız.
 
 ![İngilizce Ayar](2024.06.13-20.23.48.png)
-
-> **Note**: Eğer ekran görüntüsü aldığınız halde ekran görüntüsü kaydedilmemişse aşşığıdaki komutu girerek resim klasörüne izin verin.
-
-```BASH
-sudo chmod ugo+rwx /home/$USER/Pictures/*
-```
-
-> Verdiğiniz izni geri almak için aşağıdaki komutu girin:
-
-```BASH
-sudo chmod ugo-rwx /home/$USER/Pictures/*
-```
 
 ## Oracle VirtualBox Kurulumu
 
