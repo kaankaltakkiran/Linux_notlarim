@@ -138,6 +138,12 @@ Aşşığıdaki komut ile phi3 kurulur:
 ollama run llava
 ```
 
+> **Note**: Aşşığıdaki komut ile yüklü olan modelleri listeleyebilirsiniz:
+
+> ```bash
+> ollama list
+> ```
+
 ## Yaranlandığım Kaynaklar
 
 - [Ubuntuda Ollama İle Lokal Yapay Zeka Kurulumu](https://itsfoss.com/ollama-setup-linux/)
