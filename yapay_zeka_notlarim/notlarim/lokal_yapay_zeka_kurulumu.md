@@ -17,7 +17,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 Kurduktan sonra aşağıdaki komut ile Ollamayı arka planda sürekli çalışsın:
 
 ```bash
-  sudo systemctl enable --now ollama
+sudo systemctl enable --now ollama
 ```
 
 ## Open WebUI Nedir Ve Nasıl Kurulur ?
@@ -54,7 +54,7 @@ Son olarak docker paketlerini yüklemek için aşağıdaki komut çalıştırıl
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 ```
 
-Doğru bir şekilde yüklendiyse Aşağıdaki komut ile docker versiyonunu görebilirsiniz
+Doğru bir şekilde yüklendiyse Aşağıdaki komut ile docker versiyonunu görebilirsiniz.
 
 Örnek çıktı: Docker version 26.1.4, build 5650f9b
 
@@ -81,7 +81,9 @@ Aşşığıdaki komut ile yukardaki docker containerını görebilirsiniz:
  sudo docker ps
 ```
 
-Yükleme başarılı olduktan sonra open webuı 8080 portunu kullanır. [Bu adrese tıklayarak](http://localhost:8080/) open webuı açabilirsiniz. Üye olduktan sonra open webuı kullanmaya başlayabilirsiniz.
+Yükleme başarılı olduktan sonra open webuı 8080 portunu kullanır.
+
+[Bu adrese tıklayarak](http://localhost:8080/) open webuı açabilirsiniz. Üye olduktan sonra Open WebUI kullanmaya başlayabilirsiniz.
 
 ## Model Nasıl Yüklenir Ve Nasıl Kullanır ?
 
@@ -136,7 +138,7 @@ Aşşığıdaki komut ile phi3 kurulur:
 ollama run llava
 ```
 
-### Yaranlandığım Kaynaklar
+## Yaranlandığım Kaynaklar
 
 - [Ubuntuda Ollama İle Lokal Yapay Zeka Kurulumu](https://itsfoss.com/ollama-setup-linux/)
 - [Türkçe Detaylı Kurulum Yotube Video](https://www.youtube.com/watch?v=9pWNZUFtQSM)
