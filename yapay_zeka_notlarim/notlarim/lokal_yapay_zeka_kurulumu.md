@@ -138,10 +138,10 @@ ollama run llava
 
 ### Yaranlandığım Kaynaklar
 
-- [Ubuntuda Ollama ile lokal yapay zeka kurulumu](https://itsfoss.com/ollama-setup-linux/)
-- [Türkçe detaylı kurulum yotube](https://www.youtube.com/watch?v=9pWNZUFtQSM)
+- [Ubuntuda Ollama İle Lokal Yapay Zeka Kurulumu](https://itsfoss.com/ollama-setup-linux/)
+- [Türkçe Detaylı Kurulum Yotube Video](https://www.youtube.com/watch?v=9pWNZUFtQSM)
 - [Open WebUI](https://openwebui.com/)
-- [Open WebUI detaylı kurulum](https://docs.openwebui.com/getting-started/)
-- [Ollama model kaynak](https://ollama.com/library)
-- [Docker kurulum](https://docs.docker.com/engine/install/ubuntu/)
-- [Hata çözümü](https://github.com/open-webui/open-webui/issues/377)
+- [Open WebUI Detaylı Kurulum](https://docs.openwebui.com/getting-started/)
+- [Ollama Model Kaynak](https://ollama.com/library)
+- [Docker Kurulum](https://docs.docker.com/engine/install/ubuntu/)
+- [Hata Çözümü](https://github.com/open-webui/open-webui/issues/377)
