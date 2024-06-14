@@ -138,11 +138,13 @@ Aşşığıdaki komut ile phi3 kurulur:
 ollama run llava
 ```
 
-> **Note**: Aşşığıdaki komut ile yüklü olan modelleri listeleyebilirsiniz:
+### Yüklü Modelleri Nasıl Görebilirim ?
 
-> ```bash
-> ollama list
-> ```
+Aşşığıdaki komut ile yüklü olan modelleri listeleyebilirsiniz:
+
+```bash
+ollama list
+```
 
 ## Yaranlandığım Kaynaklar
 
