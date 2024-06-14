@@ -51,6 +51,8 @@ sh -c 'gnome-screenshot -af /home/$USER/Resimler/$(date "+%Y.%m.%d-%H.%M.%S").pn
 
 Son olarak `Kısayol Ayarla` diyerek istediğiniz kombinasyonu ayarlayabilirsiniz:
 
+> **Note**:Bilgisayar dili ingilizce olanlar için: `Set Shortcuts`
+
 örnek: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>
 
 > **Note**: Eğer ekran görüntüsü aldığınız halde ekran görüntüsü kaydedilmemişse aşşığıdaki komutu girerek resim klasörüne izin verin.
