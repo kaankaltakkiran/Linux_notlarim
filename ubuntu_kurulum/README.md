@@ -128,6 +128,7 @@ node -v
 php -v
 apache2 -v
 mysql --version
+docker --version
 
 echo "\n\n\n=== KURULUM TAMAMLANDI ===\n\n\n"
 ```
