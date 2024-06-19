@@ -1,5 +1,7 @@
 # Ubuntu 22.04 Kurulum
 
+![Ubuntu Sistem](2024.06.20-01.28.24.png)
+
 ## Hızlı Kurulum
 
 ```bash
