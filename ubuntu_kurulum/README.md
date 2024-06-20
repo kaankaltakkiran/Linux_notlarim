@@ -20,7 +20,7 @@ sudo apt upgrade
 sudo ubuntu-drivers autoinstall
 
 # Sık kullanılan faydalı paketleri kur
-sudo apt install ffmpeg wine  imagemagick guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip  -y
+sudo apt install ffmpeg wine  imagemagick guake guake-indicator pv meld vim axel ncdu  net-tools caffeine magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch  -y
 
 # Apache kurulumu
 sudo apt install apache2 apache2-utils -y

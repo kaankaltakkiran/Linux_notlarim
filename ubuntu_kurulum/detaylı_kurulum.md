@@ -382,7 +382,7 @@ sudo snap install discord
 sudo snap install prospect-mail
 ```
 
-## ulauncher kurulumu
+## ulauncher Kurulumu
 
 ```BASH
 sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
@@ -394,8 +394,14 @@ sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ul
 sudo apt install guake
 ```
 
-## Gnome extansion manager kurulumu
+## Gnome extansion manager Kurulumu
 
 ```BASH
 sudo apt install gnome-shell-extension-manager
+```
+
+## Neofetch Kurulumu
+
+```BASH
+ sudo apt install neofetch
 ```
