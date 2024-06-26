@@ -83,7 +83,6 @@ sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'local
 # Syncthing servis başlatma
  sudo systemctl enable syncthing@kaan.service
  sudo systemctl start syncthing@kaan.service
- systemctl status syncthing@kaan.service
 
 # Syncthing port izin verme
  sudo ufw allow 22000/tcp
