@@ -68,11 +68,22 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.
 https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" \
 | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
+# Syncthing kurulumu
+
+# Add the release PGP keys:
+sudo mkdir -p /etc/apt/keyrings
+sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
+# Add the "stable" channel to your APT sources:
+echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
+# Add the "candidate" channel to your APT sources:
+echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing candidate" | sudo tee /etc/apt/sources.list.d/syncthing.list
+
+
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-# Spotify,Anydesk,SublimeMerge,Vscode, Dcoker yükle
-sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+# Spotify,Anydesk,SublimeMerge,Vscode, Docker, Syncthing kurulum
+sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing -y
 
 ## PHP 7.4 yükle
 sudo apt install php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-pgsql php7.4-xml php7.4-redis libapache2-mod-php7.4 -y
@@ -91,6 +102,16 @@ sudo service mariadb restart
 # MySQL Root kullanıcısı için şifreyi değiştir
 ## mysql parola belirleme
 sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
+
+# Syncthing servis başlatma
+ sudo systemctl enable syncthing@kaan.service
+sudo systemctl start syncthing@kaan.service
+systemctl status syncthing@kaan.service
+
+# Syncthing port izin verme
+ sudo ufw allow 22000/tcp
+ sudo ufw enable
+
 
 # Adminer Kurulumu
 mkdir /var/www/html/adminer
@@ -131,6 +152,7 @@ php -v
 apache2 -v
 mysql --version
 docker --version
+syncthing --version
 
 echo "\n\n\n=== KURULUM TAMAMLANDI ===\n\n\n"
 ```
