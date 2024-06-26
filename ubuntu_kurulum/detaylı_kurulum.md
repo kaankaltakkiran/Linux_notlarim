@@ -442,3 +442,5 @@ systemctl status syncthing@kaan.service
  sudo ufw allow 22000/tcp
  sudo ufw enable
 ```
+
+> **Note**: Syncthing programını kullanmak için [adrese](http://127.0.0.1:8384) tıklayın.
