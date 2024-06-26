@@ -405,3 +405,9 @@ sudo apt install gnome-shell-extension-manager
 ```BASH
  sudo apt install neofetch
 ```
+
+## Obsidian Kurulumu
+
+```BASH
+sudo snap install obsidian --classic
+```
