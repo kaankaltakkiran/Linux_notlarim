@@ -7,7 +7,7 @@ sudo apt upgrade -y
 sudo ubuntu-drivers autoinstall 
 
 # Sık kullanılan faydalı paketleri kur
-sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch -y
+sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit -y
 
 
 # vscode kurulumu
@@ -41,19 +41,24 @@ https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_C
 
 # Syncthing kurulumu
 
-# Add the release PGP keys:
+## Add the release PGP keys:
 sudo mkdir -p /etc/apt/keyrings
 sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
-# Add the "stable" channel to your APT sources:
+## Add the "stable" channel to your APT sources:
 echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
-# Add the "candidate" channel to your APT sources:
+## Add the "candidate" channel to your APT sources:
 echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing candidate" | sudo tee /etc/apt/sources.list.d/syncthing.list
+
+# Floorp Web Tarayıcısı Kurulumu
+
+curl -fsSL https://ppa.ablaze.one/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg
+sudo curl -sS --compressed -o /etc/apt/sources.list.d/Floorp.list 'https://ppa.ablaze.one/Floorp.list'
 
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-# Spotify,Anydesk,SublimeMerge,Vscode, Docker, Syncthing kurulum
-sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing -y
+# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp kurulum
+sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp -y
 
 # Apache kurulumu
 sudo apt install apache2 apache2-utils -y
@@ -69,6 +74,7 @@ sudo apt update
 sudo apt install php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-pgsql php7.4-xml php7.4-redis libapache2-mod-php7.4 -y
 sudo apt install composer -y
 sudo service apache2 restart
+
 # Adminer kurulumu
 mkdir /var/www/html/adminer
 wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
@@ -104,6 +110,8 @@ sudo apt install gnome-shell-extension-manager -y
 #### Snap Store kurulumu
 
 sudo apt install snapd
+
+echo "Snap Uygulamaları Kuruluyor..."
 
 #### Snap Store vlc,discord, prospect-mail, postman yükleme
 sudo snap install vlc discord prospect-mail postman
