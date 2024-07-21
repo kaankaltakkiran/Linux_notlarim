@@ -89,3 +89,19 @@ Kolay bir şekilde ses cihazı ayarlma imkanı sunuyor.
 ## [Vitals ](https://extensions.gnome.org/extension/1460/vitals/)
 
 Anlık olarak işlemci çalışma seviyesi, indirme hızı gibi detaylı bilgiler sunuyor.
+
+## [Application Volume Mixer ](https://extensions.gnome.org/extension/3499/application-volume-mixer/)
+
+Aynı anda çalışan ses oynatıcıların ses seviyesini değiştirmeye imkan sağlıyor.
+
+## [Wallpaper Switcher](https://extensions.gnome.org/extension/4812/wallpaper-switcher/)
+
+Otomatik olarak duvar kağıdı değiştiriliyor.
+
+## [Wifi QR Code](https://extensions.gnome.org/extension/5416/wifi-qrcode/)
+
+Wifi şifresini qr code olarak oluşturmaya imkan sağlıyor.
+
+## [Gesture Improvements ](https://extensions.gnome.org/extension/4245/gesture-improvements/)
+
+Touchpadi macostaki gibi fonksiyonel bir biçim de kullanım imkanı sunuyor.
