@@ -38,7 +38,7 @@ Bilgisayarınızın uykuya geçmesini önler.
 
 En son kopyaladığınız yazıları liste halinde gösteriyor.
 
-## [Clipboard Indicator](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
+## [Compiz alike magic lamp effect ](https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/)
 
 Pencereyi süreklediğinizde görsel efekt sunuyor.
 
