@@ -13,3 +13,5 @@
 - [Script ile Windows Kurulumu](https://github.com/ChrisTitusTech/winutil)
 
 - [Altarnatif Program Önerileri](https://alternativeto.net/)
+
+- [Ücretsiz Figma Hesabı](https://www.youtube.com/watch?v=pJkOqN45uZE)
