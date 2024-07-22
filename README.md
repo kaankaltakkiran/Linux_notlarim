@@ -16,6 +16,6 @@
 
 - [Yapay Zeka Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/yapay_zeka_notlarim)
 
-- [Karalama Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/karalamalarim)
+- [Genel Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/karalamalarim)
 
 - [Web Programlama Yol Haritam](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/yol_haritam.md)
