@@ -19,3 +19,5 @@
 - [Linux Masaüstü Ortamı Seçicisi](https://distrochooser.de/en)
 
 - [Hızlı Arch Paket Yükleme](https://ninitarch.vercel.app/)
+
+- [Bufferbloat Test Sitesi](https://www.waveform.com/tools/bufferbloat)
