@@ -15,3 +15,7 @@
 - [Altarnatif Program Önerileri](https://alternativeto.net/)
 
 - [Ücretsiz Figma Hesabı](https://www.youtube.com/watch?v=pJkOqN45uZE)
+
+- [Linux Masaüstü Ortamı Seçicisi](https://distrochooser.de/en)
+
+- [Hızlı Arch Paket Yükleme](https://ninitarch.vercel.app/)
