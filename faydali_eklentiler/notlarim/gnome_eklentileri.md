@@ -105,3 +105,11 @@ Wifi şifresini qr code olarak oluşturmaya imkan sağlıyor.
 ## [Gesture Improvements ](https://extensions.gnome.org/extension/4245/gesture-improvements/)
 
 Touchpadi macostaki gibi fonksiyonel bir biçim de kullanım imkanı sunuyor.
+
+## [Jiggle ](https://extensions.gnome.org/extension/3438/jiggle/)
+
+Fareyi hızlı bir şekilde sağ-sola çekince fare imleci büyüyerek ekranda nerede olduğunu görebilmemizi sağlıyor.
+
+> Note: Bu eklenti, gnome Kararlı sürüm olan 42.9 sürümünü desteklemiyor. Aşşığıdaki bağlantı ile kararlı sürüm de yani 42.9 sürümünde kullanabilirsiniz.
+
+> [Gnome 42.9 sürümünde kullanmak için ](https://chatgpt.com/share/632e9d7c-db63-4c17-b4f4-25121fa182c1)
