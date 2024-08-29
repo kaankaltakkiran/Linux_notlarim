@@ -23,3 +23,7 @@ API geliştirme ve testlerini kolayca yapma imkanı sunar.
 ## [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
 
 Hızlı bir şekilde vue template oluşturmamıza yarar.
+
+## [Edit Csv](https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv)
+
+Csv dosyasını tablo şeklinde arayüz sunar.
