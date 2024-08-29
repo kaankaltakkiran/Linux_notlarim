@@ -113,3 +113,9 @@ Fareyi biraz hızlı bir şekilde sağ-sola çekince fare imleci büyüyerek ekr
 > Note: Bu eklenti, gnome Kararlı sürüm olan 42.9 sürümünü desteklemiyor. Aşağıdaki bağlantı ile kararlı sürüm de yani 42.9 sürümünde kullanabilirsiniz.
 
 > [Gnome 42.9 kararlı sürümünde kullanmak için](https://chatgpt.com/share/632e9d7c-db63-4c17-b4f4-25121fa182c1)
+
+## [Poweroff Button on Topbar ](https://extensions.gnome.org/extension/2851/poweroff-button-on-topbar/)
+
+Bilgisayarı kapatmak için kısayol ekleniyor üst menüye.
+
+> Note: [Gnome için kendi eklentimizi nasıl oluşturabilceğimiz hakkında bilgi](https://chatgpt.com/share/5eb07646-f865-4a5b-9d8e-c4da9f71640b)
