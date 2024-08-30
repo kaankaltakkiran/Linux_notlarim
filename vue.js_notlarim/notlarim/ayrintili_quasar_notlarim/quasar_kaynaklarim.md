@@ -13,3 +13,7 @@
 [Using .env file in Quasar Apps Medium Yazısı](https://medium.com/carbono/using-env-file-in-quasar-apps-72b56909302f)
 
 [Örnek quasar proje yotube video](https://www.youtube.com/watch?v=BmcA9SB9mSY)
+
+- [Quasar Diller İle İlgili Kaynak ](https://github.com/dannyconnell/quasalang)
+
+- [İ18n Dil Kodları](https://github.com/cospired/i18n-iso-languages)
