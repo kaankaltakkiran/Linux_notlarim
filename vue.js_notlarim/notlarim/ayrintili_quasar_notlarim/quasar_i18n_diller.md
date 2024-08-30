@@ -46,7 +46,7 @@ thanks,"Thanks","Merci","Danke"
 
 ### 3.Adım: İstediğimiz Dilleri Ve Çevirileri Ekleme
 
-[VSCode Extension "Edit csv"](https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv) Vscode eklentisi ile CSV dosyasında daha pratik çalışabilceğiz.
+[Edit CSV Vscode eklentisi ile](https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv) CSV dosyasında daha pratik çalışabilceğiz.
 
 Örnek olarak Rusça dilini eklediğimizde bu şekilde görünmeli:
 
@@ -128,7 +128,7 @@ export default {
 
 ### Eklediğimiz Dilleri listeleme
 
-Aşağıdaki komut ile eklediğimiz dilleri array şeklinde listeler.
+Aşağıdaki komut ile eklediğimiz dilleri değiklik algılandığında çalışarak array şeklinde listeler.
 
 ```bash
  quasalang generate --lang-switcher
@@ -139,7 +139,7 @@ Aşağıdaki komut ile eklediğimiz dilleri array şeklinde listeler.
 
 ### Değişikleri izlemek
 
-Aşağıdaki komut ile CSV dosyasında değişlik yapıldığında otamatik olarak dil oluşturma dosyalarını günceller
+Aşağıdaki komut ile CSV dosyasında değişlik yapıldığında otamatik olarak dil oluşturma dosyalarını günceller.
 
 ```bash
 quasalang generate --watch
@@ -259,7 +259,7 @@ Hoffe du magst es!"
 
 </details>
 
-This will generate language files like this:
+Aşağıdaki gibi görünür:
 
 ```javascript
 // English, en-US
@@ -298,7 +298,7 @@ Your language switcher options array:
 ]
 ```
 
-`generate` ile kullandığımızda otomatik olarak değişiklikler kayır edilir.
+`generate` ile kullandığımızda otomatik olarak değişiklikler kayıt edilir.
 
 ```bash
  quasalang generate --lang-switcher
