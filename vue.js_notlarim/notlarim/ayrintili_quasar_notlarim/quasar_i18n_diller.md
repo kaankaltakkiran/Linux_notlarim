@@ -6,6 +6,46 @@
 
 ## Başlangıç Adımları
 
+> Note: Quasar projesinde `i18n` yüklü değilse öncelikle aşağıdaki adımları tamamladıktan sonra 1.adıma geçilmeli. Eğer yüklü ise direk 1.adıma geçilebilir.
+
+Aşağıdaki komut ile i18n yüklenir.
+
+```bash
+npm install --save vue-i18n@next
+```
+
+`src/boot/i18n.js` yoluna dosya oluşturulup aşağıdaki kod yapıştırılır:
+
+```js
+import { createI18n } from "vue-i18n";
+import messages from "src/i18n";
+
+export default ({ app }) => {
+  // Create I18n instance
+  const i18n = createI18n({
+    locale: "en-US",
+    legacy: false, // comment this out if not using Composition API
+    messages,
+  });
+
+  // Tell app to use the I18n instance
+  app.use(i18n);
+};
+```
+
+Son olarak `quasar.config ` dosyasına i18n aşağıdaki gibi eklenir:
+
+```js
+return {
+  boot: [
+    // ...
+    "i18n",
+  ],
+
+  // ...
+};
+```
+
 ### 1.Adım: Global Olarak Quasalangi Yüklemek
 
 ```bash
@@ -367,6 +407,8 @@ const localeOptions = [
 </script>
 
 ```
+
+> Note:[Strings must use singlequote hatası alınırsa çözüm](https://chatgpt.com/share/d06794fe-1de1-4e93-80ca-b43b59f43f9c)
 
 Kaynakça:
 
