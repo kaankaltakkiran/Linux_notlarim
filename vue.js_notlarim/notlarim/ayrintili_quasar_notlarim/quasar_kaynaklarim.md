@@ -14,6 +14,6 @@
 
 [Örnek quasar proje yotube video](https://www.youtube.com/watch?v=BmcA9SB9mSY)
 
-- [Quasar Diller İle İlgili Kaynak ](https://github.com/dannyconnell/quasalang)
+[Quasar Diller İle İlgili Kaynak ](https://github.com/dannyconnell/quasalang)
 
-- [İ18n Dil Kodları](https://github.com/cospired/i18n-iso-languages)
+[İ18n Dil Kodları](https://github.com/cospired/i18n-iso-languages)
