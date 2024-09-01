@@ -417,3 +417,5 @@ Kaynakça:
 - [Detaylı Yotube Videosu](https://www.youtube.com/watch?v=yrfSLSjq4-E&list=PLAiDzIdBfy8gRLnMGvfm6NWHHKwFOzmrV&index=5)
 
 - [Tüm Dil Kodları](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)
+
+- [Uygulama Yerelleştirmesi için En İyi Diller](https://alconost.medium.com/the-top-10-languages-for-app-localization-ed0baca4d58e)
