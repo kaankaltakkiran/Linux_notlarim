@@ -409,6 +409,18 @@ sudo apt-get update && sudo apt-get install spotify-client
 sudo snap install discord
 ```
 
+## Telegram Kurulumu
+
+```BASH
+sudo snap install telegram-desktop
+```
+
+## Obsidian Note Kurulumu
+
+```BASH
+sudo snap install obsidian --classic
+```
+
 ## Prospect-mail Kurulumu
 
 ```BASH

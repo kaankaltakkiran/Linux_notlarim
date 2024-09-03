@@ -133,8 +133,8 @@ sudo apt install gnome-shell-extension-manager -y
 
 sudo apt install snapd
 
-# Snap Store vlc,discord, prospect-mail, postman, obsidian kurulum
-sudo snap install vlc discord prospect-mail postman obsidian --classic
+# Snap Store vlc,discord,telegram, prospect-mail, postman, obsidian kurulum
+sudo snap install vlc discord telegram-desktop prospect-mail postman obsidian --classic
 
 # Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
@@ -146,6 +146,7 @@ git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
 
 # Doğru kurulum yapıldığının test edilmesi
+
 npm -v
 node -v
 php -v
