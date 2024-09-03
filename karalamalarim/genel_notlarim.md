@@ -26,4 +26,4 @@
 
 - [Web Site Analizi](https://pagespeed.web.dev/)
 
-- [Yapay Zeka Modelleri Kıyaslama](https://artificialanalysis.ai/models?models_selected=gpt-4o-2024-08-06%2Cgpt-4o-mini%2Cllama-3-1-instruct-405b%2Cllama-3-1-instruct-70b%2Cllama-3-1-instruct-8b%2Cgemini-1-5-pro%2Cgemini-1-5-flash%2Cclaude-35-sonnet%2Cclaude-3-haiku%2Cmistral-large-2%2Cmistral-nemo%2Ccommand-r-plus%2Creka-core%2Cjamba-1-5-large%2Cjamba-1-5-mini)
+- [Yapay Zeka Modelleri Kıyaslama](https://artificialanalysis.ai/)
