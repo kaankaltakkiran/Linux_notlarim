@@ -113,8 +113,12 @@ sudo apt install snapd
 
 echo "Snap Uygulamaları Kuruluyor..."
 
-#### Snap Store vlc, discord, telegram, prospect-mail, postman , obsidian kurulum
-sudo snap install vlc discord telegram-desktop prospect-mail postman obsidian --classic
+#### Snap Store vlc, discord, telegram, prospect-mail, postman
+sudo snap install vlc discord telegram-desktop prospect-mail postman 
+
+#### Snap Store  obsidian kurulum
+sudo snap install obsidian --classic
+
 
 #### Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
