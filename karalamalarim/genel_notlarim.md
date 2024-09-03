@@ -27,3 +27,5 @@
 - [Web Site Analizi](https://pagespeed.web.dev/)
 
 - [Yapay Zeka Modelleri Kıyaslama](https://artificialanalysis.ai/)
+
+- [Ubuntu Snap Uygulama Yükleme](https://snapcraft.io/store?categories=featured)
