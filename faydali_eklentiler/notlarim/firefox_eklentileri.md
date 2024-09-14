@@ -91,3 +91,7 @@ Dikey olarak sol tarafta bookmarks olarak kullanılıyor.
 ## [Medium parser](https://addons.mozilla.org/en-US/firefox/addon/augmented-steam/)
 
 Steamdeki bir oyunun fiyatı hakkında bilgiler sunuyor.
+
+## [Gesturefy](https://addons.mozilla.org/en-US/firefox/addon/gesturefy/)
+
+Fare hareketleriyle daha hızlı gezinmeye imkan sağlıyor.
