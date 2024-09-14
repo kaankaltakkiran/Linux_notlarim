@@ -45,14 +45,18 @@ disk
 Bu komut, güncelleme işleminden sonra tüm paketleri kaldırırken eksik dosyaları otomatik olarak düzeltmeye çalışır.
 
 ```BASH
-alias gunaydin='sudo apt update --fix-missing -y && sudo apt upgrade -y && sudo apt autoremove -y'
+alias gunaydin='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh   '
 ```
 
-sudo apt update --fix-missing -y: Bu komut, paket veritabanını güncellerken eksik veya bozuk paket listelerini düzeltir (--fix-missing). -y seçeneği tüm güncelleme işlemlerini otomatik olarak onaylar.
+# Ubuntu Güncelleme ve Temizlik Komutları
 
-sudo apt upgrade -y: Bu komut, sistemdeki tüm paketleri en son sürümlerine günceller. -y seçeneği yine tüm güncelleme işlemlerini otomatik olarak onaylar.
+**`sudo apt update`**: Paket yöneticisinin mevcut paketlerin listelerini güncellemesini sağlar. Yani, hangi yazılımların yeni sürümleri mevcut, bunları kontrol eder.
 
-sudo apt autoremove -y: Bu komut, sistemde artık kullanılmayan paketleri (örneğin, bağımlılıkları çözülmüş olan paketler) kaldırır. -y seçeneği tüm kaldırma işlemlerini otomatik olarak onaylar. Bu şekilde, gereksiz dosyaları temizler ve disk alanı açar.
+**`sudo apt upgrade -y`**: Güncellenmesi gereken yazılımları indirip kurar. `-y` parametresi, işlemin kullanıcı onayı olmadan otomatik devam etmesini sağlar.
+
+**`sudo apt autoremove -y`**: Artık kullanılmayan ve gereksiz hale gelmiş bağımlılık paketlerini otomatik olarak kaldırır.
+
+**`sudo snap refresh`**: Snap paket yöneticisiyle kurulan yazılımların en son sürümlerine güncellenmesini sağlar.
 
 > Note: sudo apt purge bir paketi sistemden kaldırırken, sudo apt autoremove ise artık kullanılmayan paketleri temizler.
 
