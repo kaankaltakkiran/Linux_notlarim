@@ -45,7 +45,7 @@ disk
 Bu komut, güncelleme işleminden sonra tüm paketleri kaldırırken eksik dosyaları otomatik olarak düzeltmeye çalışır.
 
 ```BASH
-alias gunaydin='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh   '
+alias gunaydin='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh'
 ```
 
 # Ubuntu Güncelleme ve Temizlik Komutları

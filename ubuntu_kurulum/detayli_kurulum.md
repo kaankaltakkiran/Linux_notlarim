@@ -1,7 +1,7 @@
 ## Genel Güncelleme İşlemleri
 
 ```BASH
-sudo apt update -y
+sudo apt update
 sudo apt upgrade -y
 ```
 
@@ -44,7 +44,7 @@ systemctl status syncthing@kaan.service
 # Disk alanını anlamlı gösterir
 alias disk='du -h'
 # Güncelleme işlemi
-alias gunaydin='sudo apt update --fix-missing -y && sudo apt upgrade -y && sudo apt autoremove -y'
+alias gunaydin='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh'
 # Komut satırında gün,tarih,saat,isim gibi bilgileri gösterme
 PS1="\n\[\e[35m\]\D{%Y-%m-%d}, \t\[\e[m\] \[\e[31m\]\u\[\e[m\]@\[\e[36m\]KaanPc\[\e[m\]:\[\e[32m\]\w\[\e[m\]\n\$ "
 # Sanal makine başlatma
