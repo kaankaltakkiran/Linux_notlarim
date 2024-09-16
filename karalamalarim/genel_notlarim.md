@@ -29,3 +29,5 @@
 - [Yapay Zeka Modelleri Kıyaslama](https://artificialanalysis.ai/)
 
 - [Ubuntu Snap Uygulama Yükleme](https://snapcraft.io/store?categories=featured)
+
+- [Yapay Zeka Hangi Meslekleri Etkileyecek Analiz](https://willrobotstakemyjob.com/)
