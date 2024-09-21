@@ -31,3 +31,5 @@
 - [Ubuntu Snap Uygulama Yükleme](https://snapcraft.io/store?categories=featured)
 
 - [Yapay Zeka Hangi Meslekleri Etkileyecek Analiz](https://willrobotstakemyjob.com/)
+
+- [Steam Walpaper Engine Linux Ortamı İçin](https://github.com/Almamu/linux-wallpaperengine)
