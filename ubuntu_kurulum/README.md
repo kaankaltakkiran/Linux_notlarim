@@ -1,6 +1,6 @@
 # Ubuntu 22.04 Kurulum Notlarım
 
-- [Detaylı Kurulum Notlarım]()
+- [Detaylı Kurulum Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum/detayli_kurulum/README.md)
 
 ![Ubuntu Sistem](./image/System_summary.png)
 
@@ -10,7 +10,7 @@
 wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/main/ubuntu_kurulum/my_setup_commands.sh -O - | sh
 ```
 
-### Detaylı Kurulum
+### Kurulum İçeriği
 
 ```bash
 # Depolarda yer alan paketlerin güncel listesini indir
