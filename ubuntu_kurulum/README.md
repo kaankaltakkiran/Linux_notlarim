@@ -1,4 +1,6 @@
-# Ubuntu 22.04 Kurulum
+# Ubuntu 22.04 Kurulum Notlarım
+
+- [Detaylı Kurulum Notlarım]()
 
 ![Ubuntu Sistem](./image/System_summary.png)
 
