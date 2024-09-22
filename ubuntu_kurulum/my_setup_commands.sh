@@ -54,11 +54,16 @@ echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://ap
 curl -fsSL https://ppa.ablaze.one/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg
 sudo curl -sS --compressed -o /etc/apt/sources.list.d/Floorp.list 'https://ppa.ablaze.one/Floorp.list'
 
+# Brave Web Tarayıcısı Kurulumu
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp kurulum
-sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp -y
+# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp, Brave kurulum
+sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser -y
 
 # Apache kurulumu
 sudo apt install apache2 apache2-utils -y
