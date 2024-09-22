@@ -1,6 +1,6 @@
 # Ubuntu 22.04 Kurulum
 
-![Ubuntu Sistem](2024.06.20-01.28.24.png)
+![Ubuntu Sistem](./image/System_summary.png)
 
 ## Hızlı Kurulum
 

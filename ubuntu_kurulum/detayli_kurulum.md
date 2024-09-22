@@ -102,7 +102,7 @@ sudo chmod ugo-rwx /home/$USER/Resimler/*
 
 > **Note**:Bilgisayar dili ingilizce olanlar için: Resimler yerine Pictures yazmalısınız.
 
-![İngilizce Ayar](2024.06.13-20.23.48.png)
+![İngilizce Ayar](./image/screenshot_shourtcut.png)
 
 ## Oracle VirtualBox Kurulumu
 
