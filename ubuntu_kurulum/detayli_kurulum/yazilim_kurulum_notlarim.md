@@ -44,7 +44,7 @@ sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
 ```
 
-## Masaüzerine HTML klasörü kısayolunun açılması
+## Masaüstüne HTML Klasörü Kısayolunun Açılması
 
 ```BASH
  cd ~/Desktop
@@ -64,7 +64,7 @@ sudo service apache2 restart
 
 > **Note**: php7.4-imagick hatasını kontrol et
 
-## 2 farklı PHP sürümü kurma ve bunları kullanma
+## 2 Farklı PHP Sürümü Kurma Ve Bunları Kullanma
 
 ```bash
 # PHP 7.4 Sürümünü kur
@@ -110,7 +110,7 @@ sudo service mariadb restart
 sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
 ```
 
-## Node.js ve Npm kurulumu
+## Node.js Ve Npm Kurulumu
 
 ```BASH
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
@@ -208,7 +208,7 @@ code --install-extension oderwat.indent-rainbow
 
 ```
 
-## Doğru kurulum yapıldığının test edilmesi
+## Doğru Kurulum Yapıldığının Test Edilmesi
 
 ```BASH
 npm -v

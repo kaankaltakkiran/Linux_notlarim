@@ -1,6 +1,6 @@
-# Faydalı Uygulamalar Kurulum Notları
+# Faydalı Uygulamala Kurulum Notları
 
-## Syncthing Kurulumu
+## Syncthing(Senkronizasyon) Kurulumu
 
 ```BASH
 # Add the release PGP keys:
@@ -33,7 +33,7 @@ systemctl status syncthing@kaan.service
 
 > **Note**: Syncthing programını kullanmak için [adrese](http://127.0.0.1:8384) tıklayın.
 
-## Spotify Kurulumu
+## Spotify(Müzik) Kurulumu
 
 ```BASH
 curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
@@ -41,13 +41,13 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt-get update && sudo apt-get install spotify-client
 ```
 
-## ulauncher Kurulumu
+## Ulauncher(Bilgisayarda Arama) Kurulumu
 
 ```BASH
 sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
 ```
 
-## Oracle VirtualBox Kurulumu
+## Oracle VirtualBox(Sanal Makina) Kurulumu
 
 ```BASH
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
@@ -60,7 +60,7 @@ sudo apt install virtualbox-7.0
 
 > [Kernel Hata Çözümü](https://superuser.com/questions/1285964/how-to-fix-and-prevent-virtualbox-kernel-driver-not-installed)
 
-## AnyDesk Kurulumu
+## AnyDesk(Uzaktan Bilgisayara Bağlanma) Kurulumu
 
 ```BASH
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
@@ -77,7 +77,7 @@ sudo apt install anydesk
 sudo apt install bleachbit -y
 ```
 
-## Gnome extansion manager Kurulumu
+## Gnome Extansion Manager(Eklenti Yönetim) Kurulumu
 
 ```BASH
 sudo apt install gnome-shell-extension-manager

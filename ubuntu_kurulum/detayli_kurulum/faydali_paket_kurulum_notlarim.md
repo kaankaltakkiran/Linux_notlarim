@@ -1,4 +1,4 @@
-# Linuxta Kullandığım Faydalı Paketler
+# Faydalı Paket Kurulum Notlarım
 
 ## Faydalı Paketler
 
@@ -50,43 +50,43 @@ sudo chmod ugo-rwx /home/$USER/Resimler/*
 
 ![İngilizce Ayar](./image/screenshot_shourtcut.png)
 
-## Gnome-sushi Paketi Kurulumu
+## Gnome-sushi(Dosya Açma) Paketi Kurulumu
 
 ```BASH
 sudo apt install gnome-sushi
 ```
 
-## Ffmpeg Paketi Kurulumu
+## Ffmpeg(Video) Paketi Kurulumu
 
 ```BASH
 sudo apt install  ffmpeg
 ```
 
-## Imagemagick Paketi Kurulumu
+## Imagemagick(Resim) Paketi Kurulumu
 
 ```BASH
 sudo apt install imagemagick
 ```
 
-## Magic-wormhole Paketi Kurulumu
+## Magic-wormhole(Dosya Yollama) Paketi Kurulumu
 
 ```BASH
 sudo apt install magic-wormhole
 ```
 
-## Metin editör Paketi Kurulumu
+## Vi Editör (Metin Editör) Paketi Kurulumu
 
 ```BASH
 sudo apt install vim
 ```
 
-## Guake Terminal Kurulumu
+## Guake (Terminal) Kurulumu
 
 ```BASH
 sudo apt install guake
 ```
 
-## Neofetch Kurulumu
+## Neofetch(Sistem Bilgisi) Kurulumu
 
 ```BASH
  sudo apt install neofetch
