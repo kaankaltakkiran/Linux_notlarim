@@ -22,3 +22,13 @@ alias startserver='VBoxManage startvm "UbuntuServer" --type headless'
 alias stopserver='VBoxManage controlvm "UbuntuServer" acpipowerbutton'
 
 ```
+
+## [Gnome Shell Extensions(Web Arayüzünden Gnome Eklenti Kurma)](https://extensions.gnome.org/)
+
+Eklenti kurarken eğer `No such native application org.gnome.chrome_gnome_shell` gibi bir hata alıyorsanız aşağıdaki komut ile `gnome-browser-connector` yüklenmeli.
+
+```BASH
+sudo apt install gnome-browser-connector -Y
+```
+
+> **Note**: [Detaylı Kaynak)](https://ubuntushell.com/setup-gnome-shell-extensions/)
