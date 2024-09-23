@@ -33,3 +33,7 @@
 - [Yapay Zeka Hangi Meslekleri Etkileyecek Analiz](https://willrobotstakemyjob.com/)
 
 - [Steam Walpaper Engine Linux Ortamı İçin](https://github.com/Almamu/linux-wallpaperengine)
+
+- [Gnome Shell Extensions Hata Çözümü](https://ubuntushell.com/setup-gnome-shell-extensions/)
+
+- [Admin Panelli Kişisel Web Sitesi Kurma Rehberi Medium](https://safa.medium.com/tamamen-%C3%BCcretsiz-admin-panelli-ki%C5%9Fisel-web-sayfas%C4%B1-nas%C4%B1l-kurulur-aa4f968062c5)

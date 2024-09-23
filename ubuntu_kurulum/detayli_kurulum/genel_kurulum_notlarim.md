@@ -28,7 +28,7 @@ alias stopserver='VBoxManage controlvm "UbuntuServer" acpipowerbutton'
 Eklenti kurarken eğer `No such native application org.gnome.chrome_gnome_shell` gibi bir hata alıyorsanız aşağıdaki komut ile `gnome-browser-connector` yüklenmeli.
 
 ```BASH
-sudo apt install gnome-browser-connector -Y
+sudo apt install gnome-browser-connector -y
 ```
 
-> **Note**: [Detaylı Kaynak)](https://ubuntushell.com/setup-gnome-shell-extensions/)
+> **Note**: [Detaylı Kaynak](https://ubuntushell.com/setup-gnome-shell-extensions/)
