@@ -4,7 +4,7 @@
 
 - [Ubuntu Kurulum Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum_notlarim)
 
-- [Ubuntu'da,Firefox'ta ve VSCode'da Kullandığım Eklentiler](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/faydali_eklentiler)
+- [Ubuntu'da,Firefox'ta ve VSCode'da Kullandığım Eklentiler](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/eklenti_notlarim)
 
 - [Vue.js Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlarim)
 
