@@ -1,6 +1,6 @@
-# Ubuntu 22.04(LTS) Kurulum Notlarım
+# Ubuntu 22.04(LTS) Kurulum Notları
 
-- [Detaylı Kurulum Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum/detayli_kurulum/README.md)
+- [Detaylı Kurulum Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum_notlarim/detayli_kurulum)
 
 ![Ubuntu Sistem](./image/System_summary.png)
 
