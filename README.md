@@ -1,8 +1,8 @@
-# Linux, Ubuntu, Vue.Js, Typescript Ve Php Notlarım
+# Linux, Ubuntu, Eklenti, Vue.Js, Typescript, Php, Git, Yapay Zeka, Ve Genel Notlarım
 
 - [Linux Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlarim)
 
-- [Ubuntu Kurulum Notları](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum)
+- [Ubuntu Kurulum Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum)
 
 - [Ubuntu'da,Firefox'ta ve VSCode'da Kullandığım Eklentiler](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/faydali_eklentiler)
 
