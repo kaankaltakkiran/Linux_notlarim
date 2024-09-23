@@ -1,3 +1,9 @@
+# Başlangıç zamanını kaydet
+start_time=$(date +%s)
+
+# Ana kurulum işlemleri
+echo "Kurulum başlıyor..."
+
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 # Mevcut paketlerin yenisi varsa yükle
@@ -142,4 +148,17 @@ mysql --version
 docker --version
 syncthing --version
 
-echo "\n\n\n=== KURULUM TAMAMLANDI ===\n\n\n"
+# Kurulum bittiğinde bitiş zamanını al
+end_time=$(date +%s)
+
+# Toplam süreyi hesapla
+elapsed_time=$(( end_time - start_time ))
+
+# Süreyi dakika ve saniye formatına çevir
+minutes=$(( elapsed_time / 60 ))
+seconds=$(( elapsed_time % 60 ))
+
+# Sonuç mesajı
+echo "Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı."
+
+
