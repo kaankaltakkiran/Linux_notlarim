@@ -18,3 +18,10 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] http
 sudo apt update -y
 sudo apt install brave-browser -y
 ```
+
+## Chromium Web Tarayıcısı Kurulumu
+
+```BASH
+sudo snap install chromium
+
+```
