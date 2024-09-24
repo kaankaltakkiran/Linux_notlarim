@@ -2,6 +2,8 @@
 
 - [Detaylı Kurulum Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum_notlarim/detayli_kurulum)
 
+- [Hazırladığım Scriptler](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum_notlarim/script_notlarim)
+
 ![Ubuntu Sistem](./image/System_summary.png)
 
 ## Hızlı Kurulum
