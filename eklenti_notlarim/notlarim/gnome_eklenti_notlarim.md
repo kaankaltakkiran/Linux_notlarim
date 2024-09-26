@@ -1,4 +1,4 @@
-# Ubuntu Gnome Masaüstü Ortamında Kullanıdğım Eklentiler
+# Ubuntu Gnome Masaüstü Ortamında Kullanıdığım Eklentiler
 
 ## [Gnome Eklentiler Nasıl Yüklenir ? ](https://extensions.gnome.org/)
 
