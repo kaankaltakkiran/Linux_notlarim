@@ -48,7 +48,7 @@ sudo chmod ugo-rwx /home/$USER/Resimler/*
 
 > **Note**:Bilgisayar dili ingilizce olanlar için: Resimler yerine Pictures yazmalısınız.
 
-![İngilizce Ayar](../image/screenshot_shourtcut.png)
+![İngilizce Ayar](/ubuntu_kurulum_notlarim/image/screenshot_shourtcut.png)
 
 ## Gnome-sushi(Dosya Açma) Paketi Kurulumu
 
