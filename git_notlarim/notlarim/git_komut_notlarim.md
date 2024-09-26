@@ -4,10 +4,16 @@
 
 `git mv komutu` Git deposundaki dosyaları ve klasörleri yeniden adlandırmak veya taşımak için kullanılır. Bu sayede dosya boyutunu arttırmamış oluruz.
 
-Aşağıdaki komut klasor1 adını klasor2 olarak değiştirir.
+Aşağıdaki komut `klasor1` adını `klasor2` olarak değiştirir.
 
 ```bash
 git mv klasor1 klasor2
+```
+
+Aşağıdaki komut `README.md ` doyasını `notlarim` adlı klasöre taşır.
+
+```bash
+git mv README.md notlarim/
 ```
 
 ## Ssh İle Github Repository Nasıl Clone Edilir ?
