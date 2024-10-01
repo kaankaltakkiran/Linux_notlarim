@@ -14,7 +14,7 @@ wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/main/ubunt
 
 ### Kurulum İçeriği
 
-```bash
+````bash
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update
 # Mevcut paketlerin yenisi varsa yükle
@@ -93,54 +93,80 @@ sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
 
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
+# Tor Browser Web Tarayıcısı Kurulumu
+
+sudo apt install torbrowser-launcher -y
+
 # Depolarda yer alan paketlerin güncel listesini indir
+
 sudo apt update -y
 
 # Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp, Brave kurulum
-sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser -y
+
+sudo apt install spotify-client anydesk sublime-merge code docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser -y
 
 ## PHP 7.4 yükle
+
 sudo apt install php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-pgsql php7.4-xml php7.4-redis libapache2-mod-php7.4 -y
+
 ## PHP composer paketini kur
+
 sudo apt install composer -y
+
 ## PHP'nin çalışmaya başlaması için Apache'yi yeniden başlat
+
 sudo service apache2 restart
 
 # MySQL / MariaDB kurulumu
+
 sudo apt install mariadb-server mariadb-client -y
+
 ## Sistem açıldığında MySQL servisini otomatik başlat
+
 sudo systemctl enable mariadb
+
 ## MySQL servisini yeniden başlat
+
 sudo service mariadb restart
 
 # MySQL Root kullanıcısı için şifreyi değiştir
+
 ## mysql parola belirleme
+
 sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
 
 # Syncthing servis başlatma
- sudo systemctl enable syncthing@kaan.service
+
+sudo systemctl enable syncthing@kaan.service
 sudo systemctl start syncthing@kaan.service
 systemctl status syncthing@kaan.service
 
 # Syncthing port izin verme
- sudo ufw allow 22000/tcp
- sudo ufw enable
 
+sudo ufw allow 22000/tcp
+sudo ufw enable
 
 # Adminer Kurulumu
+
 mkdir /var/www/html/adminer
 wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
 
 # Fare için ayarlar
+
 ## Dock ünitesinde program simgesine tıklayınca küçült/büyült
+
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+
 ## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
+
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
 # Guake terminal kurulumu
+
 sudo apt install guake -y
 
 # Gnome Extansion Manger Kurulumu
+
 sudo apt install gnome-shell-extension-manager -y
 
 # Snap Store kurulumu
@@ -148,13 +174,15 @@ sudo apt install gnome-shell-extension-manager -y
 sudo apt install snapd
 
 # Snap Store vlc,discord,telegram, prospect-mail, postman, obsidian, chromium kurulum
+
 sudo snap install vlc discord telegram-desktop prospect-mail postman chromium obsidian --classic
 
 # Node.js ve Npm İçin Nvm Kurulumu
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
-
 # GIT ayarları
+
 sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
@@ -170,4 +198,8 @@ docker --version
 syncthing --version
 
 echo "\n\n\n=== KURULUM TAMAMLANDI ===\n\n\n"
+
 ```
+
+```
+````

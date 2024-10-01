@@ -22,6 +22,15 @@ sudo apt install brave-browser -y
 ## Chromium Web Tarayıcısı Kurulumu
 
 ```BASH
-sudo snap install chromium
+sudo snap install chromium -y
 
 ```
+
+## Tor Browser Web Tarayıcısı Kurulumu
+
+```BASH
+sudo apt install torbrowser-launcher -y
+```
+
+> **Note**: Bu kurulum uygulamasını indirir. Daha sonra bu kurulum programından `tor browser` kurulmalı
+> [Detaylı Kaynak](https://linux.how2shout.com/how-to-install-tor-browser-on-ubuntu-22-04-lts-jammy/)
