@@ -173,9 +173,12 @@ sudo apt install gnome-shell-extension-manager -y
 
 sudo apt install snapd
 
-# Snap Store vlc,discord,telegram, prospect-mail, postman, obsidian, chromium kurulum
+# Snap Store vlc,discord,telegram, prospect-mail, postman, chromium kurulum
 
-sudo snap install vlc discord telegram-desktop prospect-mail postman chromium obsidian --classic
+sudo snap install vlc discord telegram-desktop prospect-mail postman chromium
+
+#### Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend kurulum
+sudo snap install obsidian --classic && micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend
 
 # Node.js ve Npm İçin Nvm Kurulumu
 

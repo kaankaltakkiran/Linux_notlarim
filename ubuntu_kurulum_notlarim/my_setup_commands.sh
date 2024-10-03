@@ -127,9 +127,10 @@ echo "Snap Uygulamaları Kuruluyor..."
 #### Snap Store vlc, discord, telegram, prospect-mail, postman, chromium kurulum
 sudo snap install vlc discord telegram-desktop prospect-mail postman chromium
 
-#### Snap Store  obsidian kurulum
-sudo snap install obsidian --classic
+#### Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend kurulum
+sudo snap install obsidian --classic && micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend
 
+echo "Snap Uygulamaları Kurulumu Tamamlandı"
 
 #### Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
