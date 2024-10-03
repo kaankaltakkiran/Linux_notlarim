@@ -162,4 +162,5 @@ seconds=$(( elapsed_time % 60 ))
 echo "Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı."
 
 # Kurulum sonrası yapılması gerekenler(Node.js,apeche) için bilgilendirme
-echo -e "Kurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın: \e[34mhttps://www.ornekwebsite.com\e[0m"
+echo -e "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m"
+

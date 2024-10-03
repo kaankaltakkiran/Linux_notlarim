@@ -5,5 +5,5 @@
 ```bash
 nvm install 20
 node -v # node.js versiyon
-npm -v #npm versiyon
+npm -v # npm versiyon
 ```
