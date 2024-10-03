@@ -120,7 +120,7 @@ sudo apt install gnome-shell-extension-manager -y
 
 #### Snap Store kurulumu
 
-sudo apt install snapd
+sudo apt install snapd -y
 
 echo "Snap Uygulamaları Kuruluyor..."
 
@@ -132,7 +132,7 @@ sudo snap install obsidian --classic
 
 
 #### Node.js ve Npm İçin Nvm Kurulumu
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 
 
 
@@ -161,4 +161,5 @@ seconds=$(( elapsed_time % 60 ))
 # Sonuç mesajı
 echo "Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı."
 
-
+# Kurulum sonrası yapılması gerekenler(Node.js,apeche) için bilgilendirme
+echo -e "Kurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın: \e[34mhttps://www.ornekwebsite.com\e[0m"

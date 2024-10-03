@@ -113,7 +113,7 @@ sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'local
 ## Node.js Ve Npm Kurulumu
 
 ```BASH
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 nvm install 20
 node -v
 npm -v
