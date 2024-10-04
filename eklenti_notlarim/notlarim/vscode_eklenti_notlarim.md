@@ -27,3 +27,11 @@ Hızlı bir şekilde vue template oluşturmamıza yarar.
 ## [Edit Csv](https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv)
 
 Csv dosyasını tablo şeklinde arayüz sunar.
+
+## [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+
+Markdown çıktısını görmek için.
+
+## [Incredibly In Your Face](https://marketplace.visualstudio.com/items?itemName=VirejDasani.incredibly-in-your-face)
+
+Kodda hata varsa yüz ifadeleri değişen eğlenceli eklenti
