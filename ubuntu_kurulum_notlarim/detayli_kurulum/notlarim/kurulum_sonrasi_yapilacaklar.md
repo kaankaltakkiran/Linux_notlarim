@@ -8,7 +8,14 @@ node -v # node.js versiyon
 npm -v # npm versiyon
 ```
 
-2. [Kod bilgisi olmadan kurulan yapay zeka aracı](https://github.com/pinokiocomputer/pinokio/releases) `pinokio`(Opsiyonel kurulum)
+2. `Flatpak` kurulduktan sonra aşağıdaki komut çalıştırılmalı(bilgisayar yeniden başlayacak).
+
+```bash
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo reboot
+```
+
+3. [Kod bilgisi olmadan kurulan yapay zeka aracı](https://github.com/pinokiocomputer/pinokio/releases) `pinokio`(Opsiyonel kurulum)
 
 ```bash
 # Pinokio_2.15.1_amd64.deb indirdikten sonra komutu çalıştır

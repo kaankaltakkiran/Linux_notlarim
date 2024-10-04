@@ -23,6 +23,10 @@ sudo apt upgrade
 # Sürücülerin (driver) güncel dosyalarını yükle
 sudo ubuntu-drivers autoinstall
 
+# Flatpak Kurulumu
+sudo apt install flatpak -y
+sudo apt install gnome-software-plugin-flatpak -y
+
 # Sık kullanılan faydalı paketleri kur
 sudo apt install ffmpeg wine  imagemagick guake guake-indicator pv meld vim axel ncdu  net-tools caffeine magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch  -y
 
@@ -199,6 +203,8 @@ apache2 -v
 mysql --version
 docker --version
 syncthing --version
+flatpak --version
+
 
 echo "\n\n\n=== KURULUM TAMAMLANDI ===\n\n\n"
 
