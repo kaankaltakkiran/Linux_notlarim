@@ -177,8 +177,8 @@ sudo apt install snapd
 
 sudo snap install vlc discord telegram-desktop prospect-mail postman chromium
 
-#### Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend kurulum
-sudo snap install obsidian --classic && micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend
+#### Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend, onlyoffice kurulum
+sudo snap install obsidian --classic && sudo snap install micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend  &&  sudo snap install onlyoffice-desktopeditors
 
 # Node.js ve Npm İçin Nvm Kurulumu
 

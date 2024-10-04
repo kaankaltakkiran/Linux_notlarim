@@ -84,3 +84,9 @@ sudo snap install gimp
 ```BASH
 sudo snap install localsend
 ```
+
+## [Onlyoffice(ofice)](https://snapcraft.io/install/onlyoffice-desktopeditors/ubuntu)
+
+```BASH
+sudo snap install onlyoffice-desktopeditors
+```
