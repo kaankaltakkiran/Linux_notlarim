@@ -1,6 +1,6 @@
 # Ubuntu(22.04 LTS Gnome) Kurulum Sonrası Yapılması Gerekenler
 
-1. Hızlı kurulumun gerçekleştiği terminel ekranından ayrı bir terminal ekranı açıp `node.js` kurulumu tamamlanmalı.
+1.  #### Hızlı kurulumun gerçekleştiği terminel ekranından ayrı bir terminal ekranı açıp `node.js` kurulumu tamamlanmalı.
 
 ```bash
 nvm install 20
@@ -8,20 +8,47 @@ node -v # node.js versiyon
 npm -v # npm versiyon
 ```
 
-2. `Flatpak` kurulduktan sonra aşağıdaki komut çalıştırılmalı(bilgisayar yeniden başlayacak).
+2. #### `Flatpak` kurulduktan sonra aşağıdaki komut çalıştırılmalı(bilgisayar yeniden başlayacak).
 
 ```bash
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sudo reboot
 ```
 
-3. `Alpaca`(lokal yapay zeka) kurulumu(opsiyonel)
+3. #### `Alpaca`(lokal yapay zeka) kurulumu(opsiyonel)
 
 ```bash
 flatpak install flathub com.jeffser.Alpaca -y
 ```
 
-4. [Kod bilgisi olmadan kurulan yapay zeka aracı](https://github.com/pinokiocomputer/pinokio/releases) `pinokio`(Opsiyonel kurulum)
+4. #### [Alias](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/komut_notlarim/ayrintili_komutlar.md) bashrc dosyasına alias ekleme rehberi
+
+##### bashrc dosyasına alias nasıl eklenir ?
+
+vi editör ile bashrc dosyasını açıktıntan sonra `i` (insert) tuşu ile düzenleme modunu aktifleştiriyoruz. Daha sonra eklemek istediğimiz aliasımızı bashrc dosyasına yapıştırıyoruz. <kbd>Escape</kbd> tuşu ile insert modundan çıkıyoruz. Son olarak `:wq ` ile dosyayı kaydedip çıkıyoruz.
+
+vi editör ile bashrc dosyasına gir:
+
+```BASH
+vi ~/.bashrc
+```
+
+```bash
+# Disk alanını anlamlı gösterir
+alias disk='du -h'
+# Güncelleme işlemi
+alias gunaydin='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh && flatpak update'
+# Komut satırında gün,tarih,saat,isim gibi bilgileri gösterme
+PS1="\n\[\e[35m\]\D{%Y-%m-%d}, \t\[\e[m\] \[\e[31m\]\u\[\e[m\]@\[\e[36m\]KaanPc\[\e[m\]:\[\e[32m\]\w\[\e[m\]\n\$ "
+```
+
+Son olarak değiliklerin aktif olması bashrc dosyasını aşağıdaki komut ile yeniden yüklüyoruz. Bu şekilde artık kalıcı olarak aliasa sahip oluruz.
+
+```BASH
+source ~/.bashrc
+```
+
+5. #### [Kod bilgisi olmadan kurulan yapay zeka aracı](https://github.com/pinokiocomputer/pinokio/releases) `pinokio`(Opsiyonel kurulum)
 
 ```bash
 # Pinokio_2.15.1_amd64.deb indirdikten sonra komutu çalıştır

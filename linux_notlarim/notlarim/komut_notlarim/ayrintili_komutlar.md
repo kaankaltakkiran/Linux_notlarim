@@ -45,7 +45,7 @@ disk
 Bu komut, güncelleme işleminden sonra tüm paketleri kaldırırken eksik dosyaları otomatik olarak düzeltmeye çalışır.
 
 ```BASH
-alias gunaydin='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh'
+alias gunaydin='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh && flatpak update'
 ```
 
 # Ubuntu Güncelleme ve Temizlik Komutları
@@ -57,6 +57,8 @@ alias gunaydin='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 **`sudo apt autoremove -y`**: Artık kullanılmayan ve gereksiz hale gelmiş bağımlılık paketlerini otomatik olarak kaldırır.
 
 **`sudo snap refresh`**: Snap paket yöneticisiyle kurulan yazılımların en son sürümlerine güncellenmesini sağlar.
+
+**`flatpak update`**: flatpak paket yöneticisiyle kurulan yazılımların en son sürümlerine güncellenmesini sağlar.
 
 > Note: sudo apt purge bir paketi sistemden kaldırırken, sudo apt autoremove ise artık kullanılmayan paketleri temizler.
 
