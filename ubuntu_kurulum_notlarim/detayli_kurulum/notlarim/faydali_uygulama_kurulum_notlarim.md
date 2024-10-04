@@ -88,3 +88,10 @@ sudo apt install gnome-shell-extension-manager
 ```BASH
 flatpak install flathub com.jeffser.Alpaca -y
 ```
+
+## [Pinokio, Kod bilgisi olmadan kurulan yapay zeka aracı](https://github.com/pinokiocomputer/pinokio/releases) Kurulumu
+
+```bash
+# Pinokio_2.15.1_amd64.deb indirdikten sonra komutu çalıştır
+sudo dpkg -i Pinokio_2.15.1_amd64.deb
+```

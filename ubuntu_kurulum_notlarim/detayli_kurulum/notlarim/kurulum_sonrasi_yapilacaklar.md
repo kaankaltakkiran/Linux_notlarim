@@ -15,13 +15,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 sudo reboot
 ```
 
-3. #### `Alpaca`(lokal yapay zeka) kurulumu(opsiyonel)
-
-```bash
-flatpak install flathub com.jeffser.Alpaca -y
-```
-
-4. #### [Alias](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/komut_notlarim/ayrintili_komutlar.md) bashrc dosyasına alias ekleme rehberi
+3. #### [Alias](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/komut_notlarim/ayrintili_komutlar.md) `.bashrc` dosyasına alias ekleme rehberi
 
 ##### bashrc dosyasına alias nasıl eklenir ?
 
@@ -48,9 +42,8 @@ Son olarak değiliklerin aktif olması bashrc dosyasını aşağıdaki komut ile
 source ~/.bashrc
 ```
 
-5. #### [Kod bilgisi olmadan kurulan yapay zeka aracı](https://github.com/pinokiocomputer/pinokio/releases) `pinokio`(Opsiyonel kurulum)
+4. #### Kurulması Opsiyonel Olan Yazılımlar/Programramlar
 
-```bash
-# Pinokio_2.15.1_amd64.deb indirdikten sonra komutu çalıştır
-sudo dpkg -i Pinokio_2.15.1_amd64.deb
-```
+- [Alpaca(Lokal Yapay Zeka Aracı (Opsiyonel)](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/faydali_uygulama_kurulum_notlarim.md)
+
+- [Pinokio, Kod Bilgisi Olmadan Kurulan Yapay Zeka Aracı(Opsiyonel)](https://github.com/pinokiocomputer/pinokio/releases)
