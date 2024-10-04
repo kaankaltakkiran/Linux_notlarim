@@ -82,3 +82,9 @@ sudo apt install bleachbit -y
 ```BASH
 sudo apt install gnome-shell-extension-manager
 ```
+
+## Alpaca(lokal yapay zeka) Kurulumu
+
+```BASH
+flatpak install flathub com.jeffser.Alpaca -y
+```

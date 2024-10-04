@@ -15,7 +15,13 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 sudo reboot
 ```
 
-3. [Kod bilgisi olmadan kurulan yapay zeka aracı](https://github.com/pinokiocomputer/pinokio/releases) `pinokio`(Opsiyonel kurulum)
+3. `Alpaca`(lokal yapay zeka) kurulumu(opsiyonel)
+
+```bash
+flatpak install flathub com.jeffser.Alpaca -y
+```
+
+4. [Kod bilgisi olmadan kurulan yapay zeka aracı](https://github.com/pinokiocomputer/pinokio/releases) `pinokio`(Opsiyonel kurulum)
 
 ```bash
 # Pinokio_2.15.1_amd64.deb indirdikten sonra komutu çalıştır

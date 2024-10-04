@@ -173,6 +173,9 @@ sudo apt install guake -y
 
 sudo apt install gnome-shell-extension-manager -y
 
+# Flatpak Alpaca Kurulum
+flatpak install flathub com.jeffser.Alpaca -y
+
 # Snap Store kurulumu
 
 sudo apt install snapd
