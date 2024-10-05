@@ -109,7 +109,7 @@ sudo systemctl enable apache2
 sudo service apache2 restart
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
-cp -r /var/www/html "$(xdg-user-dir DESKTOP)"
+
 
 
 # Php 7.4 kurulumu
@@ -171,6 +171,9 @@ sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
 
+#### Masaüstüne apache klasörü kopyalama
+cp -r /var/www/html "$(xdg-user-dir DESKTOP)"
+
 # Kurulum test
 php -v
 apache2 -v
@@ -193,5 +196,5 @@ seconds=$(( elapsed_time % 60 ))
 echo "Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı.(Yeniden başlatma önerilir.)"
 
 # Kurulum sonrası yapılması gerekenler(Node.js,apeche) için bilgilendirme
-echo -e "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m"
+echo-e "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m"
 
