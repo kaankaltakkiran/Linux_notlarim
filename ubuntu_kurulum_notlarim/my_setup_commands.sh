@@ -109,6 +109,8 @@ sudo systemctl enable apache2
 sudo service apache2 restart
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
+cp -r /var/www/html "$(xdg-user-dir DESKTOP)"
+
 
 # Php 7.4 kurulumu
 sudo add-apt-repository -y ppa:ondrej/php
