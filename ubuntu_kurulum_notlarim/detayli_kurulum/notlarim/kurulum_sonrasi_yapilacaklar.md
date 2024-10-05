@@ -47,3 +47,5 @@ source ~/.bashrc
 - [Alpaca(Lokal Yapay Zeka Aracı (Opsiyonel)](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/faydali_uygulama_kurulum_notlarim.md)
 
 - [Pinokio, Kod Bilgisi Olmadan Kurulan Yapay Zeka Aracı(Opsiyonel)](https://github.com/pinokiocomputer/pinokio/releases)
+
+- [Portmaster, Detaylı Ağ Güvenliği Aracı Kurulumu(Opsiyonel)](https://safing.io/download/)

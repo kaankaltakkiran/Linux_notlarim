@@ -89,9 +89,16 @@ sudo apt install gnome-shell-extension-manager
 flatpak install flathub com.jeffser.Alpaca -y
 ```
 
-## [Pinokio, Kod bilgisi olmadan kurulan yapay zeka aracı](https://github.com/pinokiocomputer/pinokio/releases) Kurulumu
+## [Pinokio, Kod bilgisi olmadan kurulan yapay zeka aracı Kurulumu](https://github.com/pinokiocomputer/pinokio/releases)
 
 ```bash
 # Pinokio_2.15.1_amd64.deb indirdikten sonra komutu çalıştır
 sudo dpkg -i Pinokio_2.15.1_amd64.deb
+```
+
+## [Portmaster, Detaylı Ağ Güvenliği Aracı Kurulumu](https://safing.io/download/)
+
+```bash
+sudo apt install gdebi-core -y
+sudo gdebi portmaster-installer.deb
 ```
