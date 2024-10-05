@@ -69,8 +69,27 @@ sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
 
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
+#### VirtualBox Güncel Depo Ekleme
+curl https://www.virtualbox.org/download/oracle_vbox_2016.asc | gpg --dearmor > oracle_vbox_2016.gpg
+curl https://www.virtualbox.org/download/oracle_vbox.asc | gpg --dearmor > oracle_vbox.gpg
+sudo install -o root -g root -m 644 oracle_vbox_2016.gpg /etc/apt/trusted.gpg.d/
+sudo install -o root -g root -m 644 oracle_vbox.gpg /etc/apt/trusted.gpg.d/
+echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
+
+#### VirtualBox Kurulumu
+sudo apt install -y linux-headers-$(uname -r) dkms
+sudo apt install virtualbox-7.0 -y
+
+#### Virt Manager Kurulumu
+sudo apt install -y cpu-checker
+sudo apt install -y qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils
+sudo systemctl enable --now libvirtd
+sudo systemctl start libvirtd
+sudo usermod -aG kvm $USER
+sudo usermod -aG libvirt $USER
 
 # Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp, Brave kurulum
 sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser -y
@@ -116,11 +135,9 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ##### Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
-#### Guake terminal kurulumu
-sudo apt install guake -y
+#### Guake terminal,Gnome Extansion Manger  kurulumu
+sudo apt install guake gnome-shell-extension-manager -y
 
-#### Gnome Extansion Manger Kurulumu
-sudo apt install gnome-shell-extension-manager -y
 
 #### Snap Store kurulumu
 
@@ -138,8 +155,6 @@ echo "Snap Uygulamaları Kurulumu Tamamlandı"
 
 #### Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-
-
 
 #### GIT ayarları
 sudo apt install git -y
@@ -165,7 +180,7 @@ minutes=$(( elapsed_time / 60 ))
 seconds=$(( elapsed_time % 60 ))
 
 # Sonuç mesajı
-echo "Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı."
+echo "Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı.(Yeniden başlatma önerilir.)"
 
 # Kurulum sonrası yapılması gerekenler(Node.js,apeche) için bilgilendirme
 echo -e "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m"

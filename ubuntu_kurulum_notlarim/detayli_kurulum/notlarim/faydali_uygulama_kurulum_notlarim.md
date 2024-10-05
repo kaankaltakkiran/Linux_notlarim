@@ -50,15 +50,37 @@ sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ul
 ## Oracle VirtualBox(Sanal Makina) Kurulumu
 
 ```BASH
-wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+sudo apt install curl -y
+curl https://www.virtualbox.org/download/oracle_vbox_2016.asc | gpg --dearmor > oracle_vbox_2016.gpg
+curl https://www.virtualbox.org/download/oracle_vbox.asc | gpg --dearmor > oracle_vbox.gpg
+sudo install -o root -g root -m 644 oracle_vbox_2016.gpg /etc/apt/trusted.gpg.d/
+sudo install -o root -g root -m 644 oracle_vbox.gpg /etc/apt/trusted.gpg.d/
+echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 sudo apt update
-sudo apt install virtualbox-7.0
+sudo apt install -y linux-headers-$(uname -r) dkms
+sudo apt install virtualbox-7.0 -y
 ```
 
 > **Note**: Kurulumda **kernel hatası alarsanız bu linkteki** çözümü uygulayın.
 
 > [Kernel Hata Çözümü](https://superuser.com/questions/1285964/how-to-fix-and-prevent-virtualbox-kernel-driver-not-installed)
+
+> [Detaylı Kurulum Kaynak](https://gcore.com/learning/how-to-install-virtualbox-on-ubuntu/)
+
+## Virt Manager(Sanal Makina) Kurulumu
+
+```BASH
+sudo apt install -y cpu-checker
+sudo apt install -y qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils
+sudo systemctl enable --now libvirtd
+sudo systemctl start libvirtd
+sudo usermod -aG kvm $USER
+sudo usermod -aG libvirt $USER
+```
+
+> **Note**: Kurduktan sonra yeniden başlatılmalı
+
+> [Detaylı Kurulum Kaynak](https://www.linuxtechi.com/how-to-install-kvm-on-ubuntu-22-04/)
 
 ## AnyDesk(Uzaktan Bilgisayara Bağlanma) Kurulumu
 
