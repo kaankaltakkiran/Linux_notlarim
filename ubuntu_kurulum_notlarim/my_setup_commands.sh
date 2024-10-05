@@ -69,7 +69,12 @@ sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
 
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
-#### VirtualBox Güncel Depo Ekleme
+# Google Chrome Depo Ekleme
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmour -o /usr/share/keyrings/chrome-keyring.gpg 
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/chrome-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list' 
+
+
+# VirtualBox Güncel Depo Ekleme
 curl https://www.virtualbox.org/download/oracle_vbox_2016.asc | gpg --dearmor > oracle_vbox_2016.gpg
 curl https://www.virtualbox.org/download/oracle_vbox.asc | gpg --dearmor > oracle_vbox.gpg
 sudo install -o root -g root -m 644 oracle_vbox_2016.gpg /etc/apt/trusted.gpg.d/
@@ -79,11 +84,14 @@ echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_re
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-#### VirtualBox Kurulumu
+# Google Chrome Kurulumu
+sudo apt install google-chrome-stable -y
+
+# VirtualBox Kurulumu
 sudo apt install -y linux-headers-$(uname -r) dkms
 sudo apt install virtualbox-7.0 -y
 
-#### Virt Manager Kurulumu
+# Virt Manager Kurulumu
 sudo apt install -y cpu-checker
 sudo apt install -y qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils
 sudo systemctl enable --now libvirtd
