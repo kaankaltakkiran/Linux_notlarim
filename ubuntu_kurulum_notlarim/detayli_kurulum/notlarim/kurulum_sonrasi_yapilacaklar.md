@@ -42,7 +42,14 @@ Son olarak değiliklerin aktif olması bashrc dosyasını aşağıdaki komut ile
 source ~/.bashrc
 ```
 
-4. #### Kurulması Opsiyonel Olan Yazılımlar/Programramlar
+4. #### Klavye Kısayolları
+
+   | Name             | Command                                                                                        |
+   | ---------------- | ---------------------------------------------------------------------------------------------- |
+   | Easy Screenshoot | sh -c 'gnome-screenshot -af /home/$USER/Pictures/Screenshots/$(date "+%Y.%m.%d-%H.%M.%S").png' |
+   | Guake Terminal   | guake -t                                                                                       |
+
+5. #### Kurulması Opsiyonel Olan Yazılımlar/Programramlar
 
 - [Alpaca(Lokal Yapay Zeka Aracı (Opsiyonel)](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/faydali_uygulama_kurulum_notlarim.md)
 
