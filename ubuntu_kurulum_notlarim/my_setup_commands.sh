@@ -126,9 +126,8 @@ sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'local
 
 # Adminer kurulumu
 cd /var/www/html
-mkdir adminer
-cd adminer
-wget -O index.php https://www.adminer.org/latest.php
+mkdir /var/www/html/adminer
+wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
 
 # Syncthing servis başlatma
  sudo systemctl enable syncthing@kaan.service
