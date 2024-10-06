@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/kaankaltakkiran/Gnome_right_click_create_
 
 3. #### [Alias](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/komut_notlarim/ayrintili_komutlar.md) `.bashrc` dosyasına alias ekleme rehberi
 
-##### bashrc dosyasına alias nasıl eklenir ?
+- ##### bashrc dosyasına alias nasıl eklenir ?
 
 vi editör ile bashrc dosyasını açıktıntan sonra `i` (insert) tuşu ile düzenleme modunu aktifleştiriyoruz. Daha sonra eklemek istediğimiz aliasımızı bashrc dosyasına yapıştırıyoruz. <kbd>Escape</kbd> tuşu ile insert modundan çıkıyoruz. Son olarak `:wq ` ile dosyayı kaydedip çıkıyoruz.
 
@@ -35,7 +35,7 @@ alias gunaydin='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 PS1="\n\[\e[35m\]\D{%Y-%m-%d}, \t\[\e[m\] \[\e[31m\]\u\[\e[m\]@\[\e[36m\]KaanPc\[\e[m\]:\[\e[32m\]\w\[\e[m\]\n\$ "
 ```
 
-Son olarak değiliklerin aktif olması bashrc dosyasını aşağıdaki komut ile yeniden yüklüyoruz. Bu şekilde artık kalıcı olarak aliasa sahip oluruz.
+- Son olarak değiliklerin aktif olması `bashrc` dosyasını aşağıdaki komut ile yeniden yüklüyoruz. Bu şekilde artık kalıcı olarak aliasa sahip oluruz.
 
 ```BASH
 source ~/.bashrc
@@ -57,7 +57,7 @@ sudo reboot
 
 6. #### Kurulması Opsiyonel Olan Yazılımlar/Programramlar
 
-- [Script İle Gnome Eklenti Yükleme(Stabil Değil))](https://github.com/kaankaltakkiran/Gnome_extension_installaion)
+- [Script İle Gnome Eklenti Yükleme(Stabil Değil)](https://github.com/kaankaltakkiran/Gnome_extension_installaion)
 
 - [Alpaca(Lokal Yapay Zeka Aracı (Opsiyonel)](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/faydali_uygulama_kurulum_notlarim.md)
 
