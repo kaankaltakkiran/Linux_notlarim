@@ -8,11 +8,10 @@ node -v # node.js versiyon
 npm -v # npm versiyon
 ```
 
-2. #### `Flatpak` kurulduktan sonra aşağıdaki komut çalıştırılmalı(bilgisayar yeniden başlayacak).
+2.  #### [Sağ Tıklama İle Yeni Dosya Oluşturma](https://github.com/kaankaltakkiran/Gnome_right_click_create_new_file)
 
 ```bash
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-sudo reboot
+wget https://raw.githubusercontent.com/kaankaltakkiran/Gnome_right_click_create_new_file/main/install-script.sh -O - | bash
 ```
 
 3. #### [Alias](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/komut_notlarim/ayrintili_komutlar.md) `.bashrc` dosyasına alias ekleme rehberi
@@ -49,13 +48,14 @@ source ~/.bashrc
    | Easy Screenshoot | sh -c 'gnome-screenshot -af /home/$USER/Pictures/Screenshots/$(date "+%Y.%m.%d-%H.%M.%S").png' |
    | Guake Terminal   | guake -t                                                                                       |
 
-   5. #### [Sağ Tıklama İle Yeni Dosya Oluşturma](https://github.com/kaankaltakkiran/Gnome_right_click_create_new_file)
+5. #### `Flatpak` kurulduktan sonra aşağıdaki komut çalıştırılmalı(bilgisayar yeniden başlayacak).
 
 ```bash
-wget https://raw.githubusercontent.com/kaankaltakkiran/Gnome_right_click_create_new_file/main/install-script.sh -O - | bash
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo reboot
 ```
 
-5. #### Kurulması Opsiyonel Olan Yazılımlar/Programramlar
+6. #### Kurulması Opsiyonel Olan Yazılımlar/Programramlar
 
 - [Script İle Gnome Eklenti Yükleme(Stabil Değil))](https://github.com/kaankaltakkiran/Gnome_extension_installaion)
 
