@@ -110,8 +110,6 @@ sudo service apache2 restart
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
 
-
-
 # Php 7.4 kurulumu
 sudo add-apt-repository -y ppa:ondrej/php
 sudo apt update
@@ -119,16 +117,18 @@ sudo apt install php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl ph
 sudo apt install composer -y
 sudo service apache2 restart
 
-# Adminer kurulumu
-mkdir /var/www/html/adminer
-wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
-
 # MySQL / MariaDB kurulumu
 sudo apt install mariadb-server mariadb-client -y
 sudo systemctl enable mariadb
 sudo service mariadb restart
 # MySQL Root kullanıcısı için şifreyi değiştir
-sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
+sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root')"
+
+# Adminer kurulumu
+cd /var/www/html
+mkdir adminer
+cd adminer
+wget -O index.php https://www.adminer.org/latest.php
 
 # Syncthing servis başlatma
  sudo systemctl enable syncthing@kaan.service
@@ -171,9 +171,6 @@ sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
 
-#### Masaüstüne apache klasörü kopyalama
-cp -r /var/www/html "$(xdg-user-dir DESKTOP)"
-
 # Kurulum test
 php -v
 apache2 -v
@@ -196,5 +193,5 @@ seconds=$(( elapsed_time % 60 ))
 echo "Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı.(Yeniden başlatma önerilir.)"
 
 # Kurulum sonrası yapılması gerekenler(Node.js,apeche) için bilgilendirme
-echo-e "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m"
+echo -e "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m"
 
