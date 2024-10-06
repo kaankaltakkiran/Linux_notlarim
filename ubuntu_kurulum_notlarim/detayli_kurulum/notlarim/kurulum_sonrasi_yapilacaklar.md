@@ -49,7 +49,15 @@ source ~/.bashrc
    | Easy Screenshoot | sh -c 'gnome-screenshot -af /home/$USER/Pictures/Screenshots/$(date "+%Y.%m.%d-%H.%M.%S").png' |
    | Guake Terminal   | guake -t                                                                                       |
 
+   5. #### [Sağ Tıklama İle Yeni Dosya Oluşturma](https://github.com/kaankaltakkiran/Gnome_right_click_create_new_file)
+
+```bash
+wget https://raw.githubusercontent.com/kaankaltakkiran/Gnome_right_click_create_new_file/main/install-script.sh -O - | bash
+```
+
 5. #### Kurulması Opsiyonel Olan Yazılımlar/Programramlar
+
+- [Script İle Gnome Eklenti Yükleme(Stabil Değil))](https://github.com/kaankaltakkiran/Gnome_extension_installaion)
 
 - [Alpaca(Lokal Yapay Zeka Aracı (Opsiyonel)](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/faydali_uygulama_kurulum_notlarim.md)
 
