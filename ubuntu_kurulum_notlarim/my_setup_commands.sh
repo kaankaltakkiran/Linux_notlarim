@@ -139,37 +139,40 @@ wget -O index.php https://www.adminer.org/latest.php
  sudo ufw enable
 
 
-#### Fare için ayarlar
-##### Dock ünitesinde program simgesine tıklayınca küçült/büyült
+# Fare için ayarlar
+## Dock ünitesinde program simgesine tıklayınca küçült/büyült
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-##### Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
+## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
-#### Guake terminal,Gnome Extansion Manger  kurulumu
+## Guake terminal,Gnome Extansion Manger  kurulumu
 sudo apt install guake gnome-shell-extension-manager -y
 
 
-#### Snap Store kurulumu
+# Snap Store kurulumu
 
 sudo apt install snapd -y
 
 echo "Snap Uygulamaları Kuruluyor..."
 
-#### Snap Store vlc, discord, telegram, prospect-mail, postman, chromium kurulum
+# Snap Store vlc, discord, telegram, prospect-mail, postman, chromium kurulum
 sudo snap install vlc discord telegram-desktop prospect-mail postman chromium
 
-#### Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend, onlyoffice kurulum
+# Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend, onlyoffice kurulum
 sudo snap install obsidian --classic && sudo snap install micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend  &&  sudo snap install onlyoffice-desktopeditors
 
 echo "Snap Uygulamaları Kurulumu Tamamlandı"
 
-#### Node.js ve Npm İçin Nvm Kurulumu
+# Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 
-#### GIT ayarları
+# GIT ayarları
 sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
+
+# Apache2 html klasörünü masaüstüne kısayol olarak ekle
+ln -s /var/www/html "$(xdg-user-dir DESKTOP)/html"
 
 # Kurulum test
 php -v
@@ -193,5 +196,6 @@ seconds=$(( elapsed_time % 60 ))
 echo "Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı.(Yeniden başlatma önerilir.)"
 
 # Kurulum sonrası yapılması gerekenler(Node.js,apeche) için bilgilendirme
-echo -e "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m"
+printf "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m\n"
+
 
