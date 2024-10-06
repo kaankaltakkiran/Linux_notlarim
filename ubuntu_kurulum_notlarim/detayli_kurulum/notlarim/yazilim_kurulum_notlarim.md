@@ -52,6 +52,12 @@ ln -s /var/www/html/
 sudo rm -f /var/www/html/index.html
 ```
 
+> _Note_: Aşağıdaki komut sistem dilini ona göre masaüstüne html klasörünü kısayol olarak ekler.
+
+```bash
+ln -s /var/www/html "$(xdg-user-dir DESKTOP)/html"
+```
+
 ## Php 7.4 Kurulumu
 
 ```BASH
