@@ -6,13 +6,13 @@
 
 ![Ubuntu Sistem](./image/System_summary.png)
 
-## Tam Kurulum
+## ✅Tam Kurulum✅
 
 ```bash
 wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/refs/heads/main/ubuntu_kurulum_notlarim/my_setup_commands.sh -O - | sh
 ```
 
-## Hızlı Kurulum
+## 🚀Hızlı Kurulum🚀
 
 ```bash
 wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/refs/heads/main/ubuntu_kurulum_notlarim/my_light_setup_commands.sh -O - | sh
