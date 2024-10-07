@@ -48,7 +48,7 @@ source ~/.bashrc
 | Easy Screenshot | sh -c 'gnome-screenshot -af /home/$USER/Pictures/Screenshots/$(date "+%Y.%m.%d-%H.%M.%S").png' | <kbd>⇧ Shift</kbd> + <kbd>⌘ Command</kbd> + <kbd>S</kbd> |
 | Guake Terminal  | guake -t                                                                                       | <kbd>f12</kbd>                                           |
 
-> _Note_: Yukarıdaki komut `inglizce` kuruluma göredir ve `Screenshots` klasörüne kaydeder. Kayıt yeri isteğe göre düzenlenebilir. [Detaylı Kaynak ](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/faydali_paket_kurulum_notlarim.md)
+> _Note_: Yukarıdaki ekran görüntüsü komutu `inglizce` kuruluma göredir ve `Screenshots` klasörüne kaydeder. Kayıt yeri isteğe göre düzenlenebilir. [Detaylı Kaynak ](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/faydali_paket_kurulum_notlarim.md)
 
 5. #### `Flatpak` kurulduktan sonra aşağıdaki komut çalıştırılmalı(bilgisayar yeniden başlayacak).
 
