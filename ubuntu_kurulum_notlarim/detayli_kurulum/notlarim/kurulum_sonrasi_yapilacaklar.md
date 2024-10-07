@@ -43,10 +43,10 @@ source ~/.bashrc
 
 4. #### Klavye Kısayolları
 
-   | Name             | Command                                                                                        |
-   | ---------------- | ---------------------------------------------------------------------------------------------- |
-   | Easy Screenshoot | sh -c 'gnome-screenshot -af /home/$USER/Pictures/Screenshots/$(date "+%Y.%m.%d-%H.%M.%S").png' |
-   | Guake Terminal   | guake -t                                                                                       |
+| Name            | Command                                                                                        | Shortcut                                                 |
+| --------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| Easy Screenshot | sh -c 'gnome-screenshot -af /home/$USER/Pictures/Screenshots/$(date "+%Y.%m.%d-%H.%M.%S").png' | <kbd>⇧ Shift</kbd> + <kbd>⌘ Command</kbd> + <kbd>S</kbd> |
+| Guake Terminal  | guake -t                                                                                       | <kbd>f12</kbd>                                           |
 
 5. #### `Flatpak` kurulduktan sonra aşağıdaki komut çalıştırılmalı(bilgisayar yeniden başlayacak).
 
