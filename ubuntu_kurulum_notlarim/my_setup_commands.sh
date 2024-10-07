@@ -5,7 +5,7 @@ start_time=$(date +%s)
 echo "Kurulum başlıyor..."
 
 # Depolarda yer alan paketlerin güncel listesini indir
-sudo apt update -y
+sudo apt update 
 # Mevcut paketlerin yenisi varsa yükle
 sudo apt upgrade -y
 
