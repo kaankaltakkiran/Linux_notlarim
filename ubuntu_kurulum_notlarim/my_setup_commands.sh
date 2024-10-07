@@ -173,6 +173,10 @@ git config --global user.name 'Kaan Kaltakkıran'
 # Apache2 html klasörünü masaüstüne kısayol olarak ekle
 ln -s /var/www/html "$(xdg-user-dir DESKTOP)/html"
 
+# Ekran Görüntülerin kaydedileceği klasörü oluştur ve izin ver
+mkdir -p ~/Pictures/Screenshots
+sudo chmod ugo+rwx /home/$USER/Pictures/Screenshots/*
+
 # Kurulum test
 php -v
 apache2 -v
