@@ -160,7 +160,7 @@ echo "Snap Uygulamaları Kuruluyor..."
 sudo snap install vlc discord telegram-desktop prospect-mail postman chromium
 
 # Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend, onlyoffice kurulum
-sudo snap install obsidian --classic && sudo snap install micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend  &&  sudo snap install onlyoffice-desktopeditors && sudo snap install mc-installer && sudo snap install steam
+sudo snap install obsidian --classic && sudo snap install micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend  &&  sudo snap install onlyoffice-desktopeditors 
 
 echo "Snap Uygulamaları Kurulumu Tamamlandı"
 
