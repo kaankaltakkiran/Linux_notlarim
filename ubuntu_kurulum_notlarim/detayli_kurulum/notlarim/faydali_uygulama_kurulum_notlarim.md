@@ -128,5 +128,6 @@ sudo gdebi portmaster-installer.deb
 ## Gnome-tweaks(detaylı gnome masaüstü ayarları) Kurulumu
 
 ```BASH
+sudo add-apt-repository universe -y
 sudo apt install gnome-tweaks -y
 ```

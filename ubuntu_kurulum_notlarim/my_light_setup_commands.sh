@@ -16,6 +16,9 @@ sudo ubuntu-drivers autoinstall
 sudo apt install flatpak -y
 sudo apt install gnome-software-plugin-flatpak -y
 
+# Gnome Tweaks Kurulumu
+sudo add-apt-repository universe -y
+
 # Sık kullanılan faydalı paketleri kur
 sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit -y
 
@@ -128,7 +131,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
 ## Guake terminal,Gnome Extansion Manger, Gnome Tweaks, Kurulumu
-sudo apt install guake gnome-shell-extension-manager gnome-tweaks -y
+sudo apt install guake gnome-shell-extension-manager  gnome-tweaks -y
 
 # Snap Store kurulumu
 
