@@ -17,7 +17,7 @@ sudo apt install flatpak -y
 sudo apt install gnome-software-plugin-flatpak -y
 
 # Sık kullanılan faydalı paketleri kur
-sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit -y
+sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit gnome-tweaks -y
 
 
 # vscode kurulumu

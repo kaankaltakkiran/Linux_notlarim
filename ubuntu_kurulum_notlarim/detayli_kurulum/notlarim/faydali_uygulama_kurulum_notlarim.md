@@ -124,3 +124,9 @@ sudo dpkg -i Pinokio_2.15.1_amd64.deb
 sudo apt install gdebi-core -y
 sudo gdebi portmaster-installer.deb
 ```
+
+## Gnome-tweaks(detaylı gnome masaüstü ayarları) Kurulumu
+
+```BASH
+sudo apt install gnome-tweaks -y
+```
