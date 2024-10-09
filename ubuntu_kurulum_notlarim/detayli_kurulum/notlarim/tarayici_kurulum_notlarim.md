@@ -43,3 +43,17 @@ sudo apt install torbrowser-launcher -y
 
 > **Note**: Bu kurulum uygulamasını indirir. Daha sonra bu kurulum programından `tor browser` kurulmalı
 > [Detaylı Kaynak](https://linux.how2shout.com/how-to-install-tor-browser-on-ubuntu-22-04-lts-jammy/)
+
+## LibreWolf Web Tarayıcısı Kurulumu
+
+```BASH
+sudo apt update && sudo apt install extrepo -y
+sudo extrepo enable librewolf
+sudo apt update && sudo apt install librewolf -y
+```
+
+## Zen Browser Web Tarayıcısı Kurulumu
+
+```BASH
+flatpak install flathub io.github.zen_browser.zen -y
+```
