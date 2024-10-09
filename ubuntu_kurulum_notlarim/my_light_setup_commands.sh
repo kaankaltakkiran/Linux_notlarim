@@ -157,7 +157,7 @@ ln -s /var/www/html "$(xdg-user-dir DESKTOP)/html"
 
 # Ekran Görüntülerin kaydedileceği klasörü oluştur ve izin ver
 mkdir -p ~/Pictures/Screenshots
-sudo chmod ugo+rwx /home/$USER/Pictures/Screenshots/*
+
 
 # Kurulum test
 php -v
