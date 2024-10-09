@@ -116,8 +116,8 @@ mkdir /var/www/html/adminer
 wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
 
 # Syncthing servis başlatma
- sudo systemctl enable syncthing@kaan.service
- sudo systemctl start syncthing@kaan.service
+sudo systemctl enable syncthing@$(whoami).service
+sudo systemctl start syncthing@$(whoami).service
 
 # Syncthing port izin verme
  sudo ufw allow 22000/tcp
