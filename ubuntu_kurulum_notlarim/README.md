@@ -18,6 +18,10 @@ wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/refs/heads
 wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/refs/heads/main/ubuntu_kurulum_notlarim/my_light_setup_commands.sh -O - | sh
 ```
 
+```bash
+wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/refs/heads/main/ubuntu_kurulum_notlarim/deneme.sh -O - | sh
+```
+
 ### Kurulum İçeriği
 
 ````bash
