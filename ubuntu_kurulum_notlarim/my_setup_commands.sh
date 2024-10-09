@@ -76,6 +76,10 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] http
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmour -o /usr/share/keyrings/chrome-keyring.gpg 
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/chrome-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list' 
 
+# LibraWolf Web Tarayıcısı Kurulumu
+sudo apt install extrepo -y
+sudo extrepo enable librewolf
+
 
 # VirtualBox Güncel Depo Ekleme
 curl https://www.virtualbox.org/download/oracle_vbox_2016.asc | gpg --dearmor > oracle_vbox_2016.gpg
@@ -87,8 +91,8 @@ echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_re
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-# Google Chrome Kurulumu
-sudo apt install google-chrome-stable -y
+# Google Chrome, LibraWolf Kurulumu
+sudo apt install google-chrome-stable librewolf -y
 
 # VirtualBox Kurulumu
 sudo apt install -y linux-headers-$(uname -r) dkms
