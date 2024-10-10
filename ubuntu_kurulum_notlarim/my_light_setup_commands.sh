@@ -88,6 +88,11 @@ sudo service apache2 restart
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
 
+# Adminer kurulumu
+cd /var/www/html
+mkdir /var/www/html/adminer
+wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
+
 # Php 7.4 kurulumu
 sudo add-apt-repository -y ppa:ondrej/php
 sudo apt update
@@ -102,10 +107,7 @@ sudo service mariadb restart
 # MySQL Root kullanıcısı için şifreyi değiştir
 sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root')"
 
-# Adminer kurulumu
-cd /var/www/html
-mkdir /var/www/html/adminer
-wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
+
 
 # Syncthing servis başlatma
 sudo systemctl enable syncthing@$(whoami).service
