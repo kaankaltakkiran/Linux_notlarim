@@ -13,8 +13,7 @@ sudo apt upgrade -y
 sudo ubuntu-drivers autoinstall
 
 # Flatpak Kurulumu
-sudo apt install flatpak -y
-sudo apt install gnome-software-plugin-flatpak -y
+sudo apt install flatpak gnome-software-plugin-flatpak -y
 
 # Gnome Tweaks Kurulumu
 sudo add-apt-repository universe -y
@@ -78,15 +77,8 @@ echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_re
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-# Google Chrome Kurulumu
-sudo apt install google-chrome-stable -y
-
-# VirtualBox Kurulumu
-sudo apt install -y linux-headers-$(uname -r) dkms
-sudo apt install virtualbox-7.0 -y
-
-# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Kurulum
-sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing -y
+# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Google Chrome, VirtualBox Kurulum
+sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing google-chrome-stable linux-headers-$(uname -r) dkms virtualbox-7.0 -y
 
 # Apache kurulumu
 sudo apt install apache2 apache2-utils -y
@@ -123,26 +115,14 @@ sudo systemctl start syncthing@$(whoami).service
  sudo ufw allow 22000/tcp
  sudo ufw enable
 
-
 # Fare için ayarlar
 ## Dock ünitesinde program simgesine tıklayınca küçült/büyült
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
-## Guake terminal,Gnome Extansion Manger, Gnome Tweaks, Kurulumu
-sudo apt install guake gnome-shell-extension-manager  gnome-tweaks -y
-
-# Snap Store kurulumu
-
-sudo apt install snapd -y
-
-echo "Snap Uygulamaları Kuruluyor..."
-
-# Snap Store vlc, telegram, prospect-mail, postman, kurulum
-sudo snap install vlc telegram-desktop prospect-mail postman 
-
-echo "Snap Uygulamaları Kurulumu Tamamlandı"
+## Guake terminal,Gnome Extansion Manger, Gnome Tweaks, Snap Store Kurulumu
+sudo apt install guake gnome-shell-extension-manager gnome-tweaks snapd -y
 
 # Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
@@ -158,6 +138,12 @@ ln -s /var/www/html "$(xdg-user-dir DESKTOP)/html"
 # Ekran Görüntülerin kaydedileceği klasörü oluştur ve izin ver
 mkdir -p ~/Pictures/Screenshots
 
+echo "Snap Uygulamaları Kuruluyor..."
+
+# Snap Store vlc, telegram, prospect-mail, postman, kurulum
+sudo snap install vlc telegram-desktop prospect-mail postman 
+
+echo "Snap Uygulamaları Kurulumu Tamamlandı"
 
 # Kurulum test
 php -v
