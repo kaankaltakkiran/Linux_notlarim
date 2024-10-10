@@ -12,12 +12,12 @@ sudo apt upgrade -y
 # Sürücülerin (driver) güncel dosyalarını yükle
 sudo ubuntu-drivers autoinstall
 
-# Flatpak Kurulumu
-sudo apt install flatpak -y
-sudo apt install gnome-software-plugin-flatpak -y
+# Flatpak Kurulumu (librewolf)
+sudo apt install flatpak gnome-software-plugin-flatpak extrepo -y
 
-# Gnome Tweaks Kurulumu
+# Gnome Tweaks(librewolf) Kurulumu
 sudo add-apt-repository universe -y
+sudo extrepo enable librewolf
 
 # Sık kullanılan faydalı paketleri kur(Tor Browser)
 sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit torbrowser-launcher -y
@@ -76,10 +76,6 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] http
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmour -o /usr/share/keyrings/chrome-keyring.gpg 
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/chrome-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list' 
 
-# LibraWolf Web Tarayıcısı Kurulumu
-sudo apt install extrepo -y
-sudo extrepo enable librewolf
-
 
 # VirtualBox Güncel Depo Ekleme
 curl https://www.virtualbox.org/download/oracle_vbox_2016.asc | gpg --dearmor > oracle_vbox_2016.gpg
@@ -91,13 +87,6 @@ echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_re
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-# Google Chrome, LibraWolf Kurulumu
-sudo apt install google-chrome-stable librewolf -y
-
-# VirtualBox Kurulumu
-sudo apt install -y linux-headers-$(uname -r) dkms
-sudo apt install virtualbox-7.0 -y
-
 # Virt Manager Kurulumu
 sudo apt install -y cpu-checker
 sudo apt install -y qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils
@@ -106,8 +95,8 @@ sudo systemctl start libvirtd
 sudo usermod -aG kvm $USER
 sudo usermod -aG libvirt $USER
 
-# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp, Brave kurulum
-sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser -y
+# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp, Brave, Google Chrome, LibraWolf, VirtualBox kurulum
+sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser google-chrome-stable librewolf linux-headers-$(uname -r) dkms virtualbox-7.0 -y
 
 # Apache kurulumu
 sudo apt install apache2 apache2-utils -y
@@ -116,6 +105,11 @@ sudo systemctl enable apache2
 sudo service apache2 restart
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
+
+# Adminer kurulumu
+cd /var/www/html
+mkdir /var/www/html/adminer
+wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
 
 # Php 7.4 kurulumu
 sudo add-apt-repository -y ppa:ondrej/php
@@ -131,11 +125,6 @@ sudo service mariadb restart
 # MySQL Root kullanıcısı için şifreyi değiştir
 sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root')"
 
-# Adminer kurulumu
-cd /var/www/html
-mkdir /var/www/html/adminer
-wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
-
 # Syncthing servis başlatma
  sudo systemctl enable syncthing@$(whoami).service
  sudo systemctl start syncthing@$(whoami).service
@@ -144,29 +133,14 @@ wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
  sudo ufw allow 22000/tcp
  sudo ufw enable
 
-
 # Fare için ayarlar
 ## Dock ünitesinde program simgesine tıklayınca küçült/büyült
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
-## Guake terminal,Gnome Extansion Manger, Gnome Tweaks, Kurulumu
-sudo apt install guake gnome-shell-extension-manager  gnome-tweaks -y
-
-# Snap Store kurulumu
-
-sudo apt install snapd -y
-
-echo "Snap Uygulamaları Kuruluyor..."
-
-# Snap Store vlc, discord, telegram, prospect-mail, postman, chromium kurulum
-sudo snap install vlc discord telegram-desktop prospect-mail postman chromium
-
-# Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend, onlyoffice kurulum
-sudo snap install obsidian --classic && sudo snap install micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend  &&  sudo snap install onlyoffice-desktopeditors 
-
-echo "Snap Uygulamaları Kurulumu Tamamlandı"
+## Guake terminal,Gnome Extansion Manger, Gnome Tweaks, Snap Store Kurulumu
+sudo apt install guake gnome-shell-extension-manager gnome-tweaks snapd -y
 
 # Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
@@ -181,6 +155,16 @@ ln -s /var/www/html "$(xdg-user-dir DESKTOP)/html"
 
 # Ekran Görüntülerin kaydedileceği klasörü oluştur ve izin ver
 mkdir -p ~/Pictures/Screenshots
+
+echo "Snap Uygulamaları Kuruluyor..."
+
+# Snap Store vlc, discord, telegram, prospect-mail, postman, chromium kurulum
+sudo snap install vlc discord telegram-desktop prospect-mail postman chromium
+
+# Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend, onlyoffice kurulum
+sudo snap install obsidian --classic && sudo snap install micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend  &&  sudo snap install onlyoffice-desktopeditors 
+
+echo "Snap Uygulamaları Kurulumu Tamamlandı"
 
 # Kurulum test
 php -v
