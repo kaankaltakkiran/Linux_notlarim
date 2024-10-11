@@ -121,7 +121,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
-## Guake terminal,Gnome Extansion Manger, Gnome Tweaks,Gnome Extension Snap Store Kurulumu
+# Guake terminal,Gnome Extansion Manger, Gnome Tweaks,Gnome Extension Snap Store Kurulumu
 sudo apt install guake gnome-shell-extension-manager gnome-tweaks gnome-browser-connector snapd -y
 
 # Node.js ve Npm İçin Nvm Kurulumu

@@ -57,7 +57,15 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 sudo reboot
 ```
 
+> Note: Zen Browser Web Tarayıcısı Kurulumu(Tavsiye)
+
+```BASH
+flatpak install flathub io.github.zen_browser.zen -y
+```
+
 6. #### Kurulması Opsiyonel Olan Yazılımlar/Programramlar
+
+- [Detaylı Uygulama/Program/Eklenti Notlarım)](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum_notlarim/detayli_kurulum)
 
 - [Script İle Gnome Eklenti Yükleme(Stabil Değil)](https://github.com/kaankaltakkiran/Gnome_extension_installaion)
 
