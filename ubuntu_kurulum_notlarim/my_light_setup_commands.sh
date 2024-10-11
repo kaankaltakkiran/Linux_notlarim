@@ -107,8 +107,6 @@ sudo service mariadb restart
 # MySQL Root kullanıcısı için şifreyi değiştir
 sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root')"
 
-
-
 # Syncthing servis başlatma
 sudo systemctl enable syncthing@$(whoami).service
 sudo systemctl start syncthing@$(whoami).service
@@ -123,8 +121,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
-## Guake terminal,Gnome Extansion Manger, Gnome Tweaks, Snap Store Kurulumu
-sudo apt install guake gnome-shell-extension-manager gnome-tweaks snapd -y
+## Guake terminal,Gnome Extansion Manger, Gnome Tweaks,Gnome Extension Snap Store Kurulumu
+sudo apt install guake gnome-shell-extension-manager gnome-tweaks gnome-browser-connector snapd -y
 
 # Node.js ve Npm İçin Nvm Kurulumu
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
