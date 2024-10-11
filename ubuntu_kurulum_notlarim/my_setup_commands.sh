@@ -150,6 +150,9 @@ sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
 
+# Google Chrome varsıyalan paketini silme
+sudo rm /etc/apt/sources.list.d/google.list
+
 # Apache2 html klasörünü masaüstüne kısayol olarak ekle
 ln -s /var/www/html "$(xdg-user-dir DESKTOP)/html"
 

@@ -9,6 +9,14 @@ sudo apt update -y
 sudo apt install google-chrome-stable -y
 ```
 
+> Note: sudo apt update yaparken hata alıyorsanız aşağıdaki komut ile fazlalık depoyu silin.
+
+```bash
+sudo rm /etc/apt/sources.list.d/google.list
+```
+
+- [Detaylı Kaynak](https://chatgpt.com/share/67094384-5c80-8008-a3b5-ac742963d2c5)
+
 ## Floorp Web Tarayıcısı Kurulumu
 
 ```BASH
