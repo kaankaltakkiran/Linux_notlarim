@@ -65,3 +65,15 @@ Aşağıdaki komut ile kurulur:
 ```bash
 sudo apt install htop -y
 ```
+
+## [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
+
+**Fastfetch**, sistem bilgilerini almak ve güzel bir şekilde görüntülemek için neofetch benzeri bir araçtır.
+
+Aşağıdaki komut ile kurulur:
+
+```bash
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
+sudo apt update
+sudo apt install fastfetch -y
+```
