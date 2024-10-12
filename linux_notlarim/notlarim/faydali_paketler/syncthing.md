@@ -6,7 +6,7 @@
 
 ## Syncthing nasıl yüklenir ?
 
-[Ubuntu için kurulum notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum/detayli_kurulum.md)
+[Ubuntu için kurulum notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/faydali_uygulama_kurulum_notlarim.md)
 
 ## Syncthing nasıl yüklenir ?
 
