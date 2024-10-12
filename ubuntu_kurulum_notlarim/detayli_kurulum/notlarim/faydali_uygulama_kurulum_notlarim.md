@@ -19,9 +19,8 @@ syncthing --version
 ### Syncthing servis başlatma
 
 ```BASH
-sudo systemctl enable syncthing@kaan.service
-sudo systemctl start syncthing@kaan.service
-systemctl status syncthing@kaan.service
+sudo systemctl enable syncthing@$(whoami).service
+sudo systemctl start syncthing@$(whoami).service
 ```
 
 ### Syncthing port izin verme
