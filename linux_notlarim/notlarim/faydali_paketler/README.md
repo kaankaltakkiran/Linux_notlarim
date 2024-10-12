@@ -1,20 +1,20 @@
 # Faydalı Paketler
 
-- [Vi Editör Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/vi_editor.md)
+- [Vi Editör Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/notlarim/vi_editor.md)
 
-- [wormhole](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/wormhole.md)
+- [wormhole](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/notlarim/wormhole.md)
 
-- [İmagemagick](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/imagemagick.md)
+- [İmagemagick](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/notlarim/imagemagick.md)
 
-- [ffmpeg](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/ffmpeg.md)
+- [ffmpeg](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/notlarim/ffmpeg.md)
 
-- [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/tldr.md)
+- [Tldr](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/notlarim/tldr.md)
 
-- [Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/wine.md)
+- [Wine](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/notlarim/wine.md)
 
-- [NVM](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/nvm.md)
+- [NVM](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/notlarim/nvm.md)
 
-- [Syncthing](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/syncthing.md)
+- [Syncthing](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/faydali_paketler/notlarim/syncthing.md)
 
 ## gnome-sushi
 
