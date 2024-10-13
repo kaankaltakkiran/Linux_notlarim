@@ -19,7 +19,7 @@ sudo apt install flatpak gnome-software-plugin-flatpak -y
 sudo add-apt-repository universe -y
 
 # Sık kullanılan faydalı paketleri kur
-sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit -y
+sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit htop btop cmatrix fzf bat fastfetch -y
 
 
 # vscode kurulumu
@@ -143,8 +143,8 @@ mkdir -p ~/Pictures/Screenshots
 
 echo "Snap Uygulamaları Kuruluyor..."
 
-# Snap Store vlc, telegram, prospect-mail, postman, kurulum
-sudo snap install vlc telegram-desktop prospect-mail postman 
+# Snap Store lsd, vlc, telegram, prospect-mail, postman, kurulum
+sudo snap install lsd vlc telegram-desktop prospect-mail postman 
 
 echo "Snap Uygulamaları Kurulumu Tamamlandı"
 
