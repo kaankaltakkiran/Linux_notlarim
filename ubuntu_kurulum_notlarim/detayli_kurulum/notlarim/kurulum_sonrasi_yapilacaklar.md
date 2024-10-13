@@ -65,6 +65,8 @@ flatpak install flathub io.github.zen_browser.zen -y
 
 6. #### Kurulması Opsiyonel Olan Yazılımlar/Programramlar
 
+- [Detaylı Linux Notlarım)](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlarim)
+
 - [Detaylı Uygulama/Program/Eklenti Notlarım)](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum_notlarim/detayli_kurulum)
 
 - [Script İle Gnome Eklenti Yükleme(Stabil Değil)](https://github.com/kaankaltakkiran/Gnome_extension_installaion)
