@@ -15,12 +15,13 @@ sudo ubuntu-drivers autoinstall
 # Flatpak Kurulumu (librewolf)
 sudo apt install flatpak gnome-software-plugin-flatpak extrepo -y
 
-# Gnome Tweaks(librewolf) Kurulumu
+# Gnome Tweaks, librewolf, fastfetch Kurulumu
 sudo add-apt-repository universe -y
 sudo extrepo enable librewolf
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
 
 # Sık kullanılan faydalı paketleri kur(Tor Browser)
-sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit torbrowser-launcher -y
+sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit torbrowser-launcher htop btop cmatrix fzf bat -y
 
 
 # vscode kurulumu
@@ -95,8 +96,8 @@ sudo systemctl start libvirtd
 sudo usermod -aG kvm $USER
 sudo usermod -aG libvirt $USER
 
-# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp, Brave, Google Chrome, LibraWolf, VirtualBox kurulum
-sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser google-chrome-stable librewolf linux-headers-$(uname -r) dkms virtualbox-7.0 -y
+# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp, Brave, Google Chrome, LibraWolf, VirtualBox, fastfetch kurulum
+sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser google-chrome-stable librewolf linux-headers-$(uname -r) dkms virtualbox-7.0 fastfetch -y
 
 # Apache kurulumu
 sudo apt install apache2 apache2-utils -y
@@ -161,8 +162,8 @@ mkdir -p ~/Pictures/Screenshots
 
 echo "Snap Uygulamaları Kuruluyor..."
 
-# Snap Store vlc, discord, telegram, prospect-mail, postman, chromium kurulum
-sudo snap install vlc discord telegram-desktop prospect-mail postman chromium
+# Snap Store lsd, vlc, discord, telegram, prospect-mail, postman, chromium kurulum
+sudo snap install lsd vlc discord telegram-desktop prospect-mail postman chromium
 
 # Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend, onlyoffice kurulum
 sudo snap install obsidian --classic && sudo snap install micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend  &&  sudo snap install onlyoffice-desktopeditors 
