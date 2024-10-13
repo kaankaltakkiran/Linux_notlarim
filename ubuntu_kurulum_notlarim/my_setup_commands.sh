@@ -162,8 +162,8 @@ mkdir -p ~/Pictures/Screenshots
 
 echo "Snap Uygulamaları Kuruluyor..."
 
-# Snap Store lsd, vlc, discord, telegram, prospect-mail, postman, chromium kurulum
-sudo snap install lsd vlc discord telegram-desktop prospect-mail postman chromium
+# Snap Store lsd, vlc, discord, telegram, prospect-mail, postman, chromium, speedtest kurulum
+sudo snap install lsd vlc discord telegram-desktop prospect-mail postman chromium speedtest
 
 # Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend, onlyoffice kurulum
 sudo snap install obsidian --classic && sudo snap install micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend  &&  sudo snap install onlyoffice-desktopeditors 

@@ -90,3 +90,9 @@ sudo snap install localsend
 ```BASH
 sudo snap install onlyoffice-desktopeditors
 ```
+
+## [Speedtest(İnternet hız ölçme)](https://snapcraft.io/install/speedtest/ubuntu)
+
+```BASH
+sudo snap install speedtest
+```

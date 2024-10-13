@@ -144,8 +144,8 @@ mkdir -p ~/Pictures/Screenshots
 
 echo "Snap Uygulamaları Kuruluyor..."
 
-# Snap Store lsd, vlc, telegram, prospect-mail, postman, kurulum
-sudo snap install lsd vlc telegram-desktop prospect-mail postman 
+# Snap Store lsd, vlc, telegram, prospect-mail, postman, speedtest kurulum
+sudo snap install lsd vlc telegram-desktop prospect-mail postman speedtest 
 
 echo "Snap Uygulamaları Kurulumu Tamamlandı"
 
