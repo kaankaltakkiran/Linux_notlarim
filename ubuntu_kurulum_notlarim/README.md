@@ -1,4 +1,4 @@
-# Ubuntu 22.04(LTS) Kurulum Notları
+# Ubuntu 22.04 Gnome(LTS) Kurulum Notları
 
 - [Detaylı Kurulum Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum_notlarim/detayli_kurulum)
 
@@ -21,36 +21,30 @@ wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/refs/heads
 ### Kurulum İçeriği
 
 ````bash
+# Başlangıç zamanını kaydet
+start_time=$(date +%s)
+
+# Ana kurulum işlemleri
+echo "Kurulum başlıyor..."
+
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update
 # Mevcut paketlerin yenisi varsa yükle
-sudo apt upgrade
+sudo apt upgrade -y
 
 # Sürücülerin (driver) güncel dosyalarını yükle
 sudo ubuntu-drivers autoinstall
 
 # Flatpak Kurulumu
-sudo apt install flatpak -y
-sudo apt install gnome-software-plugin-flatpak -y
+sudo apt install flatpak gnome-software-plugin-flatpak -y
+
+# Gnome Tweaks,fastfetch Kurulumu
+sudo add-apt-repository universe -y
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
 
 # Sık kullanılan faydalı paketleri kur
-sudo apt install ffmpeg wine  imagemagick guake guake-indicator pv meld vim axel ncdu  net-tools caffeine magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch  -y
+sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit htop btop cmatrix fzf bat -y
 
-# Apache kurulumu
-sudo apt install apache2 apache2-utils -y
-## Apache varsayılan dosyasını sil
-sudo rm -f /var/www/html/index.html
-## Sistem açıldığında apache servisini otomatik başlat
-sudo systemctl enable apache2
-## Apache servisini yeniden başlat
-sudo service apache2 restart
-## Aktif kullanıcıyı Apache'nin varsayılan grubuna ekle (www-data)
-sudo adduser $USER www-data
-## Apache'nin varsayılan dizinine aktif kullanıcıyı yetkilendir
-sudo chown -R $USER:www-data /var/www/html/
-
-# Php 7.4 Kurulumu
-sudo add-apt-repository -y ppa:ondrej/php
 
 # vscode kurulumu
 ## vscode için güvenilir depolara vscode'un kendi deposunu ve imzasını ekle
@@ -64,8 +58,7 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 
 # AnyDesk kurulumu
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
-echo "deb http://deb.anydesk.com/ all main" | sudo tee
-/etc/apt/sources.list.d/anydesk-stable.list
+echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
 sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
 
 # Spotify kurulumu
@@ -84,126 +77,102 @@ https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_C
 
 # Syncthing kurulumu
 
-# Add the release PGP keys:
+## Add the release PGP keys:
 sudo mkdir -p /etc/apt/keyrings
 sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
-# Add the "stable" channel to your APT sources:
+## Add the "stable" channel to your APT sources:
 echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
-# Add the "candidate" channel to your APT sources:
+## Add the "candidate" channel to your APT sources:
 echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing candidate" | sudo tee /etc/apt/sources.list.d/syncthing.list
 
 
-# Floorp Web Tarayıcısı Kurulumu
+# Google Chrome Depo Ekleme
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmour -o /usr/share/keyrings/chrome-keyring.gpg
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/chrome-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list'
 
-curl -fsSL https://ppa.ablaze.one/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg
-sudo curl -sS --compressed -o /etc/apt/sources.list.d/Floorp.list 'https://ppa.ablaze.one/Floorp.list'
 
-# Brave Web Tarayıcısı Kurulumu
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-
-# Tor Browser Web Tarayıcısı Kurulumu
-
-sudo apt install torbrowser-launcher -y
+# VirtualBox Güncel Depo Ekleme
+curl https://www.virtualbox.org/download/oracle_vbox_2016.asc | gpg --dearmor > oracle_vbox_2016.gpg
+curl https://www.virtualbox.org/download/oracle_vbox.asc | gpg --dearmor > oracle_vbox.gpg
+sudo install -o root -g root -m 644 oracle_vbox_2016.gpg /etc/apt/trusted.gpg.d/
+sudo install -o root -g root -m 644 oracle_vbox.gpg /etc/apt/trusted.gpg.d/
+echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 
 # Depolarda yer alan paketlerin güncel listesini indir
-
 sudo apt update -y
 
-# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp, Brave kurulum
+# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Google Chrome, VirtualBox, fastfetch Kurulum
+sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing google-chrome-stable linux-headers-$(uname -r) dkms virtualbox-7.0 fastfetch -y
 
-sudo apt install spotify-client anydesk sublime-merge code docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser -y
-
-## PHP 7.4 yükle
-
-sudo apt install php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-pgsql php7.4-xml php7.4-redis libapache2-mod-php7.4 -y
-
-## PHP composer paketini kur
-
-sudo apt install composer -y
-
-## PHP'nin çalışmaya başlaması için Apache'yi yeniden başlat
-
+# Apache kurulumu
+sudo apt install apache2 apache2-utils -y
+sudo rm -f /var/www/html/index.html
+sudo systemctl enable apache2
 sudo service apache2 restart
+sudo adduser $USER www-data
+sudo chown -R $USER:www-data /var/www/html/
 
-# MySQL / MariaDB kurulumu
-
-sudo apt install mariadb-server mariadb-client -y
-
-## Sistem açıldığında MySQL servisini otomatik başlat
-
-sudo systemctl enable mariadb
-
-## MySQL servisini yeniden başlat
-
-sudo service mariadb restart
-
-# MySQL Root kullanıcısı için şifreyi değiştir
-
-## mysql parola belirleme
-
-sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
-
-# Syncthing servis başlatma
-
-sudo systemctl enable syncthing@kaan.service
-sudo systemctl start syncthing@kaan.service
-systemctl status syncthing@kaan.service
-
-# Syncthing port izin verme
-
-sudo ufw allow 22000/tcp
-sudo ufw enable
-
-# Adminer Kurulumu
-
+# Adminer kurulumu
+cd /var/www/html
 mkdir /var/www/html/adminer
 wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
 
+# Php 7.4 kurulumu
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt update
+sudo apt install php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-pgsql php7.4-xml php7.4-redis libapache2-mod-php7.4 -y
+sudo apt install composer -y
+sudo service apache2 restart
+
+# MySQL / MariaDB kurulumu
+sudo apt install mariadb-server mariadb-client -y
+sudo systemctl enable mariadb
+sudo service mariadb restart
+# MySQL Root kullanıcısı için şifreyi değiştir
+sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root')"
+
+# Syncthing servis başlatma
+sudo systemctl enable syncthing@$(whoami).service
+sudo systemctl start syncthing@$(whoami).service
+
+# Syncthing port izin verme
+ sudo ufw allow 22000/tcp
+ sudo ufw enable
+
 # Fare için ayarlar
-
 ## Dock ünitesinde program simgesine tıklayınca küçült/büyült
-
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-
 ## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
-
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
-# Guake terminal kurulumu
-
-sudo apt install guake -y
-
-# Gnome Extansion Manger Kurulumu
-
-sudo apt install gnome-shell-extension-manager -y
-
-# Snap Store kurulumu
-
-sudo apt install snapd
-
-# Snap Store vlc,discord,telegram, prospect-mail, postman, chromium kurulum
-
-sudo snap install vlc discord telegram-desktop prospect-mail postman chromium
-
-#### Snap Store obsidian, micro, identity, mousai, czkawka, onionshare, gimp, localsend, onlyoffice kurulum
-sudo snap install obsidian --classic && sudo snap install micro --classic && sudo snap install identity && sudo snap install mousai && sudo snap install czkawka && sudo snap install onionshare && sudo snap install gimp && sudo snap install localsend  &&  sudo snap install onlyoffice-desktopeditors
+# Guake terminal,Gnome Extansion Manger, Gnome Tweaks,Gnome Extension Snap Store Kurulumu
+sudo apt install guake gnome-shell-extension-manager gnome-tweaks gnome-browser-connector snapd -y
 
 # Node.js ve Npm İçin Nvm Kurulumu
-
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 
 # GIT ayarları
-
 sudo apt install git -y
 git config --global user.email 'durdu.kaan.kaltakkiran@gmail.com'
 git config --global user.name 'Kaan Kaltakkıran'
 
-# Doğru kurulum yapıldığının test edilmesi
+# Google Chrome varsıyalan paketini silme
+sudo rm /etc/apt/sources.list.d/google.list
 
-npm -v
-node -v
+# Apache2 html klasörünü masaüstüne kısayol olarak ekle
+ln -s /var/www/html "$(xdg-user-dir DESKTOP)/html"
+
+# Ekran Görüntülerin kaydedileceği klasörü oluştur ve izin ver
+mkdir -p ~/Pictures/Screenshots
+
+echo "Snap Uygulamaları Kuruluyor..."
+
+# Snap Store lsd, vlc, telegram, prospect-mail, postman, speedtest kurulum
+sudo snap install lsd vlc telegram-desktop prospect-mail postman speedtest
+
+echo "Snap Uygulamaları Kurulumu Tamamlandı"
+
+# Kurulum test
 php -v
 apache2 -v
 mysql --version
@@ -211,10 +180,21 @@ docker --version
 syncthing --version
 flatpak --version
 
+# Kurulum bittiğinde bitiş zamanını al
+end_time=$(date +%s)
 
-echo "\n\n\n=== KURULUM TAMAMLANDI ===\n\n\n"
+# Toplam süreyi hesapla
+elapsed_time=$(( end_time - start_time ))
 
-```
+# Süreyi dakika ve saniye formatına çevir
+minutes=$(( elapsed_time / 60 ))
+seconds=$(( elapsed_time % 60 ))
+
+# Sonuç mesajı
+echo "Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı.(Yeniden başlatma önerilir.)"
+
+# Kurulum sonrası yapılması gerekenler(Node.js,apeche) için bilgilendirme
+printf "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m\n"
 
 ```
 ````
