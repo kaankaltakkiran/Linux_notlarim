@@ -20,7 +20,7 @@ wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/refs/heads
 
 ### Kurulum İçeriği
 
-````bash
+```bash
 # Başlangıç zamanını kaydet
 start_time=$(date +%s)
 
@@ -197,4 +197,3 @@ echo "Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tama
 printf "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m\n"
 
 ```
-````
