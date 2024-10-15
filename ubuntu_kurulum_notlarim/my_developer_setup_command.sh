@@ -162,7 +162,7 @@ minutes=$(( elapsed_time / 60 ))
 seconds=$(( elapsed_time % 60 ))
 
 # Sonuç mesajı
-echo "Developer Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı.(Hiçbir snap uygulaması yüklenmedi. İstediğiniz snap uygulamalarını yükleyebilirsiniz.)"
+echo -e "\e[33mDeveloper Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı.Hiçbir snap uygulaması yüklenmedi. İstediğiniz snap uygulamalarını yükleyebilirsiniz.\e[0m"
 
 
 # Kurulum sonrası yapılması gerekenler(Node.js,apeche) için bilgilendirme
