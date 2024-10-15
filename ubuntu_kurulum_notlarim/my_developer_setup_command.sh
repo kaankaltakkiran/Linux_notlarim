@@ -162,10 +162,10 @@ minutes=$(( elapsed_time / 60 ))
 seconds=$(( elapsed_time % 60 ))
 
 # Sonuç mesajı
-printf "\e[33mDeveloper Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı.Hiçbir snap uygulaması yüklenmedi. İstediğiniz snap uygulamalarını yükleyebilirsiniz.\e[0m"
+printf "\e[33mDeveloper Kurulum $minutes dakika ve $seconds saniyede başarılı bir şekilde tamamlandı. Hiçbir snap uygulaması yüklenmedi. İstediğiniz snap uygulamalarını yükleyebilirsiniz.\e[0m\n\n"
 
-
-# Kurulum sonrası yapılması gerekenler(Node.js,apeche) için bilgilendirme
+# Kurulum sonrası yapılması gerekenler(Node.js, Apache) için bilgilendirme
 printf "\e[32mKurulum sonrası yapılması gerekenler için bu bağlantıya tıklayın:\e[0m \e[34m https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/kurulum_sonrasi_yapilacaklar.md \e[0m\n"
+
 
 
