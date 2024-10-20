@@ -130,3 +130,11 @@ sudo gdebi portmaster-installer.deb
 sudo add-apt-repository universe -y
 sudo apt install gnome-tweaks -y
 ```
+
+## Kdiskmark(disk okuma/yazma test) Kurulumu
+
+```BASH
+sudo add-apt-repository ppa:jonmagon/kdiskmark -y
+sudo apt update
+sudo apt install kdiskmark -y
+```
