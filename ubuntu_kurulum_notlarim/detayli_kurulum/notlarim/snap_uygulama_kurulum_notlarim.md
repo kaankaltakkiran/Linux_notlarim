@@ -85,6 +85,8 @@ sudo snap install gimp
 sudo snap install localsend
 ```
 
+> **Note:** [Port İle İlgili Hata Veriyorsa Chatgpt Çözümü](https://chatgpt.com/share/67157597-bd9c-8008-ad71-ea6398b1fac4)
+
 ## [Onlyoffice(ofice)](https://snapcraft.io/install/onlyoffice-desktopeditors/ubuntu)
 
 ```BASH
