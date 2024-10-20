@@ -1,6 +1,6 @@
 # Ubuntu(22.04 LTS Gnome) Kurulum Sonrası Yapılması Gerekenler
 
-> **Note**: Bir uygulama çalışmıyorsa [chatgpten](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/linux_notlarim/notlarim/komut_notlarim/ayrintili_komutlar.md) yardım al veya [detaylı uygulama kurulum notlarına bak.](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum_notlarim/detayli_kurulum)
+> **Note**: Bir uygulama çalışmıyorsa [chatgpten](https://chatgpt.com/) yardım al veya [detaylı uygulama kurulum notlarına bak.](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/ubuntu_kurulum_notlarim/detayli_kurulum)
 
 1.  #### Hızlı kurulumun gerçekleştiği terminel ekranından ayrı bir terminal ekranı açıp `node.js` kurulumu tamamlanmalı.
 
