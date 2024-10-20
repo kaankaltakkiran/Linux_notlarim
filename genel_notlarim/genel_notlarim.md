@@ -39,3 +39,5 @@
 - [Admin Panelli Kişisel Web Sitesi Kurma Rehberi Medium](https://safa.medium.com/tamamen-%C3%BCcretsiz-admin-panelli-ki%C5%9Fisel-web-sayfas%C4%B1-nas%C4%B1l-kurulur-aa4f968062c5)
 
 - [Linux Donanım Veritabanının Yardımıyla Donanımı Araştırmak, Çalışabilirliği Kontrol Etmek Ve Sürücüleri Bulma Aracı](https://linux-hardware.org/)
+
+- [Uygulama Alternatifleri](https://github.com/agarrharr/awesome-cli-apps)
