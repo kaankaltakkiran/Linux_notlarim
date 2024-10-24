@@ -7,6 +7,12 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
+## Preload(Uygulama Açlış Hızlandırma) Kurulum
+
+```BASH
+sudo apt install preload -y
+```
+
 ## [Flatpak Kurulum](https://flatpak.org/setup/Ubuntu)
 
 ```BASH
