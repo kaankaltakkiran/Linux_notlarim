@@ -138,3 +138,9 @@ sudo add-apt-repository ppa:jonmagon/kdiskmark -y
 sudo apt update
 sudo apt install kdiskmark -y
 ```
+
+## gromit-mpx(ekran görüntsüne çizim yapma) Kurulumu
+
+```BASH
+sudo apt install gromit-mpx
+```
