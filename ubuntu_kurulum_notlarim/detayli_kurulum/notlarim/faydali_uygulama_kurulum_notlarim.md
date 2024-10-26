@@ -144,3 +144,11 @@ sudo apt install kdiskmark -y
 ```BASH
 sudo apt install gromit-mpx
 ```
+
+## Safe Eyes(uzun süre ekrana bakmayı önler ve göz sağlığını korur) Kurulumu
+
+```BASH
+sudo add-apt-repository ppa:safeeyes-team/safeeyes -y
+sudo apt update
+sudo apt install safeeyes -y
+```
