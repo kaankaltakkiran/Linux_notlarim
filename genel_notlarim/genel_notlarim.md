@@ -43,3 +43,6 @@
 - [Uygulama Alternatifleri](https://github.com/agarrharr/awesome-cli-apps)
 
 - [Web Sitesi, Uygulama, Eğitim Gibi Detaylı Alternatifler](https://github.com/fmhy/FMHY?tab=readme-ov-file)
+
+- [Session, Gizli Mesajlaşma Uygulaması](https://getsession.org/)
+-
