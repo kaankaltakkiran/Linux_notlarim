@@ -15,10 +15,11 @@ sudo ubuntu-drivers autoinstall
 # Flatpak Kurulumu
 sudo apt install flatpak gnome-software-plugin-flatpak -y
 
-# Gnome Tweaks,fastfetch, kdiskmark Kurulumu
+# Gnome Tweaks,fastfetch, kdiskmark, safeeyes Kurulumu
 sudo add-apt-repository universe -y
 sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
 sudo add-apt-repository ppa:jonmagon/kdiskmark -y
+sudo add-apt-repository ppa:safeeyes-team/safeeyes -y
 
 
 # Sık kullanılan faydalı paketleri kur
@@ -80,8 +81,8 @@ echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_re
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Google Chrome, VirtualBox, fastfetch, kdiskmark Kurulum
-sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing google-chrome-stable linux-headers-$(uname -r) dkms virtualbox-7.0 fastfetch kdiskmark -y
+# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Google Chrome, VirtualBox, fastfetch, kdiskmark, safeeyes Kurulum
+sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing google-chrome-stable linux-headers-$(uname -r) dkms virtualbox-7.0 fastfetch kdiskmark safeeyes -y
 
 # Apache kurulumu
 sudo apt install apache2 apache2-utils -y
