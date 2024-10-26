@@ -15,11 +15,12 @@ sudo ubuntu-drivers autoinstall
 # Flatpak Kurulumu (librewolf)
 sudo apt install flatpak gnome-software-plugin-flatpak extrepo -y
 
-# Gnome Tweaks, librewolf, fastfetch, kdiskmark Kurulumu
+# Gnome Tweaks, librewolf, fastfetch, kdiskmark, safeeyes Kurulumu
 sudo add-apt-repository universe -y
 sudo extrepo enable librewolf
 sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
 sudo add-apt-repository ppa:jonmagon/kdiskmark -y
+sudo add-apt-repository ppa:safeeyes-team/safeeyes -y
 
 # Sık kullanılan faydalı paketleri kur
 sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu net-tools  magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip neofetch bleachbit torbrowser-launcher htop btop cmatrix fzf bat gromit-mpx preload -y
@@ -97,8 +98,8 @@ sudo systemctl start libvirtd
 sudo usermod -aG kvm $USER
 sudo usermod -aG libvirt $USER
 
-# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp, Brave, Google Chrome, LibraWolf, VirtualBox, fastfetch kdiskmark kurulum
-sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser google-chrome-stable librewolf linux-headers-$(uname -r) dkms virtualbox-7.0 fastfetch kdiskmark -y
+# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Floorp, Brave, Google Chrome, LibraWolf, VirtualBox, fastfetch kdiskmark, safeeyes kurulum
+sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing floorp brave-browser google-chrome-stable librewolf linux-headers-$(uname -r) dkms virtualbox-7.0 fastfetch kdiskmark safeeyes -y
 
 # Apache kurulumu
 sudo apt install apache2 apache2-utils -y
