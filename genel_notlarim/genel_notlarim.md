@@ -45,3 +45,5 @@
 - [Web Sitesi, Uygulama, Eğitim Gibi Detaylı Alternatifler](https://github.com/fmhy/FMHY?tab=readme-ov-file)
 
 - [Session, Gizli Mesajlaşma Uygulaması](https://getsession.org/)
+
+- [Uygulamar Ne Kadar İzin İstiyor Olduğunu Görme](https://reports.exodus-privacy.eu.org/en/)
