@@ -47,3 +47,7 @@
 - [Session, Gizli Mesajlaşma Uygulaması](https://getsession.org/)
 
 - [Uygulamar Ne Kadar İzin İstiyor Olduğunu Görme](https://reports.exodus-privacy.eu.org/en/)
+
+- [Dns Sorgulama](https://who.is/)
+
+- [Ubuntu/Debian Swap Oluşturma Rehberi](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-debian-11)
