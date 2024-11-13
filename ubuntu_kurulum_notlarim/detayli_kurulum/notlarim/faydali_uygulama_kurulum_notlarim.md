@@ -152,3 +152,14 @@ sudo add-apt-repository ppa:safeeyes-team/safeeyes -y
 sudo apt update
 sudo apt install safeeyes -y
 ```
+
+## [OpenVPN Kurulumu](https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux)
+
+```BASH
+sudo apt install apt-transport-https curl -y
+mkdir -p /etc/apt/keyrings    ### This might not exist in all distributions
+curl -sSfL https://packages.openvpn.net/packages-repo.gpg >/etc/apt/keyrings/openvpn.asc
+echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian noble main" >>/etc/apt/sources.list.d/openvpn3.list
+sudoa pt update -y
+sudo apt install openvpn3 -y
+```
