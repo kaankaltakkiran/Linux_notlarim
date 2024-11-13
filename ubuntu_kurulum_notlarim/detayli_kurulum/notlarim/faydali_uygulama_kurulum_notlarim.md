@@ -157,14 +157,6 @@ sudo apt install safeeyes -y
 
 ```BASH
 sudo apt install apt-transport-https curl -y
-sudo mkdir -p /etc/apt/keyrings
-curl -sSfL https://packages.openvpn.net/packages-repo.gpg | sudo tee /etc/apt/keyrings/openvpn.asc
-echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian noble main" | sudo tee /etc/apt/sources.list.d/openvpn3.list
-sudo apt update -y
-sudo apt install openvpn3 -y
-```
-
-```BASH
 sudo mkdir -p /etc/apt/keyrings && curl -fsSL https://packages.openvpn.net/packages-repo.gpg | sudo tee /etc/apt/keyrings/openvpn.asc
 DISTRO=$(lsb_release -c -s)
 echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian $DISTRO main" | sudo tee /etc/apt/sources.list.d/openvpn-packages.list
