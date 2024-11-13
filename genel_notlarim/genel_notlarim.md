@@ -51,3 +51,5 @@
 - [Dns Sorgulama](https://who.is/)
 
 - [Ubuntu/Debian Swap Oluşturma Rehberi](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-debian-11)
+
+- [İp Tespit](https://ipleak.net/)
