@@ -79,9 +79,9 @@ sudo install -o root -g root -m 644 oracle_vbox.gpg /etc/apt/trusted.gpg.d/
 echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 
 # OpenVPN Kurulumu
-mkdir -p /etc/apt/keyrings    ### This might not exist in all distributions
+mkdir -p /etc/apt/keyrings    ### Bu klasör tüm dağıtımlarda varsayılan olarak olmayabilir
 curl -sSfL https://packages.openvpn.net/packages-repo.gpg >/etc/apt/keyrings/openvpn.asc
-echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian noble main" >>/etc/apt/sources.list.d/openvpn3.list
+echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian noble main" | sudo tee /etc/apt/sources.list.d/openvpn3.list
 
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
