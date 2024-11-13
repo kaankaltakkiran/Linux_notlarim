@@ -78,11 +78,16 @@ sudo install -o root -g root -m 644 oracle_vbox_2016.gpg /etc/apt/trusted.gpg.d/
 sudo install -o root -g root -m 644 oracle_vbox.gpg /etc/apt/trusted.gpg.d/
 echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 
+# OpenVPN Kurulumu
+mkdir -p /etc/apt/keyrings    ### This might not exist in all distributions
+curl -sSfL https://packages.openvpn.net/packages-repo.gpg >/etc/apt/keyrings/openvpn.asc
+echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian noble main" >>/etc/apt/sources.list.d/openvpn3.list
+
 # Depolarda yer alan paketlerin güncel listesini indir
 sudo apt update -y
 
-# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Google Chrome, VirtualBox, fastfetch, kdiskmark, safeeyes Kurulum
-sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing google-chrome-stable linux-headers-$(uname -r) dkms virtualbox-7.0 fastfetch kdiskmark safeeyes -y
+# Spotify, Anydesk, SublimeMerge, Vscode, Docker, Syncthing, Google Chrome, VirtualBox, fastfetch, kdiskmark, safeeyes, openvpn Kurulum
+sudo apt install spotify-client anydesk sublime-merge code  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin syncthing google-chrome-stable linux-headers-$(uname -r) dkms virtualbox-7.0 fastfetch kdiskmark safeeyes openvpn3 -y
 
 # Apache kurulumu
 sudo apt install apache2 apache2-utils -y
