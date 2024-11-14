@@ -88,10 +88,62 @@ Tüm medium bloglarını okuma imkanı sunuyor
 
 Dikey olarak sol tarafta bookmarks olarak kullanılıyor.
 
-## [Medium parser](https://addons.mozilla.org/en-US/firefox/addon/augmented-steam/)
+## [Augmented Steam](https://addons.mozilla.org/en-US/firefox/addon/augmented-steam/)
 
 Steamdeki bir oyunun fiyatı hakkında bilgiler sunuyor.
 
 ## [Gesturefy](https://addons.mozilla.org/en-US/firefox/addon/gesturefy/)
 
 Fare hareketleriyle daha hızlı gezinmeye imkan sağlıyor.
+
+## [Firefox Multi-Account Containers](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/)
+
+Farklı workspaclerde oturum yönetme imkanı sunuyor.
+
+## [Get RSS Feed URL](https://addons.mozilla.org/en-US/firefox/addon/get-rss-feed-url/)
+
+Rss akışını gösteren eklenti.
+
+## [Multithreaded Download Manager](https://addons.mozilla.org/en-US/firefox/addon/multithreaded-download-manager/)
+
+Parçalara ayırarak hızlı bir şekilde indirme sağlıyor.
+
+## [Return YouTube Dislike](https://addons.mozilla.org/en-US/firefox/addon/return-youtube-dislikes/)
+
+Youtube dislike sayısını tahmini gösteriyor.
+
+## [RYS — Remove YouTube Suggestions](https://addons.mozilla.org/en-US/firefox/addon/remove-youtube-s-suggestions/)
+
+Yotube önerilen videoları gizliyor.
+
+## [SimpleLogin: Open-source Email Protection](https://addons.mozilla.org/en-US/firefox/addon/simplelogin/)
+
+Geçiçi email üretiyor.
+
+## [SponsorBlock - Skip Sponsorships on YouTube](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
+
+Youtube videolarındaki sponsor reklamını geçmeye olanak sağlıyor.
+
+## [Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/)
+
+Geçiçi workspace oluşturmaya imkan sağlıyor.
+
+## [TWP - Translate Web Pages](https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/)
+
+Web sayfaısını istediğiniz dile çevirmeye yarıyor.
+
+## [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+
+Reklam engelleyici.
+
+## [Web Archives](https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/)
+
+Web sitesinin geçmişi hakkında bilgi veriyor.
+
+## [Enhancer for YouTube™](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/)
+
+Youtube deneyimini arttrıyor.
+
+## [Youtube Playback speed controller](https://addons.mozilla.org/en-US/firefox/addon/yt-playback-speed-controller/)
+
+Youtube video hızını özelleştirme imkanı sağlıyor.
