@@ -76,7 +76,9 @@ Alan adlarını gerçek web sunucularına bağlayarak İnternet üzerindeki traf
 - Örnek: `example.com` alan adını `2001:db8::1` IPv6 adresine bağlar.
 - Kullanım: IPv6 adresleme için.
 
-### DNS Kayıt Tipleri Tablosu
+---
+
+## DNS Kayıt Tipleri Tablosu
 
 | **Kayıt Tipi** | **Açıklama**                                 | **Kullanım Alanı**             |
 | -------------- | -------------------------------------------- | ------------------------------ |
