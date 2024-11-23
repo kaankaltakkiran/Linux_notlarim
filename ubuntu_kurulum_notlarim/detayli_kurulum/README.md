@@ -13,3 +13,5 @@
 - [Tarayıcı Kurulum Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/tarayici_kurulum_notlarim.md)
 
 - [Yazılım Kurulum Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/yazilim_kurulum_notlarim.md)
+
+- [Hata Çözüm Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/hata_cozumleri.md)

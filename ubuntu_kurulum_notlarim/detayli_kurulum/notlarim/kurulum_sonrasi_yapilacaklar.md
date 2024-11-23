@@ -65,7 +65,9 @@ sudo reboot
 flatpak install flathub io.github.zen_browser.zen -y
 ```
 
-6. #### Kurulması Opsiyonel Olan Yazılımlar/Programramlar
+6. #### Kurulması Opsiyonel Olan Yazılımlar/Programlar
+
+- [Olası Hata Çözümleri](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/ubuntu_kurulum_notlarim/detayli_kurulum/notlarim/hata_cozumleri.md)
 
 - [Detaylı Linux Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlarim)
 
