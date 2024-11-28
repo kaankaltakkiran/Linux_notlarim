@@ -59,3 +59,23 @@ if ($method === 'OPTIONS') {
 ```js
 lang: 'tr', // Quasar language pack
 ```
+
+## [ Property '$q' does not exist on type '{ $: ComponentInternalInstance; Hatası Nasıl Çözülür ?](https://chatgpt.com/share/67483eea-89a0-8008-b22a-b054a63847a5)
+
+Quasar CLI ile TypeScript seçeneği kullanarak oluşturulan projelerde, $q gibi Quasar nesnesine ait özellikler varsayılan olarak Vue'nun globalProperties özelliği üzerinden kullanılır.
+
+Ancak, TypeScript ile çalışırken bu tür özelliklerin tanımlanmaması, tip denetleyicisinin hata vermesine neden olabilir.
+
+`src/quasar.d.ts`
+
+```js
+/// <reference types="@quasar/app-vite" />
+
+import { QVueGlobals } from 'quasar';
+
+declare module '@vue/runtime-core' {
+  interface ComponentCustomProperties {
+    $q: QVueGlobals;
+  }
+}
+```
