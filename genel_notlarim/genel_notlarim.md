@@ -53,3 +53,5 @@
 - [Ubuntu/Debian Swap Oluşturma Rehberi](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-debian-11)
 
 - [İp Tespit](https://ipleak.net/)
+
+- [Nodemcu Sorun Çözme Port /dev/ttyUSB0 veya brltty 2.5.2 esp8266 ](https://github.com/esp8266/source-code-examples/issues/26)

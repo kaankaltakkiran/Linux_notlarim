@@ -190,4 +190,4 @@
 
 - [YunoHost Yotube Video](https://www.youtube.com/watch?v=tEVtZCyTWHk)
 
-- [YunoHost Uygulama Tavsiye](https://apps.yunohost.org/wishlist)
+- [YunoHost Uygulama Tavsiye](https://apps.yunohost.org/catalog)
