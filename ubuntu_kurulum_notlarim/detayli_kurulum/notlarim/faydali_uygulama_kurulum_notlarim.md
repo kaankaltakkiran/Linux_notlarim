@@ -163,3 +163,15 @@ echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net
 sudo apt update -y
 sudo apt install openvpn3 -y
 ```
+
+## Filezilla(Sunucu dosya transfer işlemleri) Kurulumu
+
+```BASH
+sudo apt install filezilla -y
+```
+
+## Arduino(Nodemcu, Iot cihazları için yazılım aracı) Kurulumu
+
+```BASH
+sudo apt install arduino -y
+```
