@@ -12,6 +12,10 @@
 wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/refs/heads/main/ubuntu_kurulum_notlarim/my_setup_commands.sh -O - | sh
 ```
 
+```bash
+wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/refs/heads/main/ubuntu_kurulum_notlarim/kaan.sh -O - | sh
+```
+
 ## 🚀Hızlı Kurulum🚀
 
 ```bash
