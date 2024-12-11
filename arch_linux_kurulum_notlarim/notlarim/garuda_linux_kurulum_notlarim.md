@@ -880,3 +880,5 @@ source ~/.config/fish/config.fish
 - [Kde Efekler](https://discuss.kde.org/t/enable-fun-desktop-effects-on-kde-plasma/636)
 
 -[Kde Efekler Video](https://www.youtube.com/watch?v=Cjic2IB8Wx0)
+
+-[Vpn Ayarla](https://www.youtube.com/watch?v=X06u5AM_2F0&t=434s)
