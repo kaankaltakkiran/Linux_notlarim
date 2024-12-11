@@ -10,6 +10,12 @@ Garuda terimi Hinduizm kaynaklı olup kartal benzeri, ilahi bir güneş kuşu ve
 
 ## Garuda Linux Kurulum Adımları
 
+Tek komut ile aşağıdaki paketleri yükleme:
+
+```bash
+sudo pacman -S vim apache mariadb php php-apache nodejs npm git flatpak  --noconfirm
+```
+
 ### LAMA (Linux, Apache, MySQL, and Adminer) Kurulum Notları
 
 #### Apache Kurulum Notları
@@ -23,13 +29,13 @@ sudo pacman -Syu
 Aşağıdaki komut `vi editörü` yükler:
 
 ```bash
-sudo pacman -S vim
+sudo pacman -S vim --noconfirm
 ```
 
 Aşağıdaki komut `apache` yükler:
 
 ```bash
-sudo pacman -S apache
+sudo pacman -S apache --noconfirm
 ```
 
 Aşağıdaki komut `apache confing ` dosyasını vi editör ile açar:
@@ -77,7 +83,7 @@ sudo chmod -R 775 /srv/http
 Aşağıdaki komut `mariadb` yükler:
 
 ```bash
-sudo pacman -S mariadb
+sudo pacman -S mariadb --noconfirm
 ```
 
 Aşağıdaki komut gerekli `mariadb` ayarlarını yapar ve aktif eder:
@@ -117,7 +123,7 @@ mysql --version
 Aşağıdaki komut `php ve php-apache` yükler:
 
 ```bash
-sudo pacman -S php php-apache
+sudo pacman -S php php-apache --noconfirm
 ```
 
 Aşağıdaki komut `apache confing ` dosyasını vi editör ile açar:
@@ -789,7 +795,7 @@ Include conf/extra/php_module.conf
 Aşağıdaki komut nodejs ve npm yükler:
 
 ```bash
-sudo pacman -S nodejs npm
+sudo pacman -S nodejs npm --noconfirm
 ```
 
 Kurulum kontrol:
@@ -804,7 +810,7 @@ npm -v
 Aşağıdaki komut git yükler:
 
 ```bash
-sudo pacman -S git
+sudo pacman -S git --noconfirm
 ```
 
 Aşağıdaki komut git confing ayarlarını yapar:
@@ -825,7 +831,7 @@ git config --global --list
 Aşağıdaki komut flatpak yükler ve yeniden başlatır:
 
 ```bash
-sudo pacman -S flatpak
+sudo pacman -S flatpak --noconfirm
 sudo reboot
 ```
 
