@@ -876,3 +876,7 @@ source ~/.config/fish/config.fish
 - [Arch Aur Depo](https://archlinux.org/packages/)
 
 - [Arch Görsel Olarak Uygulama Yükleme Web Sitesi](https://ninitarch.vercel.app/)
+
+- [Kde Efekler](https://discuss.kde.org/t/enable-fun-desktop-effects-on-kde-plasma/636)
+
+-[Kde Efekler Video](https://www.youtube.com/watch?v=Cjic2IB8Wx0)
