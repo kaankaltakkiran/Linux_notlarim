@@ -35,7 +35,7 @@ sudo pacman -S apache
 Aşağıdaki komut `apache confing ` dosyasını vi editör ile açar:
 
 ```bash
-sudo vi /etc/httpd/conf/httpd.conf
+sudo vim /etc/httpd/conf/httpd.conf
 ```
 
 Daha sonra aşağıdaki işlemler yapılır:
@@ -63,7 +63,8 @@ Apache masaüstüne kısayol oluşturma ve izin verme:
 
 ```bash
 ln -s /srv/http ~/Desktop/http_local
-sudo chmod -R u+w /srv/http
+sudo chown -R $USER:$USER /srv/http
+sudo chmod -R 775 /srv/http
 
 ```
 
@@ -122,7 +123,7 @@ sudo pacman -S php php-apache
 Aşağıdaki komut `apache confing ` dosyasını vi editör ile açar:
 
 ```bash
-sudo vi /etc/httpd/conf/httpd.conf
+sudo vim /etc/httpd/conf/httpd.conf
 ```
 
 Daha sonra aşağıdaki işlemler yapılır:
@@ -150,7 +151,7 @@ sudo systemctl restart httpd
 Kurulumu denemek için:
 
 ```bash
-sudo vi /srv/http/test.php
+sudo vim /srv/http/test.php
 ```
 
 test.php:
@@ -191,17 +192,10 @@ sudo chown -R http:http /srv/http/adminer
 sudo chmod -R 755 /srv/http/adminer
 ```
 
-Gerekli `izinleri` verin:
-
-```bash
-sudo chown -R http:http /srv/http/adminer
-sudo chmod -R 755 /srv/http/adminer
-```
-
 Apache dizinine gidin:
 
 ```bash
-sudo vi /etc/httpd/conf/httpd.conf
+sudo vim /etc/httpd/conf/httpd.conf
 ```
 
 En aşağıya ekleyin:
@@ -216,7 +210,7 @@ En aşağıya ekleyin:
 `Php.ini` dosyasına gidin:
 
 ```bash
-sudo vi  /etc/php/php.ini
+sudo vim  /etc/php/php.ini
 ```
 
 Ardından aşağıdaki `,` işaretini kaldırın
