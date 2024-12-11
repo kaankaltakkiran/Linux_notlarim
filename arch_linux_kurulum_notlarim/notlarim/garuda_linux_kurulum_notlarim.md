@@ -864,3 +864,17 @@ source ~/.config/fish/config.fish
 ```
 
 ### Yararlandığım Kaynaklar
+
+- [Arch Linux Kurulum Chatgpt](https://chatgpt.com/share/67595183-a1f4-8008-936a-c8b1bccd4c3f)
+
+- [Arch Linux Lama Kurulum Videosu](https://www.youtube.com/watch?v=zsDzrwT7nvk&list=FLRi8LZ2PetKpAdDVN17oDxg&index=5)
+
+- [Adminer Mysql Aktif Etme Hatası Çözüm Videosu](https://www.youtube.com/watch?v=4AImF_cVr9Q&list=FLRi8LZ2PetKpAdDVN17oDxg&index=3)
+
+- [Garuda Linux Kurulum Sonrası Tavsiye Videosu](https://www.youtube.com/watch?v=ntdlZ60XoD4&list=FLRi8LZ2PetKpAdDVN17oDxg&index=4)
+
+- [Garuda Linux Hakkında Bilgi Chatgpt](https://chatgpt.com/share/67595183-a1f4-8008-936a-c8b1bccd4c3f)
+
+- [Arch Aur Depo](https://archlinux.org/packages/)
+
+- [Arch Görsel Olarak Uygulama Yükleme Web Sitesi](https://ninitarch.vercel.app/)
