@@ -869,6 +869,34 @@ Değişikliğin aktif olması için:
 source ~/.config/fish/config.fish
 ```
 
+### Kurulum Sonrası Yapılacaklar
+
+Numlock aktif etme: `/etc/sddm.conf` dosya yoluna bunu yapıştır:
+
+```bash
+[General]
+InputMethod=
+Numlock=on
+```
+
+- [x] Firewalld (Güvenlik) altif et.
+- [x] F12 tuşuna terminal açma kısayolu ekle.(ctrl+d kapatır)
+- [x] Pencere yerleşim ve boyutunu(fare imleci de)ayarla.
+
+- [x] Grub boot saniyesini 1 yap.
+
+- [x] Genel Davranışta çift tıklama ayarını yap.
+
+- [x] Ttf-ms microsoft fontunu indir.
+
+- [x] Spell check(yazım düzeltme) kapa.
+
+- [x] Octopustan istediğin yazılımı indir.
+
+- [x] Power settingsten uyku ayarını kapat.
+
+- [x] Btrfs ayarla.
+
 ### Yararlandığım Kaynaklar
 
 - [Arch Linux Kurulum Genel Bİlgi Chatgpt](https://chatgpt.com/share/675959ad-1d80-8008-bd49-35bc0e122498)
@@ -885,6 +913,8 @@ source ~/.config/fish/config.fish
 
 - [Kde Efekler](https://discuss.kde.org/t/enable-fun-desktop-effects-on-kde-plasma/636)
 
--[Kde Efekler Video](https://www.youtube.com/watch?v=Cjic2IB8Wx0)
+- [Kde Efekler Video](https://www.youtube.com/watch?v=Cjic2IB8Wx0)
 
--[Vpn Ayarla](https://www.youtube.com/watch?v=X06u5AM_2F0&t=434s)
+- [Vpn Ayarla](https://www.youtube.com/watch?v=X06u5AM_2F0&t=434s)
+
+- [NumLock Kapanma Sorunu](https://forum.manjaro.org/t/numlock-keyboard-issue-on-bootup/60167)
