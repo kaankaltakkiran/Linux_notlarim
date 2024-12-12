@@ -857,6 +857,12 @@ Aşağıdaki örnek alias:
 alias gunaydin='paru -Syu --noconfirm && flatpak update'
 ```
 
+Aşağıdaki örnek alias:
+
+```bash
+alias gunaydin='paru -Syu --noconfirm && flatpak update && paru -Rns $(paru -Qtdq) --noconfirm'
+```
+
 Değişikliğin aktif olması için:
 
 ```bash
