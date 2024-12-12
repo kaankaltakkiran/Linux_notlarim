@@ -879,6 +879,18 @@ InputMethod=
 Numlock=on
 ```
 
+Harici disk okumazsa aşığıdaki paketi yükle:
+
+```bash
+sudo pacman -S ntfs-3g
+```
+
+Sonra mount et:
+
+```bash
+sudo mount -t ntfs-3g /dev/sda1 /mnt
+```
+
 - [x] Firewalld (Güvenlik) altif et.
 - [x] F12 tuşuna terminal açma kısayolu ekle.(ctrl+d kapatır)
 - [x] Pencere yerleşim ve boyutunu(fare imleci de)ayarla.
