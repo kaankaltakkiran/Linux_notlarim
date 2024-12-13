@@ -941,4 +941,8 @@ sudo mount -t ntfs-3g /dev/sda1 /mnt
 
 - [Vpn Ayarla](https://www.youtube.com/watch?v=X06u5AM_2F0&t=434s)
 
+- [Vpn Kurulum Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/hosting_notlarim/notlarim/openvpn.md)
+
+- [İp Test](https://ipleak.net/)
+
 - [NumLock Kapanma Sorunu](https://forum.manjaro.org/t/numlock-keyboard-issue-on-bootup/60167)

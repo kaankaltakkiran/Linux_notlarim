@@ -59,7 +59,19 @@ sftp root@SUNUCU_IP_ADDRESS
 Daha sonra aşağıdaki komut ile adını belirlediğimiz `vpn dosyasını` indriyoruz.
 
 ```bash
-get/root/CLIENT_NAME
+get /root/CLIENT_NAME
+```
+
+Eğer root dosyasından indirirken `acces denied` hatası veriyorsa aşağıdaki komut ile başka bir klasöre taşıyıp indir:
+
+```bash
+sudo mv /root/CLIENT_NAME/tmp/
+```
+
+Ardından aşağıdaki komut ile indir:
+
+```bash
+get /tmp/CLIENT_NAME
 ```
 
 > **Note:** Aşağıdaki komut ile qrcode ile vpn dosyanızı indrebilirsiniz.
