@@ -1,4 +1,4 @@
-# Linux, Ubuntu,Arch(Garuda)Linux, Eklenti, Hosting, Vue.Js, Typescript, Php, Git, Yapay Zeka, Ve Genel Notlarım
+# Linux, Ubuntu, Arch(Garuda)Linux, Eklenti, Hosting, Vue.Js, Typescript, Php, Git, Yapay Zeka, Ve Genel Notlarım
 
 - [Linux Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/linux_notlarim)
 
