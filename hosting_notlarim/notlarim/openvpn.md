@@ -65,13 +65,13 @@ get /root/CLIENT_NAME
 Eğer root dosyasından indirirken `acces denied` hatası veriyorsa aşağıdaki komut ile başka bir klasöre taşıyıp indir:
 
 ```bash
-sudo mv /root/CLIENT_NAME/tmp/
+cd /home/kaan/Kaan-garuda-pc-vpn.ovpn
 ```
 
 Ardından aşağıdaki komut ile indir:
 
 ```bash
-get /tmp/CLIENT_NAME
+get /home/kaan/Kaan-garuda-pc-vpn.ovpn
 ```
 
 > **Note:** Aşağıdaki komut ile qrcode ile vpn dosyanızı indrebilirsiniz.
