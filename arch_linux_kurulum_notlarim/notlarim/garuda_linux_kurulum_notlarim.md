@@ -13,7 +13,7 @@ Garuda terimi Hinduizm kaynaklı olup kartal benzeri, ilahi bir güneş kuşu ve
 Tek komut ile aşağıdaki paketleri yükleme:
 
 ```bash
-sudo pacman -S vim apache mariadb php php-apache nodejs npm git flatpak  --noconfirm
+sudo pacman -S vim apache mariadb php php-apache nodejs npm git flatpak --noconfirm
 ```
 
 ### LAMA (Linux, Apache, MySQL, and Adminer) Kurulum Notları
@@ -877,6 +877,18 @@ Numlock aktif etme: `/etc/sddm.conf` dosya yoluna bunu yapıştır:
 [General]
 InputMethod=
 Numlock=on
+```
+
+Java indirmek için:
+
+```bash
+sudo pacman -S jre-openjdk
+```
+
+Java versiyon kontrol:
+
+```bash
+java -version
 ```
 
 Harici disk okumazsa aşığıdaki paketi yükle:
