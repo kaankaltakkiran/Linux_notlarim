@@ -1,6 +1,6 @@
 # KRunner İşlevleri
 
-![Krunner İşlevleri](https://teknoseyir.com/wp-content/uploads/2021/06/267b462b49c28bb.png)
+![Krunner İşlevleri](/arch_linux_kurulum_notlarim/notlarim/image/Kruuner-Shourtcutspg.jpg)
 
 ## 1. Uygulama Başlatır
 
