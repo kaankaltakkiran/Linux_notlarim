@@ -903,6 +903,18 @@ Sonra mount et:
 sudo mount -t ntfs-3g /dev/sda1 /mnt
 ```
 
+Root kullanocı şifresini değiştirme(Opsiyonel):
+
+```bash
+sudo passwd root
+```
+
+Normal kullanıcı şifresini değiştirme(Opsiyonel):
+
+```bash
+sudo passwd $(whoami)
+```
+
 - [x] Firewalld (Güvenlik) altif et.
 - [x] F12 tuşuna terminal açma kısayolu ekle.(ctrl+d kapatır)
 - [x] Pencere yerleşim ve boyutunu(fare imleci de)ayarla.
