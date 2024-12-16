@@ -1,5 +1,11 @@
 # Arch linux(Garuda linux(Kde)) Kurulum Notlarım
 
+## 🚀Hızlı Kurulum🚀
+
+```bash
+wget -O - | sh
+```
+
 ## [Garuda Linux](https://garudalinux.org/) Özellikleri
 
 `Garuda Linux,` Arch Linux işletim sistemi tabanlı bir Linux dağıtımıdır. KDE Plasma dahil, çeşitli popüler Linux masaüstü ortamlarında mevcuttur. Paket yöneticisi olarak Pacman'ı kullanır ve yuvarlanan sürüm güncelleme modeline sahiptir.
