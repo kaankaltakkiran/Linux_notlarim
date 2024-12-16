@@ -66,7 +66,7 @@ sed -i 's/;extension=mysqli/extension=mysqli/g' /etc/php/php.ini
 # Git Configuration
 print_status "Configuring Git..."
 git config --global user.email "durdu.kaan.kaltakkiran@gmail.com"
-git config --global user.name "Kaan
+git config --global user.name "Kaan"
 
 # Numlock Configuration
 print_status "Configuring Numlock..."
