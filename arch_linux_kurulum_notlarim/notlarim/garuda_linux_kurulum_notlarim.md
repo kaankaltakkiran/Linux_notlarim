@@ -813,10 +813,18 @@ npm -v
 
 ### Git Kurulum Notları
 
-Aşağıdaki komut git yükler:
+Aşağıdaki komut `git` yükler:
 
 ```bash
 sudo pacman -S git --noconfirm
+```
+
+### windsurf Kurulum Notları
+
+Aşağıdaki komut `windsurf` yükler:
+
+```bash
+yay windsurf
 ```
 
 Aşağıdaki komut git confing ayarlarını yapar:
