@@ -3,7 +3,7 @@
 ## 🚀Hızlı Kurulum🚀
 
 ```bash
-wget -O - | sh
+wget https://raw.githubusercontent.com/kaankaltakkiran/Linux_notlarim/refs/heads/main/arch_linux_kurulum_notlarim/notlarim/garuda-linux-setup.sh -O - | sh
 ```
 
 ## [Garuda Linux](https://garudalinux.org/) Özellikleri
