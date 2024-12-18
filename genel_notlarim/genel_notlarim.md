@@ -65,3 +65,5 @@
 - [Magic Ui](https://magicui.design/)
 
 - [Github Wrapped](https://github.com/avgupta456/github-trends)
+
+- [Database Diagram Aracı](https://dbdiagram.io/home)
