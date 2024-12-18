@@ -929,6 +929,12 @@ Normal kullanıcı şifresini değiştirme(Opsiyonel):
 sudo passwd $(whoami)
 ```
 
+Cursor ai indir:
+
+```bash
+https://www.cursor.com/pricing
+```
+
 - [x] Firewalld (Güvenlik) altif et.
 - [x] F12 tuşuna terminal açma kısayolu ekle.(ctrl+d kapatır)
 - [x] Pencere yerleşim ve boyutunu(fare imleci de)ayarla.
