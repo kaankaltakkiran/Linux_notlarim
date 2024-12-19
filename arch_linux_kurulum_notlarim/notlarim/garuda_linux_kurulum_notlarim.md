@@ -885,6 +885,18 @@ source ~/.config/fish/config.fish
 
 ### Kurulum Sonrası Yapılacaklar
 
+Adminer `file upload sınırını` arttırmak için:
+
+```bash
+sudo vim /etc/php/php.ini
+```
+
+upload_max_filesize=128mb olmalı. Ardından apache serverı yeniden başlat:
+
+```bash
+sudo systemctl restart httpd
+```
+
 Numlock aktif etme: `/etc/sddm.conf` dosya yoluna bunu yapıştır:
 
 ```bash
