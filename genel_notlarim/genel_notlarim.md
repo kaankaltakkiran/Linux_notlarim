@@ -67,3 +67,5 @@
 - [Github Wrapped](https://github.com/avgupta456/github-trends)
 
 - [Database Diagram Aracı](https://dbdiagram.io/home)
+
+- [Cursor Ai Shortcuts](https://cursor101.com/cursor/cheat-sheet)
