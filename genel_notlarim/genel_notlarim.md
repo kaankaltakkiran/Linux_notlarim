@@ -69,3 +69,7 @@
 - [Database Diagram Aracı](https://dbdiagram.io/home)
 
 - [Cursor Ai Shortcuts](https://cursor101.com/cursor/cheat-sheet)
+
+- [Proje Fikirleri](https://www.producthunt.com/)
+
+- [Yapay Zekalı Terminal](https://www.warp.dev/)
