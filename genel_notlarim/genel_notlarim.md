@@ -75,3 +75,5 @@
 - [Yapay Zekalı Terminal](https://www.warp.dev/)
 
 - [Vize Bot Web Sitesi](https://visasbot.com/?lang=tr)
+
+- [Ubuntu Hyperland Script](https://github.com/JaKooLit/Ubuntu-Hyprland?tab=readme-ov-file)
