@@ -967,6 +967,8 @@ https://www.cursor.com/pricing
 
 ### Yararlandığım Kaynaklar
 
+- [Failed to commit transaction (conflicting files) when updating packages on](https://stackoverflow.com/questions/67353216/failed-to-commit-transaction-conflicting-files-when-updating-packages-on-manja)
+
 - [Arch Linux Kurulum Genel Bİlgi Chatgpt](https://chatgpt.com/share/675959ad-1d80-8008-bd49-35bc0e122498)
 
 - [Arch Linux Lama Kurulum Videosu](https://www.youtube.com/watch?v=zsDzrwT7nvk&list=FLRi8LZ2PetKpAdDVN17oDxg&index=5)
