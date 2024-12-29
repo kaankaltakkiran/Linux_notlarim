@@ -8,6 +8,6 @@
 
 ## Yaralandığım Kaynaklar
 
-[Sass ve SCSS Medium Yazısı](https://medium.com/@koseoglumelikenur/sass-ve-scss-nedi%CC%87r-5a14618bbd97)
+- [Sass ve SCSS Medium Yazısı](https://medium.com/@koseoglumelikenur/sass-ve-scss-nedi%CC%87r-5a14618bbd97)
 
-[Sass Ve SCSS Syntax](https://devhints.io/sass)
+- [Sass Ve SCSS Syntax](https://devhints.io/sass)

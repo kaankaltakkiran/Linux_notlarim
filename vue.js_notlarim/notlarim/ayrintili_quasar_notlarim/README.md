@@ -4,6 +4,8 @@
 
 - [Quasar Framework Hata Çözümleri](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/quasar_hata_cozumlerim.md)
 
+- [Login Register Api](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/register_login_api.md)
+
 - [Netlify İle Web Site Yayınlama](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/netlify_deploy.md)
 
 - [Quasar Framework Kaynaklarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/quasar_kaynaklarim.md)
