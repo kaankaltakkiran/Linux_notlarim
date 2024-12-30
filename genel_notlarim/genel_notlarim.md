@@ -87,3 +87,5 @@
 - [Cursor Rules Web Sitesi](https://cursor101.com/cursor/rules)
 
 - [Cursor Rules Github](https://github.com/PatrickJS/awesome-cursorrules?tab=readme-ov-file)
+
+- [Temp Email](https://10minutemail.com/)
