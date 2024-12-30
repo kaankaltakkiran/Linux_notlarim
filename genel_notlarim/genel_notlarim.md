@@ -81,3 +81,5 @@
 - [Kötümserlik Arşiv](https://pessimistsarchive.org/)
 
 - [Lokal Yapay Zeka Çalıştırma Aracı](https://github.com/janhq/jan)
+
+- [Görsel İstatistik](https://github.com/hatemhosny/racing-bars)
