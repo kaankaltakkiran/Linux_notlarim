@@ -89,3 +89,5 @@
 - [Cursor Rules Github](https://github.com/PatrickJS/awesome-cursorrules?tab=readme-ov-file)
 
 - [Temp Email](https://10minutemail.com/)
+
+- [Yazılım Yol Haritası](https://roadmap.sh/)
