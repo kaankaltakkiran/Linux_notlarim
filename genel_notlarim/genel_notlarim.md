@@ -79,3 +79,5 @@
 - [Ubuntu Hyperland Script](https://github.com/JaKooLit/Ubuntu-Hyprland?tab=readme-ov-file)
 
 - [Kötümserlik Arşiv](https://pessimistsarchive.org/)
+
+- [Lokal Yapay Zeka Çalıştırma Aracı](https://github.com/janhq/jan)
