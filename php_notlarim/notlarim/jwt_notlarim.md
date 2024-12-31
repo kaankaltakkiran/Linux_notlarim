@@ -133,6 +133,64 @@ try {
 
 Bu yapı modern web uygulamalarında sıkça kullanılan güvenli bir yöntemdir.
 
+JWT (JSON Web Token), kullanıcı oturumlarını yönetmek, kimlik doğrulama yapmak ve bazı bilgileri istemci tarafına güvenli bir şekilde iletmek için kullanılan bir standarttır. Ancak, JWT’nin güvenliği ve amacı hakkında yanlış anlamalar olabilir. Şimdi neden JWT kullandığımızı ve nasıl güvenli olduğunu açıklayalım:
+
+---
+
+### **JWT Neden Decode Edilebiliyor?**
+
+JWT'nin üç bölümü vardır:
+
+1. **Header**: Algoritma ve token türü gibi meta veriler.
+2. **Payload**: Kullanıcıya ait veriler (örneğin `user_id`).
+3. **Signature**: Token’ın doğruluğunu ve bütünlüğünü sağlayan bir imza.
+
+JWT **Base64URL** ile kodlanır, bu yüzden decode edilebilir. Örneğin:
+
+```bash
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjM0NSwiZXhwIjoxNjgwMDAwMDAwfQ.s5sKwp8WQXOTfrb4qKw_1L0JhsKPYFjS7-Y0sx9KTYc
+```
+
+**Payload’daki veriler şifrelenmez**, sadece kodlanır. Bu tasarım, JWT'nin hızlı bir şekilde doğrulanmasını sağlar. Ancak, payload'a hassas veriler koymamalısınız, çünkü JWT'nin güvenliği imzaya dayanır, gizliliğe değil.
+
+---
+
+### **JWT’nin Güvenlik Mekanizması**
+
+JWT'nin güvenliği, **imzası** (Signature) sayesinde sağlanır:
+
+- Sunucu JWT’yi oluştururken bir **gizli anahtar** (`secret key`) veya bir **özel anahtar** (asimetric şifreleme için) kullanır.
+- Bu imza, JWT'nin içeriğinin (header ve payload) değiştirilmediğini garanti eder.
+
+JWT’yi decode ettiğinizde içeriğini görebilirsiniz, ancak imzayı değiştiremezsiniz:
+
+- Eğer birisi token’ı değiştirirse, sunucuda imza doğrulaması başarısız olur ve token geçersiz sayılır.
+
+---
+
+### **JWT’nin Gerçek Güvenliği Nerede?**
+
+1. **Gizli Anahtar**:
+
+   - Token’ın imzasını doğrulamak için kullanılan anahtar gizli tutulur. Bu anahtar olmadan token’ı yeniden oluşturmak veya değiştirmek mümkün değildir.
+
+2. **HTTPS Kullanımı**:
+
+   - JWT, istemci ve sunucu arasında taşınırken **HTTPS** ile korunmalıdır. Böylece token'ın çalınması önlenir.
+
+3. **İmza Koruması**:
+   - İmza sayesinde token'ın içeriği değiştirilse bile sunucu bunu fark eder ve kabul etmez.
+
+---
+
+### **JWT Güvenliğinin Sınırları**
+
+- JWT içeriği gizli değildir; sadece **değiştirilemez**. Bu yüzden:
+  - Hassas bilgiler (örneğin e-posta, şifre, kredi kartı bilgileri) koyulmamalıdır.
+- **Payload’a koyduğunuz bilgiler, istemci tarafında görünür olacaktır.**
+
+---
+
 ### Kaynakça
 
 - [Chatgpt Kaynak](https://chatgpt.com/share/67719714-98c0-8008-910b-7278763a6906)
