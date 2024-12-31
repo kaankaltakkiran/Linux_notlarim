@@ -2,6 +2,8 @@
 
 **JSON Web Token (JWT)**, iki sistem arasında güvenli bir şekilde bilgi alışverişi yapmak için kullanılan bir standarttır. JWT, bilgileri JSON formatında saklar ve genellikle güvenlik amacıyla bir şifreleme veya imzalama algoritması ile korunur.
 
+Server'a giden isteklerin aynı kişiden gidip gitmediğini tespit etmeye yarar.
+
 JWT, genellikle aşağıdaki senaryolarda kullanılır:
 
 - Kullanıcı doğrulama (Authentication)
@@ -184,6 +186,8 @@ JWT’yi decode ettiğinizde içeriğini görebilirsiniz, ancak imzayı değişt
 ---
 
 ### **JWT Güvenliğinin Sınırları**
+
+- Server'a giden isteklerin aynı kişiden gidip gitmediğini tespit etmeye yarar.
 
 - JWT içeriği gizli değildir; sadece **değiştirilemez**. Bu yüzden:
   - Hassas bilgiler (örneğin e-posta, şifre, kredi kartı bilgileri) koyulmamalıdır.
