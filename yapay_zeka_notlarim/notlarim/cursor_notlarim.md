@@ -186,7 +186,24 @@ const phpDevelopmentCursorRules = [
 
 ```
 
-#### Kaynaklarım
+#### Sistemli Proje Kodlama
+
+1. **PRD** (Ürün Gereksinimleri Belgesi)
+
+Bir (Product Requirements Document), bir ürünün hedeflerini, özelliklerini, işlevlerini ve kısıtlamalarını ana hatlarıyla belirtir. Geliştiriciler, tasarımcılar ve paydaşlar için ürünün neyi neden yapması gerektiğini detaylandıran bir plan görevi görür.
+
+2. **RFC** (Request for Comments)
+   RFC(Yorum Talebi), belirli bir uygulama veya özellik öneren yapılandırılmış bir belgedir. Teknik ayrıntıları, gerekçeleri ve olası etkileri içerir ve ekibin bir özelliği nasıl uygulayacağını veya bir sorunu nasıl çözeceğini değerlendirmesine ve uyum sağlamasına yardımcı olur.
+
+3. **Cursor' a derdimi nasıl anlatabildim**;
+   1- Uygulama fikrin hakkında bir PRD dokümanı oluştur
+   2- Oluşturduğun PRD dokümanındaki teknolojilere göre .cursorrules dosyası oluştur
+   3- PRD dokümanına göre bir features dokümanı oluştur.
+   4- PRD ve features dokümanını baz alarak implementasyon sırasına göre RFC dökümanları oluştur.
+   5- Oluşturulan RFC dokümanlarına göre User behavior ve User action flowlarını oluştur ve çizdir
+   6- Son adım her bir RFC yi sırasıyla Cursor' a implemente etmesini iste
+
+##### Kaynaklarım
 
 - [Cursor Resmi Sitesi](https://www.cursor.com/)
 
