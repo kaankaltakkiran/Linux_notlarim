@@ -33,6 +33,16 @@ Cursor'ı resmi web sitesinden veya GitHub deposundan indirilebilir:
 
 > **Not**: Kısayollar varsayılan ayarlardır. Editör içinden kişiselleştirilebilir.
 
+### Cursor Activ Barı Sol Dikey Yerleştirme
+
+[İlgili Video](https://www.youtube.com/watch?v=x3JB6LuWXeE&list=FLRi8LZ2PetKpAdDVN17oDxg&index=6)
+
+Vs code `settings.json` ekle:
+
+```bash
+"workbench.activityBar.orientation":"vertical",
+```
+
 ### Cursor Kullanımı ve Özellikler
 
 Cursor, yazılımcılara verimlilik kazandırmayı hedefleyen modern bir kod editörüdür. Yapay zeka destekli özellikleri ile kod yazma, analiz etme ve düzenleme süreçlerini kolaylaştırır. Bu doküman, Cursor'un önemli araçlarını ve kullanım alanlarını açıklamaktadır.
@@ -197,10 +207,15 @@ Bir (Product Requirements Document), bir ürünün hedeflerini, özelliklerini, 
 
 3. **Cursor' a derdimi nasıl anlatabildim**;
    1- Uygulama fikrin hakkında bir PRD dokümanı oluştur
+
    2- Oluşturduğun PRD dokümanındaki teknolojilere göre .cursorrules dosyası oluştur
+
    3- PRD dokümanına göre bir features dokümanı oluştur.
+
    4- PRD ve features dokümanını baz alarak implementasyon sırasına göre RFC dökümanları oluştur.
+
    5- Oluşturulan RFC dokümanlarına göre User behavior ve User action flowlarını oluştur ve çizdir
+
    6- Son adım her bir RFC yi sırasıyla Cursor' a implemente etmesini iste
 
 ##### Kaynaklarım
