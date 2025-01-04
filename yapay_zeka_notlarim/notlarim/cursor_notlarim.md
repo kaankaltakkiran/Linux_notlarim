@@ -40,7 +40,7 @@ Cursor'ı resmi web sitesinden veya GitHub deposundan indirilebilir:
 Vs code `settings.json` ekle:
 
 ```bash
-"workbench.activityBar.orientation":"vertical",
+"workbench.activityBar.orientation": "vertical",
 ```
 
 ### Cursor Kullanımı ve Özellikler
@@ -217,6 +217,16 @@ Bir (Product Requirements Document), bir ürünün hedeflerini, özelliklerini, 
    5- Oluşturulan RFC dokümanlarına göre User behavior ve User action flowlarını oluştur ve çizdir
 
    6- Son adım her bir RFC yi sırasıyla Cursor' a implemente etmesini iste
+
+#### Cursor Ücretsiz Kullanma
+
+- [Yotube Video](https://www.youtube.com/watch?v=twzVanNjXyg&t=1s)
+
+- [Ücretsiz Pro Hesabı Fake Machine İd](https://mega.nz/folder/jJJ3XApT#KoIw2_FQdQu0QDrEr48eIA)
+
+- [Cursor Hesap Oluşturma Scripti](https://github.com/yuaotian/go-cursor-help/releases/tag/v0.0.31)
+
+- [Cursor Hesap Oluşturma Scripti](https://github.com/chengazhen/cursor-auto-free)
 
 ##### Kaynaklarım
 
