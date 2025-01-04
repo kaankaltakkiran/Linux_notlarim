@@ -91,3 +91,5 @@
 - [Temp Email](https://10minutemail.com/)
 
 - [Yazılım Yol Haritası](https://roadmap.sh/)
+
+- [Cursor Ücretsiz Kullanma Video](https://www.youtube.com/watch?v=twzVanNjXyg&t=1s)
