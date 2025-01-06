@@ -228,6 +228,10 @@ Bir (Product Requirements Document), bir ürünün hedeflerini, özelliklerini, 
 
 - [Cursor Hesap Oluşturma Scripti](https://github.com/chengazhen/cursor-auto-free)
 
+- [Yotube Video(New)](https://www.youtube.com/watch?v=VKB7EFrWwew)
+
+- [Cursor Hesap Oluşturma](https://veont.github.io/cursor.ai/)
+
 ##### Kaynaklarım
 
 - [Cursor Resmi Sitesi](https://www.cursor.com/)
