@@ -322,8 +322,6 @@ Aşağıdaki komut ile array şeklinde oluşturduğumuz diller gözükür.
 
 ```bash
  quasalang lang-switcher
-
-
 ```
 
 Consolda bu şeklide gözükür:
@@ -405,7 +403,33 @@ const localeOptions = [
   { value: "tr", label: "Turkish" },
 ];
 </script>
+```
 
+### Başka Sayfalarda Kullanmak İçin Örnek
+
+```js
+<template>
+     <div class="col">
+          <q-input
+            outlined
+            dense
+            v-model="addEntryForm.name"
+            ref="nameRef"
+            :placeholder="$t('Name')"
+            bg-color="white"
+            :rules="enableRules ? [validateName] : []"
+            @blur="checkInput('name')"
+          />
+        </div>
+</template>
+
+<script setup>
+
+import { useI18n } from 'vue-i18n'; // useI18n fonksiyonunu ekleyin
+
+// i18n kullanımı
+const { t } = useI18n();
+</script>
 ```
 
 > Note:[Strings must use singlequote hatası alınırsa çözüm](https://chatgpt.com/share/d06794fe-1de1-4e93-80ca-b43b59f43f9c)
