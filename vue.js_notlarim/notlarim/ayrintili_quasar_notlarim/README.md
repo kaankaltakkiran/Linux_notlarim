@@ -6,6 +6,8 @@
 
 - [Login Register Api](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/register_login_api.md)
 
+- [Env İle Api Ayarı](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/quasar_axios_api_env_ayarlari.md)
+
 - [Netlify İle Web Site Yayınlama](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/netlify_deploy.md)
 
 - [Quasar Framework Kaynaklarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/quasar_kaynaklarim.md)
