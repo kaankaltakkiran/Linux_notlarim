@@ -147,3 +147,7 @@ Youtube deneyimini arttrıyor.
 ## [Youtube Playback speed controller](https://addons.mozilla.org/en-US/firefox/addon/yt-playback-speed-controller/)
 
 Youtube video hızını özelleştirme imkanı sağlıyor.
+
+## [Orbit](https://addons.mozilla.org/en-US/firefox/addon/orbit-summarizer/)
+
+Yapay Zeka İle Sayfa Özetleyici.
