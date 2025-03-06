@@ -93,3 +93,7 @@
 - [Yazılım Yol Haritası](https://roadmap.sh/)
 
 - [Cursor Ücretsiz Kullanma Video](https://www.youtube.com/watch?v=twzVanNjXyg&t=1s)
+
+- [Readme Ai Oluşturma](https://github.com/eli64s/readme-ai)
+
+- [Readme İçin İcon Oluşturma](https://shields.io/)
