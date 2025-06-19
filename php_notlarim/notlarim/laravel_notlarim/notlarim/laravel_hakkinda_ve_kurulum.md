@@ -57,6 +57,34 @@ Bu komut PHP, Composer, and the Laravel installer kurulumunu yapar linux dağıt
 
 > Note: Bu komutu çalıştırdıktan sonra oturumu yeniden başlat.
 
+fish terminal kullanıyorsan şu komutu çalıştır ve oturumunu yeniden başlat:
+
+```bash
+set -U fish_user_paths $fish_user_paths /home/kaan/.config/herd-lite/bin
+
+```
+
+Kontrol etmek için:
+
+```bash
+which composer
+composer --version
+
+which laravel
+laravel --version
+
+```
+
+Eğer şu tarz çıktılar alırsan her şey çalışıyor demektir:
+
+```bash
+/home/kaan/.config/herd-lite/bin/composer
+Composer version 2.x.x ...
+
+/home/kaan/.config/herd-lite/bin/laravel
+Laravel Installer 5.x ...
+```
+
 Laravel installer global olarak kurulabilir:
 
 ```bash
