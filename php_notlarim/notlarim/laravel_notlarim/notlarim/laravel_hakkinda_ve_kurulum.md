@@ -60,8 +60,11 @@ Bu komut PHP, Composer, and the Laravel installer kurulumunu yapar linux dağıt
 fish terminal kullanıyorsan şu komutu çalıştır ve oturumunu yeniden başlat:
 
 ```bash
-set -U fish_user_paths $fish_user_paths /home/kaan/.config/herd-lite/bin
+set -Ux PATH /home/kaan/.config/herd-lite/bin $PATH
+```
 
+```bash
+set -U fish_user_paths $fish_user_paths /home/kaan/.config/herd-lite/bin
 ```
 
 Kontrol etmek için:
