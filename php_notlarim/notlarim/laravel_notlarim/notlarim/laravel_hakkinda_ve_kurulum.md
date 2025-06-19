@@ -159,3 +159,20 @@ http://localhost:8000
 adresine git. Laravel sayfası geliyorsa her şey yolunda 🎉
 
 ---
+
+## 🧪 Vs code Extension Laravel için
+
+Laravel için Visual Studio Code uzantıları:
+
+- [Php İntelephense(Kod Öneri)](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+
+- [Php(Otomatik Kod Tamamla)](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode)
+
+- [Php(Otomatik Kod Tamamla)](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode)
+- [Laravel Blade Snippets(Laravel Kodu İçin Kod Tanımlama)](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade)
+
+- [Livewire Language Support(Laravel Kod Hatırlama)](https://marketplace.visualstudio.com/items?itemName=cierra.livewire-vscode)
+
+- [Laravel Blade formatter(Otomatik Kod Tamamlama)](https://marketplace.visualstudio.com/items?itemName=shufo.vscode-blade-formatter)
+
+- [Vue Offical(Vue Kod Tamamlama)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
