@@ -1,5 +1,7 @@
 # Php Notlarım
 
+- [Laravel Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/php_notlarim/notlarim/laravel_notlarim)
+
 - [Ayrıntılı Php Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/php_notlarim/notlarim)
 
 - [Php Yararlandığım Kaynaklar](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/php_kaynaklarim.md)
