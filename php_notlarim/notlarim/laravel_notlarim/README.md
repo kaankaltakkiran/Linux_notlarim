@@ -5,3 +5,5 @@
 - [Laravel Hata Çözüm Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/laravel_hata_cozum_notlarim.md)
 
 - [Laravel Ve Mvc](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/laravel_ve_mvc.md)
+
+- [Laravel Migration Ve Composer Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/laravel_migration_ve_composer_notlarim.md)
