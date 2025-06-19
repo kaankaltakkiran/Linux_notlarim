@@ -7,7 +7,6 @@
 ## 🔹 1. Model (Veri Katmanı)
 
 - **Veritabanıyla iletişim kurar.**
-- Laravel'de **Eloquent ORM** kullanılarak yazılır.
 - Örnek: `User`, `Product`, `Post` gibi veritabanı tablolarını temsil eder.
 
 ```php

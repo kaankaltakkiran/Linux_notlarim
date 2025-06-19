@@ -49,17 +49,18 @@ composer --version
 
 ### 3. Laravel Installer (Opsiyonel)
 
+Bu komut PHP, Composer, and the Laravel installer kurulumunu yapar linux dağıtımına için:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://php.new/install/linux/8.4)"
+```
+
+> Note: Bu komutu çalıştırdıktan sonra oturumu yeniden başlat.
+
 Laravel installer global olarak kurulabilir:
 
 ```bash
 composer global require laravel/installer
-```
-
-PATH'e `~/.composer/vendor/bin` veya `~/.config/composer/vendor/bin` ekle:
-
-```bash
-echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
 ```
 
 ### 4. Yeni Proje Oluşturma
@@ -67,7 +68,7 @@ source ~/.bashrc
 #### Laravel Installer ile:
 
 ```bash
-laravel new proje-adi
+laravel new example-app
 ```
 
 #### Composer ile:
@@ -79,8 +80,9 @@ composer create-project laravel/laravel proje-adi
 ### 5. Geliştirme Sunucusunu Başlatma
 
 ```bash
-cd proje-adi
-php artisan serve
+cd example-app
+npm install && npm run build
+composer run dev
 ```
 
 Sonrasında `http://127.0.0.1:8000` adresinde projeni görebilirsin.
