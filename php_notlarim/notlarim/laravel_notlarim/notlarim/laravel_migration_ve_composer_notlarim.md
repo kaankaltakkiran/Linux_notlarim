@@ -228,14 +228,15 @@ return new class extends Migration {
 
 ## 🚀 Sık Kullanılan Migration Komutları
 
-| Komut                          | Açıklama                                 |
-| ------------------------------ | ---------------------------------------- |
-| `php artisan make:migration`   | Yeni migration dosyası oluşturur         |
-| `php artisan migrate`          | Migration’ları uygular (up çalışır)      |
-| `php artisan migrate:rollback` | Son migration'ı geri alır (down çalışır) |
-| `php artisan migrate:refresh`  | Tüm migrationları sıfırdan çalıştırır    |
-| `php artisan migrate:fresh`    | Veritabanını sıfırlar ve yeniden kurar   |
-| `php artisan migrate:status`   | Hangi migration’lar çalışmış gösterir    |
+| Komut                                        | Açıklama                                 |
+| -------------------------------------------- | ---------------------------------------- |
+| `php artisan make:controller AuthController` | Controller oluşturur                     |
+| `php artisan make:migration`                 | Yeni migration dosyası oluşturur         |
+| `php artisan migrate`                        | Migration’ları uygular (up çalışır)      |
+| `php artisan migrate:rollback`               | Son migration'ı geri alır (down çalışır) |
+| `php artisan migrate:refresh`                | Tüm migrationları sıfırdan çalıştırır    |
+| `php artisan migrate:fresh`                  | Veritabanını sıfırlar ve yeniden kurar   |
+| `php artisan migrate:status`                 | Hangi migration’lar çalışmış gösterir    |
 
 ---
 
