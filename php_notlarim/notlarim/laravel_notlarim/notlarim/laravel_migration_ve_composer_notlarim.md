@@ -140,3 +140,125 @@ Yani `autoload` sistemini yönetir. Kendi yazdığın sınıfları bile Composer
 | `vendor/` klasörü | Tüm kütüphaneler buraya yüklenir.          |
 
 ---
+
+## Detaylı Migration Konusu
+
+# 🧱 Laravel Migration Kısaca
+
+- **Migration:** Kod yazarak veritabanı tablosu oluşturma, değiştirme, silme işlemleridir.
+- `php artisan make:migration` komutu ile oluşturulur.
+- `up()` ➝ tabloyu oluşturur / değiştirir
+- `down()` ➝ yapılan işlemi geri alır (rollback için)
+
+---
+
+## 📦 1. Migration Oluşturma
+
+```bash
+php artisan make:migration create_posts_table
+```
+
+Oluşan dosya: `database/migrations/202x_xx_xx_xxxxxx_create_posts_table.php`
+
+---
+
+## 🔨 2. Migration Yapısı
+
+```php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration {
+    public function up()
+    {
+        Schema::create('posts', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->text('content');
+            $table->timestamps(); // created_at ve updated_at
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('posts');
+    }
+};
+```
+
+---
+
+## 🔍 `up()` Nedir?
+
+- **`up()`** fonksiyonu, migration **ilerletildiğinde** çalışır.
+- Genellikle tablo oluşturma, sütun ekleme burada yapılır.
+
+---
+
+## 🔁 `down()` Nedir?
+
+- **`down()`**, `migrate:rollback` komutunda çalışır.
+- `up()` fonksiyonunda yapılan işlemleri **geri almak** için kullanılır.
+
+> Örn: `up()` tablo oluşturuyorsa → `down()` o tabloyu siler.
+
+---
+
+## 🔧 `Blueprint` Nedir?
+
+- Migration içinde tabloyu tanımlarken kullanılan yardımcı sınıftır.
+- `$table` ifadesi aslında bir `Blueprint` nesnesidir.
+- Yani `$table->string('name')` gibi metotlar, tabloya sütun eklemeye yarar.
+
+---
+
+## 🔣 Blueprint ile Sık Kullanılan Sütun Türleri
+
+| Komut                          | Açıklama                     |
+| ------------------------------ | ---------------------------- |
+| `$table->id()`                 | Otomatik artan `id`          |
+| `$table->string('title')`      | 255 karakterlik string       |
+| `$table->text('content')`      | Uzun metin                   |
+| `$table->integer('views')`     | Tamsayı                      |
+| `$table->boolean('is_active')` | True / False                 |
+| `$table->timestamps()`         | `created_at` ve `updated_at` |
+
+---
+
+## 🚀 Sık Kullanılan Migration Komutları
+
+| Komut                          | Açıklama                                 |
+| ------------------------------ | ---------------------------------------- |
+| `php artisan make:migration`   | Yeni migration dosyası oluşturur         |
+| `php artisan migrate`          | Migration’ları uygular (up çalışır)      |
+| `php artisan migrate:rollback` | Son migration'ı geri alır (down çalışır) |
+| `php artisan migrate:refresh`  | Tüm migrationları sıfırdan çalıştırır    |
+| `php artisan migrate:fresh`    | Veritabanını sıfırlar ve yeniden kurar   |
+| `php artisan migrate:status`   | Hangi migration’lar çalışmış gösterir    |
+
+---
+
+## 📌 Örnek: posts tablosu
+
+```php
+Schema::create('posts', function (Blueprint $table) {
+    $table->id();
+    $table->string('title');
+    $table->text('body');
+    $table->boolean('published')->default(false);
+    $table->timestamps();
+});
+```
+
+---
+
+## ✅ Kısaca Özet
+
+| Kavram      | Anlamı                                         |
+| ----------- | ---------------------------------------------- |
+| `migration` | Kodla tablo oluşturma sistemi                  |
+| `up()`      | Tabloyu oluşturur, sütun ekler                 |
+| `down()`    | Tabloyu siler, değişiklikleri geri alır        |
+| `Blueprint` | Tabloya sütun tanımlamak için kullanılan sınıf |
+| `migrate`   | Migration'ları çalıştırır, tabloları oluşturur |
