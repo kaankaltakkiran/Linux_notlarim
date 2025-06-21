@@ -9,3 +9,5 @@
 - [Laravel Proje Yapısı](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/laravel_proje_yapisi.md)
 
 - [Laravel Migration Ve Composer Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/laravel_migration_ve_composer_notlarim.md)
+
+- [Laravel Register Login Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/laravel_register_login_notlarim.md)
