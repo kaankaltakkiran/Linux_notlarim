@@ -6,7 +6,7 @@
 
 - [Laravel Ve Mvc](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/laravel_ve_mvc.md)
 
-- [Laravel Proje Yapısı](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/roje_yapisi.md)
+- [Laravel Proje Yapısı](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/proje_yapisi.md)
 
 - [Laravel Migration Ve Composer Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/migration_ve_composer_notlarim.md)
 
