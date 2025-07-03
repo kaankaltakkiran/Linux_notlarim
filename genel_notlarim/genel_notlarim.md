@@ -97,3 +97,5 @@
 - [Readme Ai Oluşturma](https://github.com/eli64s/readme-ai)
 
 - [Readme İçin İcon Oluşturma](https://shields.io/)
+
+- [Bilgasayarında Linux Kursan Ne Çalışmaz](https://linux-hardware.org/)
