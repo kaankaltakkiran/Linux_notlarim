@@ -99,3 +99,5 @@
 - [Readme İçin İcon Oluşturma](https://shields.io/)
 
 - [Bilgasayarında Linux Kursan Ne Çalışmaz](https://linux-hardware.org/)
+
+- [Otomasyon Aracı](https://n8n.io/)
