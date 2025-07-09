@@ -27,8 +27,41 @@ Son olarak projemizi başlatmak için terminalden aşağıdaki komutu çalışt�
 composer run dev
 ```
 
+## Laravel Türkiye Timezone Ayarlama
+
+Laravel projesinde Türkiye için timezone ayarlamak için `config/app.php` dosyasında `timezone` kısmını aşağıdaki gibi düzenleyebiliriz:
+
+```php
+
+'timezone' => env('APP_TIMEZONE', 'UTC'),
+```
+
+ve `.env` dosyasında `APP_TIMEZONE` değerini ekle ve timezone `Europe/Istanbul` olarak ayarlayabiliriz:
+
+```bash
+APP_TIMEZONE=Europe/Istanbul
+```
+
+## Laravel Personel Token Expire Date Ayarlama
+
+`config/sanctum.php` dosyasında `expiration` değerini ayarlayarak personel token'larının ne kadar süre geçerli olacağını belirleyebiliriz. Örneğin, 1 gün geçerli olacak şekilde ayarlamak için:
+
+```php
+'expiration' => 3600
+```
+
+`app/controllers/AuthController.php` dosyasında örneğin kullanıcı login işlemi sırasında token oluştururken `expiresAt` parametresini kullanarak token'ın geçerlilik süresini belirleyebiliriz. Örneğin, 1 gün geçerli olacak şekilde:
+
+```php
+ $token=$user->createToken($user->name,expiresAt: now()->addDay());
+```
+
 ### Kaynakça-
 
 - [Laravel Resmi Dokümantasyonu](https://laravel.com/docs)
 
 - [Database Bağlantı Sorunu Çözüm Videosu](https://www.youtube.com/watch?v=AppwyIBAs74&list=FLRi8LZ2PetKpAdDVN17oDxg)
+
+- [Türk Timezone Forum](https://laravel.gen.tr/d/4164-local-timezone-ayari)
+
+- [Timezone Ayarlama](https://docs.vultr.com/how-to-set-the-timezone-in-laravel)
