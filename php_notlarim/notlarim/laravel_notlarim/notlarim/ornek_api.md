@@ -1,4 +1,4 @@
-# Laravel Örnek Api Oluşturma Rehberi
+# Laravel Örnek Api(Sanctum) Oluşturma Rehberi
 
 Laravel ile kullanıcı ve post işlemlerini gerçekleştiren basit bir CRUD api örneği.
 
@@ -30,16 +30,10 @@ DB_USERNAME={kullanıcı_adınız}
 DB_PASSWORD={şifreniz}
 ```
 
-## Api İçin Sanctum Kurulumu
+## Api İçin [Sanctum](https://laravel.com/docs/12.x/sanctum#main-content) Kurulumu
 
 ```bash
 php artisan install:api
-```
-
-## Migration İle Veritabanı Oluşturma
-
-```bash
-php artisan migrate
 ```
 
 > ** Note:** Veritabanında yeni migrationlar oluşturuldu. Çalıştırmak ister misiniz ? diye bir soru sorulacak. `yes` demek için `enter` tuşuna basın.
@@ -52,12 +46,6 @@ php artisan migrate
 php artisan route:list
 ```
 
-## Sunucu Çalıştırma
-
-```bash
-php artisan serve
-```
-
 ## Post için Model, Migration ve Controller Oluşturma
 
 ```bash
@@ -66,7 +54,11 @@ php artisan make:model Post -a --api
 
 > ** Not:** `-a` parametresi model için migration, controller ve factory dosyalarını da oluşturur. `--api` parametresi ise sadece api için gerekli olan metodları oluşturur.
 
-HasApiTokens unutma
+## Migration İle Tabloları Oluşturma
+
+```bash
+php artisan migrate
+```
 
 ## Post Modelini Düzenleme
 
@@ -146,10 +138,10 @@ return new class extends Migration
 };
 ```
 
-> ** Note:** Migration dosyasını düzenledikten sonra veritabanına yeni migration eklemek için aşağıdaki komutu çalıştırın:
+> ** Note:** Migration dosyasını düzenledikten sonra, veritabanında değişiklikleri uygulamak için aşağıdaki komutu çalıştırın:
 
 ```bash
-php artisan migrate
+php artisan migrate:fresh
 ```
 
 ## User Model Düzenleme
@@ -472,4 +464,10 @@ class AuthController extends Controller
         ];
     }
 }
+```
+
+## Sunucu Çalıştırma
+
+```bash
+php artisan serve
 ```

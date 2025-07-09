@@ -19,3 +19,7 @@
 - [Laravel Ülke Şehir Ve İlçe İçin Kullanımı](https://github.com/kaankaltakkiran/Country_City_District_Laravel)
 
 - [Php Artisan Komutları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/php_artisan_komutlari.md)
+
+- [Laravel Örnek Api](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/ornek_api.md)
+
+- [Postman Kullanım Notları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/ornek_api_postman.md)
