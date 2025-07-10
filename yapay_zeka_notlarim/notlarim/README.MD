@@ -6,4 +6,9 @@
 
 - [Gemini Cli Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/yapay_zeka_notlarim/notlarim/gemini_cli_notlarim.md)
 
+- [Mcp Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/yapay_zeka_notlarim/notlarim/mcp_notlarim.md)
+
+
+
+
 
