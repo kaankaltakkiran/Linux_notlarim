@@ -16,6 +16,30 @@ Aşağıdaki komut `README.md ` doyasını `notlarim` adlı klasöre taşır.
 git mv README.md notlarim/
 ```
 
+## `git revert` Komutu Ne İşe Yarar ?
+
+`git revert` komutu, Git deposundaki bir commit'i geri almak için kullanılır. Bu komut, belirtilen commit'in yaptığı değişiklikleri tersine çevirir ve yeni bir commit oluşturur.
+
+Öncelikle son comitleri listeleyelim:
+
+```bash
+git log --oneline
+```
+
+> **Note**: en üsteki commit en son yapılan commit'tir.
+
+Geri almak istedğimiz commit'in hash kodunu kopyalayalın ve aşağıdaki komutu kullanarak geri alalım:
+
+```bash
+git revert c2e5b7a
+```
+
+Son olarak değişiklikleri push edelim:
+
+```bash
+git push
+```
+
 ## Ssh İle Github Repository Nasıl Clone Edilir ?
 
 Örneğin aşağıdaki komut ile ssh ile birlikte clone işlemi yapılır.
