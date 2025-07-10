@@ -101,3 +101,5 @@
 - [Bilgasayarında Linux Kursan Ne Çalışmaz](https://linux-hardware.org/)
 
 - [Otomasyon Aracı](https://n8n.io/)
+
+- [Yapay Zeka Api](https://openrouter.ai/)
