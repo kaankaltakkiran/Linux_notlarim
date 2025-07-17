@@ -1,9 +1,5 @@
 # Cloud Genel Notlarım
 
-Elbette! İşte **IaaS**, **PaaS**, **SaaS** ve **Terraform** kavramlarını genel hatlarıyla açıklayan ve örneklerle destekleyen bir anlatım:
-
----
-
 ## ☁️ IaaS, PaaS ve SaaS Nedir?
 
 Bu üç kavram, **bulut bilişim hizmet modellerini** tanımlar. Her biri farklı seviyelerde kontrol ve sorumluluk sunar:
