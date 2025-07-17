@@ -103,3 +103,5 @@
 - [Otomasyon Aracı](https://n8n.io/)
 
 - [Yapay Zeka Api](https://openrouter.ai/)
+
+- [Turkiye Konum Api](https://turkiyeapi.dev/)
