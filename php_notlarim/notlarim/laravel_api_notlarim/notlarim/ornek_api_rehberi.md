@@ -2,8 +2,6 @@
 
 Aşağıdaki adımları takip ederek, Laravel ile basit bir CRUD API (kullanıcı + post işlemleri) oluşturabilirsiniz.
 
-<p align="center">
-
 - **1. Adım:** <a href="#laravel-kurulum">Laravel Kurulum</a>
 - **2. Adım:** <a href="#laravel-proje-oluşturma">Laravel Proje Oluşturma</a>
 - **3. Adım:** <a href="#çalıştırılacak-php-artisan-komutları">Çalıştırılacak Php Artisan Komutları</a>
@@ -11,11 +9,10 @@ Aşağıdaki adımları takip ederek, Laravel ile basit bir CRUD API (kullanıc�
 - **5. Adım:** <a href="#post-konfigürasyon">Post Konfigürasyon</a>
 - **6. Adım:** <a href="#router-konfigürasyon">Router Konfigürasyon</a>
 - **7. Adım:** <a href="#sunucuyu-çalıştırma">Sunucuyu Çalıştırma</a>
-</p>
 
 ---
 
-## Laravel Kurulumu
+## Laravel Kurulum
 
 Daha öncesinde bilgisayarınızda `PHP ve Composer kurulu değilse` aşağıdaki komutları kullanarak kurulum yapabilirsiniz:
 
@@ -132,15 +129,10 @@ php artisan make:controller AuthController
 
 ```php
 <?php
-namespace App\Http\Controllers;
-
 use App\Models\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
-class AuthController extends Controller
-{
-    public function register(Request $request)
+  public function register(Request $request)
     {
         $fields = $request->validate([
             'name'     => 'required|max:255',
@@ -178,7 +170,6 @@ class AuthController extends Controller
         $request->user()->tokens()->delete();
         return ['message' => 'Logged out successfully'];
     }
-}
 ```
 
 ### Sanctum Api Konfigürasyon
@@ -186,6 +177,7 @@ class AuthController extends Controller
 **Dosya:** `app/Models/User.php`
 
 ```php
+   use Laravel\Sanctum\HasApiTokens;
    use HasFactory, Notifiable,HasApiTokens;
 
        public function posts(){
@@ -239,7 +231,14 @@ protected $fillable = [
 **Dosya:** `app/Http/Controllers/PostController.php`
 
 ```php
-<?php
+use App\Models\Post;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controllers\HasMiddleware;
+use Illuminate\Routing\Controllers\Middleware;
+use Illuminate\Support\Facades\Gate;
+
+class PostController extends Controller implements HasMiddleware
+
   public static function middleware()
     {
        return [ new Middleware('auth:sanctum',except:['index','show'])];
@@ -297,22 +296,14 @@ protected $fillable = [
 **Dosya:** `app/Policies/PostPolicy.php`
 
 ```php
-<?php
-namespace App\Policies;
-
-use App\Models\Post;
-use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
-class PostPolicy
-{
     public function modify(User $user, Post $post)
     {
         return $user->id === $post->user_id
             ? Response::allow()
             : Response::deny('You do not own this post');
     }
-}
 ```
 
 ## Router Konfigürasyon
