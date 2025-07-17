@@ -32,7 +32,7 @@ pacman -Syu --noconfirm
 
 # Install core packages in one command
 print_status "Installing core packages..."
-pacman -S vim apache mariadb php php-apache nodejs npm git flatpak ntfs-3g jre-openjdk --noconfirm
+pacman -S vim apache mariadb php php-apache nodejs npm git flatpak ntfs-3g jre-openjdk terraform --noconfirm
 
 # Apache Configuration
 print_status "Configuring Apache..."

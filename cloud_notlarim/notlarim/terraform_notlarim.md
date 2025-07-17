@@ -25,6 +25,22 @@ Terraform birçok sağlayıcıyla çalışır:
 
 ---
 
+# 🚀 Terraform Nasıl Yüklenir ?
+
+`Arch Linux` için:
+
+```bash
+sudo pacman -S terraform
+```
+
+kontrol etmek için:
+
+```bash
+terraform version
+```
+
+> **Not:** Diğer işletim sistemleri için [Terraform resmi dokümantasyonuna](https://developer.hashicorp.com/terraform/install) bakabilirsiniz.
+
 # 🛠️ Terraform Nasıl Çalışır?
 
 Terraform’un temel çalışma adımları:

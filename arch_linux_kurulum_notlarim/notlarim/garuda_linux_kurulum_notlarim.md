@@ -827,12 +827,19 @@ Aşağıdaki komut `windsurf` yükler:
 yay windsurf
 ```
 
+### Terraform Kurulum Notları
+
+Aşağıdaki komut `terraform` yükler:
+
+````bash
+sudo pacman -S terraform --noconfirm
+
 Aşağıdaki komut git confing ayarlarını yapar:
 
 ```bash
 git config --global user.email "durdu.kaan.kaltakkiran@gmail.com"
 git config --global user.name "Kaan Kaltakkıran"
-```
+````
 
 Aşağıdaki komut git confing ayarlarını listeler:
 
