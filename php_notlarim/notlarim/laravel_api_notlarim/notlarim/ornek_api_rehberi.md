@@ -2,13 +2,16 @@
 
 Aşağıdaki adımları takip ederek, Laravel ile basit bir CRUD API (kullanıcı + post işlemleri) oluşturabilirsiniz.
 
+<p align="center">
+
 - **1. Adım:** <a href="#laravel-kurulum">Laravel Kurulum</a>
 - **2. Adım:** <a href="#laravel-proje-oluşturma">Laravel Proje Oluşturma</a>
 - **3. Adım:** <a href="#çalıştırılacak-php-artisan-komutları">Çalıştırılacak Php Artisan Komutları</a>
 - **4. Adım:** <a href="#user-konfigürasyon">User Konfigürasyon</a>
 - **5. Adım:** <a href="#post-konfigürasyon">Post Konfigürasyon</a>
 - **6. Adım:** <a href="#router-konfigürasyon">Router Konfigürasyon</a>
-- **7. Adım:** <a href="#sunucu-çalıştırma">Sunucuyu Çalıştırma</a>
+- **7. Adım:** <a href="#sunucuyu-çalıştırma">Sunucuyu Çalıştırma</a>
+</p>
 
 ---
 
