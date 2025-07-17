@@ -47,7 +47,7 @@ Terraform’un temel çalışma adımları:
 
 ---
 
-# ☁️ Terraform ile GCP Üzerinde Bucket Oluşturma (ACL Dahil)
+# ☁️ Terraform ile GCP Üzerinde Bucket Oluşturma
 
 Aşağıda GCP üzerinde bir **Cloud Storage Bucket** oluşturan Terraform yapısı var. Ayrıca **ACL** ayarıyla bucket’a erişim seviyesini kontrol ediyoruz.
 
