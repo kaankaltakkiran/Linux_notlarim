@@ -326,6 +326,7 @@ php artisan serve
 ```
 
 - API’niz şimdi `http://127.0.0.1:8000/api/...` adresinde çalışıyor.
-- Postman veya başka bir araçla `register`, `login`, `posts` uç noktalarını test edin.
+- [Postman Api Rehberi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/postman_api_rehberi.md)
+- [Postman Api Dosyası](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/Laravel%20Post%20Api.postman_collection.json)
 
 ---

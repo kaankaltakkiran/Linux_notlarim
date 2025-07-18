@@ -226,6 +226,6 @@ Bu rehber, Laravel ile oluşturulmuş bir basit blog API'sini Postman ile test e
 
 - Token'ı her yetkili işlem için `Authorization` başlığına `Bearer {TOKEN}` olarak eklemeyi unutmayın.
 - Yerel sunucu çalışıyorsa (`php artisan serve` ile), istekleri `http://127.0.0.1:8000/api/...` adresine yapın.
--
+- [Postman Api Dosyası](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/Laravel%20Post%20Api.postman_collection.json)
 
 ---
