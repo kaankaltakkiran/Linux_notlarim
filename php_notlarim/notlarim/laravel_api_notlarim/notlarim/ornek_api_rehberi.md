@@ -128,7 +128,6 @@ php artisan make:controller AuthController
 **Dosya:** `app/Http/Controllers/AuthController.php`
 
 ```php
-<?php
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
@@ -191,7 +190,6 @@ use Illuminate\Support\Facades\Hash;
 **Dosya:** `app/Models/Post.php`
 
 ```php
-<?php
 protected $fillable = [
         'title',
         'body',
@@ -231,7 +229,6 @@ protected $fillable = [
 **Dosya:** `app/Http/Controllers/PostController.php`
 
 ```php
-use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controllers\HasMiddleware;
 use Illuminate\Routing\Controllers\Middleware;
@@ -296,8 +293,6 @@ class PostController extends Controller implements HasMiddleware
 **Dosya:** `app/Policies/PostPolicy.php`
 
 ```php
-use Illuminate\Auth\Access\Response;
-
     public function modify(User $user, Post $post)
     {
         return $user->id === $post->user_id
@@ -313,10 +308,6 @@ use Illuminate\Auth\Access\Response;
 ```php
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AuthController;
-
- Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
 
 Route::apiResource('posts',PostController::class);
 Route::post('/register',[AuthController::class,'register']);
