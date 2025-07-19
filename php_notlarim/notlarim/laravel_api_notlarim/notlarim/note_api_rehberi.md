@@ -9,4 +9,4 @@ Bu örnekte kullanıcı kendi notlarını yönetebileceği bir API oluşturacakt
 3. [ ] [Controller Oluşturma](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/controller.md)
 4. [ ] [Router Adımları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/router.md)
 
-> **Not:** Apileri test etmek için [Postman Rehberini incleyebilirsiniz](https://www.postman.com/) uygul
+> **Not:** Apileri test etmek için [Postman Rehberini incleyebilirsiniz](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/postman_rehberi.md)
