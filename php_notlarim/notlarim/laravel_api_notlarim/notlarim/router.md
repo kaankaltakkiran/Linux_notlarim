@@ -50,22 +50,6 @@ Routerlarınızı kontrol etmek için aşağıdaki komutu kullanabilirsiniz:
 php artisan route:list
 ```
 
-## Not API Uç Noktaları
-
-Bu tablo, not yönetimi için mevcut API uç noktalarını detaylandırmaktadır:
-
-| Alan (Domain)                           | Yöntem   | URI                 | Rota Adı            | Eylem                                         |
-| :-------------------------------------- | :------- | :------------------ | :------------------ | :-------------------------------------------- | -------------------------------------------- |
-| `http://127.0.0.1:8000/api/blogs`       | `GET     | HEAD`               | `/api/blogs`        | `blogs.index`                                 | `App\Http\Controllers\BlogController@index`  |
-| `http://127.0.0.1:8000/api/blogs`       | `POST`   | `/api/blogs`        | `blogs.store`       | `App\Http\Controllers\BlogController@store`   |
-| `http://127.0.0.1:8000/api/blogs/{:id}` | `GET     | HEAD`               | `/api/blogs/{blog}` | `blogs.show`                                  | `App\Http\Controllers\BlogController@show`   |
-| `http://127.0.0.1:8000/api/blogs/{:id}` | `PUT     | PATCH`              | `/api/blogs/{blog}` | `blogs.update`                                | `App\Http\Controllers\BlogController@update` |
-| `http://127.0.0.1:8000/api/blogs/{:id}` | `DELETE` | `/api/blogs/{blog}` | `blogs.destroy`     | `App\Http\Controllers\BlogController@destroy` |
-
----
-
-Bu çıktıda, `blogs` kaynakları için gerekli tüm API rotaları listelenmiştir.
-
 ## Sunucuyu Başlatma
 
 ```bash
