@@ -34,4 +34,8 @@ Markdown çıktısını görmek için.
 
 ## [Incredibly In Your Face](https://marketplace.visualstudio.com/items?itemName=VirejDasani.incredibly-in-your-face)
 
-Kodda hata varsa yüz ifadeleri değişen eğlenceli eklenti
+Kodda hata varsa yüz ifadeleri değişen eğlenceli eklenti.
+
+## [SQLite3 Editor](https://marketplace.visualstudio.com/items?itemName=yy0931.vscode-sqlite3-editor)
+
+Sqlite database ui.
