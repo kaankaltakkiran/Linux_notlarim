@@ -1,13 +1,13 @@
 {
 	"info": {
-		"_postman_id": "caad6ed0-6cba-46e7-9859-e97b190014f0",
-		"name": "Note Api",
+		"_postman_id": "fa5f37d9-bfca-4f21-9dc4-31b14583c4e2",
+		"name": "Blog Api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21796219"
 	},
 	"item": [
 		{
-			"name": "Note Oluşturma",
+			"name": "Blog Oluştur",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -19,7 +19,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\":\"Note 1 başlık\",\n    \"content\":\"Note 1 içerik\"\n}",
+					"raw": "{\n    \"title\":\"Blog Başlık 1\",\n    \"description\":\"Blog Açıklama 1\",\n    \"is_published\":0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -27,7 +27,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/notes",
+					"raw": "http://127.0.0.1:8000/api/blogs",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -38,14 +38,17 @@
 					"port": "8000",
 					"path": [
 						"api",
-						"notes"
+						"blogs"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Bir Adet Not Listeleme",
+			"name": "Tüm Blogları Listele",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [
@@ -55,8 +58,12 @@
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/notes/1",
+					"raw": "http://127.0.0.1:8000/api/blogs",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -67,15 +74,17 @@
 					"port": "8000",
 					"path": [
 						"api",
-						"notes",
-						"1"
+						"blogs"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Tüm Notlari Listeleme",
+			"name": "Bir Adet Blog Listele",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [
@@ -85,8 +94,12 @@
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/notes",
+					"raw": "http://127.0.0.1:8000/api/blogs/2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -97,14 +110,15 @@
 					"port": "8000",
 					"path": [
 						"api",
-						"notes"
+						"blogs",
+						"2"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Not Güncelleme",
+			"name": "Blog Güncelle",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -116,7 +130,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\":\"Note 1 başlık güncellendi\",\n    \"content\":\"Note 1 içerik güncellendi\"\n}",
+					"raw": "{\n    \"title\":\"Blog Başlık 1 Güncellendi\",\n    \"description\":\"Blog Açıklama 1 Güncellendi\",\n    \"is_published\":0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -124,7 +138,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/notes/1",
+					"raw": "http://127.0.0.1:8000/api/blogs/1",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -135,7 +149,7 @@
 					"port": "8000",
 					"path": [
 						"api",
-						"notes",
+						"blogs",
 						"1"
 					]
 				}
@@ -143,7 +157,7 @@
 			"response": []
 		},
 		{
-			"name": "Not Silme",
+			"name": "Blog Sil",
 			"request": {
 				"method": "DELETE",
 				"header": [
@@ -163,7 +177,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/notes/2",
+					"raw": "http://127.0.0.1:8000/api/blogs/2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -174,7 +188,7 @@
 					"port": "8000",
 					"path": [
 						"api",
-						"notes",
+						"blogs",
 						"2"
 					]
 				}

@@ -1,34 +1,42 @@
 # Controller Adımları
 
-**Dosya:** `app/Http/Controllers/NoteController.php`
+Api controller Oluşturma:
+
+```bash
+php artisan make:controller API/BlogController --api
+```
+
+- `--api` parametresi, controller'ın API için gerekli metotları otomatik olarak oluşturmasını sağlar.
+
+**Dosya:** `app/Http/Controllers/BlogController.php`
 
 ```php
-use Illuminate\Http\Request;
+use App\Models\Blog;
 
-    public function index()
+     public function index()
     {
 
-        return Note::all();
+        return Blog::all();
     }
     public function store(Request $request)
     {
-        $note = Note::create($request->all());
-        return $note;
+        $blog = Blog::create($request->all());
+        return $blog;
     }
-    public function show(Note $note)
+    public function show(Blog $blog)
     {
-        return $note;
+        return $blog;
     }
-    public function update(Request $request, Note $note)
+    public function update(Request $request, Blog $blog)
     {
-        $note->update($request->all());
-        return $note;
+        $blog->update($request->all());
+        return $blog;
     }
 
-    public function destroy(Note $note)
+    public function destroy(Blog $blog)
     {
 
-        $note->delete();
-        return ["message" => "Not silindi"];
+        $blog->delete();
+        return ["message" => "Blog silindi"];
     }
 ```

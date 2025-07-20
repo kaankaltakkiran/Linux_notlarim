@@ -1,39 +1,54 @@
 # Model Ve Migration Adımları
 
-## Model Oluşturma
+## Migration Oluşturma
 
 ```bash
- php artisan make:model Note -a --api
+php artisan make:migration create_blogs_table --create=blogs
 ```
 
-- `-a` = migration, factory, controller,policy dosyalarını otomatik oluşturur.
-- `--api` = yalnızca API metodları oluşturur.
+- `create_blogs_table` = Migration dosyasının adı.
+- `--create=blogs` = Migration dosyası, `blogs` adında bir tablo oluşturacak.
 
 ## Migration Düzenleme
 
-**Dosya:** `database/migrations/xxxx_xx_xx_create_notes_table.php`
+**Dosya:** `database/migrations/xxxx_xx_xx_create_blogs_table.php`
 
 ```php
-        Schema::create('notes', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('content');
-            $table->tinyInteger('status')->default(0);
+            $table->text('description');
+            $table->boolean('is_published')->default(0); // 0: Yayınlanmadı, 1: Yayınlandı
+            $table->timestamp('published_at')->nullable();
+            $table->softDeletes(); // Soft Delete
             $table->timestamps();
         });
 ```
 
-## Model Düzenleme
-
-**Dosya:** `app/Models/Note.php`
-
-```php
-protected $fillable = [
-        'title',
-        'content',
-    ];
-```
 Tabloları oluşturmak için migration dosyasını çalıştırın:
+
 ```bash
 php artisan migrate
+```
+
+## Model Düzenleme
+
+Model dosyasını oluşturun:
+
+```bash
+php artisan make:model Blog
+```
+
+**Dosya:** `app/Models/Blog.php`
+
+```php
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+ use SoftDeletes;
+
+protected $fillable = [
+        'title',
+        'description',
+        'is_published',
+    ];
 ```

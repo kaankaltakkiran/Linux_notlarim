@@ -1,6 +1,6 @@
 # Laravel Örnek Api Oluşturma Rehberi
 
-Bu örnekte kullanıcı kendi notlarını yönetebileceği bir API oluşturacaktır. Bu API, not ekleme, listeleme, güncelleme ve silme işlemlerini gerçekleştirecektir.
+Bu örnekte kullanıcı kendi notlarını yönetebileceği bir API oluşturacaktır. Bu API, blog ekleme, listeleme, güncelleme ve silme işlemlerini gerçekleştirecektir.
 
 ## Api Oluşturma Sıralaması
 

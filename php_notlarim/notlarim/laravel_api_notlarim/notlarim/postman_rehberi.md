@@ -1,78 +1,146 @@
-Her bir dosyayı oluşturmak için, her bir kod bloğundaki içeriği kopyalayıp belirtilen dosya adına yapıştırın ve `.sh` uzantısıyla kaydedin. Örneğin, "Not_Oluşturma.sh" için ilk kod bloğunu kullanın.
+## 📡 API Endpoint'leri
 
-**Kullanım Talimatları:**
+Tüm isteklerde `Accept: application/json` header'ı kullanılmalıdır.
 
-1.  Her bir kod bloğunu ayrı bir `.sh` dosyası olarak kaydedin (örneğin: `Not_Oluşturma.sh`).
-2.  Dosyaları çalıştırılabilir yapın: `chmod +x Not_Oluşturma.sh`
-3.  Komut dosyasını çalıştırın: `./Not_Oluşturma.sh`
-
----
-
-### Not Oluşturma (Not_Oluşturma.sh)
+### ➕ Blog Oluştur
 
 ```bash
 #!/bin/bash
-echo "Not Oluşturma isteği gönderiliyor..."
-curl --location 'http://127.0.0.1:8000/api/notes' \
+curl --location 'http://127.0.0.1:8000/api/blogs' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
 --data '{
-    "title":"Note 1 başlık",
-    "content":"Note 1 içerik"
+    "title":"Blog Başlık 1",
+    "description":"Blog Açıklama 1",
+    "is_published":0
 }'
-echo -e "\nİstek tamamlandı."
 ```
 
 ---
 
-### Bir Adet Not Listeleme (Bir_Adet_Not_Listeleme.sh)
+#### Örnek Çıktı:
+
+```json
+{
+  "title": "Blog Başlık 1",
+  "description": "Blog Açıklama 1",
+  "is_published": 0,
+  "updated_at": "2025-07-20T14:04:41.000000Z",
+  "created_at": "2025-07-20T14:04:41.000000Z",
+  "id": 1
+}
+```
+
+---
+
+### 📄 Tüm Blogları Listele
 
 ```bash
 #!/bin/bash
-echo "Bir Adet Not Listeleme isteği gönderiliyor..."
-curl --location 'http://127.0.0.1:8000/api/notes/1' \
+curl --location 'http://127.0.0.1:8000/api/blogs' \
 --header 'Accept: application/json'
-echo -e "\nİstek tamamlandı."
+```
+
+#### Örnek Çıktı:
+
+```json
+[
+  {
+    "id": 1,
+    "title": "Blog Başlık 1",
+    "description": "Blog Açıklama 1",
+    "is_published": 0,
+    "published_at": null,
+    "deleted_at": null,
+    "created_at": "2025-07-20T14:04:41.000000Z",
+    "updated_at": "2025-07-20T14:04:41.000000Z"
+  },
+  {
+    "id": 2,
+    "title": "Blog Başlık 2",
+    "description": "Blog Açıklama 2",
+    "is_published": 1,
+    "published_at": null,
+    "deleted_at": null,
+    "created_at": "2025-07-20T14:05:59.000000Z",
+    "updated_at": "2025-07-20T14:05:59.000000Z"
+  }
+]
 ```
 
 ---
 
-### Tüm Notları Listeleme (Tum_Notlari_Listeleme.sh)
+### 🔍 Tek Blog Getir
 
 ```bash
 #!/bin/bash
-curl --location 'http://127.0.0.1:8000/api/notes' \
+curl --location 'http://127.0.0.1:8000/api/blogs/2' \
 --header 'Accept: application/json'
-echo -e "\nİstek tamamlandı."
+```
+
+#### Örnek Çıktı:
+
+```json
+{
+  "id": 2,
+  "title": "Blog Başlık 2",
+  "description": "Blog Açıklama 2",
+  "is_published": 1,
+  "published_at": null,
+  "deleted_at": null,
+  "created_at": "2025-07-20T14:05:59.000000Z",
+  "updated_at": "2025-07-20T14:05:59.000000Z"
+}
 ```
 
 ---
 
-### Not Güncelleme (Not_Guncelleme.sh)
+### ✏️ Blog Güncelle
 
 ```bash
 #!/bin/bash
-echo "Not Güncelleme isteği gönderiliyor..."
-curl --location --request PUT 'http://127.0.0.1:8000/api/notes/1' \
+curl --location --request PUT 'http://127.0.0.1:8000/api/blogs/1' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
 --data '{
-    "title":"Note 1 başlık güncellendi",
-    "content":"Note 1 içerik güncellendi"
+    "title":"Blog Başlık 1 Güncellendi",
+    "description":"Blog Açıklama 1 Güncellendi",
+    "is_published":0
 }'
-echo -e "\nİstek tamamlandı."
+```
+
+#### Örnek Yanıt:
+
+```json
+{
+  "id": 1,
+  "title": "Blog Başlık 1 Güncellendi",
+  "description": "Blog Açıklama 1 Güncellendi",
+  "is_published": 0,
+  "published_at": null,
+  "deleted_at": null,
+  "created_at": "2025-07-20T14:04:41.000000Z",
+  "updated_at": "2025-07-20T14:17:29.000000Z"
+}
 ```
 
 ---
 
-### Not Silme (Not_Silme.sh)
+### ❌ Blog Sil (Soft Delete)
 
 ```bash
 #!/bin/bash
-curl --location --request DELETE 'http://127.0.0.1:8000/api/notes/2' \
+curl --location --request DELETE 'http://127.0.0.1:8000/api/blogs/2' \
 --header 'Accept: application/json' \
 --data ''
-echo -e "\nİstek tamamlandı."
 ```
 
-> **Note**: 2. yöntem olarak `Note Api.postman_collection.json` dosyasını Postman uygulamasına import ederek de işlemleri gerçekleştirebilirsiniz. Bu dosya, yukarıdaki komutları Postman ortamında çalıştırmak için hazır bir koleksiyon içerir.
+#### Örnek Yanıt:
+
+```json
+{
+  "message": "Blog silindi"
+}
+```
+
+> **Note**: 2. yöntem olarak `Blog Api.postman_collection.json` dosyasını Postman uygulamasına import ederek de işlemleri gerçekleştirebilirsiniz. Bu dosya, yukarıdaki komutları Postman ortamında çalıştırmak için hazır bir koleksiyon içerir.
