@@ -117,7 +117,7 @@ class User extends Authenticatable implements JWTSubject
 
 </details>
 
-> **Note:** `AUTH_GUARD` `.env` dosyasında api` olarak ayarlanabilir.
+> **Note:** `AUTH_GUARD` `.env` dosyasında api olarak ayarlanabilir.
 
 ```bash
 AUTH_GUARD=api
