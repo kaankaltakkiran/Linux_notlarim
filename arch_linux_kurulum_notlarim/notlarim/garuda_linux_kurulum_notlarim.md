@@ -831,15 +831,24 @@ yay windsurf
 
 Aşağıdaki komut `terraform` yükler:
 
-````bash
+```bash
 sudo pacman -S terraform --noconfirm
+```
+
+### Insomnia Kurulum Notları
+
+Aşağıdaki komut `Insomnia` yükler:
+
+```bash
+yay -S insomnia
+```
 
 Aşağıdaki komut git confing ayarlarını yapar:
 
 ```bash
 git config --global user.email "durdu.kaan.kaltakkiran@gmail.com"
 git config --global user.name "Kaan Kaltakkıran"
-````
+```
 
 Aşağıdaki komut git confing ayarlarını listeler:
 
