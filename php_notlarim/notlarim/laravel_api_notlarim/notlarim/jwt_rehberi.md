@@ -1,5 +1,9 @@
 # Laravel JWT (JSON Web Token) Rehberi
 
+Bu rehberi uygulamadan önce laravelde api oluşturmalısınız. Örnek [api rehberini](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/blog_api_rehberi.md) inceleyebilirsiniz.
+
+Bu rehber, Laravel uygulamalarında JWT (JSON Web Token) kullanarak kullanıcı kimlik doğrulama işlemlerini gerçekleştirmek için aşağıdaki adımları takip edebilirsiniz. Bu rehber, JWT Auth paketini kullanarak basit bir kimlik doğrulama sistemi kurmayı amaçlamaktadır.
+
 ## JWT Kurulum
 
 ```bash
@@ -102,7 +106,7 @@ class User extends Authenticatable implements JWTSubject
 
 ```php
 
-    'defaults' => [
+     'defaults' => [
         'guard' => env('AUTH_GUARD', 'api'),
         'passwords' => env('AUTH_PASSWORD_BROKER', 'users'),
     ],
@@ -117,7 +121,11 @@ class User extends Authenticatable implements JWTSubject
 
 </details>
 
-> **Note:** `AUTH_GUARD` `.env` dosyasında api olarak ayarlanabilir.
+> **Notes:** Bu dosyada `17. satırda ` yer alan guard kısmındaki `web` yerine `api` yazılmalıdır.
+
+> Bu dosyada 44.satıra `guards` bölümü eklenmelidir.
+
+> `AUTH_GUARD` `.env` dosyasında `api` olarak ayarlanabilir.
 
 ```bash
 AUTH_GUARD=api
@@ -275,3 +283,5 @@ Route::controller(AuthController::class)->group(function () {
 ### Kaynaklar
 
 - [Laravel JWT Auth](https://laravel-jwt-auth.readthedocs.io/en/latest/laravel-installation/)
+
+- [Laravel Örnek Api Rehberi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/blog_api_rehberi.md)
