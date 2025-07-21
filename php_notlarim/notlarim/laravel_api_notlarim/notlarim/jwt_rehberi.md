@@ -285,3 +285,5 @@ Route::controller(AuthController::class)->group(function () {
 - [Laravel JWT Auth](https://laravel-jwt-auth.readthedocs.io/en/latest/laravel-installation/)
 
 - [Laravel Örnek Api Rehberi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/blog_api_rehberi.md)
+
+- [Postman Rehber](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/postman_rehberi.md)
