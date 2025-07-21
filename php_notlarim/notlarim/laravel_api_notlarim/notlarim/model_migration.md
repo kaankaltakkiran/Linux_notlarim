@@ -13,6 +13,9 @@ php artisan make:migration create_blogs_table --create=blogs
 
 **Dosya:** `database/migrations/xxxx_xx_xx_create_blogs_table.php`
 
+<details>
+<summary><b>create_blogs_table.php</b></summary>
+
 ```php
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
@@ -24,6 +27,8 @@ php artisan make:migration create_blogs_table --create=blogs
             $table->timestamps();
         });
 ```
+
+</details>
 
 Tabloları oluşturmak için migration dosyasını çalıştırın:
 
@@ -41,6 +46,9 @@ php artisan make:model Blog
 
 **Dosya:** `app/Models/Blog.php`
 
+<details>
+<summary><b>Blog.php</b></summary>
+
 ```php
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -52,3 +60,5 @@ protected $fillable = [
         'is_published',
     ];
 ```
+
+</details>

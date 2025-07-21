@@ -8,6 +8,9 @@ php artisan make:provider RouteServiceProvider
 
 **Dosya:** `app/Providers/RouteServiceProvider.php`
 
+<details>
+<summary><b>RouteServiceProvider.php</b></summary>
+
 ```php
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
@@ -28,6 +31,8 @@ class RouteServiceProvider extends ServiceProvider
 }
 ```
 
+</details>
+
 Api rotalarını tanımlamak için `routes/api.php` dosyasını oluşturun:
 
 ```bash
@@ -36,6 +41,9 @@ touch routes/api.php
 
 **Dosya:** `routes/api.php`
 
+<details>
+<summary><b>api.php</b></summary>
+
 ```php
 <?php
 use App\Http\Controllers\API\BlogController;
@@ -43,6 +51,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::apiResource('blogs', BlogController::class);
 ```
+
+</details>
 
 Routerlarınızı kontrol etmek için aşağıdaki komutu kullanabilirsiniz:
 

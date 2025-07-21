@@ -10,6 +10,9 @@ php artisan make:controller API/BlogController --api
 
 **Dosya:** `app/Http/Controllers/BlogController.php`
 
+<details>
+<summary><b>BlogController.php</b></summary>
+
 ```php
 use App\Models\Blog;
 
@@ -40,3 +43,5 @@ use App\Models\Blog;
         return ["message" => "Blog silindi"];
     }
 ```
+
+</details>
