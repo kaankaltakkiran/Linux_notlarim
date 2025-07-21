@@ -271,3 +271,7 @@ Route::controller(AuthController::class)->group(function () {
 ```
 
 </details>
+
+### Kaynaklar
+
+- [Laravel JWT Auth](https://laravel-jwt-auth.readthedocs.io/en/latest/laravel-installation/)
