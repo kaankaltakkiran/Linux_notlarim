@@ -1,6 +1,6 @@
 # Laravel JWT (JSON Web Token) Rehberi
 
-Bu rehberi uygulamadan önce laravelde api oluşturmalısınız. Örnek [api rehberini](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/blog_api_rehberi.md) inceleyebilirsiniz.
+Bu rehberi uygulamadan önce laravelde api oluşturmuş olmanız gerekmektedir. Eğer api oluşturmadıysanız [Örnek api rehberini](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/blog_api_rehberi.md) inceleyebilirsiniz.
 
 Bu rehber, Laravel uygulamalarında JWT (JSON Web Token) kullanarak kullanıcı kimlik doğrulama işlemlerini gerçekleştirmek için aşağıdaki adımları takip edebilirsiniz. Bu rehber, JWT Auth paketini kullanarak basit bir kimlik doğrulama sistemi kurmayı amaçlamaktadır.
 
