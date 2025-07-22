@@ -9,7 +9,7 @@ Bu rehber, Laravel uygulamalarında JWT (JSON Web Token) kullanarak kullanıcı 
 1. [ ] [JWT Kurulum](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/jwt_kurulum.md)
 2. [ ] [JWT İle Kullanıcı İşlemleri](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/jwt_kullanici.md)
 3. [ ] [JWT Router Ayarları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/jwt_router.md)
-4. [ ] [JWT Kullanıcı Blog İşlemleri]()
+4. [ ] [JWT Kullanıcı Blog İşlemleri](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/jwt_kullanici_blog_.md)
 
 > **Not:** Apileri test etmek için [Postman Rehberini incleyebilirsiniz](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/postman_rehberi.md)
 
