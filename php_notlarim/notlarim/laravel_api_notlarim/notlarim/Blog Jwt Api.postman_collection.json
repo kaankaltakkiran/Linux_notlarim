@@ -45,6 +45,54 @@
 			"response": []
 		},
 		{
+			"name": "Kullanıcı Blog Oluştur",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUzMTYxODc5LCJleHAiOjE3NTMxNjU0NzksIm5iZiI6MTc1MzE2MTg3OSwianRpIjoic0NrSjlMOFVNMDl3Um80eiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jL6C2VWz86yfdzyrpXWvXD33sy8u9J9TDmhsD3JovIc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Blog Başlık 1\",\n    \"description\":\"Blog Açıklama 1\",\n    \"is_published\":0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Tüm Blogları Listele",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -157,6 +205,55 @@
 			"response": []
 		},
 		{
+			"name": "Kullanıcı Blog Güncelleme",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUzMTYxOTMzLCJleHAiOjE3NTMxNjU1MzMsIm5iZiI6MTc1MzE2MTkzMywianRpIjoiVnVWejVrTEpaM2xEZ1hFbSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.gU7jisxlKBgDSozOZGuTpD8YXp1ncJyZc6WyRZeU18Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Blog Başlık 1 Güncellendi\",\n    \"description\":\"Blog Açıklama 1 Güncellendi\",\n    \"is_published\":0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Blog Sil",
 			"request": {
 				"method": "DELETE",
@@ -190,6 +287,55 @@
 						"api",
 						"blogs",
 						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kullanıcı Blog Sil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUzMTYxOTMzLCJleHAiOjE3NTMxNjU1MzMsIm5iZiI6MTc1MzE2MTkzMywianRpIjoiVnVWejVrTEpaM2xEZ1hFbSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.gU7jisxlKBgDSozOZGuTpD8YXp1ncJyZc6WyRZeU18Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs",
+						"1"
 					]
 				}
 			},
@@ -279,7 +425,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUzMTIxNTQyLCJleHAiOjE3NTMxMjUxNDIsIm5iZiI6MTc1MzEyMTU0MiwianRpIjoiR2pSMGhabUFTWG5VVlFIbyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6OpLAeSI8dXdNl3Won1Up3qfoS4YQ4XPZIG7q0FcDgw",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUzMTYxNzUwLCJleHAiOjE3NTMxNjUzNTAsIm5iZiI6MTc1MzE2MTc1MCwianRpIjoiU2RYcDhJdUFNZ0J2RVVjUSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WxpNq61wgx5VR4Rk1rnXoA1nQ9ydTlcj4C_U4ojwN6Q",
 							"type": "string"
 						}
 					]
