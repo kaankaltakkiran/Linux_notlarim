@@ -1,6 +1,6 @@
 # Laravel JWT İle Kullanıcı Blog İşlemleri
 
-Bu rehber,daha önceden oluşturulan laravel api örneğinin devamı şeklindedir. Bu notta sadece eklenecek kısımlar ve değişiklikler yer alacaktır. [Önceki notları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/blog_api_rehberi.md) incelemenizi öneririm.
+Bu rehber,daha önceden oluşturulan laravel api örneğinin devamı şeklindedir. Bu notta sadece eklenecek kısımlar ve değişiklikler yer alacaktır. [Önceki notları](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/blog_api_ornegi/blog_api_rehberi.md) incelemenizi öneririm.
 
 ## Model Ve Migration Konfigürasyon
 

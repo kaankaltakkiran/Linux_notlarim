@@ -278,4 +278,4 @@ curl --request POST \
 }
 ```
 
-> **Note**: 2. yöntem olarak `Blog Jwt Api.postman_collection.json` dosyasını Postman uygulamasına import ederek de işlemleri gerçekleştirebilirsiniz. Bu dosya, yukarıdaki komutları Postman ortamında çalıştırmak için hazır bir koleksiyon içerir.
+> **Note**: 2. yöntem olarak [Api Dosyasını](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/blog_api_ornegi/Blog_jwt_api.postman_collection.json) dosyasını Postman uygulamasına import ederek de işlemleri gerçekleştirebilirsiniz. Bu dosya, yukarıdaki komutları Postman ortamında çalıştırmak için hazır bir koleksiyon içerir.
