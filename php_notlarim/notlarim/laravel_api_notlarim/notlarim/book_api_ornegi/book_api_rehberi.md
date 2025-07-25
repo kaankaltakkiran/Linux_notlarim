@@ -710,7 +710,7 @@ Route::controller(AuthController::class)->group(function () {
 
 </details>
 
-## KullanıcI -Yazar JWT Token ile ilişkilendirme
+## User -Author JWT Token ile ilişkilendirme
 
 **Dosya:** `app/Models/Author.php`
 
@@ -1022,6 +1022,14 @@ Route::middleware('auth:api')->group(function () {
 ```
 
 </details>
+
+## User -Category JWT Token ile ilişkilendirme
+
+[Proje Değişiklikleri](https://github.com/kaankaltakkiran/my_laravel_projects/commit/09f2d4001f72170866e6a8bec879877aad0da2e0)
+
+## User -Book JWT Token ile ilişkilendirme
+
+[Proje Değişiklikleri](https://github.com/kaankaltakkiran/my_laravel_projects/commit/fe773bd438d0cd41a10fe125a9b86c37c00719f4)
 
 ## Sunucu Başlatma
 
