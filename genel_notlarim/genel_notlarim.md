@@ -107,3 +107,11 @@
 - [Turkiye Konum Api](https://turkiyeapi.dev/)
 
 - [Server Deneyim](https://serverlesshorrors.com/)
+
+- [İzmir Public Api](https://acikveri.bizizmir.com/)
+
+- [Turkiye Masaüstü Kullanım Oranı](https://gs.statcounter.com/os-market-share/desktop/turkey)
+
+- [Dünya Masaüstü Kullanım Oranı](https://gs.statcounter.com/os-market-share/desktop/worldwide/)
+
+- [Linux Oyun Anti Cheat](https://areweanticheatyet.com/)
