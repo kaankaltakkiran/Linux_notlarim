@@ -110,7 +110,7 @@
 
 - [İzmir Public Api](https://acikveri.bizizmir.com/)
 
-- [Turkiye Masaüstü Kullanım Oranı](https://gs.statcounter.com/os-market-share/desktop/turkey)
+- [Türkiye Masaüstü Kullanım Oranı](https://gs.statcounter.com/os-market-share/desktop/turkey)
 
 - [Dünya Masaüstü Kullanım Oranı](https://gs.statcounter.com/os-market-share/desktop/worldwide/)
 
