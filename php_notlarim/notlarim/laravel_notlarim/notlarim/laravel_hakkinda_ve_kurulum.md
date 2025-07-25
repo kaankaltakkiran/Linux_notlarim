@@ -67,6 +67,18 @@ set -Ux PATH /home/kaan/.config/herd-lite/bin $PATH
 set -U fish_user_paths $fish_user_paths /home/kaan/.config/herd-lite/bin
 ```
 
+Bash terminal için:
+
+```bash
+echo 'export PATH="$HOME/.config/herd-lite/bin:$PATH"' >> ~/.bashrc
+```
+
+Daha sonra terminali yeniden başlat veya şu komutu çalıştır:
+
+```bash
+source ~/.bashrc
+```
+
 Kontrol etmek için:
 
 ```bash
@@ -176,3 +188,7 @@ Laravel için Visual Studio Code uzantıları:
 - [Laravel Blade formatter(Otomatik Kod Tamamlama)](https://marketplace.visualstudio.com/items?itemName=shufo.vscode-blade-formatter)
 
 - [Vue Offical(Vue Kod Tamamlama)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+## 📝 Kaynaklar
+
+- [Terminal Bash Sorun Çözüm](https://chatgpt.com/share/6883d768-391c-8005-9a19-e0e74adccfa6)
