@@ -710,6 +710,319 @@ Route::controller(AuthController::class)->group(function () {
 
 </details>
 
+## KullanıcI -Yazar JWT Token ile ilişkilendirme
+
+**Dosya:** `app/Models/Author.php`
+
+<details>
+<summary><b>Author.php</b></summary>
+
+```php
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Author extends Model
+{
+    use SoftDeletes;
+
+    protected $fillable = [
+        'author_name',
+    ];
+
+    public function books()
+    {
+        return $this->hasMany(Book::class);
+    }
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
+```
+
+</details>
+
+**Dosya:** `app/Models/User.php`
+
+<details>
+<summary><b>User.php</b></summary>
+
+```php
+<?php
+
+namespace App\Models;
+
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
+
+class User extends Authenticatable implements JWTSubject
+{
+    /** @use HasFactory<\Database\Factories\UserFactory> */
+    use HasFactory, Notifiable;
+
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var list<string>
+     */
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var list<string>
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'email_verified_at' => 'datetime',
+            'password' => 'hashed',
+        ];
+    }
+    public function authors()
+    {
+        return $this->hasMany(Author::class);
+    }
+}
+```
+
+**Dosya:** `database/migrations/2023_10_01_000000_create_authors_table.php`
+
+<details>
+<summary><b>create_authors_table</b></summary>
+
+```php
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('authors', function (Blueprint $table) {
+            $table->id();
+            $table->string('author_name');
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->boolean('is_active')->default(1);
+            $table->softDeletes();
+            $table->timestamps();
+        });
+    }
+    public function down(): void
+    {
+        Schema::dropIfExists('authors');
+    }
+};
+```
+
+</details>
+
+> ** Note:** Migration dosyasını düzenledikten sonra, veritabanında değişiklikleri uygulamak için aşağıdaki komutu çalıştırın:
+
+```bash
+php artisan migrate:fresh
+```
+
+## Policy Konfigürasyon
+
+Policy oluşturma:
+
+```bash
+php artisan make:policy AuthorPolicy --model=Author
+```
+
+**Dosya:** `app/Policies/AuthorPolicy.php`
+
+<details>
+<summary><b>AuthorPolicy.php</b></summary>
+
+```php
+<?php
+
+namespace App\Policies;
+
+use App\Models\Author;
+use App\Models\User;
+use Illuminate\Auth\Access\Response;
+
+class AuthorPolicy
+{
+    public function modify(User $user, Author $author): Response
+    {
+        return $user->id === $author->user_id
+        ? Response::allow()
+        : Response::deny('You do not have permission to modify this author.');
+    }
+}
+```
+
+</details>
+
+**Dosya:** `app/Providers/AppServiceProvider.php`
+
+<details>
+<summary><b>AppServiceProvider.php</b></summary>
+
+```php
+<?php
+
+namespace App\Providers;
+
+use App\Models\Author;
+use App\Policies\AuthorPolicy;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    protected $policies = [
+        Author::class => AuthorPolicy::class,
+    ];
+}
+```
+
+## Controller Konfigürasyon
+
+**Dosya:** `app/Http/Controllers/API/BlogController.php`
+
+<details>
+<summary><b>BlogController</b></summary>
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Author;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
+
+class AuthorController extends Controller
+{
+    public function index()
+    {
+
+        //return Author::all();
+        return Author::with('user')->latest()->get();
+    }
+    public function store(Request $request)
+    {
+        $author = $request->user()->authors()->create($request->all());
+        return response()->json([
+            'message' => 'Author başarıyla kaydedildi',
+            'author' => $author,
+            'user' => $author->user,
+        ]);
+
+        return $author;
+    }
+    public function show(Author $author)
+    {
+        return response()->json([
+            'author' => $author,
+            'user' => $author->user,
+        ]);
+
+    }
+    public function update(Request $request, Author $author)
+    {
+        Gate::authorize('modify', $author);
+
+        $author->update($request->all());
+        return response()->json([
+            'author' => $author,
+            'message' => 'Author güncellendi',
+        ]);
+
+    }
+
+    public function destroy(Author $author)
+    {
+        Gate::authorize('modify', $author);
+
+        $author->delete();
+        return response()->json([
+            'message' => 'Author silindi',
+        ]);
+    }
+}
+```
+
+</details>
+
+## Router Konfigürasyon
+
+**Dosya:** `routes/api.php`
+
+<details>
+<summary><b>api.php</b></summary>
+
+```php
+<?php
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\CategoryController;
+use Illuminate\Support\Facades\Route;
+
+// JWT gerektirmeyen Crud işlemleri
+Route::get('authors', [AuthorController::class, 'index']);
+Route::get('authors/{author}', [AuthorController::class, 'show']);
+
+// JWT gerektirmeyen Auth işlemleri
+Route::controller(AuthController::class)->group(function () {
+    Route::post('register', 'register');
+    Route::post('login', 'login');
+});
+
+// JWT gerektiren işlemler
+Route::middleware('auth:api')->group(function () {
+    Route::post('logout', [AuthController::class, 'logout']);
+    Route::get('profile', [AuthController::class, 'profile']);
+    Route::post('refresh', [AuthController::class, 'refresh']);
+
+    // JWT gerektiren Crud işlemleri
+    Route::apiResource('authors', AuthorController::class)->except(['index', 'show']);
+    Route::apiResource('categories', CategoryController::class);
+    Route::apiResource('books', BookController::class);
+});
+```
+
+</details>
+
 ## Sunucu Başlatma
 
 Sunucuyu başlatmak için aşağıdaki komutu kullanabilirsiniz:
