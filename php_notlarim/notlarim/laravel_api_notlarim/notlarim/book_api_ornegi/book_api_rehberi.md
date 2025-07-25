@@ -1,6 +1,6 @@
 # Laravel API Rehberi
 
-Laravel ile yazar ve kitap API'si oluşturma rehberi.
+Bu rehber, Laravel ile basit bir kitap API'si oluşturmayı amaçlamaktadır. Kitaplar, yazarlar ve kategoriler gibi temel CRUD işlemlerini içermektedir. Aynı zamanda JWT (JSON Web Token) ile kimlik doğrulama ve yetkilendirme işlemlerini de içermektedir.
 
 ## Proje Kurulumu
 
