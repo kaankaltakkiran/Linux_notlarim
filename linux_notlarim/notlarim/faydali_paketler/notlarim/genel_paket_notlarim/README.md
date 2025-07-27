@@ -36,6 +36,16 @@ sudo vi /etc/gromit-mpx/gromit-mpx.cfg
 
 > Note: Pause tuşuna bastıktan sonra mausun sol clickiyle kırmızı renkte çizim başlar.Tekrar pause tuşuna basınca çizimden çıkar. Ctrl e basılı tutulunca sarı renkte çililir. Shift tuşuna basılı tutup çizince mavi renkte çizer. ctrl+pause ile tüm çizimleri ekrandan siler.Alt+pause ile uygulamadan çıkar.
 
+## jq
+
+Terminalde json verileri düzgünce gösterir.
+
+### jq paketi nasıl yüklenir ?
+
+```BASH
+sudo apt install -y jq
+```
+
 ## Pip(python)
 
 pip, Python programlama dilinde paket yönetimi için kullanılan bir araçtır.

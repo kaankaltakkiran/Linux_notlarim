@@ -7,6 +7,16 @@
 sudo apt install ffmpeg gnupg wine  imagemagick guake guake-indicator pv meld vim axel ncdu xclip net-tools caffeine magic-wormhole gnome-sushi hwinfo hardinfo gnome-shell-extension-manager software-properties-common apt-transport-https wget curl gnome-screenshot xclip -y
 ```
 
+## jq
+
+Terminalde json verileri düzgünce gösterir.
+
+### jq paketi nasıl yüklenir ?
+
+```BASH
+sudo apt install -y jq
+```
+
 ## Ekran görüntüsü kurulum ve ayarlar
 
 Aşağıdaki komut ile `gnome-screenshot` ve `xclip` kurulur.

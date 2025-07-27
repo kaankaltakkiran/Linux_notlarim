@@ -19,7 +19,7 @@ Garuda terimi Hinduizm kaynaklı olup kartal benzeri, ilahi bir güneş kuşu ve
 Tek komut ile aşağıdaki paketleri yükleme:
 
 ```bash
-sudo pacman -S vim apache mariadb php php-apache nodejs npm git flatpak --noconfirm
+sudo pacman -S vim apache mariadb php php-apache nodejs npm git flatpak jq --noconfirm
 ```
 
 ### LAMA (Linux, Apache, MySQL, and Adminer) Kurulum Notları
@@ -825,6 +825,16 @@ Aşağıdaki komut `windsurf` yükler:
 
 ```bash
 yay windsurf
+```
+
+## jq
+
+Terminalde json verileri düzgünce gösterir.
+
+### jq paketi nasıl yüklenir ?
+
+```BASH
+sudo pacman -S jq --noconfirm
 ```
 
 ### Terraform Kurulum Notları
