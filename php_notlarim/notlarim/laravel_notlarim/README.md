@@ -2,6 +2,8 @@
 
 - [Laravel Hakkında Ve Kurulum](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/laravel_hakkinda_ve_kurulum.md)
 
+- [Laravel Proje Nasıl Çalıştırılır](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/proje_calistirma_notlarim.md)
+
 - [Laravel Hata Çözüm Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/hata_cozum_notlarim.md)
 
 - [Laravel Ve Mvc](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_notlarim/notlarim/laravel_ve_mvc.md)
