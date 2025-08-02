@@ -2,6 +2,8 @@
 
 - [Quasar Framework Hakkında Bilgi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/quasar_framework.md)
 
+- [Quasar Güncel Not]()
+
 - [Quasar Framework Hata Çözümleri](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/quasar_hata_cozumlerim.md)
 
 - [Login Register Api](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/register_login_api.md)
