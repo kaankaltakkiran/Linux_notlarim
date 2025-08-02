@@ -2,7 +2,7 @@
 
 - [Quasar Framework Hakkında Bilgi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/quasar_framework.md)
 
-- [Quasar Güncel Not]()
+- [Quasar Güncel Not](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/guncel_not)
 
 - [Quasar Framework Hata Çözümleri](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/vue.js_notlarim/notlarim/ayrintili_quasar_notlarim/quasar_hata_cozumlerim.md)
 
