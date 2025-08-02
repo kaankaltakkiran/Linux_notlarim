@@ -2,6 +2,8 @@
 
 - [Domain Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/hosting_notlarim/notlarim/domain.md)
 
+- [Yunohost Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/hosting_notlarim/notlarim/yunohost_notlarim.md)
+
 - [OpenVPN Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/hosting_notlarim/notlarim/openvpn.md)
 
 - [Self-Host Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/hosting_notlarim/notlarim/self_host_.md)
