@@ -3,8 +3,11 @@
 Quasar Framework, **Vue.js tabanlı** bir frontend framework’tür. Tek bir kod tabanıyla şu platformlar için uygulama geliştirmeni sağlar:
 
 ✅ Web
+
 ✅ Mobil (iOS / Android – Cordova veya Capacitor ile)
+
 ✅ Masaüstü (Electron ile)
+
 ✅ PWA (Progressive Web App)
 
 ## 1. Gereksinimler
@@ -101,7 +104,9 @@ const tab = ref<string>("home");
 </script>
 ```
 
-> **Note:** `<q-tab` ile route işlemi yapılacaksa `q-tab` yerine `q-route-tab` kullanılır. Örnek kullanım:
+> **Note:** `<q-tab` ile route işlemi yapılacaksa `q-tab` yerine `q-route-tab` kullanılır.
+
+> Örnek kullanım:
 > `<q-route-tab name="register" to="/register" exact label="Üye Ol" />`
 
 ### Quasar Ayar Notlarım (quasar.config.js)
