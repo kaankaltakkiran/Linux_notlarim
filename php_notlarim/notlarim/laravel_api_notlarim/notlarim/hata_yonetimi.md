@@ -91,9 +91,6 @@ return Application::configure(basePath: dirname(__DIR__))
                     'message' => 'Sunucuda beklenmeyen bir hata oluştu.',
                 ], 500);
             }
-
-            // API değilse Laravel varsayılan hataları gösterir.
-            return null;
         });
     })
     ->create();
