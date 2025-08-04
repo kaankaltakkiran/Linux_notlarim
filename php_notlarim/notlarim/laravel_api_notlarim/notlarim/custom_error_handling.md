@@ -488,3 +488,7 @@ return Application::configure(basePath: dirname(__DIR__))
 ```
 
 </details>
+
+## Kaynak
+
+- [Custom Error Handling](https://medium.com/@murilolivorato/mastering-exception-handling-in-laravel-12-centralized-error-management-guide-95df500cb4ba)
