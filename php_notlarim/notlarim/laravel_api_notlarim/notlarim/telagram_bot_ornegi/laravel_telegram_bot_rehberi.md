@@ -103,29 +103,32 @@ Aşağıdaki adımları takip ederek Telegram kanalınızı oluşturun:
 1. **Telegram’ı aç** (mobil ya da masaüstü).
 2. Sağ üstten **"Yeni Mesaj" → "Yeni Kanal"** seç.
 3. Kanal ismini ve açıklamasını gir, **"İleri"**'ye tıkla.
-4. Kanalı **Genel** veya **Özel** olarak ayarlayabilirsin.
-5. **Yalnızca kendini ekleyerek** kanalı oluşturabilirsin.
+4. Kanal türünü **Genel** olarak ayarla.
+5. Genel bağlantı adını oluştur ve sağ yukarda onay butonuna tıkla.
+6. Abone ekle kısmından arama kısmına **oluşturduğunuz telegram botunun** ismini(usurname) yaz ve kanala ekle.
 
 Aşağıdaki adımları takip ederek Telegram botunuzu kanalınıza ekleyin:
 
-1. Kanal ayarlarına git.
+1. Oluşturduğun kanalı aç ve kanal ismine tıkla.
 2. **Yöneticiler > Yönetici Ekle** bölümüne gir.
-3. Bot kullanıcı adını yaz(bot ismi):
+3. Bot kullanıcı adını yaz(bot usurname):
 
    - Örneğin: `@my_awesome_bot`
 
-4. Botu bulunca **ekle** ve **aşağıdaki izinleri ver**:
+4. Botu bulunca sağ üste yer alan tick butonuna tıkla.
 
-5. Kaydet ve çık.
+5. Botun yönetici olarak görünmesi gerekiyor.
 
 Aşağıdaki adımları takip ederek Telegram kanalının ID'sini alabilirsiniz:
 
-1. `3.adımda` oluşturduğunuz kanala mesaj gönderin.
-2. Chat ID'yi almak için oluşturduğunuz `botun token'ini` kullanarak aşağıdaki URL'yi açın:
+1. Chat ID'yi almak için oluşturduğunuz `botun token'ini` kullanarak aşağıdaki URL'yi açın:
 
 ```bash
 https://api.telegram.org/bot<TOKEN>/getUpdates
 ```
+
+2. `4.adımda` oluşturduğunuz kanala mesaj gönderin.
+3. Açtığınız url sayfayı yenileyin.
 
 Bu URL'yi açtığınızda bir JSON cevabı alacaksınız. Bu JSON'da `chat_id` değerini bulabilirsiniz.
 
@@ -136,15 +139,23 @@ Bu URL'yi açtığınızda bir JSON cevabı alacaksınız. Bu JSON'da `chat_id` 
   "ok": true,
   "result": [
     {
-      "message": {
-        "message_id": 1,
-        "chat": {
+      "update_id": 82672471,
+      "channel_post": {
+        "message_id": 3,
+        "sender_chat": {
           "id": -1001234567890,
-          "title": "Benim Kanalım",
+          "title": "Laravel Deneme 1",
+          "username": "laravel_try1",
           "type": "channel"
         },
-        "date": 1234567890,
-        "text": "Test mesajı"
+        "chat": {
+          "id": -1001234567895,
+          "title": "Laravel Deneme 1",
+          "username": "laravel_try1",
+          "type": "channel"
+        },
+        "date": 1754293378,
+        "text": "Deneme"
       }
     }
   ]
@@ -154,7 +165,7 @@ Bu URL'yi açtığınızda bir JSON cevabı alacaksınız. Bu JSON'da `chat_id` 
 Chat ID'yi `.env` dosyasına ekleyin:
 
 ```bash
-TELEGRAM_CHAT_ID=-1001234567890
+TELEGRAM_CHAT_ID=-1001234567895
 ```
 
 ## Adım 5: Örnek Kullanım
@@ -328,8 +339,6 @@ class AuthController extends Controller
 ## Adım 6: Event Listener Oluşturma
 
 Laravel'de Event ve Listener, uygulamanızda gerçekleşen olaylara tepki vermek için kullanılan olay güdümlü programlama (event-driven programming) desenidir.
-
-Bu desen, kodunuzu daha temiz, esnek ve bakımı kolay hale getirir.
 
 `Event`: Uygulamanızda meydana gelen bir olayı temsil eder.
 
@@ -522,7 +531,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use PHPOpenSourceSaver\JWTAuth\Facades\JWTAuth;
-// Event'i import et
 
 class AuthController extends Controller
 {
