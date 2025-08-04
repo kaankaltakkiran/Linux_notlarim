@@ -457,10 +457,16 @@ protected Api $telegram;
 
 </details>
 
-`app/Providers/AppServiceProvider.php` dosyasını düzenleyin:
+EventServiceProvider dosyasını oluşturma:
+
+```bash
+php artisan make:provider EventServiceProvider
+```
+
+`app/Providers/EventServiceProvider.php` dosyasını düzenleyin:
 
 <details>
-<summary><b>AppServiceProvider.php</b></summary>
+<summary><b>EventServiceProvider.php</b></summary>
 
 ```php
 <?php
@@ -468,47 +474,33 @@ namespace App\Providers;
 
 use App\Events\UserRegistered;
 use App\Listeners\SendTelegramNotification;
-use Illuminate\Auth\Events\Registered;
-use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
 {
-    /**
-     * The event to listener mappings for the application.
-     *
-     * @var array<class-string, array<int, class-string>>
-     */
     protected $listen = [
-        Registered::class => [
-            SendEmailVerificationNotification::class,
-        ],
-        // Yeni eklenen event ve listener
         UserRegistered::class => [
             SendTelegramNotification::class,
         ],
     ];
 
-    /**
-     * Register any events for your application.
-     *
-     * @return void
-     */
     public function boot()
     {
-        //
-    }
-
-    /**
-     * Determine if events and listeners should be automatically discovered.
-     *
-     * @return bool
-     */
-    public function shouldDiscoverEvents()
-    {
-        return false;
+        parent::boot();
     }
 }
+```
+
+> **Note**: `bootsrap/providers.php` EventServiceProvider dosyasını otomatik olarak ekliyor. Onu kaldırmalısınız.
+
+> Bu şekilde olmalı:
+
+```php
+<?php
+
+return [
+    App\Providers\AppServiceProvider::class,
+];
 ```
 
 </details>
