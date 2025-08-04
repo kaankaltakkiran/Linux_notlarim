@@ -1,5 +1,96 @@
 # Yeni Öğrendiğim Git Komutları
 
+## Forklanan Repository Nasıl Güncellenir?
+
+Örneğin aşağıdaki komut ile forklanan repository güncellenir.
+
+```bash
+# 1. Orijinal repoyu remote olarak ekle (sadece 1 kez yapılır)
+git remote add upstream https://github.com/orijinal/kullanici/proje.git
+
+# 2. Upstream (orijinal) repodan güncellemeleri çek
+git fetch upstream
+
+# 3. Kendi main branch'ine orijinal repodaki main branch'i birleştir
+git checkout main
+git merge upstream/main
+
+# 4. (İsteğe bağlı) Değişiklikleri kendi GitHub fork'una gönder
+git push origin main
+```
+
+Git ile çalışırken aşağıdaki komutları kullanarak istediğin işlemleri yapabilirsin:
+
+---
+
+### ✅ 1. **Forkladığın bir projeyi en güncel haline getirme**
+
+Forkladığın repo, orijinal repodan zamanla geri kalabilir. En güncel hale getirmek için orijinal repoyu **remote** olarak ekleyip onun üzerinden güncelleme yapman gerekir.
+
+#### 🔁 Adım adım:
+
+```bash
+# 1. Orijinal repoyu remote olarak ekle (sadece 1 kez yapılır)
+git remote add upstream https://github.com/orijinal/kullanici/proje.git
+
+# 2. Upstream (orijinal) repodan güncellemeleri çek
+git fetch upstream
+
+# 3. Kendi main branch'ine orijinal repodaki main branch'i birleştir
+git checkout main
+git merge upstream/main
+
+# 4. (İsteğe bağlı) Değişiklikleri kendi GitHub fork'una gönder
+git push origin main
+```
+
+## 🧰 2. **Git stash — kayıtlı değişiklikleri geri getirme**
+
+### 📝 Değişiklikleri stash'e almak
+
+```bash
+git stash
+```
+
+### 🔄 Stash'teki en son kaydı geri almak (ve silmek):
+
+```bash
+git stash pop
+```
+
+Bu komut, en son stash'i uygular ve stash listesinden kaldırır.
+
+### 🔍 Stash listesini görüntülemek:
+
+```bash
+git stash list
+```
+
+Örnek çıktı:
+
+```
+stash@{0}: WIP on main: 2a1e4ab düzenleme yapıldı
+stash@{1}: WIP on main: önceki düzenleme
+```
+
+### 🎯 Belirli bir stash’i geri getirmek (ve silmek):
+
+```bash
+git stash pop stash@{1}
+```
+
+### 📂 Belirli bir stash’i sadece uygulamak (silmeden):
+
+```bash
+git stash apply stash@{0}
+```
+
+### ❌ Tüm stash’leri temizlemek:
+
+```bash
+git stash clear
+```
+
 ## `git mv` Komutu Ne İşe Yarar ?
 
 `git mv komutu` Git deposundaki dosyaları ve klasörleri yeniden adlandırmak veya taşımak için kullanılır. Bu sayede dosya boyutunu arttırmamış oluruz.
