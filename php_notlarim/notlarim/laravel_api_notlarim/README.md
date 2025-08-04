@@ -4,7 +4,7 @@
 
 - [Laravel Api Hata Yönetimi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/hata_yonetimi.md)
 
-- [Laravel Telegram Bot Rehberi]()
+- [Laravel Telegram Bot Rehberi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/telagram_bot_ornegi/laravel_telegram_bot_rehberi.md)
 
 - [Detaylı Product - Category API Örneği](./notlarim/detayli_api_orneği/README.md)
 
