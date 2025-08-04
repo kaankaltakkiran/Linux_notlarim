@@ -115,3 +115,5 @@
 - [Dünya Masaüstü Kullanım Oranı](https://gs.statcounter.com/os-market-share/desktop/worldwide/)
 
 - [Linux Oyun Anti Cheat](https://areweanticheatyet.com/)
+
+- [Laravel Paket Listesi](https://packagist.org/)
