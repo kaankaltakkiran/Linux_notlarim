@@ -203,20 +203,20 @@ use Throwable;
 
 class ApiExceptionHandler
 {
-/\*\*
-_ Map of exception classes to their handler methods
-_/
-public static array $handlers = [
-AuthenticationException::class => 'handleAuthenticationException',
-AccessDeniedHttpException::class => 'handleAuthenticationException',
-AuthorizationException::class => 'handleAuthorizationException',
-ValidationException::class => 'handleValidationException',
-ModelNotFoundException::class => 'handleNotFoundException',
-NotFoundHttpException::class => 'handleNotFoundException',
-MethodNotAllowedHttpException::class => 'handleMethodNotAllowedException',
-HttpException::class => 'handleHttpException',
-QueryException::class => 'handleQueryException',
-];
+    /**
+     * Map of exception classes to their handler methods
+     */
+    public static array $handlers = [
+        AuthenticationException::class => 'handleAuthenticationException',
+        AccessDeniedHttpException::class => 'handleAuthenticationException',
+        AuthorizationException::class => 'handleAuthorizationException',
+        ValidationException::class => 'handleValidationException',
+        ModelNotFoundException::class => 'handleNotFoundException',
+        NotFoundHttpException::class => 'handleNotFoundException',
+        MethodNotAllowedHttpException::class => 'handleMethodNotAllowedException',
+        HttpException::class => 'handleHttpException',
+        QueryException::class => 'handleQueryException',
+    ];
 
     /**
      * Handle authentication exceptions
@@ -416,9 +416,7 @@ QueryException::class => 'handleQueryException',
 
         Log::warning($message, $logContext);
     }
-
 }
-
 ```
 
 </details>
