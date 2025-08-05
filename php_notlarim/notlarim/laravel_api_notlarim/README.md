@@ -6,7 +6,7 @@
 
 - [Laravel Api Custom Api Rehberi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/custom_error_handling.md)
 
-- [Laravel Api N8N Telegram Bot Hata Yönetimi Rehberi]()
+- [Laravel Api N8N Telegram Bot Hata Yönetimi Rehberi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/n8n_telagram_bot_hata_yonetimi_rehberi.md)
 
 - [Laravel Telegram Bot Rehberi](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/telagram_bot_ornegi/laravel_telegram_bot_rehberi.md)
 

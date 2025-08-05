@@ -20,7 +20,7 @@ kullanır.
 TELEGRAM_BOT_TOKEN=YOUR_BOT_TOKEN
 ```
 
-> **Not:**:Telegram bot tokeni `.env` eklemeniz sadece tokeni güvenli bir yerde tutmanız içindir. Laravel projesinde bu token kullanılmayacaktır.
+> **Not:** Telegram bot tokeni `.env` eklemeniz sadece tokeni güvenli bir yerde tutmanız içindir. Laravel projesinde bu token kullanılmayacaktır.
 
 ## Adım 2: Telegram Kanal Oluşturma Ve Kanal ID'yi Alma
 
@@ -94,7 +94,7 @@ Chat ID'yi `.env` dosyasına ekleyin:
 TELEGRAM_CHAT_ID=-1001234567895
 ```
 
-> **Not:**:Telegram kanal ID'sini `.env` eklemeniz sadece tokeni güvenli bir yerde tutmanız içindir. Laravel projesinde bu token kullanılmayacaktır.
+> **Not:** Telegram kanal ID'sini `.env` eklemeniz sadece tokeni güvenli bir yerde tutmanız içindir. Laravel projesinde bu token kullanılmayacaktır.
 
 ## Adım 3: Kod Konfigürasyonu
 
@@ -459,7 +459,7 @@ POST
 laravel-api-error-report
 ```
 
-> **Not:**:`path` kısmına istediğin bir şey yazabilirsin.
+> **Not:** `path` kısmına istediğin bir şey yazabilirsin.
 
 `Webhook url's` kısmında 2 adet url var.
 
@@ -539,7 +539,7 @@ Aşağıdaki ayarları yap:
 
 Örnek Ayarlar:
 
-![Telegram Ayarları](./images/telegram.png)
+![Telegram Ayarları](./images/telegram_ayar.png)
 
 ## Test Etme
 
@@ -553,7 +553,7 @@ Test aşamasında `test url` linkini kullanarak test edebilirsiniz. `Execute wor
 
 Üst tarafta yer alan `inactive` butonuna tıklayarak workflow aktif edin.
 
-> **Not:**: `env` dosyasında `N8N_WEBHOOK_URL` linkiniz `production url` linki olmalıdır.
+> **Not:** `env` dosyasında `N8N_WEBHOOK_URL` linkiniz `production url` linki olmalıdır.
 
 Örnek Mesaj:
 
