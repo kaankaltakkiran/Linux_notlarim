@@ -545,6 +545,10 @@ Aşağıdaki ayarları yap:
 
 Tüm ayarlar bitti. Eğer her şey doğru bir şekilde ayarlandıysa otomasyon çalışacaktır.
 
+[N8N Workflow Dosyası]() `n8n` import ederek workflow oluşturabilirsiniz.
+
+> **Not:** İmport ettikten sonra `Telegram bot token` ve `Chat ID` kısmını ayarlamalısınız.
+
 Örnek Workflow:
 
 ![Test Etme](./images/workflow.png)

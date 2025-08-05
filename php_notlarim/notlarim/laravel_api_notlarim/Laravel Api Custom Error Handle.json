@@ -1,0 +1,101 @@
+{
+  "name": "Laravel Api Custom Error Handle",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "laravel-api-error-report",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "fb3f719d-d377-4366-b00c-200d4fbb566b",
+      "name": "Webhook",
+      "webhookId": "d2a48441-c4b3-4bba-a66b-c429a1228be2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6837d6bb-9a5a-431d-b406-b4242e8200c3",
+              "name": "text",
+              "value": "=🚨 *Laravel API Hatası*\n\n*Hata:* {{$json[\"body\"][\"error_message\"]}}\n\n*Exception:* {{$json[\"body\"][\"exception\"]}}\n\n*Mesaj:* {{$json[\"body\"][\"message\"]}}\n\n*Method:* {{$json[\"body\"][\"method\"]}}\n\n*IP:* {{$json[\"body\"][\"ip\"]}}\n\n*Zaman:* {{$json[\"body\"][\"timestamp\"]}}\n",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "ffe29e00-79d2-41fc-929a-f48e5c3ab169",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "chatId": "-1002725680137",
+        "text": "={{$json[\"text\"]}}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "cc6859c3-c206-4b2e-b9cd-fe9bcc1f3f23",
+      "name": "Send a text message",
+      "webhookId": "70dfe382-d179-4cea-a5ce-d1f0514701d5",
+      "credentials": {
+        "telegramApi": {
+          "id": "x1KRzsxaVUUxbT9a",
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "5ae69e2b-44d2-4818-aafa-81f8f09da1c6",
+  "meta": {
+    "instanceId": "7b2603afd7bed23b0b3a7397babecbfa348313e5f0eafb9ccea60727a251c7b5"
+  },
+  "id": "enDey2eD4zXOzy3F",
+  "tags": []
+}
