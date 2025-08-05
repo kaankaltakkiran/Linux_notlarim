@@ -1,5 +1,5 @@
 {
-  "name": "Laravel Api Custom Error Handle",
+  "name": "laravel_api_error_handle_n8n_telegram_bot",
   "nodes": [
     {
       "parameters": {
@@ -13,7 +13,7 @@
         0,
         0
       ],
-      "id": "fb3f719d-d377-4366-b00c-200d4fbb566b",
+      "id": "a7856124-97c8-4d4a-ad4a-e7a648f2afe7",
       "name": "Webhook",
       "webhookId": "d2a48441-c4b3-4bba-a66b-c429a1228be2"
     },
@@ -37,7 +37,7 @@
         208,
         0
       ],
-      "id": "ffe29e00-79d2-41fc-929a-f48e5c3ab169",
+      "id": "bb6a5d27-28a0-4279-9494-7f4909655160",
       "name": "Edit Fields"
     },
     {
@@ -52,7 +52,7 @@
         416,
         0
       ],
-      "id": "cc6859c3-c206-4b2e-b9cd-fe9bcc1f3f23",
+      "id": "558a0624-5763-40f3-bcb7-f6556adc37f0",
       "name": "Send a text message",
       "webhookId": "70dfe382-d179-4cea-a5ce-d1f0514701d5",
       "credentials": {
@@ -92,10 +92,10 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "5ae69e2b-44d2-4818-aafa-81f8f09da1c6",
+  "versionId": "87f59b42-8876-4a65-90d4-8ae5747a769c",
   "meta": {
     "instanceId": "7b2603afd7bed23b0b3a7397babecbfa348313e5f0eafb9ccea60727a251c7b5"
   },
-  "id": "enDey2eD4zXOzy3F",
+  "id": "d2IWywKqqYKCmc4D",
   "tags": []
 }
