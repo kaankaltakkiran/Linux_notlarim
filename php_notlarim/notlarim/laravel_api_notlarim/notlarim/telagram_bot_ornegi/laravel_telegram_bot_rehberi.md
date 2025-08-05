@@ -669,4 +669,4 @@ curl -X POST http://127.0.0.1:8000/api/auth/register \
 ```
 
 Telagram kanalında mesajı göreceksiniz:
-![Telagram Bot](./telegram.png)
+![Telagram Bot](../images/telegram.png)
