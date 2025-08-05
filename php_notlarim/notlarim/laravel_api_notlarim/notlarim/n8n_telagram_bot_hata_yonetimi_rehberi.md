@@ -545,7 +545,7 @@ Aşağıdaki ayarları yap:
 
 Tüm ayarlar bitti. Eğer her şey doğru bir şekilde ayarlandıysa otomasyon çalışacaktır.
 
-[N8N Workflow Dosyası]() `n8n` import ederek workflow oluşturabilirsiniz.
+[N8N Workflow Dosyası](https://github.com/kaankaltakkiran/Linux_notlarim/blob/main/php_notlarim/notlarim/laravel_api_notlarim/notlarim/laravel_api_error_handle_n8n_telegram_bot.json) `n8n` import ederek workflow oluşturabilirsiniz.
 
 > **Not:** İmport ettikten sonra `Telegram bot token` ve `Chat ID` kısmını ayarlamalısınız.
 
