@@ -10,7 +10,7 @@
 
 - [Hosting Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/hosting_notlarim)
 
-- [Docker Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/docker_notlarım)
+- [Docker Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/docker_notlarim)
 
 - [Vue.js Notlarım](https://github.com/kaankaltakkiran/Linux_notlarim/tree/main/vue.js_notlarim)
 
