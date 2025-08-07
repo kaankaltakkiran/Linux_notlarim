@@ -890,6 +890,8 @@ systemctl --user stop docker-desktop
 
 > **Not:** Bu ayarların etkili olması sistemi yeniden başlatın.
 
+> [Docker desktop login için gpg key](https://docs.docker.com/desktop/setup/sign-in/#credentials-management-for-linux-users) oluşturun.
+
 ### Git Kurulum Notları
 
 Aşağıdaki komut `git` yükler:
