@@ -19,6 +19,14 @@ git merge upstream/main
 git push origin main
 ```
 
+Tek komut ile tüm işlemler yapılır:
+
+```bash
+git checkout main
+git merge upstream/main
+git push origin main
+```
+
 ## 🧰 2. **Git stash — kayıtlı değişiklikleri geri getirme**
 
 ### 📝 Değişiklikleri stash'e almak
