@@ -816,7 +816,7 @@ npm -v
 Aşağıdaki komut `docker` yükler:
 
 ```bash
-sudo pacman -S docker docker-compose docker-buildx --noconfirm
+sudo pacman -S docker --noconfirm
 ```
 
 Aşağıdaki komut `docker` servisini başlatır:
@@ -859,6 +859,33 @@ Aşağıdaki komut docker containerlarını listeler:
 
 ```bash
 docker ps
+```
+
+Aşağıdaki komut `docker desktop` ayarlarını yapar:
+
+```bash
+sudo wget https://download.docker.com/linux/static/stable/x86_64/docker-28.3.3.tgz -qO- | tar xvfz - docker/docker--strip-components=1
+sudo mv ./docker /usr/local/bin
+```
+
+[Güncel docker](https://docs.docker.com/desktop/release-notes/)indir ve yükle:
+
+```bash
+sudo pacman -U ./docker-desktop-x86_64.pkg.tar.zst --noconfirm
+```
+
+> **Not:** indirdiğiniz dosya hangi klasörde ise bu komutu o klasörde çalıştırın.
+
+Aşağıdaki komut `docker desktop` servisini başlatır:
+
+```bash
+systemctl --user enable docker-desktop
+```
+
+Aşağıdaki komut `docker desktop` servisini durdurur:
+
+```bash
+systemctl --user stop docker-desktop
 ```
 
 > **Not:** Bu ayarların etkili olması sistemi yeniden başlatın.
