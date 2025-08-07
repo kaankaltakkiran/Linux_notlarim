@@ -831,6 +831,12 @@ Aşağıdaki komut `docker` servisinin durumunu kontrol eder:
 sudo systemctl is-active docker.service
 ```
 
+Aşağıdaki komut `docker` servisini devre dışı bırakır:
+
+```bash
+sudo systemctl disable docker.service
+```
+
 Aşağıdaki komut `docker` çalıştığını kontrol eder:
 
 ```bash
