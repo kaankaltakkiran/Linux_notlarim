@@ -846,7 +846,7 @@ sudo docker run hello-world
 Aşağıdaki komut `docker` kullanıcı için yetki verir:
 
 ```bash
-sudo usermod -aG docker ${USER}
+sudo usermod -aG docker $USER
 ```
 
 Aşağıdaki komut `docker` değişiklikleri etkili kılar:
