@@ -19,31 +19,6 @@ git merge upstream/main
 git push origin main
 ```
 
-Git ile çalışırken aşağıdaki komutları kullanarak istediğin işlemleri yapabilirsin:
-
----
-
-### ✅ 1. **Forkladığın bir projeyi en güncel haline getirme**
-
-Forkladığın repo, orijinal repodan zamanla geri kalabilir. En güncel hale getirmek için orijinal repoyu **remote** olarak ekleyip onun üzerinden güncelleme yapman gerekir.
-
-#### 🔁 Adım adım:
-
-```bash
-# 1. Orijinal repoyu remote olarak ekle (sadece 1 kez yapılır)
-git remote add upstream https://github.com/orijinal/kullanici/proje.git
-
-# 2. Upstream (orijinal) repodan güncellemeleri çek
-git fetch upstream
-
-# 3. Kendi main branch'ine orijinal repodaki main branch'i birleştir
-git checkout main
-git merge upstream/main
-
-# 4. (İsteğe bağlı) Değişiklikleri kendi GitHub fork'una gönder
-git push origin main
-```
-
 ## 🧰 2. **Git stash — kayıtlı değişiklikleri geri getirme**
 
 ### 📝 Değişiklikleri stash'e almak
