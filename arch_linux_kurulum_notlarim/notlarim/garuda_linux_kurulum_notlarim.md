@@ -811,6 +811,52 @@ node -v
 npm -v
 ```
 
+### Docker Kurulum
+
+Aşağıdaki komut `docker` yükler:
+
+```bash
+sudo pacman -S docker docker-compose docker-buildx --noconfirm
+```
+
+Aşağıdaki komut `docker` servisini başlatır:
+
+```bash
+sudo systemctl enable --now docker.service
+```
+
+Aşağıdaki komut `docker` servisinin durumunu kontrol eder:
+
+```bash
+sudo systemctl is-active docker.service
+```
+
+Aşağıdaki komut `docker` çalıştığını kontrol eder:
+
+```bash
+sudo docker run hello-world
+```
+
+Aşağıdaki komut `docker` kullanıcı için yetki verir:
+
+```bash
+sudo usermod -aG docker ${USER}
+```
+
+Aşağıdaki komut `docker` değişiklikleri etkili kılar:
+
+```bash
+newgrp docker
+```
+
+Aşağıdaki komut docker containerlarını listeler:
+
+```bash
+docker ps
+```
+
+> **Not:** Bu ayarların etkili olması sistemi yeniden başlatın.
+
 ### Git Kurulum Notları
 
 Aşağıdaki komut `git` yükler:
