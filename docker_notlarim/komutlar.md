@@ -1,4 +1,4 @@
-# 🐳 Docker Nedir? (Kısa ve Öz)
+# 🐳 Docker Nedir?
 
 **Docker**, uygulamaları ve bağımlılıklarını izole edilmiş ortamlarda (container/kapsayıcı) çalıştırmak için kullanılan açık kaynaklı bir platformdur.
 

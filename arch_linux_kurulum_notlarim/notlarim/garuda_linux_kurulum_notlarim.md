@@ -19,7 +19,7 @@ Garuda terimi Hinduizm kaynaklı olup kartal benzeri, ilahi bir güneş kuşu ve
 Tek komut ile aşağıdaki paketleri yükleme:
 
 ```bash
-sudo pacman -S vim apache mariadb php php-apache nodejs npm git flatpak jq docker docker-compose docker-buildx --noconfirm
+sudo pacman -S vim apache mariadb php php-apache nodejs npm git flatpak jq docker --noconfirm
 ```
 
 ### LAMA (Linux, Apache, MySQL, and Adminer) Kurulum Notları
