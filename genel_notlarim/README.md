@@ -1,0 +1,3 @@
+# Genel Notlarım
+
+- []()
