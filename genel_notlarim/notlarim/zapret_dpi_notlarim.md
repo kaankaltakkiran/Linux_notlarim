@@ -438,3 +438,174 @@ sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 # Restart Systemd-Resolved for the changes to take effect
 sudo systemctl restart systemd-resolved
 ```
+
+## Zapret Komutaları
+
+Tamam, şimdi **zapret’i gerçek hayatta nasıl “otomatik çalışır” hale getirirsin**,
+**nasıl durdurursun**, **çalışıp çalışmadığını nasıl anlarsın** hepsini net, adım adım anlatıyorum.
+(Anlatım Linux içindir – Ubuntu / Debian / Arch / CachyOS fark etmez.)
+
+---
+
+## 🔹 1. Zapret’i Servis Olarak Otomatik Başlatmak
+
+Zapret, systemd servisi olarak çalıştırılabilir.
+Kurulumdan sonra genelde `/opt/zapret` altında olur.
+
+### 📌 Servisi aktif et (boot’ta otomatik başlasın)
+
+```bash
+sudo systemctl enable zapret
+```
+
+### 📌 Hemen başlatmak için
+
+```bash
+sudo systemctl start zapret
+```
+
+Bu noktadan sonra:
+
+- Bilgisayar her açıldığında **zapret otomatik çalışır**
+- Manuel başlatmana gerek kalmaz
+
+---
+
+## 🔹 2. Zapret Çalışıyor mu? (Kontrol Etme)
+
+### ✅ Servis durumu
+
+```bash
+systemctl status zapret
+```
+
+Başarılıysa şuna benzer görürsün:
+
+```
+● zapret.service - DPI bypass service
+   Active: active (running)
+```
+
+Eğer `inactive`, `failed` veya `dead` yazıyorsa çalışmıyordur.
+
+---
+
+### 🔍 Canlı logları izlemek
+
+```bash
+journalctl -u zapret -f
+```
+
+Burada şunlara benzer satırlar görürsün:
+
+```
+Starting zapret DPI bypass...
+nfqws started
+```
+
+Bu çıktılar **zapret aktif** demektir.
+
+---
+
+## 🔹 3. Zapret’i Durdurmak
+
+Geçici olarak kapatmak için:
+
+```bash
+sudo systemctl stop zapret
+```
+
+Tamamen devre dışı bırakmak için (boot’ta çalışmasın):
+
+```bash
+sudo systemctl disable zapret
+```
+
+---
+
+## 🔹 4. Zapret Gerçekten Çalışıyor mu? (Pratik Test)
+
+### ✔ Yöntem 1 — Log kontrolü
+
+```bash
+journalctl -u zapret --since "5 minutes ago"
+```
+
+### ✔ Yöntem 2 — Trafik kontrolü
+
+Zapret aktifken:
+
+```bash
+curl https://discord.com
+curl https://youtube.com
+```
+
+Eğer daha önce girmiyorsa ama şimdi giriyorsa → **zapret çalışıyor**.
+
+---
+
+## 🔹 5. Zapret Hangi Siteler İçin Çalışır?
+
+Önemli nokta 👇
+
+Zapret:
+
+- ❌ Tüm siteleri otomatik açmaz
+- ✔ DPI ile engellenen sitelerde işe yarar
+- ❌ IP bazlı engelleri aşamaz
+
+Yani:
+
+- YouTube / Discord / Reddit gibi DPI ile engellenmiş sitelerde genelde işe yarar
+- Tamamen IP bloklu sitelerde yetersiz kalır
+
+---
+
+## 🔹 6. Gelişmiş (İsteğe Bağlı): Hangi Modu Kullanıyor?
+
+Zapret farklı DPI bypass modlarıyla çalışır (`nfqws`, `tpws`, `nfqueue`).
+
+Aktif ayarı görmek için:
+
+```bash
+cat /opt/zapret/config
+```
+
+veya:
+
+```bash
+ls /opt/zapret/
+```
+
+---
+
+## 🔹 7. Kısa Özet (TL;DR)
+
+| İşlem           | Komut                          |
+| --------------- | ------------------------------ |
+| Servisi başlat  | `sudo systemctl start zapret`  |
+| Otomatik başlat | `sudo systemctl enable zapret` |
+| Durdur          | `sudo systemctl stop zapret`   |
+| Durum kontrol   | `systemctl status zapret`      |
+| Logları gör     | `journalctl -u zapret -f`      |
+
+---
+
+## 🧠 Son Tavsiye
+
+Zapret **VPN değildir**.
+Ama “DPI yüzünden giremiyorum” dediğin birçok sitede çok etkilidir.
+
+İstersen bir sonraki adımda:
+
+- 🧩 **zapret + iptables ayarları**
+- 🔍 **hangi sitelerin DPI ile engellendiğini test etme**
+- 🚀 **en stabil zapret konfigürasyonu (Türkiye ISP’leri için)**
+
+bunları da adım adım anlatabilirim.
+
+## References
+
+- [Zapret GitHub](https://github.com/bol-van/zapret/)
+
+- [Zapret Documentation](https://keift.gitbook.io/blog/linux/install-zapret)
