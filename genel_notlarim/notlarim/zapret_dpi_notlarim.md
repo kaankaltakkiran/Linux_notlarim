@@ -1,6 +1,15 @@
+# Zapret DPI Notlarım
+
+Açık kaynaklı bir DPI engelini aşma aracıdır (Deep Packet Inspection bypass).
+GitHub
+
+Temel amacı, internet servis sağlayıcınızın (ISP) veya devlet DPI sistemlerinin içerik filtrelemesini atlatmak için paketleri değiştirip “okunamaz / yanlış anlaşılır” hale getirerek DPI engellerini zorlaştırmaktır.
+
 ---
+
 description: Install Zapret to bypass DPI barriers.
 icon: lock-keyhole-open
+
 ---
 
 ## 1. Install required tools
