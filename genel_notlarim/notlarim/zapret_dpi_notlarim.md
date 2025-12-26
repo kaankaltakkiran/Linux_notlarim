@@ -609,3 +609,5 @@ bunları da adım adım anlatabilirim.
 - [Zapret GitHub](https://github.com/bol-van/zapret/)
 
 - [Zapret Documentation](https://keift.gitbook.io/blog/linux/install-zapret)
+
+- [Zapret YouTube Video](https://www.youtube.com/watch?v=kbqL9Kw23dg)
