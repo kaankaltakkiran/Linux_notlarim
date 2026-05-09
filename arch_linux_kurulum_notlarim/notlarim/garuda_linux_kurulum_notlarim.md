@@ -972,6 +972,8 @@ sudo pacman -S Waydroid --noconfirm
 
 > [Youtube Video](https://www.youtube.com/watch?v=eBgnMrhE4WU&list=FLRi8LZ2PetKpAdDVN17oDxg&index=3)
 
+> [chat gpt yardım](https://chatgpt.com/share/69ffc142-ff8c-83eb-b46e-951a461c9fc7)
+
 ---
 
 ### Alias Kurulum Notları
