@@ -962,6 +962,16 @@ Flatpak versiyon kontrol:
 flatpak --version
 ```
 
+### Waydroid Kurulum Notlarım
+
+```bash
+sudo pacman -S Waydroid --noconfirm
+```
+
+> [waydroid script çeşitli uyumuluk](https://github.com/casualsnek/waydroid_script)
+
+> [Youtube Video](https://www.youtube.com/watch?v=eBgnMrhE4WU&list=FLRi8LZ2PetKpAdDVN17oDxg&index=3)
+
 ---
 
 ### Alias Kurulum Notları
